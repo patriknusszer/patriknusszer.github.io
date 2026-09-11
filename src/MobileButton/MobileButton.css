@@ -1,0 +1,14 @@
+#mobile_menu_btn {
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 7px;
+    transition: color .3s ease-in-out;
+    z-index: 11;
+}
+
+#mobile_menu_btn:hover {
+    color: #9E5EA2;
+}

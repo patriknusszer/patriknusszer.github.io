@@ -1,0 +1,12 @@
+#panel > p {
+    font-family: 'LatoWeb';
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #CBCBCB;
+}
+
+#panel > h1 {
+    font-family: 'LatoWeb';
+    color: #CBCBCB;
+}

@@ -1,0 +1,86 @@
+#logo {
+    height: 110px;
+    width: auto;
+}
+
+#brandname {
+    font-family: 'Sacramento';
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+#deviantintro {
+    font-family: 'Ms Madi';
+    margin: 8px;
+    font-size: 30px;
+}
+
+#c00lbox {
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border: 2px solid #7E5280;
+    color: white;
+    font-family: 'Oooh baby';
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.list {
+    text-align: left;
+    display: inline-block;
+    /* border-left: 2px solid #9E5EA2; */
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+#panel {
+    height: fit-content;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        height: 80px;
+    }
+
+    #c00lbox {
+        font-size: 20px;
+    }
+
+    #deviantintro {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #logo {
+        height: 60px;
+    }
+
+    #deviantintro {
+        font-size: 20px;
+    }
+
+    #brandname {
+        font-size: 30px;
+    }
+    
+    #c00lbox {
+        font-size: 15px;
+        width: auto;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+}
