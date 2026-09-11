@@ -130,6 +130,7 @@
     height: 50px;
     position: fixed;
     top: 0;
+    text-align: center;
     left: 0;
     right: 0;
     z-index: 2;
