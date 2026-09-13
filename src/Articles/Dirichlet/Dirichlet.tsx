@@ -1,5 +1,4 @@
-import ItemViewTemplate from "../ItemViewTemplate/ItemViewTemplate"
-import { useMathJax } from "../Assets/ts/useMathJax.ts"
+import ItemViewTemplate from "../../ItemViewTemplate/ItemViewTemplate.tsx"
 import article from "./Dirichlet.md?raw"
 
 function Dirichlet() {

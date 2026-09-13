@@ -26,7 +26,7 @@ function useMediaQuery(query: string) {
 }
 
 function Navbar() {
-  const isMobile = useMediaQuery("(max-width: 770px)")
+  const isMobile = useMediaQuery("(max-width: 600px)")
   const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false)
 
   return (
@@ -51,8 +51,12 @@ function Navbar() {
                 </svg>
             </Link>
 
-            <Link onClick={() => setMobileMenuOpen(false)} to="/Projects" title="Projects" className="menuitem">Projects</Link>
-            <Link onClick={() => setMobileMenuOpen(false)} to="/Blog" title="Blog" className="menuitem">Blog</Link>
+            {!isMobile && (
+                <>
+                    <Link onClick={() => setMobileMenuOpen(false)} to="/Projects" title="Projects" className="menuitem">Projects</Link>
+                    <Link onClick={() => setMobileMenuOpen(false)} to="/Blog" title="Blog" className="menuitem">Blog</Link>
+                </>
+            )}
         </div>
     </>
   )

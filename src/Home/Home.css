@@ -12,9 +12,9 @@
 }
 
 #deviantintro {
-    font-family: 'Ms Madi';
+    font-family: 'Fredericka the Great', serif;
     margin: 8px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #c00lbox {
@@ -28,7 +28,7 @@
     padding-bottom: 25px;
     border: 2px solid #7E5280;
     color: white;
-    font-family: 'Oooh baby';
+    font-family: 'Kranky';
     font-size: 20px;
     -webkit-font-smoothing: antialiased;
 }
