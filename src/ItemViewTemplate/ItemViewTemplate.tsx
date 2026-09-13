@@ -1,12 +1,14 @@
-import { useEffect } from "react";
+import { useEffect } from "react"
+import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
-import "../Assets/prism/prism.css"
-import "../Assets/css/equ.css"
+
+import remarkMath from "remark-math"
+import rehypeKatex from "rehype-katex"
 
 interface ItemViewTemplateProps {
     title: string;
     subtitle: string;
-    description: React.ReactNode;
+    description: string;
     hasLink?: boolean;
     source?: string;
 }
@@ -39,9 +41,12 @@ function ItemViewTemplate({
 
             <hr />
 
-            <span id="description">
+            <Markdown
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[[rehypeKatex, { displayMode: true }]]}
+            id="description">
                 {description}
-            </span>
+            </Markdown>
 
             {hasLink && (
                 <>

@@ -4,6 +4,7 @@
     overflow-y: hidden;
 }
 
+
 html {
     overflow-y: scroll;
     background-color: #31281F;
@@ -11,6 +12,14 @@ html {
 
 body {
     margin: 0;
+}
+
+.katex-display {
+    margin-left: 30px;
+    margin-right: 30px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #panel {
@@ -72,7 +81,7 @@ body {
     margin-top: 12px;
 }
 
-#description, p {
+#description, p, li, .katex-display {
     -webkit-font-smoothing: antialiased;
     color: #c2c2d6;
     text-align: left;
