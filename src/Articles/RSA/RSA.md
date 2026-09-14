@@ -244,7 +244,7 @@ The theorem I am gonna prove is in fact Euler's Equation. Fermat's Little Theore
 $$
 \begin{aligned}
 & a^{\phi(m)} \equiv 1 \pmod{m}\\
-& (a, m) = 1
+& \gcd(a, m) = 1
 \end{aligned}
 $$
 
@@ -256,55 +256,70 @@ $$
 \phi(10) = 4
 $$
 
-Because between $1$ and $9$, the following numbers are relatively prime to $10$: $1, 3, 7, 9$, and there are 4 of them. Our job is now to find out why rasing $a$ to the power of the value of this function gives such and interesting result.
+Because between $1$ and $9$, the following numbers are relatively prime to $10$: $1, 3, 7, 9$, and there are 4 of them.
 
-Now I am going to introduce you to reduced residue systems. A set of unordered numbers is said to form a reduced residue system modulo $n$ given the following 3 properties hold:
+Let's introduce residue systems. A set of unordered numbers is said to form a reduced residue system modulo $n$ given the following 3 properties hold:
 
-First, there are exactly $\phi(m)$ numbers in the set.
+- There are exactly $\phi(m)$ numbers in the set.
 
-Second, each of the numbers produce different remainders modulo $m$.
+- Second, each of the numbers produce different remainders modulo $m$.
 
-Third, each of these numbers are relatively prime to $m$.
+- Third, each of these numbers are relatively prime to $m$.
 
-That being said, the simplest example for an RRS modulo $10$ is ${1, 3, 7, 9}$. Of course, adding multiples of 10 to each will result in another RRS modulo $m$: ${11, 13, 17, 19}$ since it is immediately evident, that the same 3 conditions must hold true here as well. It is not just these 3 properties that are so much important. It is much rarely mentioned (because it is deemed way too trivial) that each RRS modulo $m$ gives the exact same remainders modulo $m$. So however trivial it may sound, let me, first and foremost, prove this rarely cared for fourth quality:
+That being said, the simplest example for an RRS modulo $10$ is ${1, 3, 7, 9}$. Adding multiples of 10 to each will result in another RRS modulo $m$: ${11, 13, 17, 19}$. It is not just these 3 properties that are so much important.
 
-For proving this we first need to prove that if a number $a$ is relatively prime to $m$, then its remainder modulo $m$ shall also be relatively prime modulo $m$. We prove it indirectly, so let's assume that remainder $r$ of $a$ modulo $m$ happens NOT to be relatively prime to $m$, despite $a$ being relatively prime to $m$.
+It is important to mention something that might not be immediately evident from the above 3 properties: every RRS modulo $m$ has elements of the same remainder equivalence classes, not simply just different remainder eqivalence classes.
 
-$$
-a = km + r
-$$
-
-Now if $r$ was not relatively prime to $a$, it would mean that it must have at least one $q > 1$ common factor with $m$. But then since $km$ also contains this divisor because of $m$, we shall be able to factor it out as such:
+To prove these statements, it is first to be shown that an integer $a$ coprime to $m$ if and only if it has a remainder $r$ also coprime to $m$. Bidirectional proof:
 
 $$
-a = q\left(k\frac{m}{q} + \frac{r}{q}\right)
+\begin{aligned}
+&\begin{cases}
+a = mk + r\\
+\exists q>1: q \mid r,\,q \mid m \iff \gcd(r,m)>1\\
+\end{cases}\\
+\iff &a = q(\frac{m}{q}k + \frac{r}{q})\\
+\iff
+&\begin{cases}
+q \mid a\\
+\exists q>1: q \mid a,\,q \mid m \iff \gcd(a,m)>1\\
+\end{cases} 
+\end{aligned}
 $$
 
-But then if we can do that we are given a contradiction: this latter result means that $q \mid a$ and therefore it could not have been relatively prime to $a$, which was our assumed criterium. Therefore if $a$ is relatively prime to $m$ then its remainder must also be.
+Therefore an integer is **not coprime** to a modulus if and only if its remainder is **not coprime** to that modulus **either**, and equivalently an integer is **coprime** to a modulus if and only if its remainder is **coprime** to that modulus **as well**.  
 
-Okay now what implication does it have for us? We know that if $r$ is a remainder of $a$ modulo $n$, then it is true that $n > r \geq 0$. The simplest example for an RRS modulo $m$ is always those relative prime $a_i$ numbers for which it is true that $m > a_i \geq 1$. Now if we are given any other RRS modulo $m$, we are faced with the fact that they should INDEED produce these $a_i$ numbers as remainders modulo $m$, because each of them shall give different remainders, there are exactly $\phi(m)$ of them, and we also know that finally, that their remainders MUST BE relatively prime to $m$, so they are just simply ought not to be anything else than those numbers that Euler's phi function counts.
+This result is enough to show that elements of any RRS modulo $m$ indeed hold the same remainder equivalence classes, which are exactly the coprime remaidners of modulus $m$:
 
-That having been proven, let's prove one more thing about RRSs:
+- The elements are coprime, hence they yield not just different, but different coprime remainders
+- Every RRS has exactly $\phi(m)$ number of elements, which is exactly the nubmer of all coprime remainders of modulus $m$
 
-**Lemma:** Given any RRS modulo $m$, multiplying each number $a_i$ in the RRS by a number $c$ that is relatively prime to $m$, shall result in another RRS modulo $m$.
-
-Simply enough, we just need to verify whether all the 3 abovementioned qualities hold true. Since $a_i$ and $c$ both are relatively primes to $m$, their product shall also be. Therefore, the resulting numbers are also relatively prime to $m$. Since we initially had $\phi(m)$ numbers, we will end up with just as much, it is trivial. And proving that each of these produce different remainders modulo $m$ requires just a little more of work. Let's assume indirectly that $ca_i$ and $ca_j$ are two numbers that accidentally produce identical remainders modulo $m$:
-
-$$
-ca_i \equiv ca_j \pmod{m}
-$$
-
-Now due to the second lemma I proved for linear congruencies, we know that we shall obtain a congruency equivalent to this one by simply removing multiplier $c$, since $(c, m)=1$, therefore the new modulus shall be $\frac{m}{1}$, because we must divide the modulus by the greatest common divisor of $m$ and $c$, which coincidentally happens to be $1$ at the moment. So this is equivalent to:
+Multiplying integers representing each of the remainder classes of a modulus $m$ with an integer coprime to it will yield the same remainders.
 
 $$
-a_i \equiv a_j \pmod{m}
+\begin{aligned}
+&\begin{cases}
+xa_i \equiv xa_j \pmod{m}\\
+\gcd(x, m)=1
+\end{cases}\\
+\iff
+&\begin{cases}
+a_i \equiv a_j \pmod{\frac{m}{\gcd(x,m)=1}}\\
+\gcd(x,m)=1
+\end{cases}
+\end{aligned}
 $$
 
-And that one happens to be a contradiction, since our assumption also means that $a_i$ and $a_j$ were initially congruent to each other, whereas we know that they give different remainders modulo $m$. That means $ca_i$ and $ca_j$ are ought to have unique remainders modulo $m$.
 
-And again since we have $\phi(m)$ numbers, each having unique AND relatively prime remainders modulo $m$, we know that these new nubmers must produce the exact same remainders modulo $m$. Now we can easily proceed to the conclusion of the most important result.
+As per the above reasoning, an two integers produce the same remaidner modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$ Equivalently two integers produce different remainders modulo $m$ if and only if their multiples with an integer coprime to the modulus produce different remainders modulo m.
 
-So let's consider any RRS modulo $m$, and let the constituent numbers be $a_0$, $a_1$, .., $a_{\phi(m)-1}$, and let any $c$ be a relatively prime to $m$. Then for every $a_i$ there is ought to be a $ca_j$ for which it is true that:
+At this point two fatcs are known:
+- multiplying representatives of different remainder classes with an integer coprime to the modulus yields representatives of different remainder classes
+- the representatives of the coprime remainders yield back coprime remainder representatives
+
+As a result, we can conclude, as a fun fact, that the representatives of such remainders that have common (prime) factors with the modulus yield representatives of remainders that also have common (prime) factors with the modulus. 
+
+Wrapping up the main proof, let's consider any RRS modulo $m$, and let the constituent numbers be $a_0$, $a_1$, .., $a_{\phi(m)-1}$, and let any $c$ be relatively prime to $m$. Then, as per the previous conclusions, for every $a_i$ there is ought to be a $ca_j$ for which it is true that:
 
 $$
 a_i \equiv ca_j \pmod{m}
