@@ -294,7 +294,11 @@ This result is enough to show that elements of any RRS modulo $m$ indeed hold th
 - The elements are coprime, hence they yield not just different, but different coprime remainders
 - Every RRS has exactly $\phi(m)$ number of elements, which is exactly the nubmer of all coprime remainders of modulus $m$
 
-Multiplying integers representing each of the remainder classes of a modulus $m$ with an integer coprime to it will yield the same remainders.
+Two integers produce the same remainder modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$. 
+
+Equivalently, two integers produce different remainders modulo $m$ if and only if their multiples with an integer coprime to the modulus produce different remainders modulo m.
+
+Proof below:
 
 $$
 \begin{aligned}
@@ -310,14 +314,11 @@ a_i \equiv a_j \pmod{\frac{m}{\gcd(x,m)=1}}\\
 \end{aligned}
 $$
 
+Therefore, in **general**, multiplying integers representing each of the different remainder classes of a modulus $m$ with an integer coprime to it will yield representatives of each of the different remainder classes.
 
-As per the above reasoning, an two integers produce the same remaidner modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$ Equivalently two integers produce different remainders modulo $m$ if and only if their multiples with an integer coprime to the modulus produce different remainders modulo m.
+In **particular**, combined with the earlier lemma, multiplying integers representing each of the different coprime remainder classes of a modulus $m$ with an integer coprime to it will yield representatives of each of the different coprime remainder classes.
 
-At this point two fatcs are known:
-- multiplying representatives of different remainder classes with an integer coprime to the modulus yields representatives of different remainder classes
-- the representatives of the coprime remainders yield back coprime remainder representatives
-
-As a result, we can conclude, as a fun fact, that the representatives of such remainders that have common (prime) factors with the modulus yield representatives of remainders that also have common (prime) factors with the modulus. 
+Therefore, as a fun fact, multiplying integers representing each of the different remainder classes of a modulus $m$ having common factors with $m$, with an integer coprime to it will yield representatives of each of the different remainder classes having common factors with $m$.
 
 Wrapping up the main proof, let's consider any RRS modulo $m$, and let the constituent numbers be $a_0$, $a_1$, .., $a_{\phi(m)-1}$, and let any $c$ be relatively prime to $m$. Then, as per the previous conclusions, for every $a_i$ there is ought to be a $ca_j$ for which it is true that:
 
@@ -325,7 +326,6 @@ $$
 a_i \equiv ca_j \pmod{m}
 $$
 
-So basically any number from the RRS can be paired up with another one which will produce the same remainder after multiplied by $c$. For all these pairs this above congruency holds true, and there's exactly $\phi(m)$ of these. As a result of the multiplication rule for linear congruencies, all these congruencies can be "multiplied together" and the product on both sides shall produce the same remainder modulo $m$ for each factor on side having a pair factor on the other producing the same remainder:
 
 $$
 a_0a_1a_2... \equiv ca_0ca_1ca_2... \pmod{m}
@@ -337,7 +337,7 @@ $$
 a_0a_1a_2... \equiv c^{\phi(m)}a_0a_1a_2... \pmod{m}
 $$
 
-Now you see, $a_0a_1a_2...$ product is relatively prime to $m$, for each of its factors being relatively prime to $m$. In accordance with our lemma for equivalent division for linear congruencies, we can safely divide both sides by this factor without having to change the modulus, and thus we obtain:
+Now you see, $a_0a_1a_2...$ product is relatively prime to $m$, for each of its factors being relatively prime to $m$. Therefore we can safely cancel them without altering the modulus to get what was to be shown:
 
 $$
 1 \equiv c^{\phi(m)} \pmod{m}
