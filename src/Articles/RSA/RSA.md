@@ -19,15 +19,15 @@ The two entities on the two sides of the congruency can be any numbers that sati
 
 If two elements $a$ and $b$ satisfy some well defined equivalence condition, the relation be formally written as $a \sim b$, but this latter notation depends on the exact definition of the equivalence.
 
-Please note that it is always safe to **add or subtract arbitrary multiples of the modulus** from either side of teh congruency, since it does not change their remainders:
+Please note that it is always safe to **add or subtract arbitrary multiples of the modulus** from either side of the congruency, since it does not change their remainders:
 
 $$
 \begin{aligned}
 & a \equiv b \pmod{m}\\
 \iff &a=q_am+r,b+q_bm+r \pmod{m}\\
 \iff &q_am + r \equiv q_bm + r \pmod{m}\\
-\iff &q_am + r \pm Km \equiv q_bm + r \pmod{m}\\
 \iff &(q_a \pm K)m + r \equiv q_bm + r \pmod{m}\\
+\iff &q_am + r \pm Km \equiv q_bm + r \pmod{m}\\
 \iff &a \pm Km \equiv b \pmod{m}
 \end{aligned}
 $$
