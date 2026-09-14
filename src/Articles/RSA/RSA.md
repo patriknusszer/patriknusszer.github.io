@@ -328,13 +328,17 @@ $$
 
 
 $$
-a_0a_1a_2... \equiv ca_0ca_1ca_2... \pmod{m}
+a_0a_1a_2... \equiv ca_0ca_1ca_2... \pmod{m}\\
 $$
 
 Then you can collect all the $c$ factors on the right hand side and, big surprise, you will find that there is exactly $\phi(m)$ of it. So after rearrangement:
 
 $$
-a_0a_1a_2... \equiv c^{\phi(m)}a_0a_1a_2... \pmod{m}
+\begin{aligned}
+a_0a_1a_2... &\equiv c^{\phi(m)}a_0a_1a_2... \pmod{m}\\
+\\
+\prod_{i=0}^{\phi(m)-1}a_i &\equiv c^{\phi(m)}\prod_{j=0}^{\phi(m)-1}a_j \pmod{m}
+\end{aligned}
 $$
 
 Now you see, $a_0a_1a_2...$ product is relatively prime to $m$, for each of its factors being relatively prime to $m$. Therefore we can safely cancel them without altering the modulus to get what was to be shown:
