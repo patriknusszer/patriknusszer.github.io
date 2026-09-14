@@ -92,6 +92,12 @@ body {
     font-size: 17px;
 }
 
+h1, h2 {
+   -webkit-font-smoothing: antialiased;
+    color: #c2c2d6;
+        font-family: 'Mali';
+}
+
 hr {
     margin-left: 30px;
     margin-right: 30px;

@@ -6,7 +6,7 @@ import Projects from '../Projects'
 import '../Assets/css/fonts.css'
 import './App.css'
 
-
+import { rsaRoute } from "../Articles/Routes"
 import { dirichletRoute } from "../Articles/Routes"
 import { fejerRoute } from "../Articles/Routes"
 
@@ -22,7 +22,7 @@ function App() {
             <Route path="/Blog" element={<Blog />}></Route>
             <Route path="/Projects" element={<Projects />}></Route>
             <Route {...dirichletRoute}></Route>
-            <Route {...fejerRoute}></Route>
+            <Route {...rsaRoute}></Route>
 
           </Routes>
         </div>
