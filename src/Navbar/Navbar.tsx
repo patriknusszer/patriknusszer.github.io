@@ -53,8 +53,8 @@ function Navbar() {
 
             {!isMobile && (
                 <>
-                    <Link onClick={() => setMobileMenuOpen(false)} to="/Projects" title="Projects" className="menuitem">Projects</Link>
                     <Link onClick={() => setMobileMenuOpen(false)} to="/Blog" title="Blog" className="menuitem">Blog</Link>
+                    <Link onClick={() => setMobileMenuOpen(false)} to="/Projects" title="Projects" className="menuitem">Projects</Link>
                 </>
             )}
         </div>

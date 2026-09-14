@@ -47,9 +47,9 @@
 }
 
 @media screen and (max-width: 800px) {
-    #logo {
+    /*#logo {
         height: 80px;
-    }
+    }*/
 
     #c00lbox {
         font-size: 20px;
@@ -60,9 +60,37 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    #logo {
+        height: 90px;
+    }
+
+    #c00lbox {
+        font-size: 18px;
+    }
+
+    #deviantintro {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #logo {
+        height: 80px;
+    }
+
+    #c00lbox {
+        font-size: 16px;
+    }
+
+    #deviantintro {
+        font-size: 17px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     #logo {
-        height: 60px;
+        height: 70px;
     }
 
     #deviantintro {
