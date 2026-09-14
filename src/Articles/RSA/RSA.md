@@ -94,6 +94,8 @@ x_a \equiv x_b \pmod{m}
 \end{aligned}
 $$
 
+This result can be interpreted in ring theory as any representatives of one equivalence class ($a,b$) and any representatives of another equivalence class ($x_a,x_b$) always yield a representative of one given equivalence class ($a \pm x_a, b \pm x_b$). Thus a finite ring could be defined on a set containing elements representing each remainder (equivalence class) and define these operations on them. 
+
 A linear congruency $a \equiv b \pmod{m}$ is equivalent with the difference of the two integers $a - b$ being divisible by the modulus $m$:
 
 $$
@@ -121,8 +123,36 @@ It is important to note that multiplication is not (without conditions) reversib
 
 $$
 \begin{aligned}
-a &\equiv b \pmod{m}\\
-\Longrightarrow xa &\equiv xb \pmod{m} 
+&\begin{cases}
+a \equiv b \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\Longrightarrow &x_aa \equiv x_bb \pmod{m} 
+\end{aligned}
+$$
+
+The proof in this direction:
+
+$$
+\begin{aligned}
+&\begin{cases}
+a \equiv b \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\Longrightarrow
+&\begin{cases}
+a=q_am + r,b=q_bm + r\\
+x_a=q_{x_a}m + r_x, x_b=q_{x_b}m + r_x
+\end{cases}\\
+\Longrightarrow
+&\begin{cases}
+r \equiv r \pmod{m}\\
+r_x \equiv r_x \pmod{m}
+\end{cases}\\
+\Longrightarrow
+&\begin{cases}
+rr_x \equiv rr_x \pmod{m}
+\end{cases}
 \end{aligned}
 $$
 
@@ -194,31 +224,7 @@ x=x_cx_g
 \end{aligned}
 $$
 
-So if we want to cancel some integer, we need to make sure to remove the factors it has in common with the modulus, from the modulus. The factors in that integer that are not common are unconditionally cancellable, although not necessarily.
-
-That's cool! We need 1 more lemma before we can proceed to the Euler-Fermat Theorem.
-
-$ac \equiv bc \pmod{m}$ is equivalent with $a \equiv b \pmod{\frac{m}{(m, c)}}$. Here equivalency only means that the 2 congruencies are true for the exact same set of solutions. None have a wider set of solutions than the other one. Proof:
-
-Assume $ac \equiv bc \pmod{m}$. Then:
-
-$$
-m \mid ac - bc = c(a - b)
-$$
-
-Then let $d = (m, c)$. That is, $d$ shall be the greatest common divisor of $m$ and $c$. Then since we are unsure whether $(a - b)$ is divisible by $d$, we are required to remove these factors from the modulus in order to be sure that $m \mid (a - b)$ after the removal of factor $c$. Because we know that $c(a - b)$ contains every factor of $m$, but we can not know their distribution between $d$ and $a - b$. If $c$ has any prime factor $q$ such that it is common with $m$ but it is not common with $a - b$ then it would not be true that $m$ divides $a - b$. Any other (prime) factor of $c$, however, that is not common with $m$, can be removed without worry (if we may also keep them) because it does not change divisibility by $m$. So given that $c' = \frac{c}{d}$ it follows that this congruency is equivalent with:
-
-$$
-\frac{m}{d} \mid c'(a - b)
-$$
-
-And as mentioned, since $c'$ and $m$ has no factors in common, this is equivalent with:
-
-$$
-\frac{m}{d} \mid (a - b)
-$$
-
-That's even cooler is not it? With these lemmas we can now turn to proving the Euler-Fermat Theorem.
+So if we want to cancel some integer, we need to make sure to remove the factors it has in common with the modulus, from the modulus. The factors in that integer that are not common are unconditionally cancellable without the modification of the modulus, although it is not necessary.
 
 # Euler-Fermat Theorem
 
