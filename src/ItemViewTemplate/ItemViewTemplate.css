@@ -93,8 +93,12 @@ body {
     font-size: 17px;
 }
 
-.katex, .katex-display {
-    color:#f9bc8a;
+.katex {
+    color: #e7a5ff;
+}
+
+.katex-display > .katex {
+    color:  #ffcba0;
 }
 
 h1, h2 {
