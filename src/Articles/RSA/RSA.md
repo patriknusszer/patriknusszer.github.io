@@ -62,6 +62,8 @@ $$
 Proof of general lemma in **both** directions:
 
 $$
+\newcommand{\rem}[2]{\operatorname{rem}_{#1}\left(#2\right)}
+
 \begin{aligned}
 &\begin{cases}
 a \equiv b \pmod{m}\\
@@ -69,24 +71,20 @@ x_a \equiv x_b \pmod{m}
 \end{cases}\\
 \iff
 &\begin{cases}
-a = q_am + r,b=q_bm + r\\
-x_a=q_{x_a}m + r_x, x_b=q_{x_b}m + r_x\\
+a = q_am + r\\
+b=q_bm + r\\
+x_a=q_{x_a}m + r_x\\
+x_b=q_{x_b}m + r_x\\
 x_a \equiv x_b \pmod{m}
 \end{cases}\\
 \iff
 &\begin{cases}
 r \equiv r \pmod{m}\\
 r_x \equiv r_x \pmod{m}\\
-x_a \equiv x_b \pmod{m}
 \end{cases}\\
-\iff &\begin{cases}
-r \pm r_x \equiv r \pm r_x \pmod{m}\\
-x_a \equiv x_b \pmod{m}
-\end{cases}\\
-\iff &\begin{cases}
-(q_am + r) \pm (q_{x_a}m + r_x) \equiv (q_bm + r) \pm (q_{x_b}m + r) \pmod{m}\\
-x_a \equiv x_b \pmod{m}
-\end{cases}\\
+\iff &r \pm r_x \equiv r \pm r_x \pmod{m}\\
+\iff 
+&(q_am + r) \pm (q_{x_a}m + r_x) \equiv (q_bm + r) \pm (q_{x_b}m + r) \pmod{m}\\
 \iff &\begin{cases}
 a \pm x_a \equiv b \pm x_b \pmod{m}\\
 x_a \equiv x_b \pmod{m}
@@ -141,20 +139,33 @@ x_a \equiv x_b \pmod{m}
 \end{cases}\\
 \Longrightarrow
 &\begin{cases}
-a=q_am + r,b=q_bm + r\\
-x_a=q_{x_a}m + r_x, x_b=q_{x_b}m + r_x
+a=q_am + r\\
+b=q_bm + r\\
+x_a=q_{x_a}m + r_x\\
+x_b=q_{x_b}m + r_x
 \end{cases}\\
 \Longrightarrow
 &\begin{cases}
-r \equiv r \pmod{m}\\
+ax_a = (q_aq_{x_a} + q_{x_a}r + q_ar + rr_x)m + rr_x\\
+bx_b = (q_bq_{x_b} + q_{x_b}r + q_br + rr_x)m + rr_x\\
+\end{cases}\\
+\Longrightarrow
+&\begin{cases}
+rr_x + m(...) \equiv rr_x + m(...) \pmod{m}\\
+rr_x \equiv rr_x \pmod{m}
+\end{cases}\\
+\Longrightarrow
+&\begin{cases}
+rr_x \equiv r \pmod{m}\\
 r_x \equiv r_x \pmod{m}
 \end{cases}\\
 \Longrightarrow
-&\begin{cases}
-rr_x \equiv rr_x \pmod{m}
-\end{cases}
+&rr_x \equiv rr_x \pmod{m}
+
 \end{aligned}
 $$
+
+Therefore this result can be understood in ring theory as any representatives if some remainder equivalence class $(a, b)$ multiplied by any representative of another remainder equivalence class $(x_a, x_b)$ will yield a representative of one particular remainder equivalence class.
 
 But the other direction is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
 
