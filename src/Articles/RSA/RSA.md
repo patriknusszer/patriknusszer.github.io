@@ -61,8 +61,8 @@ From these it follows:
 
 $$
 \begin{aligned}
-& q_0m + r_0 \pm r_1 \equiv q_1m + r_0 \pm r_1 \pmod{m}\\
-& r_0 \pm r_1 \equiv r_0 \pm r_1 \pmod{m}
+q_0m + r_0 \pm r_1 &\equiv q_1m + r_0 \pm r_1 \pmod{m}\\
+r_0 \pm r_1 &\equiv r_0 \pm r_1 \pmod{m}
 \end{aligned}
 $$
 

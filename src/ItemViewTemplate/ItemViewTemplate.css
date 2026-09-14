@@ -94,14 +94,14 @@ body {
 }
 
 .katex, .katex-display {
-    color: #ffa4a4;
+    color:#ffcba0;
 }
 
 h1, h2 {
     margin-top: 60px;
     margin-bottom: 45px;
    -webkit-font-smoothing: antialiased;
-    color: #d8a6d0;
+    color:#e3a6da;
         font-family: 'Cabin sketch';
 }
 
