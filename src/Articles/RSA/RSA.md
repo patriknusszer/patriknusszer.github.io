@@ -1,72 +1,123 @@
 # Short summary
 
-My aim is to introduce linear congruencies, prove some lemmas about it, then use them to prove the Euler-Fermat Theorem, and then RSA itself. This article aims at introducing RSA as a very tame animal that is in fact extremely easy to understand.
+My aim is to introduce linear congruencies, prove basic lemmas, then use those to prove the Euler-Fermat Theorem, and then the core mathematics of RSA itself. This article aims at introducing RSA as a very tame animal that is in fact extremely easy to understand. This article is intended for those who have never seen linear congruencies before, so RSA mathematics are proven down from zero.
 
 # Linear congruencies
 
-2 integers $a, b$ are said to be congruent modulo $m$ given that they produce the same remainder when divided by $m$. That means for some $k_0, k_1, r_0, m \in \mathbb{Z}, r_0 < m$ numbers $a$, $b$ can be expressed as:
-
-$$
-\begin{aligned}
-& a = k_0m + r_0\\
-& b = k_1m + r_0
-\end{aligned}
-$$
-
-Then this inherently means:
-
-$$
-\begin{aligned}
-& m \mid a - b\\
-& a \equiv b \pmod{m}
-\end{aligned}
-$$
-
-Please remember that the 2 entities on the 2 sides of the congruency can be any numbers. None of them strictly represent the common remainder. Without going deeper into the topic, I am going to show some very basic results about linear congruencies, only the ones essential for proving that RSA indeed works. Assume that the following 2 linear congruencies hold true:
-
-$$
-\begin{aligned}
-& a \equiv b \pmod{m}\\
-& c \equiv d \pmod{m}
-\end{aligned}
-$$
-
-Then if the above congruencies hold, it is also true that:
-
-$$
-a \pm c \equiv b \pm d \pmod{m}
-$$
-
-It can be proven with remainders:
+Two integers $a, b$ are said to be congruent modulo $m$ if they produce the same remainder when divided by $m$. That means for some $k_0, k_1, r_0, m \in \mathbb{Z}, r_0 < m$ the numbers $a$, $b$ can be expressed as:
 
 $$
 \begin{aligned}
 & a = k_0m + r_0\\
 & b = k_1m + r_0\\
-& c = k_2m + r_1\\
-& d = k_3m + r_1
+\text{Notation: } &a \equiv b \pmod{m}\\
+\text{Notation: } &a \sim b
 \end{aligned}
 $$
 
-From these it follows:
+The two entities on the two sides of the congruency can be any numbers that satisfy the equivalence condition (same remainders) under the given modulus. You can think of all numbers producing a given remainder $r$ modulo $m$ as being different representatives of the same equivalence class.
+
+If two elements $a$ and $b$ satisfy some well defined equivalence condition, the relation be formally written as $a \sim b$, but this latter notation depends on the exact definition of the equivalence.
+
+Please note that it is always safe to **add or subtract arbitrary multiples of the modulus** from either side of teh congruency, since it does not change their remainders:
 
 $$
 \begin{aligned}
-& a \pm c = (k_0m + r_0) \pm (k_2m + r_1) = q_0m + r_0 \pm r_1 \\
-& b \pm d = (k_1m + r_0) \pm (k_3m + r_1) = q_1m + r_0 \pm r_1
+& a \equiv b \pmod{m}\\
+\iff &a=q_am+r,b+q_bm+r \pmod{m}\\
+\iff &q_am + r \equiv q_bm + r \pmod{m}\\
+\iff &q_am + r \pm Km \equiv q_bm + r \pmod{m}\\
+\iff &(q_a \pm K)m + r \equiv q_bm + r \pmod{m}\\
+\iff &a \pm Km \equiv b \pmod{m}
 \end{aligned}
 $$
 
-From these it follows:
+Furthermore, it is always safe to add/subtract any two representatives of the **same** remainder equivalence class to/from both sides of the congruency (the congruencies imply each other in both directions):
+
+In **general**:
 
 $$
 \begin{aligned}
-q_0m + r_0 \pm r_1 &\equiv q_1m + r_0 \pm r_1 \pmod{m}\\
-r_0 \pm r_1 &\equiv r_0 \pm r_1 \pmod{m}
+&\begin{cases}
+a + x_a \equiv c + x_b \pmod{m} \\
+x_a \equiv x_b \pmod{m}
+\end{cases} \\
+\iff &
+\begin{cases}
+a \equiv c \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}
 \end{aligned}
 $$
 
-It can also be proven using divisibility:
+In **particular**, it is always harmless to add/subtract a constant to/from a congruency that holds:
+
+$$
+\begin{aligned}
+&a \equiv b \pmod{m}\\
+\iff &a \pm x \equiv b \pm x \pmod{m}
+\end{aligned}
+$$
+
+Proof of general lemma in **both** directions:
+
+$$
+\begin{aligned}
+&\begin{cases}
+a \equiv b \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\iff
+&\begin{cases}
+a = q_am + r,b=q_bm + r\\
+x_a=q_{x_a}m + r_x, x_b=q_{x_b}m + r_x\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\iff
+&\begin{cases}
+r \equiv r \pmod{m}\\
+r_x \equiv r_x \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\iff &\begin{cases}
+r \pm r_x \equiv r \pm r_x \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\iff &\begin{cases}
+(q_am + r) \pm (q_{x_a}m + r_x) \equiv (q_bm + r) \pm (q_{x_b}m + r) \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\iff &\begin{cases}
+a \pm x_a \equiv b \pm x_b \pmod{m}\\
+x_a \equiv x_b \pmod{m}
+\end{cases}\\
+\end{aligned}
+$$
+
+A linear congruency $a \equiv b \pmod{m}$ is equivalent with the difference of the two integers $a - b$ being divisible by the modulus $m$:
+
+$$
+\begin{aligned}
+&a \equiv b \pmod{m}\\
+\iff &m \mid a-b\\
+\iff &m \mid b-a
+\end{aligned}
+$$
+
+Proof in **both** directions:
+
+$$
+\begin{aligned}
+&a \equiv b \pmod{m}\\
+\iff &a = q_am + r_0,b=q_bm+r_0\\
+\iff &a - b = (q_a-q_b)m\\
+\iff &b - a = (q_b - q_a)m\\
+\iff &m \mid a - b\\
+\iff &m \mid b - a
+\end{aligned}
+$$
+
+Having proven this, the addition/subtraction of a constant always yielding a true congruency (the one earlier theorem) can also be proven using this new divisibility criterion:
 
 $$
 \begin{aligned}
@@ -75,7 +126,7 @@ $$
 \end{aligned}
 $$
 
-Then if two entities are divisible by a number then their sum or difference shoudl also be divisible by it:
+Then if two entities are divisible by a number then their sum or difference should also be divisible by it:
 
 $$
 \begin{aligned}
