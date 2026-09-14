@@ -117,94 +117,84 @@ $$
 \end{aligned}
 $$
 
-Having proven this, the addition/subtraction of a constant always yielding a true congruency (the one earlier theorem) can also be proven using this new divisibility criterion:
+It is important to note that multiplication is not (without conditions) reversible. Formally:
 
 $$
 \begin{aligned}
-& m \mid a - b \\
-& m \mid c - d
+a &\equiv b \pmod{m}\\
+\Longrightarrow xa &\equiv xb \pmod{m} 
 \end{aligned}
 $$
 
-Then if two entities are divisible by a number then their sum or difference should also be divisible by it:
+But the other direction is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
 
 $$
 \begin{aligned}
-& m \mid (a - b) + (c - d) = (a + c) - (b + d)  \\
-& m \mid (a - b) - (c - d) = (a - c) - (b - d)
+&ax \equiv bx \pmod{m}\\
+\iff &m \mid x(a-b)
 \end{aligned}
 $$
 
-Now we know that if the difference of 2 integers is divisible by a number if and only if they are congruent modulo that number. If you subtract them, and they produce the same remainder for $n$, then the result will be a multiple of $n$. Otherwise it just simply can not be. Therefore these results are equivalent with:
+The danger here to bear in mind is that diving by $x$ or some prime factors of $x$ may be factors that also exist in the modulus $m$, and after they are removed from $x$, the difference $(a-b)$ and the remaining factors of $x$ must still contain all of the factors (with their corresponding multiplicities) of $m$ for the divisibility criterium to hold.
+
+On one part, it is always safe to cancel prime factors from the congruency that $m$ does not contain:
 
 $$
 \begin{aligned}
-& a + c \equiv b + d \pmod{m}  \\
-& a - c \equiv b - d \pmod{m}
+&\begin{cases}
+ax \equiv bx \pmod{m}\\
+\gcd(x, m)=1
+\end{cases}\\
+\Longrightarrow &a \equiv b \pmod{m}\\
 \end{aligned}
 $$
 
-Given the initial 2 congruencies are 2, I am going to show that it is also true that:
-
-$$
-ac \equiv bd \pmod{m}
-$$
-
-Proof with remainders:
+Add from this, it trivially follows (equivalently, bidirectionally):
 
 $$
 \begin{aligned}
-& a = k_0m + r_0\\
-& b = k_1m + r_0\\
-& c = k_2m + r_1\\
-& d = k_3m + r_1
+&\begin{cases}
+ax \equiv bx \pmod{m}\\
+x = x_f * x_g\\
+\gcd(x_f, m)=1
+\end{cases}\\
+\Longrightarrow &\frac{x}{x_f}a \equiv \frac{x}{x_f}b \pmod{m}\\
+\Longrightarrow &x_ga \equiv x_gb \pmod{m}
 \end{aligned}
 $$
 
-From these we gain:
+The question rises, what happens if we want to **cancel factors common with the modulus**? Well, if we know that what remains after the cancellation in the difference of the two sides of the congruency, then we can certainly do that.
+
+But is there a surefire, trivial way? Yes, we can just simply **remove these factors from the modulus**:
 
 $$
 \begin{aligned}
-& ac = (k_0m + r_0)(k_2m + r_1) = q_0m + r_0r_1 \\
-& bd = (k_1m + r_0)(k_3m + r_1) = q_1m + r_0r_1
+&\begin{cases}
+xa \equiv xb \pmod{m}\\
+x \mid m
+\end{cases}\\
+\Longrightarrow &a \equiv b \pmod{\frac{m}{x}}
 \end{aligned}
 $$
 
-From this we actually obtain:
-
-$$
-ac \equiv bd \pmod{m}
-$$
-
-It can also be proven with divisibility:
+And from this, the following trivially follows (equivalently, bidirectionally):
 
 $$
 \begin{aligned}
-& m \mid a - b\\
-& m \mid c - d
+&\begin{cases}
+xa \equiv xb \pmod{m}\\
+\begin{cases}
+\gcd(x, m)=x_c\\
+x=x_cx_g
+\end{cases}\\
+\Longrightarrow \gcd(x_g, m)=1 
+\end{cases}\\
+\Longrightarrow &a \equiv b \pmod{\frac{m}{x_c}}\\
+\iff &x_ga \equiv x_gb \pmod{\frac{m}{x_c}}
 \end{aligned}
 $$
 
-Now any multiple of numbers divisible by $m$ should still be divisible by $m$:
-
-$$
-\begin{aligned}
-& m \mid c(a - b) = ac - bc\\
-& m \mid b(c - d) = bc - bd
-\end{aligned}
-$$
-
-Now that we know the sum of 2 integers divisible by $n$ shall also be divisible by $m$, we obtain that:
-
-$$
-m \mid (ac - bc) + (bc - db) = ac - db
-$$
-
-And since $m \mid a - b$ is equivalent with $a \equiv b \pmod{m}$ we get:
-
-$$
-ac \equiv db \pmod{m}
-$$
+So if we want to cancel some integer, we need to make sure to remove the factors it has in common with the modulus, from the modulus. The factors in that integer that are not common are unconditionally cancellable, although not necessarily.
 
 That's cool! We need 1 more lemma before we can proceed to the Euler-Fermat Theorem.
 
