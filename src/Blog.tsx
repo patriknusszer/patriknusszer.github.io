@@ -17,6 +17,36 @@ interface ItemsViewModel {
 function Blog() {
     const model: ItemsViewModel = {
         categories: [
+              {
+                name: "Mathematics",
+                items: [
+                    {
+                        page: "/Blog/fouriertransform",
+                        name: "Fourier transform"
+                    },
+                    {
+                        page: "/Blog/dirichlet",
+                        name: "Fourier series: differentiable functions' pointwise convergence"
+                    },
+                    {
+                        page: "/Blog/fejer",
+                        name: "Fourier series: continuous functions' pointwise convergence"
+                    },
+                    {
+                        page: "/Blog/rsa",
+                        name: "Euler-Fermat theorem, linear congruencies, RSA"
+                    }
+                ]
+            },
+             {
+                name: "Other",
+                items: [
+                    {
+                        page: "/Blog/french_pronounciation",
+                        name: "French pronounciation"
+                    }
+                ]
+            },
             {
                 name: "Algorithms",
                 items: [
@@ -39,38 +69,6 @@ function Blog() {
                     {
                         page: "/Blog/dijkstra",
                         name: "Dijkstra"
-                    }
-                ]
-            },
-
-            {
-                name: "Mathematics",
-                items: [
-                    {
-                        page: "/Blog/fouriertransform",
-                        name: "Fourier transform"
-                    },
-                    {
-                        page: "/Blog/dirichlet",
-                        name: "Fourier series: differentiable functions' pointwise convergence"
-                    },
-                    {
-                        page: "/Blog/fejer",
-                        name: "Fourier series: continuous functions' pointwise convergence"
-                    },
-                    {
-                        page: "/Blog/rsa",
-                        name: "Euler-Fermat theorem, linear congruencies, RSA"
-                    }
-                ]
-            },
-
-            {
-                name: "Other",
-                items: [
-                    {
-                        page: "/Blog/highlevellanguages",
-                        name: "High level languages behind the scenes"
                     }
                 ]
             }
