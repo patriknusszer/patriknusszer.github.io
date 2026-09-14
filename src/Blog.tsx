@@ -1,4 +1,4 @@
-https://github.com/login/deviceimport ItemsViewTemplate from "./ItemsViewTemplate/ItemsViewTemplate";
+import ItemsViewTemplate from "./ItemsViewTemplate/ItemsViewTemplate";
 
 interface Item {
     page: string;
