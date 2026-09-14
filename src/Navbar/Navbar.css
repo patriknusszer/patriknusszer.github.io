@@ -77,7 +77,7 @@
 }
 
 .menuitem:hover {
-    color: #9E5EA2;
+    color: #c792ca;
     /* border-bottom-color: #9E5EA2; */
 }
 
@@ -106,8 +106,8 @@
 }
 
 .menuitem:hover:before {
-    border-bottom-color: #9E5EA2;
-    border-right-color: #9E5EA2;
+    border-bottom-color: #c792ca;
+    border-right-color: #c792ca;
     transition: border-bottom-color 0s ease-in;
     animation: underline .5s ease-in-out forwards;
 }

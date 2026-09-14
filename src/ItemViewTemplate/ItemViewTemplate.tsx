@@ -28,6 +28,7 @@ function ItemViewTemplate({
         document.head.appendChild(link)
 
         return () => {
+            console.log('unmount')
             link.remove();
         };
     }, []);

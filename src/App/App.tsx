@@ -23,7 +23,7 @@ function App() {
             <Route path="/Projects" element={<Projects />}></Route>
             <Route {...dirichletRoute}></Route>
             <Route {...rsaRoute}></Route>
-
+            <Route {...fejerRoute}></Route>
           </Routes>
         </div>
     </BrowserRouter>
