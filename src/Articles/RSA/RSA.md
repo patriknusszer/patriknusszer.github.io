@@ -156,7 +156,7 @@ rr_x \equiv rr_x \pmod{m}
 \end{cases}\\
 \Longrightarrow
 &\begin{cases}
-rr_x \equiv r \pmod{m}\\
+r \equiv r \pmod{m}\\
 r_x \equiv r_x \pmod{m}
 \end{cases}\\
 \Longrightarrow
@@ -353,9 +353,7 @@ Diffie-Hellman public key exchange protocol is the predecessor of RSA. It is a t
 
 But it only served the purpose of agreeing upon a common cryptographic key through a public, vulnerable channel.
 
-Then once everyone knows the key, they can use their symmetric cryptographic algorithm with it. RSA is different from it. It is an cryptographic algorithm itself,
-
-while it is as safe on public channels. (That is, until the era of quantum computers sets in eventually). Every participant has a private and public key.
+Then once everyone knows the key, they can use their symmetric cryptographic algorithm with it. RSA is different from it. It is a cryptographic algorithm itself, while it is as safe on public channels. (That is, until the era of quantum computers sets in eventually). Every participant has a private and public key.
 
 The public key is that one which is safe to be shared on the vulnerable channel. The public key can be used to encrypt a message with it,
 
