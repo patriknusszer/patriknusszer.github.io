@@ -19,7 +19,11 @@ The two entities on the two sides of the congruency can be any numbers that sati
 
 If two elements $a$ and $b$ satisfy some well defined equivalence condition, the relation be formally written as $a \sim b$, but this latter notation depends on the exact definition of the equivalence.
 
-Please note that it is always safe to **add or subtract arbitrary multiples of the modulus** from either side of the congruency, since it does not change their remainders:
+**Theorem**
+
+It is always safe to **add or subtract arbitrary multiples of the modulus** from either side of the congruency, since it does not change their remainders.
+
+**Proof**
 
 $$
 \begin{aligned}
@@ -34,7 +38,7 @@ $$
 
 Furthermore, it is always safe to add/subtract any two representatives of the **same** remainder equivalence class to/from both sides of the congruency (the congruencies imply each other in both directions):
 
-In **general**:
+**Theorem in general**:
 
 $$
 \begin{aligned}
@@ -101,6 +105,8 @@ The initial conditions therefore only follow from the result in the other direct
 
 This result can be interpreted in **ring theory** as any representatives of one equivalence class $(a,b)$ and any representatives of another equivalence class $(x_a,x_b)$ always yield a representative of one given equivalence class $(a \pm x_a, b \pm x_b)$. Thus a finite ring could be defined on a set containing elements representing each remainder equivalence classes, and define these operations on these equivalence classes. These operations are backed by the operations defined on the underlying representatives of the equivalence classes.
 
+**Theorem**
+
 A linear congruency $a \equiv b \pmod{m}$ is equivalent with the difference of the two integers $a - b$ being divisible by the modulus $m$:
 
 $$
@@ -111,7 +117,7 @@ $$
 \end{aligned}
 $$
 
-Proof in **both** directions:
+**Proof**
 
 $$
 \begin{aligned}
@@ -123,6 +129,8 @@ $$
 \iff &m \mid b - a
 \end{aligned}
 $$
+
+**Theorem**
 
 It is important to note that multiplication is not (without conditions) reversible. Formally:
 
@@ -136,7 +144,7 @@ x_a \equiv x_b \pmod{m}
 \end{aligned}
 $$
 
-The proof in this direction:
+**Proof**
 
 $$
 \begin{aligned}
@@ -270,7 +278,10 @@ That being said, the simplest example for an RRS modulo $10$ is ${1, 3, 7, 9}$. 
 
 It is important to mention something that might not be immediately evident from the above 3 properties: every RRS modulo $m$ has elements of the same remainder equivalence classes, not simply just different remainder eqivalence classes.
 
-To prove these statements, it is first to be shown that an integer $a$ coprime to $m$ if and only if it has a remainder $r$ also coprime to $m$. Bidirectional proof:
+**Theorem**
+To prove this latter statement, it is first to be shown that an integer $a$ coprime to $m$ if and only if it has a remainder $r$ also coprime to $m$.
+
+**Proof**
 
 $$
 \begin{aligned}
@@ -287,14 +298,14 @@ q \mid a\\
 \end{aligned}
 $$
 
-Therefore an integer is **not coprime** to a modulus if and only if its remainder is **not coprime** to that modulus **either**, and equivalently an integer is **coprime** to a modulus if and only if its remainder is **coprime** to that modulus **as well**.  
+In words, an integer is **not coprime** to a modulus if and only if its remainder is **not coprime** to that modulus **either**, and equivalently an integer is **coprime** to a modulus if and only if its remainder is **coprime** to that modulus **as well**.  
 
 This result is enough to show that elements of any RRS modulo $m$ indeed hold the same remainder equivalence classes, which are exactly the coprime remaidners of modulus $m$:
 
 - The elements are coprime, hence they yield not just different, but different coprime remainders
 - Every RRS has exactly $\phi(m)$ number of elements, which is exactly the number of all coprime remainders of modulus $m$
 
-**Lemma**: Two integers produce the same remainder modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$. 
+**Theorem**: Two integers produce the same remainder modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$. 
 
 Equivalently, two integers produce different remainders modulo $m$ if and only if their multiples with an integer coprime to the modulus produce different remainders modulo m.
 
@@ -331,13 +342,13 @@ $$
 
 The implication follows from the multiplication rule we have already proven.
 
-Then you can collect all the $c$ factors on the right hand side and, big surprise, you will find that there is exactly $\phi(m)$ of it. So after rearrangement:
+The $c$ factors on the right hand side can be collected and not surprisingly, there is exactly $\phi(m)$ of it. So after rearrangement:
 
 $$
 \begin{aligned}
 a_0a_1a_2... &\equiv c^{\phi(m)}a_0a_1a_2... \pmod{m}\\
 \\
-\prod_{i=0}^{\phi(m)-1}a_i &\equiv c^{\phi(m)}\prod_{j=0}^{\phi(m)-1}a_j \pmod{m}
+\prod_{i=0}^{\phi(m)-1}a_i &\equiv c^{\phi(m)}\prod_{i=0}^{\phi(m)-1}a_i \pmod{m}
 \end{aligned}
 $$
 
