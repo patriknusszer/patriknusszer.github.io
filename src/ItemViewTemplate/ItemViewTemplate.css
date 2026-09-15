@@ -97,6 +97,10 @@ body {
     color: #e7a5ff;
 }
 
+h1 > .katex, h2 > .katex {
+    color: #ffb1f4;
+}
+
 .katex-display > .katex {
     color:  #ffcba0;
 }
