@@ -466,7 +466,7 @@ $$
 \iff
 \phi(N) = \phi(pq)&=\phi(p)\phi(q)
 \end{aligned}
-$$.
+$$
 
 I am going to prove it now. It is important that $p$ and $q$ are relatively prime. In generality, they are not even required to be primes, only relative primes, that is, they may be compound but should not have common factors.
 
