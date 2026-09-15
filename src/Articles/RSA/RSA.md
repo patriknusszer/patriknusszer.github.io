@@ -397,7 +397,11 @@ N &= pq
 \end{aligned}
 $$
 
-$p$ and $q$ are 300-digit prime numbers. The efficacy of RSA lies in the fact that pre-quantum computers can not effectively find out the prime factors of $N$.
+$p$ and $q$ are 300-digit prime numbers. The efficacy of RSA lies in the fact that pre-quantum computers can not effectively find out the prime factors of $N$. The interpretation of the above congruency is roughly:
+- $x$ is the message
+- $x$ is exponentiated and modulated to retrieve the ciphertext
+- the ciphertext is then exponentiated and modulated again to retrieve $x$
+- the exponent $k\phi(N) + 1$ is basically the sum of these two different exponents
 
 To prove this, three cases are separated:
 - When exactly none of
