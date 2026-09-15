@@ -218,7 +218,7 @@ x \mid m
 \end{aligned}
 $$
 
-And from this, the following trivially follows (equivalently, bidirectionally):
+And from this, the following trivially follows equivalently/bidirectionally:
 
 $$
 \begin{aligned}
@@ -316,20 +316,20 @@ $$
 
 Therefore, in **general**, multiplying integers representing each of the different remainder classes of a modulus $m$ with an integer coprime to it will yield representatives of each of the different remainder classes.
 
-In **particular**, combined with the earlier lemma, multiplying integers representing each of the different coprime remainder classes of a modulus $m$ with an integer coprime to it will yield representatives of each of the different coprime remainder classes.
+In **particular**, combined with the earlier lemma, multiplying integers representing each of the different coprime remainder classes of a modulus $m$ with an integer coprime to it will yield representatives of each of the different coprime remainder classes. This means that **multiplying an RRS $\pmod{m}$ by arbitrary coprime integer yields another RRS $\pmod{m}$**.
 
 Therefore, as a fun fact, multiplying integers representing each of the different remainder classes of a modulus $m$ having common factors with $m$, with an integer coprime to it will yield representatives of each of the different remainder classes having common factors with $m$.
 
-Wrapping up the main proof, let's consider any RRS modulo $m$, and let the constituent numbers be $a_0$, $a_1$, .., $a_{\phi(m)-1}$, and let any $c$ be relatively prime to $m$. Then, as per the previous conclusions, for every $a_i$ there is ought to be a $ca_j$ for which it is true that:
+Wrapping up the main proof, let's consider any RRS $\pmod{m}$, and let the constituent numbers be $a_0$, $a_1$, .., $a_{\phi(m)-1}$, and let any $c$ be relatively prime to $m$. Then, as per the previous conclusion, the numbers $ca_0$, $ca_1$,..,$ca_{\phi(m)-1}$ constitute another RRS $\pmod{m}$, and therefore $\forall\;a_i\;\exists!\; ca_j:$ (for all RRS elements, there exists exactly one RRS element whose multiple with $c$ belongs to the same remainder class)  
 
 $$
-a_i \equiv ca_j \pmod{m}
+\begin{aligned}
+a_i &\equiv ca_j \pmod{m}\\
+\Longrightarrow a_0a_1a_2... &\equiv ca_0ca_1ca_2... \pmod{m}\\
+\end{aligned}
 $$
 
-
-$$
-a_0a_1a_2... \equiv ca_0ca_1ca_2... \pmod{m}\\
-$$
+The implication follows from the multiplication rule we have already proven.
 
 Then you can collect all the $c$ factors on the right hand side and, big surprise, you will find that there is exactly $\phi(m)$ of it. So after rearrangement:
 
@@ -346,6 +346,8 @@ Now you see, $a_0a_1a_2...$ product is relatively prime to $m$, for each of its 
 $$
 1 \equiv c^{\phi(m)} \pmod{m}
 $$
+
+Quod erat demonstrandum.
 
 # RSA Cryptography
 
