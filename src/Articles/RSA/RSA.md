@@ -175,7 +175,21 @@ Notice that this result we wanted to prove (the final congruency), **alone**, th
 
 This result can be understood in **ring theory** as any representatives of some remainder equivalence class $(a, b)$ multiplied by any representative of another remainder equivalence class $(x_a, x_b)$ will yield a representative of one particular remainder equivalence class.
 
-But the other direction is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
+**Theorem**
+Exponentiating sides of a congruency yields another congruency which is also true:
+
+$$
+\begin{aligned}
+a &\equiv b \pmod{m}\\
+\implies a^n &\equiv b^n \pmod{m}
+\end{aligned}
+$$
+
+**Proof**
+
+Exponentiation is backed by multiplication, hence proven.
+
+But the other direction in case of multiplication (or exponentiation) is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
 
 $$
 \begin{aligned}
@@ -348,15 +362,14 @@ $$
 \begin{aligned}
 a_0a_1a_2... &\equiv c^{\phi(m)}a_0a_1a_2... \pmod{m}\\
 \\
-\prod_{i=0}^{\phi(m)-1}a_i &\equiv c^{\phi(m)}\prod_{i=0}^{\phi(m)-1}a_i \pmod{m}
+\prod_{i=0}^{\phi(m)-1}a_i &\equiv c^{\phi(m)}\prod_{i=0}^{\phi(m)-1}a_i \pmod{m}\\
+\\
+\xleftrightarrow{\gcd(\prod_{}^{}a_i, m)=1}
+1 &\equiv c^{\phi(m)} \pmod{m}
 \end{aligned}
 $$
 
-Now you see, $a_0a_1a_2...$ product is relatively prime to $m$, for each of its factors being relatively prime to $m$. Therefore we can safely cancel them without altering the modulus to get what was to be shown:
-
-$$
-1 \equiv c^{\phi(m)} \pmod{m}
-$$
+The product $a_0a_1a_2...$ is relatively prime to $m$, for each of its factors being relatively prime to $m$. Therefore we can safely cancel them without altering the modulus to get what was to be shown.
 
 Quod erat demonstrandum.
 
@@ -377,8 +390,8 @@ The key is in the proving of the below congruency:
 
 $$
 \begin{aligned}
-& x^{k\phi(N) + 1} \equiv x \pmod{N}\\
-& N = pq
+x^{k\phi(N) + 1} &\equiv x \pmod{N}\\
+N &= pq
 \end{aligned}
 $$
 
@@ -398,10 +411,13 @@ This one follows almost directly from Fermat's little theorem.
 
 $$
 \begin{aligned}
-& x^{\phi(N)} \equiv 1 \pmod{N}\\
-& x^{k\phi(N)} \equiv 1^k \pmod{N}\\
-& x^{k\phi(N)} \equiv 1 \pmod{N}\\
-& x^{k\phi(N) + 1} \equiv x \pmod{N}
+x^{\phi(N)} &\equiv 1 \pmod{N}\\
+\implies
+x^{k\phi(N)} &\equiv 1^k \pmod{N}\\
+\implies
+x^{k\phi(N)} &\equiv 1 \pmod{N}\\
+\implies
+x^{k\phi(N) + 1} &\equiv x \pmod{N}
 \end{aligned}
 $$
 
@@ -412,14 +428,14 @@ Since both prime factors $p$ and $q$, and hence $N$, divide $x$, the remainder c
 
 $$
 \begin{aligned}
-&N \mid (x - 0)\\
+N \mid &(x - 0)\\
 \iff
  x &\equiv 0 \pmod{N}\\
-\Longrightarrow
-x^{k\phi(N)} &\equiv 0^k \pmod{N}\\
-\Longrightarrow
-x^{k\phi(N)} &\equiv 0 \pmod{N}\\
-\Longrightarrow
+\implies
+x^{k\phi(N)} &\equiv 0^{k\phi(N)} \pmod{N}\\
+\implies
+x^{k\phi(N)+1} &\equiv 0^{k\phi(N)+1} \pmod{N}\\
+\implies
 x^{k\phi(N) + 1} &\equiv 0\pmod{N}\\
 \xleftrightarrow{x \equiv 0 \pmod{m}} x^{k\phi(N) + 1} &\equiv x \pmod{N}
 \end{aligned}
@@ -431,14 +447,26 @@ Due to Euler-Fermat Theorem:
 
 $$
 \begin{aligned}
-& x^{\phi(p)} \equiv 1 \pmod{p}\\
-& x^{k\phi(q)\phi(p)} \equiv 1^k \pmod{p}\\
-& x^{k\phi(q)\phi(p)} \equiv 1 \pmod{p}\\
-& \implies x^{k\phi(N)} \equiv 1 \pmod{p}
+x^{\phi(p)} &\equiv 1 \pmod{p}\\
+\implies
+x^{k\phi(q)\phi(p)} &\equiv 1^k \pmod{p}\\
+\implies
+x^{k\phi(q)\phi(p)} &\equiv 1 \pmod{p}\\
+\implies x^{k\phi(N)} &\equiv 1 \pmod{p}
 \end{aligned}
 $$
 
-In the last step, we have done a transformation based on an identity: $\phi(N) = \phi(pq)=\phi(p)\phi(q)$.
+In the last step, a transformation have been performed based on a theorem.
+
+**Theorem**
+
+$$
+\begin{aligned}
+\gcd(p, q)&=1\\
+\iff
+\phi(N) = \phi(pq)&=\phi(p)\phi(q)
+\end{aligned}
+$$.
 
 I am going to prove it now. It is important that $p$ and $q$ are relatively prime. In generality, they are not even required to be primes, only relative primes, that is, they may be compound but should not have common factors.
 
