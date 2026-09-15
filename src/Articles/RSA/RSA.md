@@ -71,24 +71,24 @@ x_a \equiv x_b \pmod{m}
 \end{cases}\\
 \iff
 &\begin{cases}
+\begin{cases}
 a = q_am + r\\
 b=q_bm + r\\
 x_a=q_{x_a}m + r_x\\
 x_b=q_{x_b}m + r_x\\
-x_a \equiv x_b \pmod{m}
-\end{cases}\\
-\iff
-&\begin{cases}
+x_a \equiv x_b \pmod{m}\\
 r \equiv r \pmod{m}\\
 r_x \equiv r_x \pmod{m}\\
 \end{cases}\\
-\iff &r \pm r_x \equiv r \pm r_x \pmod{m}\\
+\Longrightarrow r \pm r_x \equiv r \pm r_x \pmod{m}
+\end{cases}\\
 \iff 
 &(q_am + r) \pm (q_{x_a}m + r_x) \equiv (q_bm + r) \pm (q_{x_b}m + r) \pmod{m}\\
 \iff &\begin{cases}
 a \pm x_a \equiv b \pm x_b \pmod{m}\\
 x_a \equiv x_b \pmod{m}
 \end{cases}\\
+\Longrightarrow &a \pm x_a \equiv b \pm x_b \pmod{m}
 \end{aligned}
 $$
 
