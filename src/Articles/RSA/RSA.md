@@ -137,33 +137,29 @@ $$
 a \equiv b \pmod{m}\\
 x_a \equiv x_b \pmod{m}
 \end{cases}\\
-\Longrightarrow
+\iff
 &\begin{cases}
 a=q_am + r\\
 b=q_bm + r\\
 x_a=q_{x_a}m + r_x\\
 x_b=q_{x_b}m + r_x
 \end{cases}\\
-\Longrightarrow
+\iff
 &\begin{cases}
 ax_a = (q_aq_{x_a} + q_{x_a}r + q_ar + rr_x)m + rr_x\\
 bx_b = (q_bq_{x_b} + q_{x_b}r + q_br + rr_x)m + rr_x\\
 \end{cases}\\
-\Longrightarrow
+\iff
 &\begin{cases}
 rr_x + m(...) \equiv rr_x + m(...) \pmod{m}\\
-rr_x \equiv rr_x \pmod{m}
+rr_x \equiv rr_x \pmod{m}\\
+ax_a \equiv bx_b \pmod{m}
 \end{cases}\\
-\Longrightarrow
-&\begin{cases}
-r \equiv r \pmod{m}\\
-r_x \equiv r_x \pmod{m}
-\end{cases}\\
-\Longrightarrow
-&rr_x \equiv rr_x \pmod{m}
-
+\Longrightarrow &ax_a \equiv bx_b \pmod{m}
 \end{aligned}
 $$
+
+Notice that this result we wanted to prove (the final congruency), alone, that is, without knowing the remainders of $a,b,x_a,x_b$, does not imply the initial conditians in the other direction. 
 
 Therefore this result can be understood in ring theory as any representatives if some remainder equivalence class $(a, b)$ multiplied by any representative of another remainder equivalence class $(x_a, x_b)$ will yield a representative of one particular remainder equivalence class.
 
@@ -292,13 +288,13 @@ Therefore an integer is **not coprime** to a modulus if and only if its remainde
 This result is enough to show that elements of any RRS modulo $m$ indeed hold the same remainder equivalence classes, which are exactly the coprime remaidners of modulus $m$:
 
 - The elements are coprime, hence they yield not just different, but different coprime remainders
-- Every RRS has exactly $\phi(m)$ number of elements, which is exactly the nubmer of all coprime remainders of modulus $m$
+- Every RRS has exactly $\phi(m)$ number of elements, which is exactly the number of all coprime remainders of modulus $m$
 
-Two integers produce the same remainder modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$. 
+**Lemma**: Two integers produce the same remainder modulo $m$ if and only if their multiples with an integer coprime to the modulus produce the same remainders modulo $m$. 
 
 Equivalently, two integers produce different remainders modulo $m$ if and only if their multiples with an integer coprime to the modulus produce different remainders modulo m.
 
-Proof below:
+**Proof**:
 
 $$
 \begin{aligned}
@@ -353,15 +349,14 @@ Diffie-Hellman public key exchange protocol is the predecessor of RSA. It is a t
 
 But it only served the purpose of agreeing upon a common cryptographic key through a public, vulnerable channel.
 
-Then once everyone knows the key, they can use their symmetric cryptographic algorithm with it. RSA is different from it. It is a cryptographic algorithm itself, while it is as safe on public channels. (That is, until the era of quantum computers sets in eventually). Every participant has a private and public key.
+Once everyone knows the key, they can use their symmetric cryptographic algorithm with it. RSA is different from it. It is a cryptographic algorithm itself, while it is as safe on public channels. (That is, until the era of quantum computers sets in eventually). Every participant has a private and public key.
 
-The public key is that one which is safe to be shared on the vulnerable channel. The public key can be used to encrypt a message with it,
-
-and then the person who receives the message can decrypt it using his/her private key. We are about to find out how that is exactly possible.
+The public key is that one which is safe to be shared on the vulnerable channel. The public key can be used to encrypt a message with it, and then the person who receives the message can decrypt it using his/her private key. We are about to find out how that is exactly possible.
 
 All the mathematics behind RSA, knowing the lemmas above, can be concluded in nothing more than a few lines of linear congruencies.
 
-The key is in the proving of the following:
+**Lemma**:
+The key is in the proving of the below congruency:
 
 $$
 \begin{aligned}
@@ -372,17 +367,17 @@ $$
 
 $p$ and $q$ are 300-digit prime numbers. The efficacy of RSA lies in the fact that pre-quantum computers can not effectively find out the prime factors of $N$.
 
-Now consider the case, when $x$ happens to be relatively prime with $N$. In that case we are done with the proof, since this congruency is easily derived from the Euler-Fermat theorem.
+To prove this, three cases are separated:
+- When exactly none of
+- When exactly both of
+- When exactly one of
+$q$ and $p$ divide $x$.
 
-below we use the multiplication rule for linear congruencies, we just multiply by the same linear congruency:
+# Case 1: $p, q\nmid x$
 
-$$
-\begin{aligned}
-& a \equiv x \pmod{N}\\
-& a \equiv x \pmod{N}\\
-& \implies a^2 \equiv x^2 \pmod{N}
-\end{aligned}
-$$
+This one follows almost directly from Fermat's little theorem.
+
+**Proof**
 
 $$
 \begin{aligned}
@@ -393,12 +388,15 @@ $$
 \end{aligned}
 $$
 
-So there we go actually. We only need to do some more proving in case $x$ is assumed not to be relatively prime to $N$.
+# Case 2: $p,q \mid x \iff N \mid x$
 
-Let's look at one other, very trivial case, when $x$ happens to be divisible by both $p$ and $q$. In that case, since $N$ in this case is a divisor of $x$:
+Since both prime factors $p$ and $q$, and hence $N$, divide $x$, the remainder can not be other than zero.
+
 
 $$
 \begin{aligned}
+&N \mid (x - 0)\\
+\iff
 & x \equiv 0 \pmod{N}\\
 & x^{k\phi(N)} \equiv 0^k \pmod{N}\\
 & x^{k\phi(N)} \equiv 0 \pmod{N}\\
@@ -407,7 +405,7 @@ $$
 \end{aligned}
 $$
 
-Isn't it EZ? We are left with one more case. What if $x$ is only divisible by either $p$ or $q$?
+We are left with one more case. What if $x$ is only divisible by either $p$ or $q$?
 
 Let's assume so, that, for example, $p \nmid x$ but $q \mid x$. Due to Euler-Fermat Theorem:
 
