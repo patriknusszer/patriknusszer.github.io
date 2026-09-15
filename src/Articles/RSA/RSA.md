@@ -385,6 +385,8 @@ The public key is that one which is safe to be shared on the vulnerable channel.
 
 All the mathematics behind RSA, knowing the lemmas above, can be concluded in nothing more than a few lines of linear congruencies.
 
+# Core theorem
+
 **Lemma**:
 The key is in the proving of the below congruency:
 
@@ -403,7 +405,7 @@ To prove this, three cases are separated:
 - When exactly one of
 $q$ and $p$ divide $x$.
 
-# Case 1: $p, q\nmid x$
+## Case 1: $p, q\nmid x$
 
 This one follows almost directly from Fermat's little theorem.
 
@@ -421,7 +423,7 @@ x^{k\phi(N) + 1} &\equiv x \pmod{N}
 \end{aligned}
 $$
 
-# Case 2: $p,q \mid x \iff N \mid x$
+## Case 2: $p,q \mid x \iff N \mid x$
 
 Since both prime factors $p$ and $q$, and hence $N$, divide $x$, the remainder can not be other than zero.
 
@@ -441,7 +443,7 @@ x^{k\phi(N) + 1} &\equiv 0\pmod{N}\\
 \end{aligned}
 $$
 
-# Case 3: $q \mid x,\;p \nmid x$
+## Case 3: $q \mid x,\;p \nmid x$
 
 Due to Euler-Fermat Theorem:
 
@@ -574,7 +576,7 @@ $$
 x^{k\phi(N) + 1} \equiv x \pmod{N}
 $$
 
-Ok so, we have shown that this congruency holds true for any value of $x$.
+# Message & keys
 
 The only question is, how could we use it for cryptography?
 
