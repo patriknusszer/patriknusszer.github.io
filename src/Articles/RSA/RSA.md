@@ -598,25 +598,6 @@ $$
 ab = k\phi(N)+1
 $$
 
-We need a public key $a$, and private key $b$. We need a cryptographic function such that:
-
-$$
-x^a \equiv c \pmod{N}
-$$
-
-Here $c$ is your ciphertext, resulting from public key $a$ and plaintext $x$.
-
-$x$ is your message that you are encrypting.
-
-Now we need such a private key $b$, for which:
-
-$$
-\begin{aligned}
-& (x^a)^b \equiv c \pmod{N}\\
-& x^{ab} \equiv x \pmod{N}
-\end{aligned}
-$$
-
 Now, due to the above result, for this to hold true:
 
 $$
