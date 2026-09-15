@@ -387,7 +387,7 @@ All the mathematics behind RSA, knowing the lemmas above, can be concluded in no
 
 # Core theorem
 
-**Lemma**:
+**Theorem**:
 The key is in the proving of the below congruency:
 
 $$
@@ -399,9 +399,21 @@ $$
 
 $p$ and $q$ are 300-digit prime numbers. The efficacy of RSA lies in the fact that pre-quantum computers can not effectively find out the prime factors of $N$. The interpretation of the above congruency is roughly:
 - $x$ is the message
-- $x$ is exponentiated and modulated to retrieve the ciphertext
-- the ciphertext is then exponentiated and modulated again to retrieve $x$
-- the exponent $k\phi(N) + 1$ is basically the sum of these two different exponents
+- $x$ is exponentiated with a public key $a$ and then modulated to retrieve the ciphertext $c$ (encryption)
+- the ciphertext $c$ is then exponentiated with a private key $b$ and modulated again to retrieve the message $x$ (decryption)
+- the exponent $k\phi(N) + 1$ is an aggregate exponent containing which is the product of the public and private keys
+
+$$
+\begin{aligned}
+ab &= k\phi(N)+1\\
+\implies x^{ab} &\equiv (x^a)^b \equiv x \pmod{N} \\
+\iff
+&\begin{cases}
+x^a \equiv c \pmod{m}\\
+(x^a)^b \equiv c^b \equiv x \pmod{m}
+\end{cases}
+\end{aligned}
+$$
 
 To prove this, three cases are separated:
 - When exactly none of
@@ -578,9 +590,13 @@ $$
 x^{k\phi(N) + 1} \equiv x \pmod{N}
 $$
 
-# Message & keys
+# Selection of the keys
 
-The only question is, how could we use it for cryptography?
+The only question left is how can we agree upon public and private keys that satisfy:
+
+$$
+ab = k\phi(N)+1
+$$
 
 We need a public key $a$, and private key $b$. We need a cryptographic function such that:
 
