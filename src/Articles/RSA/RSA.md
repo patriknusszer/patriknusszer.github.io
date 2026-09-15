@@ -186,7 +186,7 @@ $$
 
 The danger here to bear in mind is that diving by $x$ or some prime factors of $x$ may be factors that also exist in the modulus $m$, and after they are removed from $x$, the difference $(a-b)$ and the remaining factors of $x$ must still contain all of the factors (with their corresponding multiplicities) of $m$ for the divisibility criterium to hold.
 
-On one part, it is always safe to cancel prime factors from the congruency that $m$ does not contain:
+On one part, it is always **safe to cancel (prime) factors from the congruency the modulus does not contain**:
 
 $$
 \begin{aligned}
@@ -196,9 +196,9 @@ ax \equiv bx \pmod{m}\\
 \end{cases}\\
 \Longrightarrow &a \equiv b \pmod{m}\\
 \end{aligned}
-$$
+$$**
 
-And from this, it trivially follows (equivalently, bidirectionally):
+And from this, it trivially follows equivalently/ bidirectionall:
 
 $$
 \begin{aligned}
@@ -239,11 +239,11 @@ x=x_cx_g
 \Longrightarrow \gcd(x_g, m)=1 
 \end{cases}\\
 \Longrightarrow &a \equiv b \pmod{\frac{m}{x_c}}\\
-\iff &x_ga \equiv x_gb \pmod{\frac{m}{x_c}}
+\Longrightarrow &x_ga \equiv x_gb \pmod{\frac{m}{x_c}}
 \end{aligned}
 $$
 
-So if we want to cancel some integer, we need to make sure to remove the factors it has in common with the modulus, from the modulus. The factors in that integer that are not common are unconditionally cancellable without the modification of the modulus, although it is not necessary.
+So if we want to cancel some integer, we need to make sure to remove the factors it has in common with the modulus, from the modulus as a surefire way, or otherwise make sure the difference of the sides of the congruency still holds every factor of the modulus. The factors in that integer that are not common are unconditionally cancellable without the modification of the modulus.
 
 # Euler-Fermat Theorem
 
@@ -414,17 +414,20 @@ $$
 \begin{aligned}
 &N \mid (x - 0)\\
 \iff
-& x \equiv 0 \pmod{N}\\
-& x^{k\phi(N)} \equiv 0^k \pmod{N}\\
-& x^{k\phi(N)} \equiv 0 \pmod{N}\\
-& x^{k\phi(N) + 1} \equiv 0 \pmod{N}\\
-& \implies x^{k\phi(N) + 1} \equiv x \pmod{N}
+ x &\equiv 0 \pmod{N}\\
+\Longrightarrow
+x^{k\phi(N)} &\equiv 0^k \pmod{N}\\
+\Longrightarrow
+x^{k\phi(N)} &\equiv 0 \pmod{N}\\
+\Longrightarrow
+x^{k\phi(N) + 1} &\equiv 0\pmod{N}\\
+\xleftrightarrow{x \equiv 0 \pmod{m}} x^{k\phi(N) + 1} &\equiv x \pmod{N}
 \end{aligned}
 $$
 
-We are left with one more case. What if $x$ is only divisible by either $p$ or $q$?
+# Case 3: $q \mid x,\;p \nmid x$
 
-Let's assume so, that, for example, $p \nmid x$ but $q \mid x$. Due to Euler-Fermat Theorem:
+Due to Euler-Fermat Theorem:
 
 $$
 \begin{aligned}
