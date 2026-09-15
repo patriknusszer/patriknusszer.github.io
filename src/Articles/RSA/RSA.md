@@ -468,8 +468,6 @@ $$
 \end{aligned}
 $$
 
-I am going to prove it now. It is important that $p$ and $q$ are relatively prime. In generality, they are not even required to be primes, only relative primes, that is, they may be compound but should not have common factors.
-
 Now, if we wish to count all the numbers relatively prime to $N$ below $N$, it is the same task, by commonsense, as if we were to count those that are relatively prime to $p$ and $q$, below $N$. Now, imagine a table-like resolution of all the numbers from 1 until $N$. We have $p$ number of columns, and $q$ number of rows. In the first row, you get to see the first $p$ integers, in the second the next $p$ integers from $p + 1$ to $2p$. Let $i$ denote the number of a row, and $j$ denote the number of a column. Then we gain the following resolution for a number $a$ at row $i$ and column $j$:
 
 $$
