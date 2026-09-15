@@ -92,7 +92,7 @@ x_a \equiv x_b \pmod{m}
 \end{aligned}
 $$
 
-This result can be interpreted in ring theory as any representatives of one equivalence class ($a,b$) and any representatives of another equivalence class ($x_a,x_b$) always yield a representative of one given equivalence class ($a \pm x_a, b \pm x_b$). Thus a finite ring could be defined on a set containing elements representing each remainder (equivalence class) and define these operations on them. 
+This result can be interpreted in ring theory as any representatives of one equivalence class $(a,b)$ and any representatives of another equivalence class $(x_a,x_b)$ always yield a representative of one given equivalence class $(a \pm x_a, b \pm x_b)$. Thus a finite ring could be defined on a set containing elements representing each remainder (equivalence class) and define these operations on them. 
 
 A linear congruency $a \equiv b \pmod{m}$ is equivalent with the difference of the two integers $a - b$ being divisible by the modulus $m$:
 
@@ -148,9 +148,6 @@ x_b=q_{x_b}m + r_x
 &\begin{cases}
 ax_a = (q_aq_{x_a} + q_{x_a}r + q_ar + rr_x)m + rr_x\\
 bx_b = (q_bq_{x_b} + q_{x_b}r + q_br + rr_x)m + rr_x\\
-\end{cases}\\
-\iff
-&\begin{cases}
 rr_x + m(...) \equiv rr_x + m(...) \pmod{m}\\
 rr_x \equiv rr_x \pmod{m}\\
 ax_a \equiv bx_b \pmod{m}
@@ -159,9 +156,9 @@ ax_a \equiv bx_b \pmod{m}
 \end{aligned}
 $$
 
-Notice that this result we wanted to prove (the final congruency), alone, that is, without knowing the remainders of $a,b,x_a,x_b$, does not imply the initial conditians in the other direction. 
+Notice that this result we wanted to prove (the final congruency), **alone**, that is, without knowing the remainders of $a,b,x_a,x_b$, does **not imply the initial conditions** in the other direction.
 
-Therefore this result can be understood in ring theory as any representatives if some remainder equivalence class $(a, b)$ multiplied by any representative of another remainder equivalence class $(x_a, x_b)$ will yield a representative of one particular remainder equivalence class.
+This result can be understood in **ring theory** as any representatives of some remainder equivalence class $(a, b)$ multiplied by any representative of another remainder equivalence class $(x_a, x_b)$ will yield a representative of one particular remainder equivalence class.
 
 But the other direction is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
 
