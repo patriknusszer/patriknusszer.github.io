@@ -59,7 +59,7 @@ $$
 \end{aligned}
 $$
 
-Proof of general lemma in **both** directions:
+**Proof** of the general theorem:
 
 $$
 \newcommand{\rem}[2]{\operatorname{rem}_{#1}\left(#2\right)}
@@ -82,8 +82,13 @@ r_x \equiv r_x \pmod{m}\\
 \end{cases}\\
 \Longrightarrow r \pm r_x \equiv r \pm r_x \pmod{m}
 \end{cases}\\
-\iff 
-&(q_am + r) \pm (q_{x_a}m + r_x) \equiv (q_bm + r) \pm (q_{x_b}m + r) \pmod{m}\\
+\iff
+&\begin{cases}
+a + x_a = (q_a + q_{x_a})m + (r + r_x)\\
+b + x_b = (q_b + q_{x_b})m + (r + r_x)\\
+a + x_a = (...)m + (r + r_x)\\
+b + x_b = (...)m + (r + r_x)
+\end{cases}\\
 \iff &\begin{cases}
 a \pm x_a \equiv b \pm x_b \pmod{m}\\
 x_a \equiv x_b \pmod{m}
@@ -92,7 +97,9 @@ x_a \equiv x_b \pmod{m}
 \end{aligned}
 $$
 
-This result can be interpreted in ring theory as any representatives of one equivalence class $(a,b)$ and any representatives of another equivalence class $(x_a,x_b)$ always yield a representative of one given equivalence class $(a \pm x_a, b \pm x_b)$. Thus a finite ring could be defined on a set containing elements representing each remainder (equivalence class) and define these operations on them. 
+The initial conditions therefore only follow from the result in the other direction if we know that the integers that we are adding/removing to/from a congruency belong to the same remainder class.
+
+This result can be interpreted in **ring theory** as any representatives of one equivalence class $(a,b)$ and any representatives of another equivalence class $(x_a,x_b)$ always yield a representative of one given equivalence class $(a \pm x_a, b \pm x_b)$. Thus a finite ring could be defined on a set containing elements representing each remainder equivalence classes, and define these operations on these equivalence classes. These operations are backed by the operations defined on the underlying representatives of the equivalence classes.
 
 A linear congruency $a \equiv b \pmod{m}$ is equivalent with the difference of the two integers $a - b$ being divisible by the modulus $m$:
 
@@ -183,7 +190,7 @@ ax \equiv bx \pmod{m}\\
 \end{aligned}
 $$
 
-Add from this, it trivially follows (equivalently, bidirectionally):
+And from this, it trivially follows (equivalently, bidirectionally):
 
 $$
 \begin{aligned}
