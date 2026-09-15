@@ -554,17 +554,15 @@ $$
 \phi(q, p)=\phi(q)\phi(p)
 $$
 
-So we proceed with the congruency:
+**Proceeding with the congruency**:
 
 $$
 \begin{aligned}
-& x^{k\phi(N)} \equiv 1 \pmod{p}\\
-& x^{k\phi(N) + 1} \equiv x \pmod{p}\\
-& \implies p \mid x^{k\phi(N) + 1} - x\\
-& q \mid x\\
-& \implies q \mid x^{k\phi(N) + 1} - x\\
-& \implies pq \mid x^{k\phi(N) + 1} - x\\
-& \implies N \mid x^{k\phi(N) + 1} - x
+x^{k\phi(N)} &\equiv 1 \pmod{p}\\
+x^{k\phi(N) + 1} &\equiv x \pmod{p}\\
+\iff p &\mid x^{k\phi(N) + 1} - x\\
+\xrightarrow{q \mid x} qp=N &\mid x^{k\phi(N) + 1} - x\\
+\iff x^{k\phi(N) + 1} &\equiv x \pmod{p}
 \end{aligned}
 $$
 
