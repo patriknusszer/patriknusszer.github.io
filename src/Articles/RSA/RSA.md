@@ -196,7 +196,7 @@ ax \equiv bx \pmod{m}\\
 \end{cases}\\
 \Longrightarrow &a \equiv b \pmod{m}\\
 \end{aligned}
-$$**
+$$
 
 And from this, it trivially follows equivalently/ bidirectionall:
 
