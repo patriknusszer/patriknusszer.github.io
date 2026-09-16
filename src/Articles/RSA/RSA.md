@@ -187,7 +187,7 @@ $$
 
 **Proof**
 
-Exponentiation is backed by multiplication, hence proven.
+Exponentiation is multiplication, hence proven.
 
 But the other direction in case of multiplication (or exponentiation) is not always true. Remember that the modulus $m$ must always be able to divide the difference of the sides of the congruency:
 
