@@ -52,7 +52,7 @@ Nasals were inlcuded because airflow is not actually constrained as it freely fl
 
 And considering how further back is the place of articulation in the mouth, we have:
 
-**Bilabial/Labiodental > Dental > Alveolar > Postalveolar > Palatal > Velar > Uvular**
+**Bilabial > Labiodental > Dental > Alveolar > Postalveolar > Palatal > Velar > Uvular**
 
 # IPA phonemes in French
 
