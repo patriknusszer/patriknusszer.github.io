@@ -69,7 +69,7 @@ It is the typical **o** that is pronounced in words such as **oh**, **home**, an
     *m**e**ttre*, *t**e**rr.ible*, *p**e**lle*, *b**e**lle*, *p**e**r.f**e**c.tion*, *p**e**r.v**e**rs*, *t**e**r.mi.ner*, *v**e**r.dict*, *m**e**r.cre.di*, *p**e**r.so.nnel*, *s**e**p.tembre*, *c**e**r.tain*, *v**e**r.ti.cal*, *s**e**r.vir*, ***e**s.to.mac*, ***e**s.prit*, ***e**s.ca.lier*, *p**e**r.s**e**p.tible*, *p**e**r.m**e**ttre*
     - **e followed by double consonants**
     *pro.f**e**.sseur* (note **e** is at the end of an open syllable)
-    - *ei*
+    - **ei**
     *mar.v**e**.illeux*, *Mar.s**e**ille*, *p*ei*gner*
     - **ai** as in *secrétaire* -> /sə.kʁe.tɛʁ/
     - **è** as in *père*
@@ -82,3 +82,4 @@ It is the typical **o** that is pronounced in words such as **oh**, **home**, an
     - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant
     *Mon**e**t*, *parl**e**r*, *parl**e**z*, *m**e**s*
     - **é** as in *pr**é***
+- **/ə/ schwa/mid-central unrounded vowel**
