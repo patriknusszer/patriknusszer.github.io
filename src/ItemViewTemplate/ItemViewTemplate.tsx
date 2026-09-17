@@ -1,5 +1,6 @@
 import { useEffect} from "react"
 import type { ReactNode } from "react";
+import { visit } from "unist-util-visit";
 import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
 
@@ -14,20 +15,42 @@ interface ItemViewTemplateProps {
     source?: string;
 }
 
-const ipaRegex = /\/([^\/\n]+)\//g;
+const ipaRegex = /\/([^/\n]+)\//g;
 
-function TextWithIPA({ children }: { children: ReactNode }) {
-  const parts = String(children).split(ipaRegex);
+function rehypeIpa() {
+  return (tree: any) => {
+    visit(tree, "text", (node: any, index: number | undefined, parent: any) => {
+      if (!parent || index === undefined) return;
 
-  return parts.map((part, i) =>
-    i % 2 === 1 ? (
-      <span key={i} className="ipa">
-        /{part}/
-      </span>
-    ) : (
-      part
-    )
-  );
+      const text = node.value as string;
+      const parts = text.split(ipaRegex);
+
+      if (parts.length === 1) return;
+
+      const newNodes = parts.map((part, i) =>
+        i % 2 === 1
+          ? {
+              type: "element",
+              tagName: "span",
+              properties: {
+                className: ["ipa"],
+              },
+              children: [
+                {
+                  type: "text",
+                  value: `/${part}/`,
+                },
+              ],
+            }
+          : {
+              type: "text",
+              value: part,
+            }
+      );
+
+      parent.children.splice(index, 1, ...newNodes);
+    });
+  };
 }
 
 function ItemViewTemplate({
@@ -60,8 +83,8 @@ function ItemViewTemplate({
             <hr />
 
             <Markdown
-                  components={{
-                text: TextWithIPA,
+                  rehypePlugins={{
+                TextWithIPA,
             }}
             remarkPlugins={[remarkMath]}
             rehypePlugins={[[rehypeKatex, { displayMode: true }]]}>
