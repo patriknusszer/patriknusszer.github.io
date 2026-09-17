@@ -43,7 +43,7 @@ function Blog() {
                 items: [
                     {
                         page: "/Blog/French",
-                        name: "French pronounciation"
+                        name: "French pronounciation and IPA"
                     }
                 ]
             },
