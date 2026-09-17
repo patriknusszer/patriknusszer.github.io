@@ -83,7 +83,7 @@ function ItemViewTemplate({
 
             <Markdown
             remarkPlugins={[remarkMath]}
-            rehypePlugins={rehypeIpa, [[rehypeKatex, { displayMode: true }]]}>
+            rehypePlugins={[rehypeIpa, [rehypeKatex, { displayMode: true }]]}>
                 {description}
             </Markdown>
 
