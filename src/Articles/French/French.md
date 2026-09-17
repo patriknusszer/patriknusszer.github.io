@@ -65,10 +65,16 @@ I am going to list phonemes individually, and then write which character combina
 - **/o/**  close-mid back rounded vowel
 It is the typical **o** that is pronounced in words such as **oh**, **home**, and **go**.
 - **/ɛ/** open-mid front unrounded vowel. It is the same **e** as in English *meh*
-    - **e inside closed nonfinal syllables**. There is a *double consonant* rule as well but it does not always work and when it does it coincides with this rule.
-    *m**e**ttre*, *p**e**lle*, *b**e**lle*, *prof**e**sseur*, *t**e**rminer*, *v**e**rdict*, *m**e**rcredi*, *p**e**rsonnel*, *s**e**ptembre*, *c**e**rtain*, *v**e**rtical*, *s**e**rvir*
+    - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. *blanc*) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.
+    *m**e**ttre*, *t**e**rr.ible*, *p**e**lle*, *b**e**lle*, *p**e**r.f**e**c.tion*, *p**e**r.v**e**rs*, *t**e**r.mi.ner*, *v**e**r.dict*, *m**e**r.cre.di*, *p**e**r.so.nnel*, *s**e**p.tembre*, *c**e**r.tain*, *v**e**r.ti.cal*, *s**e**r.vir*, ***e**s.to.mac*, ***e**s.prit*, ***e**s.ca.lier*, *p**e**r.s**e**p.tible*, *p**e**r.m**e**ttre*
+    - **e followed by double consonants**
+    *pro.f**e**.sseur* (note **e** is at the end of an open syllable)
     - **e in *eill***
-    *marv**e**illeux*, *Mars**e**ille*
-    - **ai** as in *secrétaire*
+    *mar.v**e**.illeux*, *Mar.s**e**ille*
+    - **ai** as in *secrétaire* -> /sə.kʁe.tɛʁ/
     - **è** as in *père*
-    - **ê** as in *tête*, *fen**ê**tre*
+    - **ê** as in *t**ê**te*, *fen**ê**tre* -> /t**ɛ**t/, /fə.n**ɛ**tʁ/
+    - **EXCEPTIONS**
+    *d**e**ssert* -> /d**e**.ssɛʁ/
+    *d**e**ssous* -> /d**ə**.su/
+    *d**e**ssus* -> /d**ə**.sy/
