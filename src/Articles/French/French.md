@@ -28,9 +28,10 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
     - **Bilabial (lips)**: both lips involved in the articulation. Examples are /p/ and /b/ in "program" and "brother", respectively.
     - **Labiodental**: lips + upper front teeth. Examples are /f/ and /v/ in "flower" and "vote", respectively.
     - **Alveolar (tooth ridge)**: tongue tip + alveolar ridge. In anatomy, *dental alveolus* is a *socket* in your upper jawbone holding your tooth. The *process*, *processus alveolaris* is that complete part of the jawbone holding all the sockets. The *alveolar ridge* is the firm fleshy border covering the *process*, right behind your upper front teeth, which is contacted by the top of your tongue. Examples are /t/, /d/, /n/, /s/ as in "tower" and "DNS".
-    - **Postalveolar (steep slope/start of hard rooftop)**: tongue tip + postalveolar/prepalatal region. This area is that just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards, where the hard palate/rooftop begins. Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
-    - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is a longer part of the rooftop, starting right behindthe *ridge* at the beginning of the steep slope, running until the *soft palate*, where the rooftop feels soft. An example is /ɲ/ as in "co**gn**ac", "lasa**gn**a", or in Hungarian "**ny**úl". Also /c/, which is not used in English or French. It is common, however, in Hungarian, as in "**ty**úk".
-    - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are /k/
+    - **Postalveolar (start of steep slope/start of curvature of hard palate)**: tongue tip + postalveolar/prepalatal region. This area is that just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards, where the hard palate/rooftop begins (hence **pre**-palatal). Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
+    - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is the curved rooftop starting at the *ridge* where the curve is rising steeply, then gets more gently curved further back until the *soft palate*. When a consonant is called (hard palatal) palatal, the place of articulation is (before the soft palate per se, and) **after** the steeply rising frontal part of the hard palate starting at the *ridge*. An example is /ɲ/ as in "co**gn**ac", "lasa**gn**a", or in Hungarian "**ny**úl". Another is /c/, which is not used in English or French. It is common, however, in Hungarian, as in "**ty**úk".
+    - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are /k/, /g/ and /ŋ/ as in "**c**a**c**ao", "**g**oal" and "si**ng**i**ng**"
+    - **Uvular**: 
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
@@ -40,6 +41,14 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
     - Airflow blockage involved
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial /t/ in "time".
         - **Trill**: Airway is blocked and released repeatedly. An example is the initial /r/ in "robot".
+
+In case of consonants, considering the level of airway constriction involved, we can intuitively memorise these categories:
+
+**Nasal > Approximant > Fricative > Plosives/Trill**
+
+And considering how further back is the place of articulation in the mouth, we have:
+
+**Bilabial/Labiodental > Alveolar > Postalveolar > Palatal > Velar > Uvular**
 
 # IPA phonemes in French
 
