@@ -22,15 +22,15 @@ Besides these, **every vowel is voiced**, that is, the vocal cords are vibrating
 
 ## Consonants
 
-Consonants are produced by using a part of the mouth cavity, **place of articulation** together with the tongue to construct airflow in some manner. Variables of consonants:
+Consonants are produced by using a part of the mouth cavity, the **place of articulation** together with the tongue to construct airflow in some manner. Variables of consonants:
 
 - **Place of articulation**:
     - **Bilabial (lips)**: both lips involved in the articulation. Examples are /p/ and /b/ in "program" and "brother", respectively.
     - **Labiodental**: lips + upper front teeth. Examples are /f/ and /v/ in "flower" and "vote", respectively.
     - **Alveolar (tooth ridge)**: tongue tip + alveolar ridge. In anatomy, *dental alveolus* is a *socket* in your upper jawbone holding your tooth. The *process*, *processus alveolaris* is that complete part of the jawbone holding all the sockets. The *alveolar ridge* is the firm fleshy border covering the *process*, right behind your upper front teeth, which is contacted by the top of your tongue. Examples are /t/, /d/, /n/, /s/ as in "tower" and "DNS".
-    - **Postalveolar (steep slope)**: tongue tip + postalveolar/prepalatal region. This area is that short steep *slope*, just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards. Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
-    - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is the longer, mostly horisontal, longer part of the mouth rooftop, at the end of the *slope* and the start of the *soft palate*. If you place your tongue at the *ridge*, then follow through the short steep *slope*, it arrives at a hard planar rooftop, at the end of which you can feel the rooftop turns *soft*, and harder to reach with tongue. An example is /ŋ/ as in "co**gn**ac", "lasa**gn**a". Also /c/, which is not used in English or French. It is common, however, in Hungarian, as in "**ty**úk".
-    - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue.
+    - **Postalveolar (steep slope/start of hard rooftop)**: tongue tip + postalveolar/prepalatal region. This area is that just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards, where the hard palate/rooftop begins. Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
+    - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is a longer part of the rooftop, starting right behindthe *ridge* at the beginning of the steep slope, running until the *soft palate*, where the rooftop feels soft. An example is /ɲ/ as in "co**gn**ac", "lasa**gn**a", or in Hungarian "**ny**úl". Also /c/, which is not used in English or French. It is common, however, in Hungarian, as in "**ty**úk".
+    - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are /k/
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
