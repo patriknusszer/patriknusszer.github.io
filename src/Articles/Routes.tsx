@@ -3,16 +3,21 @@ import Fejer from "./Fejer/Fejer";
 import RSA from "./RSA/RSA";
 
 export const dirichletRoute = {
-    path: "/Blog/dirichlet",
+    path: "/Blog/Dirichlet",
     element: <Dirichlet />
 };
 
 export const fejerRoute = {
-    path: "/Blog/fejer",
+    path: "/Blog/Fejer",
     element: <Fejer />
 };
 
 export const rsaRoute = {
     path: "/Blog/RSA",
     element: <RSA />
+};
+
+export const frenchRoute = {
+    path: "/Blog/French",
+    element: <French />
 };

@@ -9,6 +9,7 @@ import './App.css'
 import { rsaRoute } from "../Articles/Routes"
 import { dirichletRoute } from "../Articles/Routes"
 import { fejerRoute } from "../Articles/Routes"
+import { frenchRoute } from "../Articles/Routes"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route {...dirichletRoute}></Route>
             <Route {...rsaRoute}></Route>
             <Route {...fejerRoute}></Route>
+            <Route {...frenchRoute}></Route>
           </Routes>
         </div>
     </HashRouter>

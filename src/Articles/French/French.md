@@ -1,4 +1,4 @@
-# Live courses versus IPA
+# Live courses and IPA
 
 When I was learning French it was the pronounciation that was most difficult to learn, and no less difficult to find quality material for it. No, I did not attend live courses and for that I do not claim to have a very good pronounciation.
 
