@@ -1,5 +1,5 @@
 import { useEffect} from "react"
-import ReactNode from "react"
+import type { ReactNode } from "react";
 import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
 
