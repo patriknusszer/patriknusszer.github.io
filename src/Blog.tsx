@@ -42,7 +42,7 @@ function Blog() {
                 name: "Other",
                 items: [
                     {
-                        page: "/Blog/french_pronounciation",
+                        page: "/Blog/French",
                         name: "French pronounciation"
                     }
                 ]
@@ -75,7 +75,7 @@ function Blog() {
         ]
     };
 
-    return <ItemsViewTemplate items={model} />;
+    return <ItemsViewTemplate items={model} />
 }
 
 export default Blog;
