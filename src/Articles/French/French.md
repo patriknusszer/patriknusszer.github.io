@@ -32,7 +32,7 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
     - **Postalveolar (start of steep slope/start of curvature of hard palate)**: tongue tip + postalveolar/prepalatal region. This area is that just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards, where the hard palate/rooftop begins (hence **pre**-palatal). Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
     - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is the curved rooftop starting at the *ridge* where the curve is rising steeply, then gets more gently curved further back until the *soft palate*. When a consonant is called (hard palatal) palatal, the place of articulation is (before the soft palate per se, and) **after** the steeply rising frontal part of the hard palate starting at the *ridge*. An example is /ɲ/ as in "co**gn**ac", "lasa**gn**a", or in Hungarian "**ny**úl". Another is /c/, which is not used in English or French. It is common, however, in Hungarian, as in "**ty**úk".
     - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are /k/, /g/ and /ŋ/ as in "**c**a**c**ao", "**g**oal" and "si**ng**i**ng**"
-    - **Uvular**: it is the small, soft, fleshy structure that hangs down from the back of the soft palate, at the very back of the throat.
+    - **Uvular**: it is the small, soft, fleshy structure that hangs down from the back of the soft palate, at the very back of the throat. In particular, in French the /r/ trill does not exist. Instead there is /ʁ/ the uvular fricative. That is, the back of the tongue raises to create a narrow airway between the tongue and the uvula. It is okay if there is uvular vibration during the sounding. A good starting point is to pronounce /h/ (as in "holy") and then push the tongue higher up to constrict airflow further. Examples as "chanteur", "tranquille".  
     - **Affricate**: nonexistent in French, but they exist in English or Hungarian. It is basically the sudden release of a full airway stop into a narrow airway instead of a standard plosion, and for a shorter time than typical for a fricative in order to create a distinctive compact sound. The sound is denoted by the **stop** which tells where the airway is blocked and a **fricative** which tells where the air is suddenly released into a narrow contrained airway for a very brief time. For it to be possible, the two consonants are either from the same place of articulation, or ones close to each other. An example is /t͡ʃ/ in "**ch**air"/"**ch**urch". Another one in Hungarian is /t͡s/ as in "**c**i**c**a". In English, it is similar to /ts/, which is not affricated, as in "ca**ts**"". Probably the only difference is length. The affricate version is brief and accoustically is one compact sound, while the latter sounds more compound due to /s/ being sounded for just slightly longer.
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
@@ -48,7 +48,7 @@ In case of consonants, considering the level of airway constriction involved, we
 
 **Nasal > Approximant > Fricative > Plosives/Trill**
 
-Nasals were inlcuded because airflow is not actually contrained, although the passageway is through the **nose**, not the mouth.
+Nasals were inlcuded because airflow is not actually constrained as it freely flows, although the passageway is through the **nose**, not the mouth.
 
 And considering how further back is the place of articulation in the mouth, we have:
 
@@ -60,5 +60,5 @@ In the following I am going to introduce most phonemes/sounds that can occur in 
 
 ## Vowels
 
-- **/o/**  close-mid back rounded voewel
+- **/o/**  close-mid back rounded vowel
 It is the typical **o** that is pronounced in words such as **oh**, **home**, and **go**.
