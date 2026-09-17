@@ -10,7 +10,34 @@ IPA is not perfect either. If you learn pronounciation just from transcriptions,
 
 # IPA phonemes in general
 
+## Vowels
 
+Vowels are those phonemes which when sounded, air is moving freely. There are three parameters to talk about:
+
+- **Vertical tongue position**: higher tongue position means the sound is more **closed**. Lower tongue position means the the sound is more **open**. The inbetween is called **mid**
+- **Horizontal tongue position**: more forward in the mouth is **front**, more backward is **back** and in between is called **central**
+- **Lip rounding**: lipes are either **rounded** or **unrounded**
+
+Besides these, **every vowel is voiced**, that is, the vocal cords are vibrating. And trivially, there is **no place of articulation** to talk about.
+
+## Consonants
+
+Consonants are produced by using a part of the mouth cavity, **place of articulation** together with the tongue to construct airflow in some manner. Variables of consonants:
+
+- **Place of articulation**:
+    - **Bilabial**: both lips involved in the articulation. Examples are /p/ and /b/ in "program" and "brother", respectively.
+    - **Labiodental**: lips + upper front teeth. Examples are /f/ and /v/ in "flower" and "vote", respectively.
+    - **Alveolar**: tongue tip + alveolar ridge. In anatomy, *dental alveolus* is a *socket* in your upper jawbone holding your tooth. The *process*, *processus alveolaris* is that complete part of the jawbone holding all the sockets. The *alveolar ridge* is the firm fleshy border covering the *process*, right behind your upper front teeth, which is contacted by the top of your tongue. Examples are /t/, /d/, /n/, /s/ as in "tower" and "DNS".
+    - **Postalveolar**: tongue tip + postalveolar/prepalatal region. This area is that short *slope*, just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards. Examples are 
+- **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
+- **Manner of articulation**:
+    - No airflow blockage involved
+        - **Nasal**: free air passageway throguh the nose. An example is /m/ in "Monday".
+        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the /j/ at the end of the word "ay".
+        - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial /s/ in "shop".
+    - Airflow blockage involved
+        - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial /t/ in "time".
+        - **Trill**: Airway is blocked and released repeatedly. An example is the initial /r/ in "robot".
 
 # IPA phonemes in French
 
