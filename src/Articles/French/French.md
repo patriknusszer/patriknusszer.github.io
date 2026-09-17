@@ -38,11 +38,11 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
 - **Manner of articulation**:
     - No airflow blockage involved
         - **Nasal**: free air passageway throguh the nose. An example is /m/ in "Monday".
-        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the /j/ at the end of the word "ay".
-        - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial /s/ in "shop".
+        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the /j/ at the end of the word *ay*.
+        - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial /s/ in *shop*.
     - Airflow blockage involved
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial /t/ in "time".
-        - **Trill**: Airway is blocked and released repeatedly. An example is the initial /r/ in "robot".
+        - **Trill**: Airway is blocked and released repeatedly. An example is the initial /r/ in *robot*.
 
 In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories:
 
@@ -64,8 +64,11 @@ I am going to list phonemes individually, and then write which character combina
 
 - **/o/**  close-mid back rounded vowel
 It is the typical **o** that is pronounced in words such as **oh**, **home**, and **go**.
-- **/ɛ/** open-mid front unrounded vowel
-    - **e**: inside closed nonfinal syllables. There is a *double consonant* rule as well but it does not always work and when it does it coincides with the closed syllable rule.
+- **/ɛ/** open-mid front unrounded vowel. It is the same **e** as in English *meh*
+    - **e inside closed nonfinal syllables**. There is a *double consonant* rule as well but it does not always work and when it does it coincides with this rule.
+    *m**e**ttre*, *p**e**lle*, *b**e**lle*, *prof**e**sseur*, *t**e**rminer*, *v**e**rdict*, *m**e**rcredi*, *p**e**rsonnel*, *s**e**ptembre*, *c**e**rtain*, *v**e**rtical*, *s**e**rvir*
+    - **e in *eill***
+    *marv**e**illeux*, *Mars**e**ille*
     - **ai** as in *secrétaire*
     - **è** as in *père*
-    - **ê** as in *tête*
+    - **ê** as in *tête*, *fen**ê**tre*
