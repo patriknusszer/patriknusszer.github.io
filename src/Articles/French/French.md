@@ -28,7 +28,8 @@ Consonants are produced by using a part of the mouth cavity, **place of articula
     - **Bilabial**: both lips involved in the articulation. Examples are /p/ and /b/ in "program" and "brother", respectively.
     - **Labiodental**: lips + upper front teeth. Examples are /f/ and /v/ in "flower" and "vote", respectively.
     - **Alveolar**: tongue tip + alveolar ridge. In anatomy, *dental alveolus* is a *socket* in your upper jawbone holding your tooth. The *process*, *processus alveolaris* is that complete part of the jawbone holding all the sockets. The *alveolar ridge* is the firm fleshy border covering the *process*, right behind your upper front teeth, which is contacted by the top of your tongue. Examples are /t/, /d/, /n/, /s/ as in "tower" and "DNS".
-    - **Postalveolar**: tongue tip + postalveolar/prepalatal region. This area is that short *slope*, just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards. Examples are 
+    - **Postalveolar**: tongue tip + postalveolar/prepalatal region. This area is that short *slope*, just behind the *alveolar ridge* where the rooftop begins to steeply curve upwards. Examples are /ʃ/ in "shoe" or "ship", and /ʒ/ in "**g**enre", "plea**s**ure" or "trea**s**ure".
+    - **Palatal**: tongue dorsum/body + hard palate. Hard palate is the longer, mostly horisontal, longer part of the mouth rooftop, at the end of the *slope* and the start of the *soft palate*. If you place your tongue at the *ridge*, then follow through the short steep *slope*, it arrives at a hard planar rooftop, at the end of which you can feel the rooftop turns *soft*, and harder to reach with tongue. Examples are /k/, /ŋ/ as in "**c**a**c**ao" and "co**gn**ac", "lasa**gn**a". For /ŋ/ there actually isn't any native English word.
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
