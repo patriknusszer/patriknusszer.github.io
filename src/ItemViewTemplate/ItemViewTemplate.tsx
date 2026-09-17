@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+import { useEffect} from "react"
+import ReactNode from "react"
 import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
 
@@ -11,6 +12,22 @@ interface ItemViewTemplateProps {
     description: string;
     hasLink?: boolean;
     source?: string;
+}
+
+const ipaRegex = /\/([^\/\n]+)\//g;
+
+function TextWithIPA({ children }: { children: ReactNode }) {
+  const parts = String(children).split(ipaRegex);
+
+  return parts.map((part, i) =>
+    i % 2 === 1 ? (
+      <span key={i} className="ipa">
+        /{part}/
+      </span>
+    ) : (
+      part
+    )
+  );
 }
 
 function ItemViewTemplate({
@@ -43,6 +60,9 @@ function ItemViewTemplate({
             <hr />
 
             <Markdown
+                  components={{
+                text: TextWithIPA,
+            }}
             remarkPlugins={[remarkMath]}
             rehypePlugins={[[rehypeKatex, { displayMode: true }]]}>
                 {description}

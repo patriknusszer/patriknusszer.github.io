@@ -1,9 +1,8 @@
 import ItemViewTemplate from "../../ItemViewTemplate/ItemViewTemplate.tsx"
 import article from "./French.md?raw"
 
-
 function French() {
-    //useMathJax()
+    //useMathJax(
 
     return (
         <>
