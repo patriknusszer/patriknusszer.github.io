@@ -14,7 +14,7 @@ IPA is not perfect either. If you learn pronounciation just from transcriptions,
 
 Vowels are those phonemes which when sounded, air is moving freely. There are three parameters to talk about:
 
-- **Vertical tongue position**: higher tongue position means the sound is more **closed**. Lower tongue position means the the sound is more **open**. The inbetween is called **mid**
+- **Vertical tongue position**: higher tongue position means the sound is more **close**. Lower tongue position means the the sound is more **open**. The inbetween is called **mid**. They can be combined, like **open-mid** or **close-mid**.
 - **Horizontal tongue position**: more forward in the mouth is **front**, more backward is **back** and in between is called **central**
 - **Lip rounding**: lipes are either **rounded** or **unrounded**
 
@@ -58,7 +58,14 @@ And considering how further back is the place of articulation in the mouth, we h
 
 In the following I am going to introduce most phonemes/sounds that can occur in French words. Three categories are distinguished.
 
+I am going to list phonemes individually, and then write which character combinations usually produce that sound, under what conditions.
+
 ## Vowels
 
 - **/o/**  close-mid back rounded vowel
 It is the typical **o** that is pronounced in words such as **oh**, **home**, and **go**.
+- **/ɛ/** open-mid front unrounded vowel
+    - **e**: inside closed nonfinal syllables. There is a *double consonant* rule as well but it does not always work and when it does it coincides with the closed syllable rule.
+    - **ai** as in *secrétaire*
+    - **è** as in *père*
+    - **ê** as in *tête*
