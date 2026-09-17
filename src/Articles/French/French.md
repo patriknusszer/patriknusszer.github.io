@@ -44,7 +44,7 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial /t/ in "time".
         - **Trill**: Airway is blocked and released repeatedly. An example is the initial /r/ in "robot".
 
-In case of consonants, considering the level of airway constriction involved, we can intuitively memorise these categories:
+In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories:
 
 **Nasal > Approximant > Fricative > Plosives/Trill**
 
