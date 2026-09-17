@@ -1,5 +1,4 @@
 import { useEffect} from "react"
-import type { ReactNode } from "react";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
@@ -83,11 +82,8 @@ function ItemViewTemplate({
             <hr />
 
             <Markdown
-                  rehypePlugins={{
-                rehypeIpa,
-            }}
             remarkPlugins={[remarkMath]}
-            rehypePlugins={[[rehypeKatex, { displayMode: true }]]}>
+            rehypePlugins={rehypeIpa, [[rehypeKatex, { displayMode: true }]]}>
                 {description}
             </Markdown>
 
