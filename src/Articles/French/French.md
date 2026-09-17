@@ -14,7 +14,7 @@ IPA is not perfect either. If you learn pronounciation just from transcriptions,
 
 Vowels are those phonemes which when sounded, air is moving freely. There are three parameters to talk about:
 
-- **Vertical tongue position**: higher tongue position means the sound is more **close**. Lower tongue position means the the sound is more **open**. The inbetween is called **mid**. They can be combined, like **open-mid** or **close-mid**.
+- **Vertical tongue position**: higher tongue position means the sound is more **closed**. Lower tongue position means the the sound is more **open**. The inbetween is called **mid**. They can be combined, like **open-mid** or **closed-mid**.
 - **Horizontal tongue position**: more forward in the mouth is **front**, more backward is **back** and in between is called **central**
 - **Lip rounding**: lipes are either **rounded** or **unrounded**
 
@@ -78,3 +78,6 @@ It is the typical **o** that is pronounced in words such as **oh**, **home**, an
     *d**e**ssert* -> /d**e**.ssɛʁ/
     *d**e**ssous* -> /d**ə**.su/
     *d**e**ssus* -> /d**ə**.sy/
+- **/e/** closed-mid front unrounded vowel. It can be pronounced as in ***a**y* -> /**e**ɪ/, without gliding into the *y*
+    - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant
+    *Mon**e**t*, *parl**e**r*, 
