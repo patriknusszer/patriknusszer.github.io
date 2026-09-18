@@ -38,7 +38,7 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
 - **Manner of articulation**:
     - No airflow blockage involved
         - **Nasal**: free air passageway throguh the nose. An example is //m// in ^''M''onday^.
-        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the end of the word ^a''y''^.
+        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ^''y''es^.
         - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //s// in ^''s''hop^.
     - Airflow blockage involved
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
