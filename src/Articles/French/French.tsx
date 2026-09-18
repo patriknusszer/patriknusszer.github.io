@@ -46,8 +46,8 @@ function French() {
               text-decoration: underline;
               }
                 .example {
-                                    color: #8062af;
-
+                                    /*color: #8062af;*/
+color:#9161dd;
                 }
                 .emphasis {
                     color:  #ffcba0;

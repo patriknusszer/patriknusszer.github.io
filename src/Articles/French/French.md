@@ -37,12 +37,12 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
-        - **Nasal**: free air passageway throguh the nose. An example is //m// in "Monday".
-        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the end of the word ^ay^.
-        - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //s// in ^shop^.
+        - **Nasal**: free air passageway throguh the nose. An example is //m// in ^''M''onday^.
+        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the end of the word ^a''y''^.
+        - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //s// in ^''s''hop^.
     - Airflow blockage involved
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
-        - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in ^robot^.
+        - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in ^''r''obot^.
 
 In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories:
 
@@ -67,18 +67,18 @@ It is the typical ''o'' that is pronounced in words such as ^''o''h^, ^h''o''me^
 - **//ɛ// open-mid front unrounded vowel**. It is the same ''e'' as in English ^m''e''h^
     - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ^blan''c''^) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
     ^m''e''ttre^, ^t''e''rr.ible^, ^p''e''lle^, ^b''e''lle^, ^p''e''r.f''e''c.tion^, ^p''e''r.v''e''rs^, ^t''e''r.mi.ner^, ^v''e''r.dict^, ^m''e''r.cre.di^, ^p''e''r.so.nn''e''l^, ^s''e''p.t''e''mbre^, ^c''e''r.tain^, ^v''e''r.ti.cal^, ^s''e''r.vir^, ^''e''s.to.mac^, ^''e''s.prit^, ^''e''s.ca.lier^, ^p''e''r.s''e''p.tible^, ^p''e''r.m''e''ttre^.   
-    //mɛtʁ//, //tɛʁ.ibl//, //pɛl//, //bɛl//, //pɛʁfɛksjɔ̃//, //pɛʁ.vɛʁs//, //tɛʁ.mi.neʁ//
+    //m__ɛ__tʁ//, //t__ɛ__ʁ.ibl//, //p__ɛ__l//, //b__ɛ__l//, //p__ɛ__ʁf__ɛ__ksjɔ̃//, //p__ɛ__ʁ.vɛʁs//, //t__ɛ__ʁ.mi.neʁ//
     - **e followed by double consonants**
     ^pro.f''e''.sseur^ (note ''e'' is at the end of an open syllable)
     - **ei**
     ^mar.v''e''.illeux^, ^Mar.s''e''ille^, ^p''ei''gner^
-    - **ai** as in ^secrét''ai''re^ -> //sə.kʁe.tɛʁ//
-    - **è** as in ^p''è''re^
+    - **ai** as in ^secrét''ai''re^ -> //sə.kʁe.t__ɛ__ʁ//
+    - **è** as in ^p''è''re^ -> //p__ɛ__ʁ//
     - **ê** as in ^t''ê''te^, ^fen''ê''tre^ -> //t__ɛ__t//, //fə.n__ɛ__tʁ//
     - **EXCEPTIONS**  
-    ^d''e''ssert^, ^d''e''sous^, ^d''e''sus^  
-    //d''e''.sɛʁ//, //d''ə''.su//, //d''ə''.sy//
-- **//e// closed-mid front unrounded vowel**. It can be pronounced as in ^''a''y^ -> //''e''ɪ//, without gliding into the ^y^
+    ^d''e''ssert^, ^d''e''ssous^, ^d''e''sus^  
+    //d__e__.sɛʁ//, //d__ə__.su//, //d__ə__.sy//
+- **//e// closed-mid front unrounded vowel**. It can be pronounced as in ^''a''y^ -> //__e__ɪ//, without gliding into the ^y^
     - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
     ^Mon''e''t^, ^parl''e''r^, ^parl''e''z^, ^m''e''s^
     - ''é'' as in ^pr''é''^
