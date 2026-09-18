@@ -4,7 +4,6 @@
     overflow-y: hidden;
 }
 
-
 html {
     overflow-y: scroll;
     background-color: #31281F;
@@ -92,6 +91,7 @@ body {
     line-height: 28px;
     font-size: 17px;
 }
+
 
 .katex {
     color: #e7a5ff;

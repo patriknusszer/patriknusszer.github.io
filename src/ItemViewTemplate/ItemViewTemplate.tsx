@@ -1,8 +1,9 @@
 import { useEffect} from "react"
-import { visit } from "unist-util-visit";
+
 import Markdown from "react-markdown"
 import cssUrl from "./ItemViewTemplate.css?url"
 
+import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 
@@ -14,43 +15,6 @@ interface ItemViewTemplateProps {
     source?: string;
 }
 
-const ipaRegex = /\/([^/\n]+)\//g;
-
-function rehypeIpa() {
-  return (tree: any) => {
-    visit(tree, "text", (node: any, index: number | undefined, parent: any) => {
-      if (!parent || index === undefined) return;
-
-      const text = node.value as string;
-      const parts = text.split(ipaRegex);
-
-      if (parts.length === 1) return;
-
-      const newNodes = parts.map((part, i) =>
-        i % 2 === 1
-          ? {
-              type: "element",
-              tagName: "span",
-              properties: {
-                className: ["ipa"],
-              },
-              children: [
-                {
-                  type: "text",
-                  value: `/${part}/`,
-                },
-              ],
-            }
-          : {
-              type: "text",
-              value: part,
-            }
-      );
-
-      parent.children.splice(index, 1, ...newNodes);
-    });
-  };
-}
 
 function ItemViewTemplate({
     title,
@@ -74,6 +38,7 @@ function ItemViewTemplate({
 
     return (
         <>
+
             <div id="toppanel">
                 <h1 id="topheading">{title}</h1>
                 <p id="subheading">{subtitle}</p>
@@ -83,7 +48,7 @@ function ItemViewTemplate({
 
             <Markdown
             remarkPlugins={[remarkMath]}
-            rehypePlugins={[[rehypeKatex, { displayMode: true }]]}>
+            rehypePlugins={[[rehypeKatex, { displayMode: true }], rehypeRaw]}>
                 {description}
             </Markdown>
 
