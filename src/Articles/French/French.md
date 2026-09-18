@@ -67,7 +67,7 @@ It is the typical ''o'' that is pronounced in words such as ^''o''h^, ^h''o''me^
 - **//ɛ// open-mid front unrounded vowel**. It is the same ''e'' as in English ^m''e''h^
     - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ^blan''c''^) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
     ^m''e''ttre^, ^t''e''rr.ible^, ^p''e''lle^, ^b''e''lle^, ^p''e''r.f''e''c.tion^, ^p''e''r.v''e''rs^, ^t''e''r.mi.ner^, ^v''e''r.dict^, ^m''e''r.cre.di^, ^p''e''r.so.nn''e''l^, ^s''e''p.t''e''mbre^, ^c''e''r.tain^, ^v''e''r.ti.cal^, ^s''e''r.vir^, ^''e''s.to.mac^, ^''e''s.prit^, ^''e''s.ca.lier^, ^p''e''r.s''e''p.tible^, ^p''e''r.m''e''ttre^.   
-    //m__ɛ__tʁ//, //t__ɛ__ʁ.ibl//, //p__ɛ__l//, //b__ɛ__l//, //p__ɛ__ʁf__ɛ__ksjɔ̃//, //p__ɛ__ʁ.vɛʁs//, //t__ɛ__ʁ.mi.neʁ//
+    //m__ɛ__tʁ//, //t__ɛ__ʁ.ibl//, //p__ɛ__l//, //b__ɛ__l//, //p__ɛ__ʁf__ɛ__ksjɔ̃//, //p__ɛ__ʁ.v__ɛ__ʁs//, //t__ɛ__ʁ.mi.neʁ//
     - **e followed by double consonants**
     ^pro.f''e''.sseur^ (note ''e'' is at the end of an open syllable)
     - **ei**
