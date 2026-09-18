@@ -63,7 +63,7 @@ I am going to list phonemes individually, and then write which character combina
 ## Vowels
 
 - //o//  close-mid back rounded vowel
-It is the typical __o__ that is pronounced in words such as ^oh^, ^home^, and ^go^.
+It is the typical __o__ that is pronounced in words such as ^__o__h^, ^h__o__me^, and ^g__o__^.
 - **//ɛ// open-mid front unrounded vowel**. It is the same __e__ as in English ^m__e__h^
     - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ^blan__c__^) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
     ^m__e__ttre^, ^t__e__rr.ible^, ^p__e__lle^, ^b__e__lle^, ^p__e__r.f__e__c.tion^, ^p__e__r.v__e__rs^, ^t__e__r.mi.ner^, ^v__e__r.dict^, ^m__e__r.cre.di^, ^p__e__r.so.nn__e__l^, ^s__e__p.t__e__mbre^, ^c__e__r.tain^, ^v__e__r.ti.cal^, ^s__e__r.vir^, ^__e__s.to.mac^, ^__e__s.prit^, ^__e__s.ca.lier^, ^p__e__r.s__e__p.tible^, ^p__e__r.m__e__ttre^.   
@@ -79,7 +79,7 @@ It is the typical __o__ that is pronounced in words such as ^oh^, ^home^, and ^g
     ^d__e__ssert^, ^d__e__sous^, ^d__e__sus^  
     //d__e__.sɛʁ//, //d__ə__.su//, //d__ə__.sy//
 - **//e// closed-mid front unrounded vowel**. It can be pronounced as in ^__a__y^ -> //__e__ɪ//, without gliding into the ^y^
-    - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant
+    - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
     ^Mon__e__t^, ^parl__e__r^, ^parl__e__z^, ^m__e__s^
     - __é__ as in ^pr__é__^
 - **//ə// schwa/mid-central unrounded vowel**
