@@ -35,10 +35,10 @@ function applyMarkers(
 
 function French() {
     //useMathJax(
-    let m_article = applyMarkers(article, '\'\'', 'emphasis')
+    let m_article = applyMarkers(article, '\'\'', 'example')
     m_article = applyMarkers(m_article, '//', 'ipa', '/')
-    m_article = applyMarkers(m_article, '^', 'example')
-    m_article = applyMarkers(m_article, '__', 'underline')
+    m_article = applyMarkers(m_article, '|', 'emphasis')
+    m_article = applyMarkers(m_article, '_', 'underline')
     return (
         <>
               <style>{`
