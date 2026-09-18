@@ -4,7 +4,7 @@ When I was learning French it was the pronounciation that was most difficult to 
 
 To learn pronounciation, I used IPA (International Phonetic Alphabet) to transcribe French words into words based on a character set with fixed pronounciation (hence, phonetic alphabet). I learned which Latin character combinations typically map to which IPA phonetic symbol, and also learned about the exceptions.
 
-I have been learning English since primary school, and especially intensely in high school as I attended the English bilingual school. My spoken English is terrible, though legible if I speak carefully. I pronounce words out of instinct, and I think most people who attend live courses do so. But then they usually pronounce with accent, and with slight variation.  I oftenly think, "how is that vowel exactly pronounced?". Because I have never rigorously learned pronounciation. I sit in the class, listen to the teacher, to my partner, and memorise prononciation as well as possible, but I don't catch it perfectly or I just forget it.
+I have been learning English since primary school, and especially intensely in high school as I attended an English bilingual school. My spoken English is terrible, though legible if I speak carefully. I pronounce words out of instinct, and I think most people who attend live courses do so. But then they usually pronounce with accent, and with slight variation.  I oftenly think, "how is that vowel exactly pronounced?". Because I have never rigorously learned pronounciation. I sit in the class, listen to the teacher, to my partner, and memorise prononciation as well as possible, but I don't catch it perfectly or I just forget it.
 
 IPA is not perfect either. If you learn pronounciation just from transcriptions, natives will be able to tell... Because slight alterations to tongue/lip position, intonation/articulation can make audible difference. And I do not necessarily say IPA is strictly better than live courses, no, but I am more than inclined to say the combination of the two would be more powerful than just one of them alone. At least, for non-phonetic languages like English or French. In contrast, i.e. Italian pronounciation is surprisingly predictable and simple.
 
@@ -33,7 +33,7 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
     - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is the curved rooftop starting at the ^ridge^ where the curve is rising steeply, then gets more gently curved further back until the ^soft palate^. When a consonant is called (hard palatal) palatal, the place of articulation is (before the soft palate per se, and) after the steeply rising frontal part of the hard palate starting at the ^ridge^. An example is //ɲ// as in ^co__gn__ac^, ^lasa__gn__a^, or in Hungarian ^__ny__úl^. Another is //c//, which is not used in English or French. It is common, however, in Hungarian, as in ^__ty__úk^.
     - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are //k//, //g// and //ŋ// as in ^__c__a__c__ao^, ^__g__oal^ and ^si__ng__i__ng__^
     - **Uvular**: it is the small, soft, fleshy structure that hangs down from the back of the soft palate, at the very back of the throat. In particular, in French the //r// trill does not exist. Instead there is //ʁ// the uvular fricative. That is, the back of the tongue raises to create a narrow airway between the tongue and the uvula. It is okay if there is uvular vibration during the sounding. A good starting point is to pronounce //h// (as in "holy") and then push the tongue higher up to constrict airflow further. Examples as "chanteur", "tranquille".  
-    - **Affricate**: nonexistent in French, but they exist in English or Hungarian. It is basically the sudden release of a full airway stop into a narrow airway instead of a standard plosion, and for a shorter time than typical for a fricative in order to create a distinctive compact sound. The sound is denoted by the **stop** which tells where the airway is blocked and a **fricative** which tells where the air is suddenly released into a narrow contrained airway for a very brief time. For it to be possible, the two consonants are either from the same place of articulation, or ones close to each other. An example is //t͡ʃ// in ^__ch__air^/^__ch__urch^. Another one in Hungarian is //t͡s// as in "__c__i__c__a". In English, it is similar to //ts//, which is not affricated, as in ^ca__ts__^. Probably the only difference is length. The affricate version is brief and accoustically is one compact sound, while the latter sounds more compound due to //s// being sounded for just slightly longer.
+    - **Affricate**: nonexistent in French, but they exist in English or Hungarian. It is basically the sudden release of a full airway stop into a narrow airway instead of a standard plosion, and for a shorter time than typical for a fricative in order to create a distinctive compact sound. The sound is denoted by the **stop** which tells where the airway is blocked and a **fricative** which tells where the air is suddenly released into a narrow contrained airway for a very brief time. For it to be possible, the two consonants are either from the same place of articulation, or ones close to each other. An example is //t͡ʃ// in ^__ch__air^/^__ch__urch^. Another one in Hungarian is //t͡s// as in ^__c__i__c__a^. In English, it is similar to //ts//, which is not affricated, as in ^ca__ts__^. Probably the only difference is length. The affricate version is brief and accoustically is one compact sound, while the latter sounds more compound due to //s// being sounded for just slightly longer.
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
@@ -63,21 +63,21 @@ I am going to list phonemes individually, and then write which character combina
 ## Vowels
 
 - //o//  close-mid back rounded vowel
-It is the typical __o__ that is pronounced in words such as **oh**, **home**, and **go**.
-- **//ɛ// open-mid front unrounded vowel**. It is the same __e__ as in English ^meh^
-    - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the __C__a__R__e__F__u__L__ (exceptions apply i.e. ^blanc^) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below ^double consonant^ rule.
-    ^mettre^, ^t__e__rr.ible^, ^p__e__lle^, ^b__e__lle^, ^p__e__r.f__e__c.tion^, ^p__e__r.v__e__rs^, ^t__e__r.mi.ner^, ^v__e__r.dict^, ^m__e__r.cre.di^, ^p__e__r.so.nnel^, ^s__e__p.tembre^, ^c__e__r.tain^, ^v__e__r.ti.cal^, ^s__e__r.vir^, ^__e__s.to.mac^, ^__e__s.prit^, ^__e__s.ca.lier^, ^p__e__r.s__e__p.tible^, ^p__e__r.m__e__ttre^
+It is the typical __o__ that is pronounced in words such as ^oh^, ^home^, and ^go^.
+- **//ɛ// open-mid front unrounded vowel**. It is the same __e__ as in English ^m__e__h^
+    - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ^blan__c__^) consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
+    ^m__e__ttre^, ^t__e__rr.ible^, ^p__e__lle^, ^b__e__lle^, ^p__e__r.f__e__c.tion^, ^p__e__r.v__e__rs^, ^t__e__r.mi.ner^, ^v__e__r.dict^, ^m__e__r.cre.di^, ^p__e__r.so.nn__e__l^, ^s__e__p.t__e__mbre^, ^c__e__r.tain^, ^v__e__r.ti.cal^, ^s__e__r.vir^, ^__e__s.to.mac^, ^__e__s.prit^, ^__e__s.ca.lier^, ^p__e__r.s__e__p.tible^, ^p__e__r.m__e__ttre^.   
+    //mɛtʁ//, //tɛʁ.ibl//, //pɛl//, //bɛl//, //pɛʁfɛksjɔ̃//, //pɛʁ.vɛʁs//, //tɛʁ.mi.neʁ//
     - **e followed by double consonants**
     ^pro.f__e__.sseur^ (note __e__ is at the end of an open syllable)
     - **ei**
-    ^mar.v__e__.illeux^, ^Mar.s__e__ille^, ^p^ei^gner^
-    - **ai** as in ^secrétaire^ -> //sə.kʁe.tɛʁ//
-    - __è__ as in ^père^
-    - __ê__ as in ^t__ê__te^, ^fen__ê__tre^ -> //t__ɛ__t//, //abc//, //fə.n__ɛ__tʁ//
-    - **EXCEPTIONS**
-    ^d__e__ssert^ -> //d__e__.ssɛʁ//
-    ^d__e__ssous^ -> //d__ə__.su//
-    ^d__e__ssus^ -> //d__ə__.sy//
+    ^mar.v__e__.illeux^, ^Mar.s__e__ille^, ^p__ei__gner^
+    - **ai** as in ^secrét__ai__re^ -> //sə.kʁe.tɛʁ//
+    - **è** as in ^p__è__re^
+    - **ê** as in ^t__ê__te^, ^fen__ê__tre^ -> //t__ɛ__t//, //fə.n__ɛ__tʁ//
+    - **EXCEPTIONS**  
+    ^d__e__ssert^, ^d__e__sous^, ^d__e__sus^  
+    //d__e__.sɛʁ//, //d__ə__.su//, //d__ə__.sy//
 - **//e// closed-mid front unrounded vowel**. It can be pronounced as in ^__a__y^ -> //__e__ɪ//, without gliding into the ^y^
     - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant
     ^Mon__e__t^, ^parl__e__r^, ^parl__e__z^, ^m__e__s^
