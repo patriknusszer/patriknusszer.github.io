@@ -35,12 +35,16 @@ function applyMarkers(
 
 function French() {
     //useMathJax(
-    let m_article = applyMarkers(article, '__', 'emphasis')
+    let m_article = applyMarkers(article, '\'\'', 'emphasis')
     m_article = applyMarkers(m_article, '//', 'ipa', '/')
     m_article = applyMarkers(m_article, '^', 'example')
+    m_article = applyMarkers(m_article, '__', 'underline')
     return (
         <>
               <style>{`
+              .underline {
+              text-decoration: underline;
+              }
                 .example {
                                     color: #8062af;
 
