@@ -1,4 +1,4 @@
-import ItemViewTemplate from "../../ItemViewTemplate/ItemViewTemplate.tsx"
+import ItemViewTemplate from "../../../ItemViewTemplate/ItemViewTemplate.tsx"
 import article from "./RSA.md?raw"
 
 function RSA() {

@@ -1,7 +1,7 @@
-import Dirichlet from "./Dirichlet/Dirichlet";
-import Fejer from "./Fejer/Fejer";
-import RSA from "./RSA/RSA";
-import French from "./French/French";
+import Dirichlet from "./Maths/Dirichlet/Dirichlet";
+import Fejer from "./Maths/Fejer/Fejer";
+import RSA from "./Maths/RSA/RSA";
+import French from "./Language/French/French";
 
 export const dirichletRoute = {
     path: "/Blog/Dirichlet",
