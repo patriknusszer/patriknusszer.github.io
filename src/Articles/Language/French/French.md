@@ -48,7 +48,7 @@ In case of consonants, considering the maximal level of airway constriction invo
 
 **Nasal > Approximant > Fricative > Plosives/Trill**
 
-Nasals were inlcuded because airflow is not actually constrained as it freely flows, although the passageway is through the **nose**, not the mouth.
+Nasals were included because airflow is not actually constrained as it freely flows, although the passageway is through the **nose**, not the mouth.
 
 And considering how further back is the place of articulation in the mouth, we have:
 
@@ -62,7 +62,7 @@ I am going to list phonemes individually, and then write which character combina
 
 ## Vowels
 
-- //o//  close-mid back rounded vowel
+- **//o//  close-mid back rounded vowel**
 It is the typical |o| that is pronounced in words such as ''|o|h'', ''h|o|me'', and ''g|o|''.
 - **//ɛ// open-mid front unrounded vowel**. It is the same |e| as in English ''m|e|h''
     - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
@@ -83,3 +83,5 @@ It is the typical |o| that is pronounced in words such as ''|o|h'', ''h|o|me'', 
     ''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
     - |é| as in ''pr|é|''
 - **//ə// schwa/mid-central unrounded vowel**
+
+**ARTICLE IS IN THE WRITING...**
