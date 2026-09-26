@@ -1,11 +1,19 @@
+One way of measuring the unusualness of a given data point $\vec{x}$ is taking the $L_2$ norm of the $z$-score vector:
+
+$$
+\vec{z} = \frac{\vec{x} - \vec{\pi}_x}{\vec{\sigma_x}}
+$$
+
+Which can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
+
 The key identity is the following:
 
 $$
 \Sigma Q = Q \wedge
 $$
 
-- $\Sigma$ is a matrix, here, in particular, the covariance matrix
-- $\wedge$ is the diagonal matrix with constants
+- $\Sigma$ is a matrix, here, in particular, the covariance matrix of the features in $x$
+- $\wedge$ is the diagonal matrix
 
 $$
 \begin{aligned}
@@ -194,8 +202,9 @@ If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational*
 
 $$
 \begin{aligned}
-L_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\wedge_{i,i}}\right)^2}\\
-\wedge_{i,i} = \lVert \vec{q_i} \rVert_2^2 \lambda_i
+L_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\wedge_{i,i}}\right)^2}\\
+\wedge_{i,i} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
 \end{aligned}
 $$
 
+In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $x$ belonging to a class $c$.
