@@ -184,4 +184,18 @@ Q^T\operatorname{Cov}(z)Q\\
 \end{aligned}
 $$
 
-Therefore, the transformed data has diagonal covariance matrix, hence the new features, formed by linear combinations of the original features are **uncorrelated**.
+Therefore, the transformed data has diagonal covariance matrix, hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the L2 norm of $\vec{z}Q$ which is:
+
+$$
+L_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
+$$
+
+If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\wedge$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
+
+$$
+\begin{aligned}
+L_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\wedge_{i,i}}\right)^2}\\
+\wedge_{i,i} = \lVert \vec{q_i} \rVert_2^2 \lambda_i
+\end{aligned}
+$$
+
