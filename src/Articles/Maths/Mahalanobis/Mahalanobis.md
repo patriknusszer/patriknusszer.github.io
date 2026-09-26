@@ -68,10 +68,10 @@ $$
 \end{bmatrix}
 $$
 
-Therefore, for $\forall \vec{q_i} \in Q$ and their corresponding constant $ \Lambda_{i,i} \in \Lambda $ the following must hold:
+Therefore, for $\forall \vec{q_i} \in Q$ and their corresponding constant $ \Lambda_{ii} \in \Lambda $ the following must hold:
 
 $$
-\Sigma \vec{q_i} = \vec{q_i} \Lambda_{i,i}
+\Sigma \vec{q_i} = \vec{q_i} \Lambda_{ii}
 $$
 
 Which is the eigenvalue problem for one eigenvector.
@@ -215,7 +215,7 @@ $$
 
 \operatorname{p}(\vec{x}\mid c)
 =
-\frac{1}{(2\pi)^{n/2}|\Sigma|^{1/2}}
+\frac{1}{(2\pi)^{n/2}\mid\Sigma\mid^{1/2}}
 \exp\left(
 -\frac12
 (\vec{x}-\vec{\mu}_c)^T

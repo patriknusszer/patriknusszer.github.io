@@ -45,7 +45,7 @@ function ItemViewTemplate({
             </div>
 
             <hr />
-
+<meta name="color-scheme" content="dark only"></meta>
             <Markdown
             remarkPlugins={[remarkMath]}
             rehypePlugins={[[rehypeKatex, { displayMode: true }], rehypeRaw]}>
