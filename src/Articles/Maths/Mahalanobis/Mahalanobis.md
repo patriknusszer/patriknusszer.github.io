@@ -208,3 +208,22 @@ L_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} 
 $$
 
 In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $x$ belonging to a class $c$.
+
+Formally, assuming data has normal distribution:
+
+$$
+p(\vec{x}\mid c)
+=
+\frac{1}{(2\pi)^{n/2}|\Sigma|^{1/2}}
+\exp\left(
+-\frac12
+(\vec{x}-\vec{\mu}_c)^T
+\Sigma^{-1}
+(\vec{x}-\vec{\mu}_c)
+\right).
+$$
+
+Where $
+(\vec{x}-\vec{\mu}_c)^T
+\Sigma^{-1}
+(\vec{x}-\vec{\mu}_c)$ is the Mahalanobis distance.
