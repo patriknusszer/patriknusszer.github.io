@@ -202,7 +202,7 @@ If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational*
 
 $$
 \begin{aligned}
-L_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{i,i}}\right)^2}\\
+\operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{i,i}}\right)^2}\\
 \Lambda_{i,i} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
 \end{aligned}
 $$
@@ -212,7 +212,8 @@ In generative LDA, the Mahalanobis distance is exponentially weighted to measure
 Formally, assuming data has normal distribution:
 
 $$
-p(\vec{x}\mid c)
+
+\operatorname{p}(\vec{x}\mid c)
 =
 \frac{1}{(2\pi)^{n/2}|\Sigma|^{1/2}}
 \exp\left(
