@@ -35,6 +35,10 @@ function Blog() {
                     {
                         page: "/Blog/rsa",
                         name: "Euler-Fermat theorem, linear congruencies, RSA"
+                    },
+                                        {
+                        page: "/Blog/Mahalanobis",
+                        name: "Generative LDA & Mahalanobis distance"
                     }
                 ]
             },
