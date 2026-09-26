@@ -9,11 +9,11 @@ Which can roughly be thought of as a vector of standardized deviations of differ
 The key identity is the following:
 
 $$
-\Sigma Q = Q \wedge
+\Sigma Q = Q \Lambda
 $$
 
 - $\Sigma$ is a matrix, here, in particular, the covariance matrix of the features in $x$
-- $\wedge$ is the diagonal matrix
+- $\Lambda$ is the diagonal matrix
 
 $$
 \begin{aligned}
@@ -24,7 +24,7 @@ $$
 \vdots      & \vdots      & \ddots & \vdots\\
 \sigma_{n1} & \sigma_{n2} & \cdots & \sigma_{nn}
 \end{bmatrix}\\
-\wedge &=
+\Lambda &=
 \begin{bmatrix}
 \lambda_1 &        &        & 0\\
            & \lambda_2 &     &  \\
@@ -36,7 +36,7 @@ $$
 
 In generality, this is the eigenvalue problem for multiple eigenvectors and eigenvalues.
 
-After multiplication on the right hand side, the matrix $(Q \wedge)$ will contain the columns vectors of $Q$ each multiplied by one of the constants of $\wedge$.
+After multiplication on the right hand side, the matrix $(Q \Lambda)$ will contain the columns vectors of $Q$ each multiplied by one of the constants of $\Lambda$.
 
 $$
 \begin{aligned}
@@ -48,7 +48,7 @@ Q &=
 \vphantom{\Large A}\vert & \vphantom{\Large A}\vert & & \vphantom{\Large A}\vert
 \end{bmatrix}\\
 
-Q \wedge &=
+Q \Lambda &=
 \begin{bmatrix}
 \vphantom{\Large A}\vert & \vphantom{\Large A}\vert & & \vphantom{\Large A}\vert \\
 \lambda_1 \vec{q_1} & \lambda_2 \vec{q_2} & \cdots & \lambda_n \vec{q_n} \\
@@ -68,10 +68,10 @@ $$
 \end{bmatrix}
 $$
 
-Therefore, for $\forall \vec{q_i} \in Q$ and their corresponding constant $ \wedge_{i,i} \in \wedge $ the following must hold:
+Therefore, for $\forall \vec{q_i} \in Q$ and their corresponding constant $ \Lambda_{i,i} \in \Lambda $ the following must hold:
 
 $$
-\Sigma \vec{q_i} = \vec{q_i} \wedge_{i,i}
+\Sigma \vec{q_i} = \vec{q_i} \Lambda_{i,i}
 $$
 
 Which is the eigenvalue problem for one eigenvector.
@@ -79,8 +79,8 @@ From the above identity we can draw an important conclusion, when $Q$ is inverti
 
 $$
 \begin{aligned}
-\Sigma Q &= Q \wedge\\
-\implies Q^{-1}\Sigma Q &= Q^{-1}Q \wedge = \wedge
+\Sigma Q &= Q \Lambda\\
+\implies Q^{-1}\Sigma Q &= Q^{-1}Q \Lambda = \Lambda
 \end{aligned}
 $$
 
@@ -142,8 +142,8 @@ The important conclusion here is, however:
 
 $$
 \begin{aligned}
-\Sigma Q &= Q \wedge\\
-\implies Q^{-1}\Sigma Q &= Q^{T}\Sigma Q = \wedge
+\Sigma Q &= Q \Lambda\\
+\implies Q^{-1}\Sigma Q &= Q^{T}\Sigma Q = \Lambda
 \end{aligned}
 $$
 
@@ -188,7 +188,7 @@ Q
 \\[4pt]
 &=
 Q^T\operatorname{Cov}(z)Q\\
-&= Q^T \Sigma Q = \wedge
+&= Q^T \Sigma Q = \Lambda
 \end{aligned}
 $$
 
@@ -198,12 +198,12 @@ $$
 L_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
 $$
 
-If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\wedge$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
+If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\Lambda$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
 
 $$
 \begin{aligned}
-L_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\wedge_{i,i}}\right)^2}\\
-\wedge_{i,i} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
+L_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{i,i}}\right)^2}\\
+\Lambda_{i,i} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
 \end{aligned}
 $$
 
