@@ -21,6 +21,28 @@ body {
   overflow-y: hidden;
 }
 
+.katex-display .mord,
+.katex-display .mop
+{
+    color:#fdbbf4;
+}
+
+.katex-display .mopen,
+.katex-display .mclose {
+    color: #ff9058;
+}
+
+.katex-display .mrel,
+.katex-display .mbin,
+.katex-display .msupsub .mord
+{
+    color: #ad53ff;
+}
+
+
+
+
+
 #panel {
     border-radius: 20px;
     position: static;
