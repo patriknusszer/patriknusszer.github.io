@@ -261,7 +261,7 @@ So if we want to cancel some integer, we need to make sure to remove the factors
 
 # Euler-Fermat Theorem
 
-The theorem I am gonna prove is in fact Euler's Equation. Fermat's Little Theorem is a special case of the former result and also has a slightly different proof which I am not going to show. The statement of the theorem:
+The theorem I am gonna prove is in fact |Euler's Equation|. |Fermat's Little Theorem| is a special case of the former result and also has a slightly different proof which I am not going to show. The statement of the theorem:
 
 $$
 \begin{aligned}

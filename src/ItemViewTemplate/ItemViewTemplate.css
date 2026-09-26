@@ -114,6 +114,10 @@ body {
     font-size: 17px;
 }
 
+strong{
+    color: #ffbb83;
+}
+
 
 .katex {
     color: #e7a5ff;
@@ -124,7 +128,7 @@ h1 > .katex, h2 > .katex {
 }
 
 .katex-display > .katex {
-    color:  #ffcba0;
+    color:  #ffc8f7;  
 }
 
 h1, h2 {
@@ -133,6 +137,14 @@ h1, h2 {
    -webkit-font-smoothing: antialiased;
     color:#ffb1f4;
         font-family: 'Cabin sketch';
+}
+
+.mbin {
+    color: rgb(140, 0, 183);
+}
+
+.mrel {
+                color: #9161dd;
 }
 
 hr {

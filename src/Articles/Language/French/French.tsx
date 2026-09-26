@@ -1,6 +1,6 @@
 import ItemViewTemplate from "../../../ItemViewTemplate/ItemViewTemplate.tsx"
 import article from "./French.md?raw"
-import { preprocessMarkdown } from "../utils.ts";
+import { preprocessMarkdown } from "../Utils.ts";
 import Style from "../Style.tsx";
 
 function applyMarkers(
