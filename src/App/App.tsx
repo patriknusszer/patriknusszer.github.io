@@ -6,7 +6,7 @@ import Projects from '../Projects'
 import '../Assets/css/fonts.css'
 import './App.css'
 
-import { rsaRoute } from "../Articles/Routes"
+import { mahalanobisRoute, rsaRoute } from "../Articles/Routes"
 import { dirichletRoute } from "../Articles/Routes"
 import { fejerRoute } from "../Articles/Routes"
 import { frenchRoute } from "../Articles/Routes"
@@ -25,6 +25,7 @@ function App() {
             <Route {...rsaRoute}></Route>
             <Route {...fejerRoute}></Route>
             <Route {...frenchRoute}></Route>
+            <Route {...mahalanobisRoute}></Route>
           </Routes>
         </div>
     </HashRouter>
