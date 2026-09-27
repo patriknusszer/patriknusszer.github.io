@@ -28,7 +28,7 @@ body {
 .katex-display .munder .vlist svg
 {
     /*color: #ff9058;*/
-    color: #cb93ff;
+    color: #bc75ff;;
 }
 
 .katex-display .mord,
@@ -39,9 +39,15 @@ body {
 
 .katex-display .mrel,
 .katex-display .mbin
-/*.katex-display .msupsub .mord*/
 {
-    color: #cb93ff;
+    /*color: #cb93ff;*/
+    color: #bc75ff;
+}
+
+.katex-display .msupsub .mord
+{
+     /*color: #909fff; */
+    color: #909fff;
 }
 
 
