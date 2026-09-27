@@ -1,10 +1,27 @@
-One way of measuring the unusualness of a given data point $\vec{x}$ is taking the $L_2$ norm of the $z$-score vector:
+One way of measuring the **unusualness** of a given data point $\vec{x}$ is taking the $\operatorname{L}_2$ norm of the $z$-score vector:
 
 $$
-\vec{z} = \frac{\vec{x} - \vec{\pi}_c}{\vec{\sigma_c}}
+\vec{z} = \frac{\vec{x} - \vec{\pi}_c}{\vec{\sigma}_c}
 $$
 
-Which can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
+- $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate being the mean of one of the features/traits
+- $\vec{\sigma}_c$ is the standard deviation vector, each coordinate being the standard deviation of one of the features/traits 
+
+Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
+
+The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they contribute great **unusualness** but the fact that it was expected due their great correlation is **not discounted**.
+
+The idea is to instead measure **unusualness** of **transformed features that are uncorrelated**. And in particular: can these **transformed features be linear combinations of the original features**?
+
+**Lemma**
+
+The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix of the features yield uncorrelated features, and the variances of these new features are the eigenvalues of the cov. mat.:
+
+$$
+\operatorname{Cov}(\vec{z}Q)=\Lambda
+$$
+
+**Proof**
 
 The key identity is the following:
 
@@ -13,7 +30,7 @@ $$
 $$
 
 - $\Sigma$ is a matrix, here, in particular, the covariance matrix of the features in $x$
-- $\Lambda$ is the diagonal matrix
+- $\Lambda$ is a diagonal matrix
 
 $$
 \begin{aligned}
