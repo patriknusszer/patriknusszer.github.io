@@ -107,7 +107,7 @@ $$
 Q^{-1}=Q^T
 $$
 
-The reasoning is trivial. Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal we have the square of the Euclidean $(L_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit vectors):
+The reasoning is trivial. Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal we have the square of the Euclidean $(\operatorname{L}_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit vectors):
 
 $$
 QQ^T =
@@ -219,7 +219,7 @@ If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational*
 
 $$
 \begin{aligned}
-\operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \hat{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{i,i}}\right)^2}\\
+\operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \hat{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{ii}}\right)^2}\\
 \Lambda_{ii} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
 \end{aligned}
 $$
