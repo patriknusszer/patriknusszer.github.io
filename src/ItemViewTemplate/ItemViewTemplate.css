@@ -38,8 +38,8 @@ body {
 }
 
 .katex-display .mrel,
-.katex-display .mbin,
-.katex-display .msupsub .mord
+.katex-display .mbin
+/*.katex-display .msupsub .mord*/
 {
     color: #cb93ff;
 }
