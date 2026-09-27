@@ -203,7 +203,7 @@ If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational*
 $$
 \begin{aligned}
 \operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \hat{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{i,i}}\right)^2}\\
-\Lambda_{i,i} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
+\Lambda_{ii} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
 \end{aligned}
 $$
 
