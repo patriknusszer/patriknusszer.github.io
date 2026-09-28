@@ -140,5 +140,9 @@ In English this phoneme is always sounded for longer. Example is the second vowe
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
     //kʁ_i_//, //l_i_vʁ//, //m_y_.zik//, //pə.t_i_//, //f_i_j//
+- **//y// close front rounded vowel**
+    - **u standing alone**  
+    ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
+    //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.ty_ʁ//, //m_y_.zik//
 
 **ARTICLE IS IN THE WRITING...**
