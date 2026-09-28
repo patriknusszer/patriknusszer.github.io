@@ -232,7 +232,16 @@ Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 
 ## Smoothly gliding approximants: semi-vowels
 
-- **//j// palatal approximant**
+Not all approximants glide, but these do. That means the tongue's movement into them from a vowel or out of them to a vowel causes a smooth accoustic transition/glide.
+
+- **//j// palatal approximant**  
+Pronounced as in English ''|y|es'' //_j_ɛs//
+    - **l/ll in ill/eil/ail**  
+    ''travai|l|'', ''Marsei|ll|es'', ''fami|ll|e'', ''fi|ll|e''
+    - **consonant + i + vowel**  
+    ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou''  
+    //v_j_ɛj//, //pap_j_e//, //met_j_e//, //p_j_ɛs//, //p_j_ano//, //esɑ̃s_j_ɛl//, //m_j_u//
+
 
 **NOTE**
 The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules also exist in Italian.
