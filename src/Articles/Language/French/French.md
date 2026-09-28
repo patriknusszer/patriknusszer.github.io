@@ -205,13 +205,22 @@ Pronounced as in ''|g|ame'' //ɡeɪm//
     ''|g|âteau'', ''|g|outte''  
     //ɡɑ.to//, //ɡut//
 - **//ʒ// voiced postalveolar fricative**
-Pronounced as in ''|g|enre'' //ˈʒɑːnrə//
+Pronounced as in ''|g|enre'' //ˈʒɑːnrə// or ''plea|s|ure'' //ˈplɛʒəɹ//
     - **g + i/e: softening of g**  
     ''|g|énéral'', ''|g|irafe''  
     //ʒe.ne.ʁal//, //ʒi.ʁaf//
     - **j**  
     ''bon|j|our'', ''tou|j|ours'', ''|j|e''  
     //bɔ̃.ʒuʁ//, //tu.ʒuʁ//, //ʒə//
+- **//ɲ// voiced palatal nasal**  
+Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.j_ən//
+    - **gn**  
+    ''monta|gn|e'', ''pei|gn|e'', ''champi|gn|on'', ''espa|gn|ol''  
+    //mɔ̃.ta_ɲ_//, //pɛ_ɲ_//, //ʃɑ̃.pi._ɲ_ɔ̃//, //ɛs.pa._ɲ_ɔl//
+- **//ʁ// voiceless uvular fricative**
+    - **r**  
+    ''chanteu|r|'', ''p|r|ofesseu|r|''  
+    //ʃɑ̃.tœ_ʁ_//, //p_ʁ_ɔ.fɛ.sœ_ʁ_//
 
 **NOTE**
 The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules above also exist in Italian.
