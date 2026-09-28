@@ -64,8 +64,6 @@ I am going to list phonemes individually, and then write which character combina
 
 A rule of thumb is that a vowel at the end of an open syllable is ''closed'', while inside a closed syllable ''open''. 
 
-- **//o//  close-mid back rounded vowel**
-It is the typical |o| that is pronounced in words such as ''|o|h'', ''h|o|me'', and ''g|o|''.
 - **//ɛ// open-mid front unrounded vowel: open "e"**.  
 It is the same |e| as in English ''m|e|h''.
     - **e inside closed syllables**.  
@@ -116,6 +114,9 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     - **eu inside open syllables**
     ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
     //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
-
+- **//o// close-mid back rounded vowel: closed o**
+    - **eau, au**  
+    Note that this rule resists the general open/close syllable close/open vowel rule
+    ''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|e'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne''
 
 **ARTICLE IS IN THE WRITING...**
