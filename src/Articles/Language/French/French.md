@@ -242,13 +242,19 @@ Pronounced as in English ''|y|es'' //_j_ɛs//
     - **consonant + i + vowel**  
     ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
     //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
+    - **EXCEPTIONS**
 - **//ɥ// voiced labialized palatal approximant**
 Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the palate.  
 Does not exist in English.
     - **ui** 
-    ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|''
-    - **ua**
-    - **ue**
+    ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|'', ''s|ui|vre''  
+    //fʁɥi//, //ɥit//, //nɥi//, //kɥiʁ//, //lɥi//, //sɥivʁ//
+    - **ua**  
+    ''n|ua|ge'', ''s|ua|ve'', ''d|ua|lité'', ''n|ua|nce''  
+    //nɥaʒ//, //sɥav//, //dɥalite//, //nɥɑ̃s//
+    - **ue**  
+    ''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
+    //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
 
 
 **NOTE**
