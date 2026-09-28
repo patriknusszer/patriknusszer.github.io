@@ -143,7 +143,7 @@ h1 > .katex, h2 > .katex {
     color:  #ffc8f7;  
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin-top: 60px;
     margin-bottom: 45px;
    -webkit-font-smoothing: antialiased;
