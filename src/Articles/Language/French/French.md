@@ -121,7 +121,7 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     //bɔʁ.d_o_//, //ʃ_o_//, //f_o_s//, //k_o_z//, //b_o_//, //b_o_.ku//, //f_o_.buʁ//, //ʒ_o_n//, //_o_.tœʁ//
 - **//ɔ// open-mid back rounded vowel: open o**
     - **o standing alone**  
-    ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le''  
-    //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//
+    ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le'', ''h|o|mme''  
+    //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//, //ɔm//
 
 **ARTICLE IS IN THE WRITING...**
