@@ -169,7 +169,7 @@ In French, the softening of **c** caused **e** or **i** do not have to be preven
 - **//k// voiceless velar plosive**  
 Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
     - **c + a/o/u**  
-    ''|c|ourt'', ''|c|ôté'', ''|c|uisine'', ''|c|ulture'', ''|c|adeau''  
+    ''|c|ourt'', ''|c|ôté'', ''|c|uisine'', ''|c|ulture'', ''|c|adeau'', ''cy|c|lisme''  
     //_k_ɔʁ//, //_k_ote//, //_k_ɥizin//, //_k_yl.tyʁ//, //_k_ado//
     - **qu, q**  
     ''|qu|el|qu|efois'', ''|qu|artier'', ''musi|qu|e'', ''épo|qu|e''  
@@ -177,17 +177,17 @@ Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
 - **//s// voiceless alveolar fricative**  
 Pronounced as in ''|s|ee'' //siː//
     - **ss, and s when _not_ between two vowels**  
-    ''profe|ss|eur'', ''per|s|onne'', ''que|s|tion''  
-    //pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//
+    ''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme''  
+    //pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//
     - **t in tion, when preceded by a vowel**  
     ''na|t|ion'', ''éduca|t|ion''  
     //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//
     - **s in sion, when preceded by a consonant**  
     ''ascen|s|ion'', ''exten|s|ion''  
     //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
-    - **c + i/e: softening of c**  
-    ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise''  
-    //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//
+    - **c + i/e/y: softening of c**  
+    ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise'', ''|c|yclisme''  
+    //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//, //s_i_.sli.sm//
 - **//z// voiced alveolar fricative**
 Pronounced as in ''|z|oo'' //_z_uː//
     - **s between two vowels**  
@@ -206,7 +206,7 @@ Pronounced as in ''|g|ame'' //ɡeɪm//
     //ɡɑ.to//, //ɡut//
 - **//ʒ// voiced postalveolar fricative**
 Pronounced as in ''|g|enre'' //ˈʒɑːnrə// or ''plea|s|ure'' //ˈplɛʒəɹ//
-    - **g + i/e: softening of g**  
+    - **g + i/e/y: softening of g**  
     ''|g|énéral'', ''|g|irafe''  
     //ʒe.ne.ʁal//, //ʒi.ʁaf//
     - **j**  
