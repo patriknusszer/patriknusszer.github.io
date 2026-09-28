@@ -80,15 +80,15 @@ It is the same |e| as in English ''m|e|h''.
     - **EXCEPTIONS**  
     ''d|e|ssert'', ''d|e|ssous'', ''d|e|sus''  
     //d_e_.sɛʁ//. Also //d_ə_.su//, //d_ə_.sy// but mind the below rule for **schwa**
-- **//e// closed-mid front unrounded vowel: closed "e"**.  
+- **//e// closed-mid front unrounded vowel: closed "e"**  
 It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''.
     - **e at the end of open syllables**.  
     In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
     ''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
     - |é| as in ''pr|é|''
-- **//ə// schwa/mid-central unrounded vowel**
+- **//ə// schwa/mid-central unrounded vowel**  
     Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
-    - **e at the end of the first open syllable**.  
+    - **e at the end of the first open syllable**  
     Less likely to be dropped  
     ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''
     //f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
