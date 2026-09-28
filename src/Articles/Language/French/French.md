@@ -116,7 +116,12 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
 - **//o// close-mid back rounded vowel: closed o**
     - **eau, au**  
-    Note that this rule resists the general open/close syllable close/open vowel rule
-    ''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|e'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne''
+    Note that this rule resists the general open/close syllable → close/open vowel rule
+    ''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne'', ''|au|teur''
+    //bɔʁ.d_o_//, //ʃ_o_//, //f_o_s//, //k_o_z//, //b_o_//, //b_o_.ku//, //f_o_.buʁ//, //ʒ_o_n//, //_o_.tœʁ//
+- **//ɔ// open-mid back rounded vowel: open o**
+    - **o standing alone**  
+    ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le''  
+    //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//
 
 **ARTICLE IS IN THE WRITING...**
