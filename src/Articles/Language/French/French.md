@@ -164,5 +164,14 @@ Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
     - **qu, q**  
     ''|qu|el|qu|efois'', ''|qu|artier'', ''musi|qu|e'', ''épo|qu|e''  
     //_k_ɛl._k_ə.fwa//, //_k_aʁ.tje//, //my.zi_k_//, //epɔ_k_//
+- **//s// voiceless alveolar fricative**
+    - **t in tion**  
+    ''na|t|ion'', ''éduca|t|ion''  
+    //na_s_jɔ̃//, //edyka_s_jɔ̃//
+    - **c + i/e**  
+    ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise''  
+    //mɛʁ_s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_əʁiz//
+
+The **c + a/o/u** and **c + i/e** rule above also exists in Italian.
 
 **ARTICLE IS IN THE WRITING...**
