@@ -144,7 +144,7 @@ In English it is only pronounced long, as in ''f|oo|d'' //f_uː_//
 This vowel doesn't exist in English. Pronounce the abovementioned //u// and move the tongue forwards.
     - **u standing alone**  
     ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
-    //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.ty_ʁ//, //m_y_.zik//
+    //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.t_y_ʁ//, //m_y_.zik//
 
 ### I-like sound
 

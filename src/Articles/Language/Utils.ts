@@ -16,9 +16,12 @@ export function preprocessMarkdown(markdown: string) {
               : `${surround}</span>`;
       });
   }
+      markdown = applyMarkers(markdown, '//', 'ipa', '/')
+            console.log(markdown)
+
+          markdown = applyMarkers(markdown, '_', 'underline')
+
     markdown = applyMarkers(markdown, '\'\'', 'example')
-    markdown = applyMarkers(markdown, '//', 'ipa', '/')
     markdown = applyMarkers(markdown, '|', 'emphasis')
-    markdown = applyMarkers(markdown, '_', 'underline')
     return markdown
 }

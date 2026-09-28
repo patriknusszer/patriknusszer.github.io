@@ -41,10 +41,11 @@ applyMarkers: async function(
               : `${surround}</span>`;
       });
   }
+
+      markdown = await applyMarkers(markdown, '//', 'ipa', '/')
+      markdown = await applyMarkers(markdown, '_', 'underline')
+      markdown = await applyMarkers(markdown, '|', 'emphasis')
     markdown = await applyMarkers(markdown, '\'\'', 'example')
-    markdown = await applyMarkers(markdown, '//', 'ipa', '/')
-    markdown = await applyMarkers(markdown, '|', 'emphasis')
-    markdown = await applyMarkers(markdown, '_', 'underline')
     return markdown
   },
 
