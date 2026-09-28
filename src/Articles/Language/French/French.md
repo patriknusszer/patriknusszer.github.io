@@ -137,7 +137,8 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
 
 - **//i// close front unrounded vowel**  
 In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //b_ɪ_ˈl_iː_v//. In French, **vowels are always short**.
-    - **î, and i when between consonants**
-    - **inside ill in case of a few exceptions**
+    - **î, and i when between consonants**  
+    ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
+    //kʁ_i_//, //l_i_vʁ//, //m_y_.zik//, //pə.t_i_//, //f_i_j//
 
 **ARTICLE IS IN THE WRITING...**
