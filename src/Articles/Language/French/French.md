@@ -232,15 +232,23 @@ Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 
 ## Smoothly gliding approximants: semi-vowels
 
-Not all approximants glide, but these do. That means the tongue's movement into them from a vowel or out of them to a vowel causes a smooth accoustic transition/glide.
+Not all approximants glide, but these do. That means the tongue's (and possibly the lips') movement into them from a vowel or out of them to a vowel causes a smooth accoustic transition/glide.
 
-- **//j// palatal approximant**  
+- **//j// voiced palatal approximant**  
+Can be pronounced by pronouncing //i//. Lips are _not rounded_. Then, tongue is further raised towards the palate.
 Pronounced as in English ''|y|es'' //_j_ɛs//
     - **l/ll in ill/eil/ail**  
     ''travai|l|'', ''Marsei|ll|es'', ''fami|ll|e'', ''fi|ll|e''
     - **consonant + i + vowel**  
     ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
     //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
+- **//ɥ// voiced labialized palatal approximant**
+Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the palate.  
+Does not exist in English.
+    - **ui** 
+    ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|''
+    - **ua**
+    - **ue**
 
 
 **NOTE**
