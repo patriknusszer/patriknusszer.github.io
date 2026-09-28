@@ -133,16 +133,25 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le'', ''h|o|mme''  
     //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//, //ɔm//
 
-### Other vowels
+### U-like sounds
+
+- **//u// close back rounded vowel**  
+In English it is only pronounced long, as in ''f|oo|d'' //f_uː_//
+    - **ou**  
+    ''beauc|ou|p'', ''rendez-v|ou|s'', ''r|ou|e'', ''t|ou|j|ou|rs'', ''bonj|ou|r''  
+    //bo.k_u_//, //ʁɑ̃.de.v_u_//, //ʁ_u_//, //t_u_.ʒ_u_ʁ//, //bɔ̃.ʒ_u_ʁ//
+- **//y// close front rounded vowel**  
+This vowel doesn't exist in English. Pronounce the abovementioned //u// and move the tongue forwards.
+    - **u standing alone**  
+    ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
+    //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.ty_ʁ//, //m_y_.zik//
+
+### I-like sound
 
 - **//i// close front unrounded vowel**  
 In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //b_ɪ_ˈl_iː_v//. In French, **vowels are always short**.
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
     //kʁ_i_//, //l_i_vʁ//, //m_y_.zik//, //pə.t_i_//, //f_i_j//
-- **//y// close front rounded vowel**
-    - **u standing alone**  
-    ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
-    //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.ty_ʁ//, //m_y_.zik//
 
 **ARTICLE IS IN THE WRITING...**
