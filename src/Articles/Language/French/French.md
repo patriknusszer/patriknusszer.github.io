@@ -239,8 +239,8 @@ Pronounced as in English ''|y|es'' //_j_ɛs//
     - **l/ll in ill/eil/ail**  
     ''travai|l|'', ''Marsei|ll|es'', ''fami|ll|e'', ''fi|ll|e''
     - **consonant + i + vowel**  
-    ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou''  
-    //v_j_ɛj//, //pap_j_e//, //met_j_e//, //p_j_ɛs//, //p_j_ano//, //esɑ̃s_j_ɛl//, //m_j_u//
+    ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
+    //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
 
 
 **NOTE**
