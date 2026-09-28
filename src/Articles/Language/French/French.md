@@ -90,11 +90,11 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     - |é| as in ''pr|é|''
 - **//ə// schwa/mid-central unrounded vowel**
     Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
-    - **e at the end of first open syllables**.  
+    - **e at the end of the first open syllable**.  
     Less likely to be dropped  
     ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''
     //f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
-    - **en, em when is _not_ nasalized or sometimes el, inside _open medial_ syllables**  
+    - **en, em when is _not_ nasalized or el, inside _open medial_ syllables**  
     More likely to be dropped  
     ''dev|e|nir'', ''rev|e|num'', ''chev|e|lure'', ''dév|e|loppement'', ''évén|e|ment'', ''relativ|e|ment'', ''déc|e|ler'', ''rec|e|ler''
     //də.v_ə_.niʁ// or //də.vniʁ//  
@@ -105,6 +105,7 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     //de.s_ə_.le// or //de.sle//  
     //ʁə.sə.le// or //ʁə.sle//
     - **e standing alone at the end of one syllable words**  
+    Never dropped
     ''qu|e|'', ''j|e|'', ''l|e|'', ''c|e|''  
      //k_ə_//, //ʒ_ə_//, //l_ə_//, //s_ə_//
 - **//ø// close-mid front rounded vowel: closed eu**  
@@ -113,8 +114,8 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     //bl_ø_//, //d_ø_//, //p_ø_//, //f_ø_//
 - **//œ// open-mid front rounded vowel: open eu**  
     - **eu inside open syllables**
-    ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf''  
-    //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//
+    ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
+    //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
 
 
 **ARTICLE IS IN THE WRITING...**
