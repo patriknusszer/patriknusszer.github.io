@@ -246,6 +246,9 @@ Pronounced as in English ''|y|es'' //_j_ɛs//
     - **consonant + i + vowel**  
     ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
     //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
+    - **y between vowels**  
+    ''vo|y|age''  
+    //vwajaʒ//
     - **EXCEPTIONS**
 - **//ɥ// voiced labialized palatal approximant**
 Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the hard palate.  
@@ -261,9 +264,9 @@ Does not exist in English.
     //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
 - **//w// voiced labial-velar approximant**  
 Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, tongue is further raised towards the soft palate.
-    - **oi //wa//**  
-    ''v|oi|ture'', ''s|oi|r'', ''n|oi|r'', ''hist|oi|re'', ''mém|oi|re''  
-    //v_wa_tyʁ//, //s_wa_ʁ//, //n_wa_ʁ//, //ist_wa_ʁ//, //mem_wa_ʁ//
+    - **oi/oy //wa//**  
+    ''v|oi|ture'', ''s|oi|r'', ''n|oi|r'', ''hist|oi|re'', ''mém|oi|re'', ''v|oy|age''  
+    //v_wa_tyʁ//, //s_wa_ʁ//, //n_wa_ʁ//, //ist_wa_ʁ//, //mem_wa_ʁ//, //v_wa_jaʒ//
     - **ua in gua/qua //wa//**  
     ''g|ua|no'', ''q|ua|dragénaire'' 
     //ɡ_wa_no//, //k_wa_ʁaʒenɛʁ//
