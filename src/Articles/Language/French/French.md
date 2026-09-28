@@ -149,7 +149,7 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 ### I-like sound
 
 - **//i// close front unrounded vowel**  
-In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //b_ɪ_ˈl_iː_v//. In French, **vowels are always short**.
+In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //bɪˈl_iː_v//. In French, **vowels are always short**.
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
     //kʁ_i_//, //l_i_vʁ//, //m_y_.zik//, //pə.t_i_//, //f_i_j//
