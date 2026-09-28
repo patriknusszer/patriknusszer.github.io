@@ -29,8 +29,8 @@ $$
 \Sigma Q = Q \Lambda
 $$
 
-- $\Sigma$ is a matrix, here, in particular, the covariance matrix of the features in $x$
-- $\Lambda$ is a diagonal matrix
+- $\Sigma$ is a matrix, in particular, the covariance matrix of the features in $x$
+- $\Lambda$ is a diagonal matrix, in particular, the values in the diagonal are the eigenvalues
 
 $$
 \begin{aligned}
