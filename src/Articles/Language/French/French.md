@@ -1,6 +1,6 @@
 # Live courses and IPA
 
-When I was learning French it was the pronounciation that was most difficult to learn, and no less difficult to find quality material for it. No, I did not attend live courses and for that I do not claim to have a very good pronounciation.
+When I was learning French it was the pronounciation that was most difficult to learn, and no less difficult to find quality material for it. I did not attend live courses and for that I do not claim to have a very good pronounciation.
 
 To learn pronounciation, I used IPA (International Phonetic Alphabet) to transcribe French words into words based on a character set with fixed pronounciation (hence, phonetic alphabet). I learned which Latin character combinations typically map to which IPA phonetic symbol, and also learned about the exceptions.
 
@@ -62,12 +62,16 @@ I am going to list phonemes individually, and then write which character combina
 
 ## Vowels
 
+A rule of thumb is that a vowel at the end of an open syllable is ''closed'', while inside a closed syllable ''open''. 
+
 - **//o//  close-mid back rounded vowel**
 It is the typical |o| that is pronounced in words such as ''|o|h'', ''h|o|me'', and ''g|o|''.
-- **//ɛ// open-mid front unrounded vowel**. It is the same |e| as in English ''m|e|h''
-    - **e inside closed syllables**. A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
+- **//ɛ// open-mid front unrounded vowel: open "e"**.  
+It is the same |e| as in English ''m|e|h''.
+    - **e inside closed syllables**.  
+    A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
     ''m|e|ttre'', ''t|e|rr.ible'', ''p|e|lle'', ''b|e|lle'', ''p|e|r.f|e|c.tion'', ''p|e|r.v|e|rs'', ''t|e|r.mi.ner'', ''v|e|r.dict'', ''m|e|r.cre.di'', ''p|e|r.so.nn|e|l'', ''s|e|p.t|e|mbre'', ''c|e|r.tain'', ''v|e|r.ti.cal'', ''s|e|r.vir'', ''|e|s.to.mac'', ''|e|s.prit'', ''|e|s.ca.lier'', ''p|e|r.s|e|p.tible'', ''p|e|r.m|e|ttre''.   
-    //m_ɛ_tʁ//, //t_ɛ_ʁ.ibl//, //p_ɛ_l//, //b_ɛ_l//, //p_ɛ_ʁf_ɛ_ksjɔ̃//, //p_ɛ_ʁ.v_ɛ_ʁs//, //t_ɛ_ʁ.mi.neʁ//
+    //m_ɛ_tʁ//, //t_ɛ_ʁ.ibl//, //p_ɛ_l//, //b_ɛ_l//, //p_ɛ_ʁ.f_ɛ_k.sjɔ̃//, //p_ɛ_ʁ.v_ɛ_ʁs//, //t_ɛ_ʁ.mi.neʁ//
     - **e followed by double consonants**
     ''pro.f|e|.sseur'' (note |e| is at the end of an open syllable)
     - **ei** as in  
@@ -77,11 +81,41 @@ It is the typical |o| that is pronounced in words such as ''|o|h'', ''h|o|me'', 
     - **ê** as in ''t|ê|te'', ''fen|ê|tre'' -> //t_ɛ_t//, //fə.n_ɛ_tʁ//
     - **EXCEPTIONS**  
     ''d|e|ssert'', ''d|e|ssous'', ''d|e|sus''  
-    //d_e_.sɛʁ//, //d_ə_.su//, //d_ə_.sy//
-- **//e// closed-mid front unrounded vowel**. It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
-    - **e at the end of open syllables**. In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
+    //d_e_.sɛʁ//. Also //d_ə_.su//, //d_ə_.sy// but mind the below rule for **schwa**
+- **//e// closed-mid front unrounded vowel: closed "e"**.  
+It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''.
+    - **e at the end of open syllables**.  
+    In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
     ''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
     - |é| as in ''pr|é|''
 - **//ə// schwa/mid-central unrounded vowel**
+    Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
+    - **e at the end of first open syllables**.  
+    Less likely to be dropped  
+    ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''
+    //f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
+    - **en, em when is _not_ nasalized or sometimes el, inside _open medial_ syllables**  
+    More likely to be dropped  
+    ''dev|e|nir'', ''rev|e|num'', ''chev|e|lure'', ''dév|e|loppement'', ''évén|e|ment'', ''relativ|e|ment'', ''déc|e|ler'', ''rec|e|ler''
+    //də.v_ə_.niʁ// or //də.vniʁ//  
+    //ʁə.v_ə_.ny// or //ʁə.vny//  
+    //ʃə.v_ə_.lyʁ// or //ʃə.vlyʁ//  
+    //de.v_ə_.lɔp.mɑ̃// or //de.vlɔp.mɑ̃//  
+    //e.vɛ.nə.mɑ̃//, //ʁə.la.tiv.mɑ̃//  
+    //de.s_ə_.le// or //de.sle//  
+    //ʁə.sə.le// or //ʁə.sle//
+    - **e standing alone at the end of one syllable words**  
+    ''qu|e|'', ''j|e|'', ''l|e|'', ''c|e|''  
+     //k_ə_//, //ʒ_ə_//, //l_ə_//, //s_ə_//
+- **//ø// close-mid front rounded vowel**.  
+It basically the same sound as //ə// just with slightly higher tongue position and rounded lips. //ə// sounds weaker, //ø// sounds bolder/solid.
+    - **eu at the end of open syllables**  
+    ''bl|eu|'', ''d|eu|x'', ''p|eu|'', ''f|eu|''
+- **//œ// open-mid front rounded vowel**.  
+It is the open version of //ø//  
+    - **eu inside open syllables**
+    ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf''  
+    //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//
+
 
 **ARTICLE IS IN THE WRITING...**
