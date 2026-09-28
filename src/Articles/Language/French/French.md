@@ -179,9 +179,9 @@ Pronounced as in ''|s|ee'' //siː//
     - **ss, and s when _not_ between two vowels**  
     ''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme''  
     //pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//
-    - **t in tion, when preceded by a vowel**  
-    ''na|t|ion'', ''éduca|t|ion''  
-    //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//
+    - **t in tion, when not preceded by j**  
+    ''na|t|ion'', ''éduca|t|ion'', ''fonc|t|ion''  
+    //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//, //fɔ̃k._s_jɔ̃//
     - **s in sion, when preceded by a consonant**  
     ''ascen|s|ion'', ''exten|s|ion''  
     //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
@@ -221,6 +221,13 @@ Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.
     - **r**  
     ''chanteu|r|'', ''p|r|ofesseu|r|''  
     //ʃɑ̃.tœ_ʁ_//, //p_ʁ_ɔ.fɛ.sœ_ʁ_//
+- **//t// voiceless alveolar plosive**
+    - **th**  
+    ''|Th|omas'', ''|th|éorie'', ''|th|éâtre'', ''mé|th|ode'', ''ma|th|ématiques''  
+    //_t_ɔ.ma//, //_t_e.ɔ.ʁi//, //_t_e.atʁ//, //me._t_ɔd//, //ma._t_e.ma._t_ik//
+    - **t when not in tion preceded by a vowel**  
+    ''au|t|eur'', ''pe|t|it'', ''|t|erre'', ''hô|t|el''  
+    //o._t_œʁ//, //pə._t_i//, //_t_ɛʁ//, //o._t_ɛl//
 
 **NOTE**
 The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules above also exist in Italian.
