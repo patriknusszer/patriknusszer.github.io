@@ -62,7 +62,9 @@ I am going to list phonemes individually, and then write which character combina
 
 ## Vowels
 
-A rule of thumb is that a vowel at the end of an open syllable is ''closed'', while inside a closed syllable ''open''. 
+A rule of thumb is that a vowel at the end of an open syllable is ''closed'', while inside a closed syllable ''open''.
+
+### E-like sounds
 
 - **//ɛ// open-mid front unrounded vowel: open "e"**.  
 It is the same |e| as in English ''m|e|h''.
@@ -86,11 +88,15 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
     ''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
     - |é| as in ''pr|é|''
-- **//ə// schwa/mid-central unrounded vowel**  
+
+### Schwa-like sounds
+
+- **//ə// schwa/mid-central unrounded vowel** 
+    This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
     Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
     - **e at the end of the first open syllable**  
     Less likely to be dropped  
-    ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''
+    ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''  
     //f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
     - **en, em when is _not_ nasalized or el, inside _open medial_ syllables**  
     More likely to be dropped  
@@ -114,6 +120,9 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     - **eu inside open syllables**
     ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
     //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
+
+### O-like sounds
+
 - **//o// close-mid back rounded vowel: closed o**
     - **eau, au**  
     Note that this rule resists the general open/close syllable → close/open vowel rule
@@ -123,5 +132,12 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     - **o standing alone**  
     ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le'', ''h|o|mme''  
     //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//, //ɔm//
+
+### Other vowels
+
+- **//i// close front unrounded vowel**  
+In English this phoneme doesn't appear but many other similar do, as in ''b|e|l|ie|ve'' //bɪˈliːv//
+    - **î, and i when between consonants**
+    - **inside ill in case of a few exceptions**
 
 **ARTICLE IS IN THE WRITING...**
