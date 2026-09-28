@@ -60,11 +60,11 @@ In the following I am going to introduce most phonemes/sounds that can occur in 
 
 I am going to list phonemes individually, and then write which character combinations usually produce that sound, under what conditions.
 
-## Vowels
+## True vowels
 
 A rule of thumb is that a vowel at the end of an open syllable is ''closed'', while inside a closed syllable ''open''.
 
-### E-like sounds
+### E-like vowels
 
 - **//ɛ// open-mid front unrounded vowel: open "e"**.  
 It is the same |e| as in English ''m|e|h''.
@@ -89,7 +89,7 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     ''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
     - |é| as in ''pr|é|''
 
-### Schwa-like sounds
+### Schwa-like vowels
 
 - **//ə// schwa/mid-central unrounded vowel** 
     This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
@@ -121,7 +121,7 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
     //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
 
-### O-like sounds
+### O-like vowels
 
 - **//o// close-mid back rounded vowel: closed o**
     - **eau, au**  
@@ -133,7 +133,7 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     ''B|o|rdeaux'', ''b|o|n.b|o|n'', ''éc|o|le'', ''h|o|mme''  
     //b_ɔ_ʁ.do//, //b_ɔ̃_.b_ɔ̃_//, //e.k_ɔ_l//, //ɔm//
 
-### U-like sounds
+### U-like vowels
 
 - **//u// close back rounded vowel**  
 In English it is only pronounced long, as in ''f|oo|d'' //f_uː_//
@@ -146,12 +146,23 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
     ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
     //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.t_y_ʁ//, //m_y_.zik//
 
-### I-like sound
+### I-like vowel
 
 - **//i// close front unrounded vowel**  
 In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //bɪˈl_iː_v//. In French, **vowels are always short**.
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
-    //kʁ_i_//, //l_i_vʁ//, //m_y_.zik//, //pə.t_i_//, //f_i_j//
+    //kʁ_i_//, //l_i_vʁ//, //my.z_i_k//, //pə.t_i_//, //f_i_j//
+
+## Consonants
+
+- **//k// voiceless velar plosive**  
+Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
+    - **c + u/o/a**  
+    ''|c|ourt'', ''|c|ôté'', ''|c|uisine'', ''|c|ulture'', ''|c|adeau''  
+    //_k_ɔʁ//, //_k_ote//, //_k_ɥizin//, //_k_yl.tyʁ//, //_k_ado//
+    - **qu, q**  
+    ''|qu|el|qu|efois'', ''|qu|artier'', ''musi|qu|e'', ''épo|qu|e''  
+    //_k_ɛl._k_ə.fwa//, //_k_aʁ.tje//, //my.zi_k_//, //epɔ_k_//
 
 **ARTICLE IS IN THE WRITING...**
