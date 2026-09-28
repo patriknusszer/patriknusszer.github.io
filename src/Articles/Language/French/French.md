@@ -107,12 +107,11 @@ It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''
     - **e standing alone at the end of one syllable words**  
     ''qu|e|'', ''j|e|'', ''l|e|'', ''c|e|''  
      //k_ə_//, //ʒ_ə_//, //l_ə_//, //s_ə_//
-- **//ø// close-mid front rounded vowel**.  
-It basically the same sound as //ə// just with slightly higher tongue position and rounded lips. //ə// sounds weaker, //ø// sounds bolder/solid.
+- **//ø// close-mid front rounded vowel: closed eu**  
     - **eu at the end of open syllables**  
-    ''bl|eu|'', ''d|eu|x'', ''p|eu|'', ''f|eu|''
-- **//œ// open-mid front rounded vowel**.  
-It is the open version of //ø//  
+    ''bl|eu|'', ''d|eu|x'', ''p|eu|'', ''f|eu|''  
+    //bl_ø_//, //d_ø_//, //p_ø_//, //f_ø_//
+- **//œ// open-mid front rounded vowel: open eu**  
     - **eu inside open syllables**
     ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf''  
     //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//
