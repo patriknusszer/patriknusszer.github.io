@@ -32,17 +32,17 @@ Consonants are produced by using a part of the mouth cavity, the **place of arti
     - **Postalveolar (start of steep slope/start of curvature of hard palate)**: tongue tip + postalveolar/prepalatal region. This area is that just behind the ''alveolar ridge'' where the rooftop begins to steeply curve upwards, where the hard palate/rooftop begins (hence **pre**-palatal). Examples are //ʃ// in ''|sh|oe'' or ''|sh|ip'', and //ʒ// in ''|g|enre'', ''plea|s|ure'' or ''trea|s|ure''.
     - **Palatal (hard rooftop)**: tongue dorsum/body/middle + hard palate. Hard palate is the curved rooftop starting at the *ridge* where the curve is rising steeply, then gets more gently curved further back until the *soft palate*. When a consonant is called (hard palatal) palatal, the place of articulation is (before the soft palate per se, and) after the steeply rising frontal part of the hard palate starting at the *ridge*. An example is //ɲ// as in ''co|gn|ac'', ''lasa|gn|a'', or in Hungarian ''|ny|úl''. Another is //c//, which is not used in English or French. It is common, however, in Hungarian, as in ''|ty|úk''.
     - **Velar (soft rooftop)**: the soft rooftop of the mouth further behind. You need to bend your tongue backwards at greater than 90 degrees to reach it with the tip of your tongue. This is actually the longest portion of the mouth rooftop. Examples are //k//, //g// and //ŋ// as in ''|c|a|c|ao'', ''|g|oal'' and ''si|ng|i|ng|''
-    - **Uvular**: it is the small, soft, fleshy structure that hangs down from the back of the soft palate, at the very back of the throat. In particular, in French the //r// trill does not exist. Instead there is //ʁ// the uvular fricative. That is, the back of the tongue raises to create a narrow airway between the tongue and the uvula. It is okay if there is uvular vibration during the sounding. A good starting point is to pronounce //h// (as in "holy") and then push the tongue higher up to constrict airflow further. Examples as ''chanteu|r|'', ''t|r|anquille''.  
+    - **Uvular**: it is the small, soft, fleshy structure that hangs down from the back of the soft palate, at the very back of the throat. French does not have the English //ɹ//. Instead there is //ʁ// the uvular fricative. That is, the back of the tongue raises to create a narrow airway between the tongue and the uvula. It is okay if there is uvular vibration during the sounding. A good starting point is to pronounce //h// (as in "holy") and then push the tongue higher up to constrict airflow further. Examples as ''chanteu|r|'', ''t|r|anquille''.  
     - **Affricate**: nonexistent in French, but they exist in English or Hungarian. It is basically the sudden release of a full airway stop into a narrow airway instead of a standard plosion, and for a shorter time than typical for a fricative in order to create a distinctive compact sound. The sound is denoted by the **stop** which tells where the airway is blocked and a **fricative** which tells where the air is suddenly released into a narrow contrained airway for a very brief time. For it to be possible, the two consonants are either from the same place of articulation, or ones close to each other. An example is //t͡ʃ// in ''|ch|air''/''|ch|urch''. Another one in Hungarian is //t͡s// as in ''|c|i|c|a''. In English, it is similar to //ts//, which is not affricated, as in ''ca|ts|''. Probably the only difference is length. The affricate version is brief and accoustically is one compact sound, while the latter sounds more compound due to //s// being sounded for just slightly longer.
 - **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 - **Manner of articulation**:
     - No airflow blockage involved
         - **Nasal**: free air passageway throguh the nose. An example is //m// in ''|M|onday''.
-        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ''|y|es''.
+        - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ''|y|es'' or English //ɹ// in ''|r|obot'' //_r_oʊbɑːt//
         - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //ʃ// in ''|sh|op''.
     - Airflow blockage involved
         - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
-        - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in ''|r|obot''.
+        - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in Italian ''t|r|e'' //t_r_e//, Spanish ''pe|rr|o'' //pe_r_o// and Hungarian ''raktá|r|'' //rɒktaː_r_//, but it is again not the same as English //ɹ// which is the voiced postalveolar approximant //ɹ//
 
 In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories:
 
@@ -67,7 +67,7 @@ A rule of thumb is that a vowel at the end of an open syllable is ''closed'', wh
 ### E-like vowels
 
 - **//ɛ// open-mid front unrounded vowel: open "e"**.  
-It is the same |e| as in English ''m|e|h''.
+It is the same |e| as in English ''b|e|d'' //b_ɛ_d//.
     - **e inside closed syllables**.  
     A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
     ''m|e|ttre'', ''t|e|rr.ible'', ''p|e|lle'', ''b|e|lle'', ''p|e|r.f|e|c.tion'', ''p|e|r.v|e|rs'', ''t|e|r.mi.ner'', ''v|e|r.dict'', ''m|e|r.cre.di'', ''p|e|r.so.nn|e|l'', ''s|e|p.t|e|mbre'', ''c|e|r.tain'', ''v|e|r.ti.cal'', ''s|e|r.vir'', ''|e|s.to.mac'', ''|e|s.prit'', ''|e|s.ca.lier'', ''p|e|r.s|e|p.tible'', ''p|e|r.m|e|ttre''.   
@@ -179,7 +179,7 @@ Pronounced as in ''|s|ee'' //siː//
     - **ss, and s when _not_ between two vowels**  
     ''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme''  
     //pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//
-    - **t in tion, when not preceded by j**  
+    - **t in tion, _when not preceded by s_**  
     ''na|t|ion'', ''éduca|t|ion'', ''fonc|t|ion''  
     //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//, //fɔ̃k._s_jɔ̃//
     - **s in sion, when preceded by a consonant**  
@@ -193,7 +193,7 @@ Pronounced as in ''|z|oo'' //_z_uː//
     - **s between two vowels**  
     ''mademoi|s|elle'', ''mai|s|on'', ''mu|s|ée''  
     //mad.mwa._z_ɛl//, //mɛ._z_ɔ̃//, //my._z_e//
-    - **s in sion, when preceded by a vowel**  
+    - **s in sion, _when preceded by a vowel_**  
     ''préci|s|ion''  
     //pʁe.si._z_jɔ̃//
     - **z**  
@@ -221,15 +221,20 @@ Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.
     - **r**  
     ''chanteu|r|'', ''p|r|ofesseu|r|''  
     //ʃɑ̃.tœ_ʁ_//, //p_ʁ_ɔ.fɛ.sœ_ʁ_//
-- **//t// voiceless alveolar plosive**
+- **//t// voiceless alveolar plosive**  
+Pronounced as in ''|t|errain'' //_t_eˈreɪn//
     - **th**  
     ''|Th|omas'', ''|th|éorie'', ''|th|éâtre'', ''mé|th|ode'', ''ma|th|ématiques''  
     //_t_ɔ.ma//, //_t_e.ɔ.ʁi//, //_t_e.atʁ//, //me._t_ɔd//, //ma._t_e.ma._t_ik//
-    - **t when not in tion preceded by a vowel**  
+    - **t (when not in tion preceded by s)**  
     ''au|t|eur'', ''pe|t|it'', ''|t|erre'', ''hô|t|el''  
     //o._t_œʁ//, //pə._t_i//, //_t_ɛʁ//, //o._t_ɛl//
 
+## Smoothly gliding approximants: semi-vowels
+
+- **//j// palatal approximant**
+
 **NOTE**
-The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules above also exist in Italian.
+The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules also exist in Italian.
 
 **ARTICLE IS IN THE WRITING...**
