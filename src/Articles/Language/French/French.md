@@ -164,14 +164,33 @@ Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
     - **qu, q**  
     ''|qu|el|qu|efois'', ''|qu|artier'', ''musi|qu|e'', ''épo|qu|e''  
     //_k_ɛl._k_ə.fwa//, //_k_aʁ.tje//, //my.zi_k_//, //epɔ_k_//
-- **//s// voiceless alveolar fricative**
-    - **t in tion**  
+- **//s// voiceless alveolar fricative**  
+Pronounced as in ''|s|ee'' //siː//
+    - **ss, and s when _not_ between two vowels**  
+    ''profe|ss|eur'', ''per|s|onne'', ''que|s|tion''  
+    //pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//
+    - **t in tion, when preceded by a vowel**  
     ''na|t|ion'', ''éduca|t|ion''  
-    //na_s_jɔ̃//, //edyka_s_jɔ̃//
+    //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//
+    - **s in sion, when preceded by a consonant**  
+    ''ascen|s|ion'', ''exten|s|ion''  
+    //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
     - **c + i/e**  
     ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise''  
-    //mɛʁ_s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_əʁiz//
+    //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//
+- **//z// voiced alveolar fricative**
+Pronounced as in ''|z|oo'' //_z_uː//
+    - **s between two vowels**  
+    ''mademoi|s|elle'', ''mai|s|on'', ''mu|s|ée''  
+    //mad.mwa._z_ɛl//, //mɛ._z_ɔ̃//, //my._z_e//
+    - **s in sion, when preceded by a vowel**  
+    ''préci|s|ion''  
+    //pʁe.si._z_jɔ̃//
+    - **z**  
+    ''trei|z|e'', ''|z|éro''  
+    //tʁɛ_z_//  //_z_e.ʁo//
 
+**NOTE**
 The **c + a/o/u** and **c + i/e** rule above also exists in Italian.
 
 **ARTICLE IS IN THE WRITING...**
