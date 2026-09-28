@@ -79,6 +79,9 @@ It is the same |e| as in English ''m|e|h''.
     - **ai** as in ''secrét|ai|re'' -> //sə.kʁe.t_ɛ_ʁ//
     - **è** as in ''p|è|re'' -> //p_ɛ_ʁ//
     - **ê** as in ''t|ê|te'', ''fen|ê|tre'' -> //t_ɛ_t//, //fə.n_ɛ_tʁ//
+    - **ue when preventing softening effect on g**  
+    ''g|ue|rre''  
+    //ɡ_ɛ_ʁ//
     - **EXCEPTIONS**  
     ''d|e|ssert'', ''d|e|ssous'', ''d|e|sus''  
     //d_e_.sɛʁ//. Also //d_ə_.su//, //d_ə_.sy// but mind the below rule for **schwa**
@@ -153,12 +156,17 @@ In English this phoneme is always sounded for longer. Example is the second vowe
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
     //kʁ_i_//, //l_i_vʁ//, //my.z_i_k//, //pə.t_i_//, //f_i_j//
+    - **ui when preventing softening on g**  
+    ''g|ui|tare''  
+    //ɡ_i_.taʁ//
+
+In Italian, to prevent softening, **h** is used.
 
 ## Consonants
 
 - **//k// voiceless velar plosive**  
 Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
-    - **c + u/o/a**  
+    - **c + a/o/u**  
     ''|c|ourt'', ''|c|ôté'', ''|c|uisine'', ''|c|ulture'', ''|c|adeau''  
     //_k_ɔʁ//, //_k_ote//, //_k_ɥizin//, //_k_yl.tyʁ//, //_k_ado//
     - **qu, q**  
@@ -189,8 +197,18 @@ Pronounced as in ''|z|oo'' //_z_uː//
     - **z**  
     ''trei|z|e'', ''|z|éro''  
     //tʁɛ_z_//  //_z_e.ʁo//
+- **//g// voiced velar plosive** 
+Pronounced as in ''|g|ame'' //ɡeɪm//  
+    - **g + a/o/u**  
+    ''|g|âteau'', ''|g|outte''  
+    //ɡɑ.to//, //ɡut//
+- **//ʒ//**
+Pronounced as in ''|g|enre''
+    - **g + i/e**  
+    ''|g|énéral'', ''|g|irafe''
+
 
 **NOTE**
-The **c + a/o/u** and **c + i/e** rule above also exists in Italian.
+The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules above also exist in Italian.
 
 **ARTICLE IS IN THE WRITING...**
