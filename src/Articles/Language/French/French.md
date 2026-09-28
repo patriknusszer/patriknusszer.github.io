@@ -235,29 +235,41 @@ Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 Not all approximants glide, but these do. That means the tongue's (and possibly the lips') movement into them from a vowel or out of them to a vowel causes a smooth accoustic transition/glide.
 
 - **//j// voiced palatal approximant**  
-Can be pronounced by pronouncing //i//. Lips are _not rounded_. Then, tongue is further raised towards the palate.
+Can be pronounced by pronouncing //i//. Lips are _not rounded_. Then, tongue is further raised towards the hard palate.
 Pronounced as in English ''|y|es'' //_j_ɛs//
-    - **l/ll in ill/eil/ail**  
-    **ill** //ij//
-    **eil** //ɛj//  
-    **ail** //aj//
-    ''travai|l|'', ''Marsei|ll|es'', ''fami|ll|e'', ''fi|ll|e''
+    - **ll in ill //ij//**  
+    ''fami|ll|e'', ''fi|ll|e''
+    - **l in eil //ɛj//**  
+    ''Marsei|ll|es''
+    - **l in ail //aj//**  
+    ''travai|l|''
     - **consonant + i + vowel**  
     ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
     //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
     - **EXCEPTIONS**
 - **//ɥ// voiced labialized palatal approximant**
-Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the palate.  
+Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the hard palate.  
 Does not exist in English.
-    - **ui** 
+    - **u in ui //ɥi//** 
     ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|'', ''s|ui|vre''  
     //fʁɥi//, //ɥit//, //nɥi//, //kɥiʁ//, //lɥi//, //sɥivʁ//
-    - **ua**  
+    - **u in ua //ɥa//**  
     ''n|ua|ge'', ''s|ua|ve'', ''d|ua|lité'', ''n|ua|nce''  
     //nɥaʒ//, //sɥav//, //dɥalite//, //nɥɑ̃s//
-    - **ue**  
+    - **u in ue //ɥɛ//**  
     ''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
     //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
+- **//w// voiced labial-velar approximant**  
+Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, tongue is further raised towards the soft palate.
+    - **oi //wa//**  
+    ''v|oi|ture'', ''s|oi|r'', ''n|oi|r'', ''hist|oi|re'', ''mém|oi|re''  
+    //v_wa_tyʁ//, //s_wa_ʁ//, //n_wa_ʁ//, //ist_wa_ʁ//, //mem_wa_ʁ//
+    - **ua in gua/qua //wa//**  
+    ''g|ua|no'', ''q|ua|dragénaire'' 
+    //ɡ_wa_no//, //k_wa_ʁaʒenɛʁ//
+    - **oui //wi//**  
+    ''|oui|'', ''in|ouï|ment''  
+    //_wi_//, //in_wi_mɑ̃//
 
 
 **NOTE**
