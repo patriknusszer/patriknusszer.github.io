@@ -156,11 +156,13 @@ In English this phoneme is always sounded for longer. Example is the second vowe
     - **î, and i when between consonants**  
     ''cr|i|'', ''l|i|vre'', ''mus|i|que'', ''pet|i|t'', ''f|i|lle''  
     //kʁ_i_//, //l_i_vʁ//, //my.z_i_k//, //pə.t_i_//, //f_i_j//
-    - **ui when preventing softening on g**  
+    - **ui when preventing softening effect on g**  
     ''g|ui|tare''  
     //ɡ_i_.taʁ//
 
-In Italian, to prevent softening, **h** is used.
+In Italian, to prevent softening of **g** or **c**, **h** is used.
+
+In French, the softening of **c** caused **e** or **i** do not have to be prevented because any words having the sound //ki// //kɛ// or //ke// use **qu** for //k//.
 
 ## Consonants
 
@@ -183,7 +185,7 @@ Pronounced as in ''|s|ee'' //siː//
     - **s in sion, when preceded by a consonant**  
     ''ascen|s|ion'', ''exten|s|ion''  
     //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
-    - **c + i/e**  
+    - **c + i/e: softening of c**  
     ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise''  
     //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//
 - **//z// voiced alveolar fricative**
@@ -202,11 +204,14 @@ Pronounced as in ''|g|ame'' //ɡeɪm//
     - **g + a/o/u**  
     ''|g|âteau'', ''|g|outte''  
     //ɡɑ.to//, //ɡut//
-- **//ʒ//**
-Pronounced as in ''|g|enre''
-    - **g + i/e**  
-    ''|g|énéral'', ''|g|irafe''
-
+- **//ʒ// voiced postalveolar fricative**
+Pronounced as in ''|g|enre'' //ˈʒɑːnrə//
+    - **g + i/e: softening of g**  
+    ''|g|énéral'', ''|g|irafe''  
+    //ʒe.ne.ʁal//, //ʒi.ʁaf//
+    - **j**  
+    ''bon|j|our'', ''tou|j|ours'', ''|j|e''  
+    //bɔ̃.ʒuʁ//, //tu.ʒuʁ//, //ʒə//
 
 **NOTE**
 The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules above also exist in Italian.
