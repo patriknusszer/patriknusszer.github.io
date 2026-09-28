@@ -238,6 +238,9 @@ Not all approximants glide, but these do. That means the tongue's (and possibly 
 Can be pronounced by pronouncing //i//. Lips are _not rounded_. Then, tongue is further raised towards the palate.
 Pronounced as in English ''|y|es'' //_j_ɛs//
     - **l/ll in ill/eil/ail**  
+    **ill** //ij//
+    **eil** //ɛj//  
+    **ail** //aj//
     ''travai|l|'', ''Marsei|ll|es'', ''fami|ll|e'', ''fi|ll|e''
     - **consonant + i + vowel**  
     ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
