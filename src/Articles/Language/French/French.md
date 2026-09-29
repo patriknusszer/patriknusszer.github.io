@@ -75,7 +75,7 @@ A rule of thumb is that a vowel at the end of an open syllable is ''closed'', wh
 
 ### E-like vowels
 
-**//ɛ// open-mid front unrounded vowel: open "e"**.  
+**//ɛ// open-mid front unrounded vowel: open "e"**  
 It is the same |e| as in English ''b|e|d'' //b_ɛ_d//.
 
 **When //ɛ// is it pronounced**:
@@ -116,9 +116,9 @@ In particular, in the final syllable, where it is only preceded by an unsounded 
 
 ### Schwa-like vowels
 
-**//ə// schwa/mid-central unrounded vowel** 
-    This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
-    Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
+**//ə// schwa/mid-central unrounded vowel**  
+This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
+Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
 
 **When //ə//  is pronounced**
 - **e at the end of the first open syllable**  
@@ -159,7 +159,7 @@ Never dropped
 
 ### O-like vowels
 
-**//o// close-mid back rounded vowel: closed o**
+**//o// close-mid back rounded vowel: closed o**  
 
 **When //o// is pronounced**
 - **eau, au**  
@@ -167,7 +167,7 @@ Note that this rule resists the general open/close syllable → close/open vowel
 ''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne'', ''|au|teur''
 //bɔʁ.d_o_//, //ʃ_o_//, //f_o_s//, //k_o_z//, //b_o_//, //b_o_.ku//, //f_o_.buʁ//, //ʒ_o_n//, //_o_.tœʁ//
 
-**//ɔ// open-mid back rounded vowel: open o**
+**//ɔ// open-mid back rounded vowel: open o**  
 
 **When //ɔ// is pronounced**
 - **o standing alone**  
@@ -240,7 +240,7 @@ Pronounced as in ''|s|ee'' //siː//
 ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise'', ''|c|yclisme''  
 //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//, //s_i_.sli.sm//
 
-**//z// voiced alveolar fricative**
+**//z// voiced alveolar fricative**  
 Pronounced as in ''|z|oo'' //_z_uː//
 
 **When //z// is pronounced**
@@ -254,7 +254,7 @@ Pronounced as in ''|z|oo'' //_z_uː//
 ''trei|z|e'', ''|z|éro''  
 //tʁɛ_z_//  //_z_e.ʁo//
 
-**//g// voiced velar plosive** 
+**//g// voiced velar plosive**  
 Pronounced as in ''|g|ame'' //ɡeɪm//
 
 **When //g// is pronounced**
@@ -262,7 +262,7 @@ Pronounced as in ''|g|ame'' //ɡeɪm//
 ''|g|âteau'', ''|g|outte''  
 //ɡɑ.to//, //ɡut//
 
-**//ʒ// voiced postalveolar fricative**
+**//ʒ// voiced postalveolar fricative**  
 Pronounced as in ''|g|enre'' //ˈʒɑːnrə// or ''plea|s|ure'' //ˈplɛʒəɹ//
 
 **When //ʒ// is pronounced**
@@ -281,7 +281,7 @@ Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.
 ''monta|gn|e'', ''pei|gn|e'', ''champi|gn|on'', ''espa|gn|ol''  
 //mɔ̃.ta_ɲ_//, //pɛ_ɲ_//, //ʃɑ̃.pi._ɲ_ɔ̃//, //ɛs.pa._ɲ_ɔl//
 
-**//ʁ// voiceless uvular fricative**
+**//ʁ// voiceless uvular fricative**  
 
 **When //ʁ// is pronounced**
 - **r**  
@@ -303,7 +303,7 @@ Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 
 Not all approximants glide, but these do. That means the tongue's (and possibly the lips') movement into them from a vowel or out of them to a vowel causes a smooth accoustic transition/glide.
 
-**//j// voiced palatal approximant**
+**//j// voiced palatal approximant**  
 
 **When //j// is pronounced**
 
@@ -325,8 +325,7 @@ Pronounced as in English ''|y|es'' //_j_ɛs//
 ''vi|ll|age'', ''mi|ll|ion'', ''tranqui|ll|e'', ''vi|ll|e'', ''mi|ll|e''  
 //vi._l_aʒ//, //mi._l_jɔ̃//, //tʁɑ̃.ki_l_//, //vi_l_//, //mi_l_//
 
-**//ɥ// voiced labialized palatal approximant**
-
+**//ɥ// voiced labialized palatal approximant**  
 Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the hard palate.  
 Does not exist in English.
 
@@ -341,8 +340,7 @@ Does not exist in English.
 ''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
 //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
 
-**//w// voiced labial-velar approximant**
-
+**//w// voiced labial-velar approximant**  
 Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, tongue is further raised towards the soft palate.
 
 **When //w// is pronounced**
