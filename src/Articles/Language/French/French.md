@@ -75,7 +75,8 @@ A rule of thumb is that a vowel at the end of an open syllable is ''closed'', wh
 
 ### E-like vowels
 
-**//ɛ// open-mid front unrounded vowel: open "e"**  
+**//ɛ// open-mid front unrounded vowel: open "e"**
+
 It is the same |e| as in English ''b|e|d'' //b_ɛ_d//.
 
 **When //ɛ// is it pronounced**:
@@ -101,8 +102,9 @@ A syllable is closed, if its last sound is a consonant. It is important because 
 ''d|e|ssert''  
 //d_e_.sɛʁ//
 
-**//e// closed-mid front unrounded vowel: closed "e"**  
-It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''.
+**//e// closed-mid front unrounded vowel: closed "e"**
+
+It can be pronounced as the first vowel in the diphthong //eɪ//, as in ''d|a|y'' -> //d_e_ɪ//, otherwise is not natively pronounced purely. A dipthong is a smooth transition from a vowel to another. In this diphthong transitioning towards //ɪ// the jaws get closer, tongue moves backward and higher up.
 
 **When //e// is pronounced**:
 - **e at the end of open final syllable**.  
@@ -116,9 +118,10 @@ In particular, in the final syllable, where it is only preceded by an unsounded 
 
 ### Schwa-like vowels
 
-**//ə// schwa/mid-central unrounded vowel**  
+**//ə// schwa/mid-central unrounded vowel**
+
 This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
-Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a noticeably sounded  vowel. If dropped, it might reduce the number of syllables
+Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a vowel. If dropped, it might reduce the number of syllables.
 
 **When //ə//  is pronounced**
 - **e at the end of the first open syllable**  
@@ -148,11 +151,18 @@ Never dropped
 
 **//ø// close-mid front rounded vowel: closed eu**
 
+Pronounce schwa. Then move the tongue forwards, little higher up, and round the lips.
+
 **When //ø// is pronounced**
 - **eu at the end of open syllables**  
 ''bl|eu|'', ''d|eu|x'', ''p|eu|'', ''f|eu|''  
 //bl_ø_//, //d_ø_//, //p_ø_//, //f_ø_//
-- **//œ// open-mid front rounded vowel: open eu**  
+
+
+**//œ// open-mid front rounded vowel: open eu**
+
+Pronounce the above vowel, but lower the tongue.
+
 - **eu inside open syllables**
 ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
 //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
@@ -160,6 +170,8 @@ Never dropped
 ### O-like vowels
 
 **//o// close-mid back rounded vowel: closed o**  
+
+Can be pronounced as the first vowel in the common English diphthong //oʊ// as in ''h|o|tel'' //h_o_ʊˈtɛl// but otherwise is not natively pronounced purely. A diphthong is a smooth transition from a vowel to another. In this diphthong transitioning towards //ʊ// the lips get more tightly rounded and the tongue moves backwards and slithly higher.
 
 **When //o// is pronounced**
 - **eau, au**  
@@ -176,16 +188,18 @@ Note that this rule resists the general open/close syllable → close/open vowel
 
 ### U-like vowels
 
-**//u// close back rounded vowel**  
-In English it is only pronounced long, as in ''f|oo|d'' //f_uː_d//
+**//u// close back rounded vowel**
+
+In English it's only pronounced long, as in ''f|oo|d'' //f_uː_d//
 
 **When //u// is pronounced**
 - **ou**  
 ''beauc|ou|p'', ''rendez-v|ou|s'', ''r|ou|e'', ''t|ou|j|ou|rs'', ''bonj|ou|r''  
 //bo.k_u_//, //ʁɑ̃.de.v_u_//, //ʁ_u_//, //t_u_.ʒ_u_ʁ//, //bɔ̃.ʒ_u_ʁ//
 
-**//y// close front rounded vowel**  
-This vowel doesn't exist in English. Pronounce the abovementioned //u// and move the tongue forwards.
+**//y// close front rounded vowel**
+
+This vowel doesn't exist in English. Pronounce the abovementioned //u// and move the tongue forwards and high up.
 
 **When //y// is pronounced**
 - **u standing alone**  
@@ -194,8 +208,9 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 
 ### I-like vowel
 
-**//i// close front unrounded vowel**  
-In English this phoneme is always sounded for longer. Example is the second vowel of ''b|e|l|ie|ve'' //bɪˈl_iː_v//. In French, **vowels are always short**.
+**//i// close front unrounded vowel**
+
+In English it's always pronounced long. Example is the second vowel of ''b|e|l|ie|ve'' //bɪˈl_iː_v//. In French, **vowels are always short**.
 
 **When //i// is pronounced**
 - **î, and i when between consonants**  
@@ -211,7 +226,8 @@ In French, the softening of **c** caused **e** or **i** do not have to be preven
 
 ## Consonants
 
-**//k// voiceless velar plosive**  
+**//k// voiceless velar plosive**
+
 Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
 
 **When //k// is pronounced**
@@ -223,7 +239,8 @@ Pronounced as in ''o|k|ay'' //oʊˈ_k_eɪ// (American English)
 //_k_ɛl._k_ə.fwa//, //_k_aʁ.tje//, //my.zi_k_//, //epɔ_k_//
 
 
-**//s// voiceless alveolar fricative**  
+**//s// voiceless alveolar fricative**
+
 Pronounced as in ''|s|ee'' //siː//
 
 **When //s// is pronounced**
@@ -240,7 +257,8 @@ Pronounced as in ''|s|ee'' //siː//
 ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise'', ''|c|yclisme''  
 //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//, //s_i_.sli.sm//
 
-**//z// voiced alveolar fricative**  
+**//z// voiced alveolar fricative**
+
 Pronounced as in ''|z|oo'' //_z_uː//
 
 **When //z// is pronounced**
@@ -254,7 +272,8 @@ Pronounced as in ''|z|oo'' //_z_uː//
 ''trei|z|e'', ''|z|éro''  
 //tʁɛ_z_//  //_z_e.ʁo//
 
-**//g// voiced velar plosive**  
+**//g// voiced velar plosive**
+
 Pronounced as in ''|g|ame'' //ɡeɪm//
 
 **When //g// is pronounced**
@@ -262,7 +281,8 @@ Pronounced as in ''|g|ame'' //ɡeɪm//
 ''|g|âteau'', ''|g|outte''  
 //ɡɑ.to//, //ɡut//
 
-**//ʒ// voiced postalveolar fricative**  
+**//ʒ// voiced postalveolar fricative**
+
 Pronounced as in ''|g|enre'' //ˈʒɑːnrə// or ''plea|s|ure'' //ˈplɛʒəɹ//
 
 **When //ʒ// is pronounced**
@@ -273,7 +293,8 @@ Pronounced as in ''|g|enre'' //ˈʒɑːnrə// or ''plea|s|ure'' //ˈplɛʒəɹ//
 ''bon|j|our'', ''tou|j|ours'', ''|j|e''  
 //bɔ̃.ʒuʁ//, //tu.ʒuʁ//, //ʒə//
 
-**//ɲ// voiced palatal nasal**  
+**//ɲ// voiced palatal nasal**
+
 Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.j_ən//
 
 **When //ɲ// is pronounced**
@@ -281,14 +302,17 @@ Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.
 ''monta|gn|e'', ''pei|gn|e'', ''champi|gn|on'', ''espa|gn|ol''  
 //mɔ̃.ta_ɲ_//, //pɛ_ɲ_//, //ʃɑ̃.pi._ɲ_ɔ̃//, //ɛs.pa._ɲ_ɔl//
 
-**//ʁ// voiceless uvular fricative**  
+**//ʁ// voiceless uvular fricative**
+
+Can be pronounced by raising the back of the tongue towards the *uvula* to create a narrow air passageway. Vibration of the uvula is not necessary but is not a mistake.
 
 **When //ʁ// is pronounced**
 - **r**  
 ''chanteu|r|'', ''p|r|ofesseu|r|''  
 //ʃɑ̃.tœ_ʁ_//, //p_ʁ_ɔ.fɛ.sœ_ʁ_//
 
-**//t// voiceless alveolar plosive**  
+**//t// voiceless alveolar plosive**
+
 Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 
 **When //t// is pronounced**
@@ -325,7 +349,8 @@ Pronounced as in English ''|y|es'' //_j_ɛs//
 ''vi|ll|age'', ''mi|ll|ion'', ''tranqui|ll|e'', ''vi|ll|e'', ''mi|ll|e''  
 //vi._l_aʒ//, //mi._l_jɔ̃//, //tʁɑ̃.ki_l_//, //vi_l_//, //mi_l_//
 
-**//ɥ// voiced labialized palatal approximant**  
+**//ɥ// voiced labialized palatal approximant**
+
 Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**. Then, tongue is further raised towards the hard palate.  
 Does not exist in English.
 
@@ -340,7 +365,8 @@ Does not exist in English.
 ''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
 //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
 
-**//w// voiced labial-velar approximant**  
+**//w// voiced labial-velar approximant**
+
 Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, tongue is further raised towards the soft palate.
 
 **When //w// is pronounced**
@@ -356,5 +382,3 @@ Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, 
 
 **NOTE**
 The **c + a/o/u** - **c + i/e** and **g + a/o/u** - **g + i/e** rules also exist in Italian.
-
-**ARTICLE IS IN THE WRITING...**
