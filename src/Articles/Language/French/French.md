@@ -46,9 +46,9 @@ Variables of consonants are:
 
 **Manner of articulation**
 - **No airflow blockage involved**
-    - **Nasal**: free air passageway throguh the nose. An example is //m// in ''|M|onday''.
-    - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ''|y|es'' or English //ɹ// in ''|r|obot'' //_r_oʊbɑːt//
-    - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //ʃ// in ''|sh|op''.
+    - **Nasal**: free air passageway throguh the nose. An example is //m// in ''|M|onday'' //ˈ_m_ʌndeɪ//.
+    - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ''|y|es'' //jɛs// or English //ɹ// in ''|r|obot'' //'_ɹ_oʊ.bɑt//
+    - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //ʃ// in ''|sh|op'' //ʃɑp//.
 - **Airflow blockage involved**
     - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
     - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in Italian ''t|r|e'' //t_r_e//, Spanish ''pe|rr|o'' //pe_r_o// and Hungarian ''raktá|r|'' //rɒktaː_r_//, but it is again not the same as English //ɹ// which is the voiced postalveolar approximant //ɹ//
@@ -82,29 +82,37 @@ It is the same |e| as in English ''b|e|d'' //b_ɛ_d//.
 - **e inside closed syllables**.  
 A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
 ''m|e|ttre'', ''t|e|rr.ible'', ''p|e|lle'', ''b|e|lle'', ''p|e|r.f|e|c.tion'', ''p|e|r.v|e|rs'', ''t|e|r.mi.ner'', ''v|e|r.dict'', ''m|e|r.cre.di'', ''p|e|r.so.nn|e|l'', ''s|e|p.t|e|mbre'', ''c|e|r.tain'', ''v|e|r.ti.cal'', ''s|e|r.vir'', ''|e|s.to.mac'', ''|e|s.prit'', ''|e|s.ca.lier'', ''p|e|r.s|e|p.tible'', ''p|e|r.m|e|ttre''.   
-//m_ɛ_tʁ//, //t_ɛ_ʁ.ibl//, //p_ɛ_l//, //b_ɛ_l//, //p_ɛ_ʁ.f_ɛ_k.sjɔ̃//, //p_ɛ_ʁ.v_ɛ_ʁs//, //t_ɛ_ʁ.mi.neʁ//
+//m_ɛ_tʁ//, //t_ɛ_ʁ.ibl//, //p_ɛ_l//, //b_ɛ_l//, //p_ɛ_ʁ.fɛk.sjɔ̃//, //p_ɛ_ʁ.v_ɛ_ʁs//, //t_ɛ_ʁ.mi.ne//, //v_ɛ_ʁ.di//, //m_ɛ_ʁ.kʁə.di//, //p_ɛ_ʁ.sɔ.nɛl//, //s_ɛ_p.tɑ̃bʁ//, //s_ɛ_ʁ.tɛ̃//, //v_ɛ_ʁ.ti.kal//, //s_ɛʁ_.viʁ//, //_ɛ_s.tɔ.mak//, //_ɛ_s.pʁi//, //_ɛ_s.ka.lje//, //p_ɛ_ʁ.s_ɛ_p.tibl//, //p_ɛ_ʁ.m_ɛ_tʁ//
 - **e followed by double consonants**
-''pro.f|e|.sseur'' (note |e| is at the end of an open syllable)
+''pro.f|e|.sseur'' (note |e| is at the end of an open syllable)  
+//pʁɔ.f_ɛ_.sœʁ//
 - **ei** as in  
-''mar.v|e|.illeux'', ''Mar.s|e|ille'', ''p|ei|gner''
-- **ai** as in ''secrét|ai|re'' -> //sə.kʁe.t_ɛ_ʁ//
-- **è** as in ''p|è|re'' -> //p_ɛ_ʁ//
-- **ê** as in ''t|ê|te'', ''fen|ê|tre'' -> //t_ɛ_t//, //fə.n_ɛ_tʁ//
-- **ue when preventing softening effect on g**  
+''mar.v|ei|.lleux'', ''Mar.s|ei|lle'', ''p|ei|gner''  
+//maʁ.v_ɛ_j.ø//, //maʁ.s_ɛ_j//, //p_ɛ_.ɲe//
+- **ai** as in ''secrét|ai|re'' //sə.kʁe.t_ɛ_ʁ//
+- **è** as in ''p|è|re'' //p_ɛ_ʁ//
+- **ê** as in ''t|ê|te'', ''fen|ê|tre''  
+//t_ɛ_t//, //fə.n_ɛ_tʁ//
+- **ue when preventing softening on g**  
+|e| would otherwise alter pronounciation of |g|
 ''g|ue|rre''  
 //ɡ_ɛ_ʁ//
-- **EXCEPTIONS**  
-''d|e|ssert'', ''d|e|ssous'', ''d|e|sus''  
-//d_e_.sɛʁ//. Also //d_ə_.su//, //d_ə_.sy// but mind the below rule for **schwa**
+- **EXCEPTION**  
+''d|e|ssert''  
+//d_e_.sɛʁ//
 
 **//e// closed-mid front unrounded vowel: closed "e"**  
 It can be pronounced as in ''|a|y'' -> //_e_ɪ//, without gliding into the ''y''.
 
 **When //e// is pronounced**:
-- **e at the end of open syllables**.  
+- **e at the end of open final syllable**.  
 In particular, in the final syllable, where it is only preceded by an unsounded final consonant  
-''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s''
-- **é** as in ''pr|é|''
+''Mon|e|t'', ''parl|e|r'', ''parl|e|z'', ''m|e|s'', ''d|e|ssert''  
+//mɔ.n_e_//, //paʁ.l_e_//, //paʁ.l_e_//, //m_e_//
+- **RARELY: e at the end of other open syllables**  
+''d_e_ssert''
+//d_e_.sɛʁ//
+- **é** as in ''pr|é|'' //pʁe//
 
 ### Schwa-like vowels
 
@@ -117,16 +125,22 @@ In particular, in the final syllable, where it is only preceded by an unsounded 
 Less likely to be dropped  
 ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''  
 //f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
-- **en, em when is _not_ nasalized or el, inside _open medial_ syllables**  
+- **e at the end of medial open syllables**  
 More likely to be dropped  
-''dev|e|nir'', ''rev|e|num'', ''chev|e|lure'', ''dév|e|loppement'', ''évén|e|ment'', ''relativ|e|ment'', ''déc|e|ler'', ''rec|e|ler''
-//də.v_ə_.niʁ// or //də.vniʁ//  
-//ʁə.v_ə_.ny// or //ʁə.vny//  
-//ʃə.v_ə_.lyʁ// or //ʃə.vlyʁ//  
-//de.v_ə_.lɔp.mɑ̃// or //de.vlɔp.mɑ̃//  
-//e.vɛ.nə.mɑ̃//, //ʁə.la.tiv.mɑ̃//  
-//de.s_ə_.le// or //de.sle//  
-//ʁə.sə.le// or //ʁə.sle//
+    Mostly **en/em/el** but other combinations also exist  
+    ''dev|e|nir'', ''rev|e|num'', ''évén|e|ment'', ''relativ|e|ment'', ''vendr|e|di'', ''appart|e|ment'', ''menuis|e|rie'', ''déc|e|ler'', ''rec|e|ler'', ''app|e|ler'', ''chev|e|lure'', ''dév|e|loppement'', ''rev|e|nir''      
+    //də.v_ə_.niʁ// or //də.vniʁ//  
+    //ʁə.v_ə_.ny// or //ʁə.vny//  
+    //e.vɛ.nə.mɑ̃// or //ʁə.la.tiv.mɑ̃//  
+    //vɑ̃.dʁ_ə_.di//  
+    //a.paʁ.t_ə_.mɑ̃// or //a.paʁ.tmɑ̃//  
+    //mə.nɥi.zə.ʁi//  
+    //de.s_ə_.le// or //de.sle//  
+    //ʁə.s_ə_.le// or //ʁə.sle//  
+    //a.p_ə_.le// or //a.ple//  
+     //ʃə.v_ə_.lyʁ// or //ʃə.vlyʁ//  
+    //de.v_ə_.lɔp.mɑ̃// or //de.vlɔp.mɑ̃//  
+    //də.v_ə_.niʁ// or //də.vniʁ//
 - **e standing alone at the end of one syllable words**  
 Never dropped
 ''qu|e|'', ''j|e|'', ''l|e|'', ''c|e|''  
