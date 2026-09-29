@@ -155,6 +155,163 @@ QQ^T =
 \end{bmatrix}
 $$
 
+**Theorem**
+
+A symmetrical matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
+
+**Proof**
+
+**Lemma**
+
+A symmetrical matrix $A^{nn}$ has at least one eigenvector.
+
+**Proof**
+
+Consider the following functions:
+
+$$
+\begin{aligned}
+f(\vec{x}) &= \vec{x}^TA\vec{x}\\
+g(\vec{x}) &= \vec{x}^T\vec{x} = 1
+\end{aligned}
+$$
+
+Where $g$ is an implicitly defined functions which sets a constraint on the set of $\vec{x}$ vectors for which we are finding the maximum of $f$. Simply said, we are looking for the unit vector for which $f$ is maximal:
+
+$$
+S=\{\vec{x}∈\mathbb{R}^n : \vec{x}^T\vec{x}=1\}
+$$
+
+By the **Topoligical Extreme Value Theorem**:
+
+- If $S$ is a compact (closed and bounded) non-empty topoligical space, here in particular a non-empty metric space such as a subset of $\mathbb{R}^n$
+- If $f: S \to \mathbb{R}$ is continuous (everywhere)
+
+Then $f$ attains its maximum at some point $\vec{s} \in S$.
+
+**This is not proven**
+
+The problem is that taking the gradient of $f$ at this point $s$ might not yield the null vector because its definition is insensitive of the constraint. We also want $g$ to be an explicitly defined function $g(\vec{x})=y$ such that $y$ is always $1$
+
+We define a compound function with a curve function $\vec{x}(t)$ for which:
+
+$$
+\begin{aligned}
+&g(\vec{x}(t)) = g(x_1(t), x_2(t)...,x_n(t))=y=1\\
+\implies &\frac{d}{dt} g(\vec{x}(t)) = 0\\
+\text{Let } &\vec{s} = \vec{x}(t^*)\\
+\implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^*} = 0
+\end{aligned}
+$$
+
+Applying the multivariable chain rule:
+
+$$
+\begin{aligned}
+\frac{d}{dt}f(\vec{x}(t))
+&=
+\frac{d}{dt}f(x_1(t),\ldots,x_n(t))\\
+&=
+\sum_{i=1}^{n}
+\frac{\partial f}{\partial x_i}(\vec{x}(t))\,x_i'(t)\\
+&=
+\nabla f(\vec{x}(t))^T\vec{x}'(t)\\
+\implies
+&\nabla f(\vec{x}(t^*))^T\vec{x}'(t^*)=0
+\end{aligned}
+$$
+
+That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
+
+And since $g$ was by definition an implicitly defined function, for at ever point $t$ and hence of course in particular at $t^*$ the derivative with respect to $t$ is:
+
+$$
+\begin{aligned}
+&\nabla g(\vec{x}(t))^T\vec{x}'(t)=0\\
+&\nabla g(\vec{x}(t^*))^T\vec{x}'(t^*)=0
+\end{aligned}
+$$
+
+Since at $t^*$ both $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that they must be parallel, that is, scalar multiples of each other.
+Writing the result with the Lagrange multiplier $\lambda$ yields:
+
+$$
+\nabla g(\vec{x}(t))=\lambda \nabla f(\vec{x}(t))
+$$
+
+We are allowed to construct $\vec{x}(t)$ such that $t^*=0$ so $\vec{x}(0)=\vec{s}$
+Let's first differentiate $f(x(t))$:
+
+$$
+\begin{aligned}
+f(x(t))
+&=\vec{x}(t)^TA\vec{x}(t)\\
+\frac{d}{dt}f(\vec{x}(t))
+&=\frac{d}{dt}\left(\vec{x}(t)^TA\vec{x}(t)\right)\\
+&=\vec{x}'(t)^TA\vec{x}(t)+\vec{x}(t)^TA\vec{x}'(t)\\
+&=\vec{x}'(t)^TA\vec{x}(t)+\left(\vec{x}(t)^TA\vec{x}'(t)\right)^T\\
+&=\vec{x}'(t)^TA\vec{x}(t)+\vec{x}'(t)^TA^T\vec{x}(t)\\
+\xrightarrow{A=A^T}
+&=2\vec{x}'(t)^TA\vec{x}(t)\\
+\xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
+&2\vec{x}'(0)^TA\vec{x}(0)=0\\
+\xrightarrow{\vec{x}(t^*)=\vec{s}}
+&=2\vec{x}'(0)^TA\vec{s}=0.
+\end{aligned}
+$$
+
+
+Differentiation of $g(\vec{x}(t))$ is almost the same set aside matrix $A$:
+
+$$
+\begin{aligned}
+f(x(t))
+&=\vec{x}(t)^T\vec{x}(t)\\
+\frac{d}{dt}f(\vec{x}(t))
+&=\frac{d}{dt}\left(\vec{x}(t)^T\vec{x}(t)\right)\\
+&=\vec{x}'(t)^T\vec{x}(t)+\vec{x}(t)^T\vec{x}'(t)\\
+&=\vec{x}'(t)^T\vec{x}(t)+\left(\vec{x}(t)^T\vec{x}'(t)\right)^T\\
+&=2\vec{x}'(t)^T\vec{x}(t)\\
+\xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
+&2\vec{x}'(0)^T\vec{x}(0)=0\\
+\xrightarrow{\vec{x}(t^*)=\vec{s}}
+&=2\vec{x}'(0)^T\vec{s}=0.
+\end{aligned}
+$$
+
+Therefore we can conclude what we get with the introduction of the Lagrange multiplier is the eigenvalue problem, and therefore $\vec{s}$ exists and it is an eigenvector of symmetric matrix $A$:
+
+$$
+\begin{aligned}
+2\vec{x}'(0)^T\vec{s}=0\\
+2\vec{x}'(0)^TA\vec{s}=0\\
+\implies \vec{s} \perp \vec{x}'(0)\\
+\implies A\vec{s} \perp \vec{x}'(0)\\
+\implies A\vec{s} = \lambda \vec{s}
+\end{aligned}
+$$
+
+**Lemma**
+
+If we know a symmetric matrix has at least one eigenvector, there is eactly no more than $n-1$ another orthogonal eigenvectors.
+
+**Proof**
+
+The above maximization problem is repeated, but with vectors perpendicular to all other already found. It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
+
+**Q.E.D**
+
+**NOTE**
+If $f$ was converted into an implicitly defined function $F = f(\vec{x}) - y=0$ with one more variable, and redefining the curvature function $\vec{X}(t)$ as also controlling the extra variable $y$, and taking the derivative of $F$ with respect to $t$ we get the same result for all $t \in \mathbb{R}$:
+
+$$
+\nabla F(\vec{X}(t))^T\vec{X}'(t)=0
+$$
+
+Which is exactly means for **implicitly defined** surfaces the gradient at any point is perpendicular to every tangent direction at that point.
+
+For **explicitly defined** surfaces, the gradient is the direction of the greatest ascent/increase.
+
 The important conclusion here is, however:
 
 $$
