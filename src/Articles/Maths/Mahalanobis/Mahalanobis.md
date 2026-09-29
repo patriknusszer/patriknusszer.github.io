@@ -191,7 +191,7 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 **This is not proven**
 
-The problem is that taking the gradient of $f$ at this point $s$ might not yield the null vector because its definition is insensitive of the constraint. We also want $g$ to be an explicitly defined function $g(\vec{x})=y$ such that $y$ is always $1$
+The problem is that taking the gradient of $f$ at this point $s$ might not yield the null vector because its definition is insensitive of the constraint.
 
 We define a compound function with a curve function $\vec{x}(t)$ for which:
 
