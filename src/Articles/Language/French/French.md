@@ -309,19 +309,21 @@ Not all approximants glide, but these do. That means the tongue's (and possibly 
 
 Can be pronounced by pronouncing //i//. Lips are _not rounded_. Then, tongue is further raised towards the hard palate.
 Pronounced as in English ''|y|es'' //_j_ɛs//
-    - **ll in ill //ij//**  
-    ''fami|ll|e'', ''fi|ll|e''
-    - **l in eil //ɛj//**  
-    ''Marsei|ll|es''
-    - **l in ail //aj//**  
-    ''travai|l|''
-    - **consonant + i + vowel**  
-    ''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
-    //vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
-    - **y between vowels**  
-    ''vo|y|age''  
-    //vwajaʒ//
-    - **EXCEPTIONS**
+- **ll in ill //ij//**  
+''fami|ll|e'', ''fi|ll|e''
+- **l in eil //ɛj//**  
+''Marsei|ll|es''
+- **l in ail //aj//**  
+''travai|l|''
+- **consonant + i + vowel**  
+''v|i|eil'', ''pap|i|er'', ''mét|i|er'' ''p|i|èce'', ''p|i|ano'', ''essent|i|el'', ''m|i|ou'', ''l|i|on''  
+//vjɛj//, //papje//, //metje//, //pjɛs//, //pjano//, //esɑ̃sjɛl//, //mju//, //ljɔ̃//
+- **y between vowels**  
+''vo|y|age''  
+//vwajaʒ//
+- **EXCEPTIONS: ll in ill pronounced //l//**  
+''vi|ll|age'', ''mi|ll|ion'', ''tranqui|ll|e'', ''vi|ll|e'', ''mi|ll|e''  
+//vi._l_aʒ//, //mi._l_jɔ̃//, //tʁɑ̃.ki_l_//, //vi_l_//, //mi_l_//
 
 **//ɥ// voiced labialized palatal approximant**
 
@@ -329,15 +331,15 @@ Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**
 Does not exist in English.
 
 **When //ɥ// is pronounced**
-    - **u in ui //ɥi//** 
-    ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|'', ''s|ui|vre''  
-    //fʁɥi//, //ɥit//, //nɥi//, //kɥiʁ//, //lɥi//, //sɥivʁ//
-    - **u in ua //ɥa//**  
-    ''n|ua|ge'', ''s|ua|ve'', ''d|ua|lité'', ''n|ua|nce''  
-    //nɥaʒ//, //sɥav//, //dɥalite//, //nɥɑ̃s//
-    - **u in ue //ɥɛ//**  
-    ''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
-    //mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
+- **u in ui //ɥi//** 
+''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|'', ''s|ui|vre''  
+//fʁɥi//, //ɥit//, //nɥi//, //kɥiʁ//, //lɥi//, //sɥivʁ//
+- **u in ua //ɥa//**  
+''n|ua|ge'', ''s|ua|ve'', ''d|ua|lité'', ''n|ua|nce''  
+//nɥaʒ//, //sɥav//, //dɥalite//, //nɥɑ̃s//
+- **u in ue //ɥɛ//**  
+''m|ue|t'', ''d|ue|l'', ''man|ue|l'', ''act|ue|l'', ''éval|ue|r''  
+//mɥɛ//, //dɥɛl//, //manɥɛl//, //aktyɛl//, //evalɥe//
 
 **//w// voiced labial-velar approximant**
 
