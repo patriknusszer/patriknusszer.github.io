@@ -1,0 +1,251 @@
+{
+    "LTX FRAC TEST": {
+        "prefix": "zzfrac",
+        "body": "\\frac{${1:arg1}}{${2:arg2}}$0"
+    },
+    "IPA - a": {
+        "prefix": ";a",
+        "body": "a",
+        "description": "IPA open front vowel"
+    },
+    "IPA - ɑ": {
+        "prefix": ";aa",
+        "body": "ɑ",
+        "description": "IPA open back vowel"
+    },
+    "IPA - e": {
+        "prefix": ";e",
+        "body": "e",
+        "description": "IPA close-mid front unrounded vowel"
+    },
+    "IPA - ɛ": {
+        "prefix": ";ee",
+        "body": "ɛ",
+        "description": "IPA open-mid front unrounded vowel"
+    },
+    "IPA - i": {
+        "prefix": ";i",
+        "body": "i",
+        "description": "IPA close front unrounded vowel"
+    },
+    "IPA - o": {
+        "prefix": ";o",
+        "body": "o",
+        "description": "IPA close-mid back rounded vowel"
+    },
+    "IPA - ɔ": {
+        "prefix": ";oo",
+        "body": "ɔ",
+        "description": "IPA open-mid back rounded vowel"
+    },
+    "IPA - u": {
+        "prefix": ";u",
+        "body": "u",
+        "description": "IPA close front rounded vowel"
+    },
+    "IPA - y": {
+        "prefix": ";y",
+        "body": "y",
+        "description": "IPA close front rounded vowel"
+    },
+    "IPA - ə": {
+        "prefix": ";schwa",
+        "body": "ə",
+        "description": "IPA schwa"
+    },
+    "IPA - œ": {
+        "prefix": ";oe",
+        "body": "œ",
+        "description": "IPA open-mid front rounded vowel"
+    },
+    "IPA - ø": {
+        "prefix": ";oeo",
+        "body": "ø",
+        "description": "IPA close-mid front rounded vowel"
+    },
+    "IPA - ɑ̃": {
+        "prefix": ";an",
+        "body": "ɑ̃",
+        "description": "French nasal vowel"
+    },
+    "IPA - ɛ̃": {
+        "prefix": ";en",
+        "body": "ɛ̃",
+        "description": "French nasal vowel"
+    },
+    "IPA - ɔ̃": {
+        "prefix": ";on",
+        "body": "ɔ̃",
+        "description": "French nasal vowel"
+    },
+    "IPA - œ̃": {
+        "prefix": ";oen",
+        "body": "œ̃",
+        "description": "French nasal vowel"
+    },
+    "IPA - p": {
+        "prefix": ";p",
+        "body": "p",
+        "description": "IPA voiceless bilabial plosive"
+    },
+    "IPA - b": {
+        "prefix": ";b",
+        "body": "b",
+        "description": "IPA voiced bilabial plosive"
+    },
+    "IPA - t": {
+        "prefix": ";t",
+        "body": "t",
+        "description": "IPA voiceless alveolar plosive"
+    },
+    "IPA - d": {
+        "prefix": ";d",
+        "body": "d",
+        "description": "IPA voiced alveolar plosive"
+    },
+    "IPA - k": {
+        "prefix": ";k",
+        "body": "k",
+        "description": "IPA voiceless velar plosive"
+    },
+    "IPA - ɡ": {
+        "prefix": ";g",
+        "body": "ɡ",
+        "description": "IPA voiced velar plosive"
+    },
+    "IPA - f": {
+        "prefix": ";f",
+        "body": "f",
+        "description": "IPA voiceless labiodental fricative"
+    },
+    "IPA - v": {
+        "prefix": ";v",
+        "body": "v",
+        "description": "IPA voiced labiodental fricative"
+    },
+    "IPA - s": {
+        "prefix": ";s",
+        "body": "s",
+        "description": "IPA voiceless alveolar fricative"
+    },
+    "IPA - z": {
+        "prefix": ";z",
+        "body": "z",
+        "description": "IPA voiced alveolar fricative"
+    },
+    "IPA - ʃ": {
+        "prefix": ";sh",
+        "body": "ʃ",
+        "description": "IPA voiceless postalveolar fricative"
+    },
+    "IPA - ʒ": {
+        "prefix": ";zh",
+        "body": "ʒ",
+        "description": "IPA voiced postalveolar fricative"
+    },
+    "IPA - ɹ": {
+        "prefix": ";rr",
+        "body": "ɹ",
+        "description": "IPA voiced postalveolar approximant"
+    },
+    "IPA - ʁ": {
+        "prefix": ";r",
+        "body": "ʁ",
+        "description": "IPA voiced uvular fricative"
+    },
+    "IPA - m": {
+        "prefix": ";m",
+        "body": "m",
+        "description": "IPA bilabial nasal"
+    },
+    "IPA - n": {
+        "prefix": ";n",
+        "body": "n",
+        "description": "IPA alveolar nasal"
+    },
+    "IPA - ɲ": {
+        "prefix": ";gn",
+        "body": "ɲ",
+        "description": "IPA palatal nasal"
+    },
+    "IPA - ŋ": {
+        "prefix": ";ng",
+        "body": "ŋ",
+        "description": "IPA velar nasal"
+    },
+    "IPA - l": {
+        "prefix": ";l",
+        "body": "l",
+        "description": "IPA alveolar lateral approximant"
+    },
+    "IPA - ʁ̞": {
+        "prefix": ";rapp",
+        "body": "ʁ̞",
+        "description": "IPA lowered uvular fricative/approximant"
+    },
+    "IPA - j": {
+        "prefix": ";j",
+        "body": "j",
+        "description": "IPA palatal approximant"
+    },
+    "IPA - w": {
+        "prefix": ";w",
+        "body": "w",
+        "description": "IPA labio-velar approximant"
+    },
+    "IPA - ɥ": {
+        "prefix": ";hy",
+        "body": "ɥ",
+        "description": "IPA labial-palatal approximant"
+    },
+    "IPA - ː": {
+        "prefix": ";long",
+        "body": "ː",
+        "description": "IPA length mark"
+    },
+    "IPA - ̃": {
+        "prefix": ";nasal",
+        "body": "̃",
+        "description": "IPA nasalization diacritic"
+    },
+    "IPA - ˈ": {
+        "prefix": ";stress",
+        "body": "ˈ",
+        "description": "IPA primary stress"
+    },
+    "IPA - ˌ": {
+        "prefix": ";secondary",
+        "body": "ˌ",
+        "description": "IPA secondary stress"
+    },
+    "IPA - .": {
+        "prefix": ";syll",
+        "body": ".",
+        "description": "IPA syllable boundary"
+    },
+    "IPA - ‿": {
+        "prefix": ";tie",
+        "body": "‿",
+        "description": "IPA liaison/linking mark"
+    },
+    "IPA - s": {
+        "prefix": ";ss",
+        "body": ["θ"],
+        "description": "Voiceless dental fricative"
+    },
+    "IPA eth": {
+        "prefix": ";dd",
+        "body": ["ð"],
+        "description": "Voiced dental fricative"
+    },
+    "IPA tʃ": {
+        "prefix": ";tsh",
+        "body": ["t͡ʃ"],
+        "description": "Voiceless postalveolar affricate"
+    },
+    "IPA t͡s": {
+        "prefix": ";ts",
+        "body": ["t͡s"],
+        "description": "Voiceless alveolar affricate (Hungarian c)"
+    }
+}
