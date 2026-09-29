@@ -149,7 +149,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    span {
+    #menu_block span {
         display: block;
     }
 
