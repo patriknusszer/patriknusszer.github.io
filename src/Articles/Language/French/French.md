@@ -12,7 +12,7 @@ IPA is not perfect either. If you learn pronounciation just from transcriptions,
 
 ## Vowels
 
-Vowels are those phonemes which when sounded, air is moving freely. There are three parameters to talk about:
+Vowels are those phonemes which when sounded, air is moving freely. They have three parameters:
 
 - **Vertical tongue position**: higher tongue position means the sound is more ''closed''. Lower tongue position means the the sound is more ''open''. The inbetween is called ''mid''. They can be combined, like ''open-mid'' or ''closed-mid''.
 - **Horizontal tongue position**: more forward in the mouth is ''front'', more backward is ''back'' and in between is called ''central''
