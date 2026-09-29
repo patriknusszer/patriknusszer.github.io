@@ -223,7 +223,7 @@ $$
 
 That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
 
-And since $g$ was by definition an implicitly defined function, for at ever point $t$ and hence of course in particular at $t^*$ the derivative with respect to $t$ is:
+And since $g$ was by definition an implicitly defined function, at every point $t$, and hence of course in particular at $t^*$ the derivative with respect to $t$ is:
 
 $$
 \begin{aligned}
