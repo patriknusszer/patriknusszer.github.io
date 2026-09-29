@@ -1,0 +1,12 @@
+{
+    "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "markdown-preview-enhanced.enablePreviewScripts": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "onlySnippets"
+}
