@@ -124,7 +124,7 @@ In particular, in the final syllable, where it is only preceded by an unsounded 
 
 **//ə// schwa/mid-central unrounded vowel**
 
-This is the only one tha texists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
+This is the only one in this category that exists in English, as in ''|a|bout'' //_ə_ˈbaʊt//
 Oftenly dropped in speech, when the surrounding consonants are easily pronounced without a vowel. If dropped, it might reduce the number of syllables.
 
 **When //ə//  is pronounced**
@@ -147,11 +147,11 @@ More likely to be dropped
     //a.p_ə_.le// or //a.ple//  
      //ʃə.v_ə_.lyʁ// or //ʃə.vlyʁ//  
     //de.v_ə_.lɔp.mɑ̃// or //de.vlɔp.mɑ̃//  
-    //də.v_ə_.niʁ// or //də.vniʁ//
+    //rə.v_ə_.niʁ// or //rə.vniʁ//
 - **e standing alone at the end of one syllable words**  
-Never dropped
+Never dropped  
 ''qu|e|'', ''j|e|'', ''l|e|'', ''c|e|''  
-    //k_ə_//, //ʒ_ə_//, //l_ə_//, //s_ə_//
+//k_ə_//, //ʒ_ə_//, //l_ə_//, //s_ə_//
 
 **//ø// close-mid front rounded vowel: closed eu**
 
@@ -167,7 +167,7 @@ Pronounce schwa. Then move the tongue forwards, little higher up, and round the 
 
 Pronounce the above vowel, but lower the tongue.
 
-- **eu inside open syllables**
+- **eu inside open syllables**  
 ''s|œ|r'', ''n|eu|f'', ''s|eu|l'', ''chant|eu|r'', ''|œ|uf'', ''chal|eu|r''  
 //s_œ_ʁ//, //n_œ_f//, //s_œ_l//, //ʃɑ̃.tœʁ//, //_œ_f//, //ʃɑ.lœʁ//
 
@@ -179,8 +179,8 @@ Can be pronounced as the first vowel in the common English diphthong //oʊ// as 
 
 **When //o// is pronounced**
 - **eau, au**  
-Note that this rule resists the general open/close syllable → close/open vowel rule
-''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne'', ''|au|teur''
+Note that this rule resists the general open/close syllable → close/open vowel rule  
+''Bord|eau|x'', ''ch|au|d'', ''f|au|sse'', ''c|au|se'', ''b|eau|'', ''b|eau|coup'', ''f|au|bourg'', ''j|au|ne'', ''|au|teur''  
 //bɔʁ.d_o_//, //ʃ_o_//, //f_o_s//, //k_o_z//, //b_o_//, //b_o_.ku//, //f_o_.buʁ//, //ʒ_o_n//, //_o_.tœʁ//
 
 **//ɔ// open-mid back rounded vowel: open o**  
@@ -210,7 +210,13 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
 //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.t_y_ʁ//, //m_y_.zik//
 
-### I-like vowel
+### Others
+
+**//a// open front unrounded vowel**
+
+Can be pronounced as in ''f|a|ther'' //ˈf_ɑ_ːðə//
+
+**When //a// is pronounced**
 
 **//i// close front unrounded vowel**
 
@@ -353,7 +359,7 @@ Can be pronounced by pronouncing //y//. Lips are _rounded_, hence **labialized**
 Does not exist in English.
 
 **When //ɥ// is pronounced**
-- **u in ui //ɥi//** 
+- **u in ui //ɥi//**  
 ''fr|ui|t'', ''h|ui|t'', ''n|ui|t'', ''c|ui|re'', ''l|ui|'', ''s|ui|vre''  
 //fʁɥi//, //ɥit//, //nɥi//, //kɥiʁ//, //lɥi//, //sɥivʁ//
 - **u in ua //ɥa//**  
@@ -368,10 +374,13 @@ Does not exist in English.
 Can be pronounced by pronouncing //u//. Lips are _rounded_, hence labial. Then, tongue is further raised towards the soft palate.
 
 **When //w// is pronounced**
-- **oi/oy //wa//**  
-''v|oi|ture'', ''s|oi|r'', ''n|oi|r'', ''hist|oi|re'', ''mém|oi|re'', ''v|oy|age''  
-//v_wa_tyʁ//, //s_wa_ʁ//, //n_wa_ʁ//, //ist_wa_ʁ//, //mem_wa_ʁ//, //v_wa_jaʒ//
-- **ua in gua/qua //wa//**  
+- **o in oi //wa//**  
+''v|oi|ture'', ''s|oi|r'', ''n|oi|r'', ''hist|oi|re'', ''mém|oi|re''  
+//v_wa_tyʁ//, //s_wa_ʁ//, //n_wa_ʁ//, //ist_wa_ʁ//, //mem_wa_ʁ//
+- **o in oy //waj//**  
+''v|oy|age''  
+//v_wa_jaʒ//
+- **u in gua/qua //wa//**  
 ''g|ua|no'', ''q|ua|dragénaire'' 
 //ɡ_wa_no//, //k_wa_ʁaʒenɛʁ//
 - **oui //wi//**  
