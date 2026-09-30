@@ -157,7 +157,7 @@ $$
 
 **Theorem**
 
-A symmetrical matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
+A symmetric matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
 
 **Proof**
 
@@ -176,7 +176,7 @@ g(\vec{x}) &= \vec{x}^T\vec{x} = 1
 \end{aligned}
 $$
 
-Where $g$ generally as an explicitly defined function is a **constraint function**. Setting it equal to $c$ makes it implicitly defined, that is the **constraint equation**. And the set of vectors $S$ for which the **constraint equation** holds true is either called **constraint set** or **constraint surface**. Simply said, we are looking for the unit vector for which $f$ is maximal in a set $S$ such that:
+Where $g$ generally as an explicitly defined function is a **constraint function**. Setting it equal to a constant $c$, here in particular $1$, makes it implicitly defined, that turns it into a **constraint equation**. And the set of vectors $S$ for which the **constraint equation** holds true is either called **constraint set** or **constraint surface**. Simply said, we are looking for the unit vector for which $f$ is maximal in a set $S$ such that:
 
 $$
 S=\{\vec{x}∈\mathbb{R}^n : \vec{x}^T\vec{x}=1\}
