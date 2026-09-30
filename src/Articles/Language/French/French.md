@@ -88,7 +88,7 @@ It is the same |e| as in English ''b|e|d'' //bɛd//.
 A syllable is closed, if its last sound is a consonant. It is important because many words end in vowels to make sure the final consonant of the final syllable is audible/sounded. If a word does not end in a vowel, and is not one of the **C**a**R**e**F**u**L** (exceptions apply i.e. ''blan|c|'') consonants then the syllable is open because the final consonant is not sounded. Note that many examples coincide with the below *double consonant* rule.  
 ''m|e|ttre'', ''t|e|rr.ible'', ''p|e|lle'', ''b|e|lle'', ''p|e|r.f|e|c.tion'', ''p|e|r.v|e|rs'', ''t|e|r.mi.ner'', ''v|e|r.dict'', ''m|e|r.cre.di'', ''p|e|r.so.nn|e|l'', ''s|e|p.t|e|mbre'', ''c|e|r.tain'', ''v|e|r.ti.cal'', ''s|e|r.vir'', ''|e|s.to.mac'', ''|e|s.prit'', ''|e|s.ca.lier'', ''p|e|r.s|e|p.tible'', ''p|e|r.m|e|ttre''.   
 //m_ɛ_tʁ//, //t_ɛ_ʁ.ibl//, //p_ɛ_l//, //b_ɛ_l//, //p_ɛ_ʁ.fɛk.sjɔ̃//, //p_ɛ_ʁ.v_ɛ_ʁs//, //t_ɛ_ʁ.mi.ne//, //v_ɛ_ʁ.di//, //m_ɛ_ʁ.kʁə.di//, //p_ɛ_ʁ.sɔ.nɛl//, //s_ɛ_p.tɑ̃bʁ//, //s_ɛ_ʁ.tɛ̃//, //v_ɛ_ʁ.ti.kal//, //s_ɛʁ_.viʁ//, //_ɛ_s.tɔ.mak//, //_ɛ_s.pʁi//, //_ɛ_s.ka.lje//, //p_ɛ_ʁ.s_ɛ_p.tibl//, //p_ɛ_ʁ.m_ɛ_tʁ//
-- **e followed by double consonants**
+- **e followed by double consonants**  
 ''pro.f|e|.sseur'' (note |e| is at the end of an open syllable)  
 //pʁɔ.f_ɛ_.sœʁ//
 - **ei** as in  
@@ -99,7 +99,7 @@ A syllable is closed, if its last sound is a consonant. It is important because 
 - **ê** as in ''t|ê|te'', ''fen|ê|tre''  
 //t_ɛ_t//, //fə.n_ɛ_tʁ//
 - **ue when preventing softening on g**  
-|e| would otherwise alter pronounciation of |g|
+|e| would otherwise alter pronounciation of |g|  
 ''g|ue|rre''  
 //ɡ_ɛ_ʁ//
 - **EXCEPTION**  
