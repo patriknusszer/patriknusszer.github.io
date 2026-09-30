@@ -1,3 +1,7 @@
+<!--
+doctype: language
+-->
+
 # Short summary
 
 My aim is to introduce linear congruencies, prove basic lemmas, then use those to prove the Euler-Fermat Theorem, and then the core mathematics of RSA itself. This article aims at introducing RSA as a very tame animal that is in fact extremely easy to understand. This article is intended for those who have never seen linear congruencies before, so RSA mathematics are proven down from zero.

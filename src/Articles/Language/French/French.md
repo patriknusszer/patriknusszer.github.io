@@ -1,3 +1,7 @@
+<!--
+doctype: language
+-->
+
 # Live courses and IPA
 
 When I was learning French it was the pronounciation that was most difficult to learn, and no less difficult to find quality material for it. I did not attend live courses and for that I do not claim to have a very good pronounciation.
@@ -77,7 +81,7 @@ A rule of thumb is that a vowel at the end of an open syllable is ''closed'', wh
 
 **//ɛ// open-mid front unrounded vowel: open "e"**
 
-It is the same |e| as in English ''b|e|d'' //b_ɛ_d//.
+It is the same |e| as in English ''b|e|d'' //bɛd//.
 
 **When //ɛ// is it pronounced**:
 - **e inside closed syllables**.  

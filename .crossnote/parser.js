@@ -3,6 +3,11 @@
   // https://shd101wyy.github.io/markdown-preview-enhanced/#/extend-parser
 
   onWillParseMarkdown: async function(markdown) {
+  
+    let getDocType = async function(markdown) {
+      const match = markdown.match(/<!--\s*doctype:\s*(.*?)\s*-->/s);
+      return match?.[1];
+    }
 
   let applyMarkers = async function(
       text,
@@ -21,10 +26,13 @@
               : `${surround}</span>`;
       });
   }
-    //markdown = await applyMarkers(markdown, '\'\'', 'example')
-    //markdown = await applyMarkers(markdown, '//', 'ipa', '/')
-    //markdown = await applyMarkers(markdown, '|', 'emphasis')
-    //markdown = await applyMarkers(markdown, '_', 'underline')
+    if (await getDocType(markdown) != 'language')
+      return getDocType(markdown);
+
+    markdown = await applyMarkers(markdown, '\'\'', 'example')
+    markdown = await applyMarkers(markdown, '//', 'ipa', '/')
+    markdown = await applyMarkers(markdown, '|', 'emphasis')
+    markdown = await applyMarkers(markdown, '_', 'underline')
     return markdown
   },
 
