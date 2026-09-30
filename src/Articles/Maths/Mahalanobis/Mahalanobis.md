@@ -176,7 +176,7 @@ g(\vec{x}) &= \vec{x}^T\vec{x} = 1
 \end{aligned}
 $$
 
-Where $g$ is an implicitly defined functions which sets a constraint on the set of $\vec{x}$ vectors for which we are finding the maximum of $f$. Simply said, we are looking for the unit vector for which $f$ is maximal:
+Where $g$ generally as an explicitly defined function is a **constraint function**. Setting it equal to $c$ makes it implicitly defined, that is the **constraint equation**. And the set of vectors $S$ for which the **constraint equation** holds true is either called **constraint set** or **constraint surface**. Simply said, we are looking for the unit vector for which $f$ is maximal in a set $S$ such that:
 
 $$
 S=\{\vec{x}∈\mathbb{R}^n : \vec{x}^T\vec{x}=1\}
@@ -191,14 +191,14 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 **This is not proven**
 
-The problem is that taking the gradient of $f$ at this point $s$ might not yield the null vector because its definition is insensitive of the constraint.
+The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint.
 
-We define a compound function with a curve function $\vec{x}(t)$ for which:
+The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$
 
 $$
 \begin{aligned}
-&g(\vec{x}(t)) = g(x_1(t), x_2(t)...,x_n(t))=y=1\\
-\implies &\frac{d}{dt} g(\vec{x}(t)) = 0\\
+&g(\vec{x}(t)) = g(x_1(t), x_2(t)...,x_n(t))=1\\
+\xrightarrow{\frac{d}{dt}\text{const=0}} &\frac{d}{dt} g(\vec{x}(t)) = 0\\
 \text{Let } &\vec{s} = \vec{x}(t^*)\\
 \implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^*} = 0
 \end{aligned}
