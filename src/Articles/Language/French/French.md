@@ -249,14 +249,11 @@ Pronounced as in ''|s|ee'' //siː//
 
 **When //s// is pronounced**
 - **ss, and s when _not_ between two vowels**  
-''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme''  
-//pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//
+''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme'', ''ascen|s|ion'', ''exten|s|ion''  
+//pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//, //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
 - **t in tion, _when not preceded by s_**  
 ''na|t|ion'', ''éduca|t|ion'', ''fonc|t|ion''  
 //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//, //fɔ̃k._s_jɔ̃//
-- **s in sion, when preceded by a consonant**  
-''ascen|s|ion'', ''exten|s|ion''  
-//a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
 - **c + i/e/y: softening of c**  
 ''merc|i|'', ''|c|inéma'', ''|c|ertain'', ''|c|erise'', ''|c|yclisme''  
 //mɛʁ._s_i//  //_s_i.ne.ma//, //_s_ɛʁ.tɛ̃//, //_s_ə.ʁiz//, //s_i_.sli.sm//
@@ -267,11 +264,8 @@ Pronounced as in ''|z|oo'' //_z_uː//
 
 **When //z// is pronounced**
 - **s between two vowels**  
-''mademoi|s|elle'', ''mai|s|on'', ''mu|s|ée''  
-//mad.mwa._z_ɛl//, //mɛ._z_ɔ̃//, //my._z_e//
-- **s in sion, _when preceded by a vowel_**  
-''préci|s|ion''  
-//pʁe.si._z_jɔ̃//
+''mademoi|s|elle'', ''mai|s|on'', ''mu|s|ée'', ''préci|s|ion''  
+//mad.mwa._z_ɛl//, //mɛ._z_ɔ̃//, //my._z_e//, //pʁe.si._z_jɔ̃//
 - **z**  
 ''trei|z|e'', ''|z|éro''  
 //tʁɛ_z_//  //_z_e.ʁo//
