@@ -193,7 +193,7 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint.
 
-The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given by the **implicit function theorem** when the gradient at this point of the **constraint function** is nonzero. **Not proven**.
+The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given by the **implicit function theorem** when the gradient at this point of the **constraint function** is nonzero.
 
 $$
 \begin{aligned}
@@ -202,6 +202,22 @@ $$
 \text{Let } &\vec{s} = \vec{x}(t^*)\\
 \implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^*} = 0
 \end{aligned}
+$$
+
+It is not hard to construct an arbitrary differentiable curve around some point $\vec{s}$ with an arbitrary direction vector $\vec{v}$:
+
+$$
+\begin{aligned}
+&\vec{x}(t) = \vec{s} + t\vec{v}\\
+\implies &\vec{x}(0)=\vec{s}\\
+\implies &\frac{d}{dt} \vec{x}(t) = \lim_{h \to 0} \frac{\vec{s} + h\vec{v} - \vec{s}}{h}=\lim_{h \to 0} \frac {h\vec{v}}{h}=\vec{v}
+\end{aligned}
+$$
+
+The **implicit function theorem** proves it can also exist when we require a constraint, that is:
+
+$$
+g(\vec{x}(t))=c
 $$
 
 Applying the multivariable chain rule to function $f$:
