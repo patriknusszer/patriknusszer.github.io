@@ -204,7 +204,7 @@ $$
 \end{aligned}
 $$
 
-Applying the multivariable chain rule:
+Applying the multivariable chain rule to function $f$:
 
 $$
 \begin{aligned}
@@ -223,7 +223,7 @@ $$
 
 That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
 
-And since $g$ was by definition an implicitly defined function, at every point $t$, and hence of course in particular at $t^*$ the derivative with respect to $t$ is:
+And since $g$ was by definition an implicitly defined function (set equal to a constant), the derivative of $g$ with respect to $t$ at every point $t$, and hence at $t^*$ as well, is zero:
 
 $$
 \begin{aligned}
@@ -232,15 +232,14 @@ $$
 \end{aligned}
 $$
 
-Since at $t^*$ both $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that they must be parallel, that is, scalar multiples of each other.
+Since at $t^*$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
 
 $$
-\nabla g(\vec{x}(t))=\lambda \nabla f(\vec{x}(t))
+\nabla g(\vec{x}(t^*))=\lambda \nabla f(\vec{x}(t^*))
 $$
 
-We are allowed to construct $\vec{x}(t)$ such that $t^*=0$ so $\vec{x}(0)=\vec{s}$
-Let's first differentiate $f(x(t))$:
+In the following $f$ is differentiated with respect to $t$ minding its concrete definition:
 
 $$
 \begin{aligned}
@@ -261,7 +260,7 @@ f(x(t))
 $$
 
 
-Differentiation of $g(\vec{x}(t))$ is almost the same set aside matrix $A$:
+Differentiation of $g(\vec{x}(t))$ with respect to $t$ is almost the same set aside matrix $A$:
 
 $$
 \begin{aligned}
@@ -291,9 +290,11 @@ $$
 \end{aligned}
 $$
 
+**Q.E.D.** any symmetric matrix has at least one eigenvector.
+
 **Lemma**
 
-If we know a symmetric matrix has at least one eigenvector, there is eactly no more than $n-1$ another orthogonal eigenvectors.
+If we know a symmetric matrix has at least one eigenvector, then it has exactly $n-1$ more eigenvectors, $n$ in total.
 
 **Proof**
 
