@@ -218,6 +218,10 @@ Can be pronounced as in ''f|a|ther'' //ˈf_ɑ_ːðə//
 
 **When //a// is pronounced**
 
+- **a** as in ''ch|a|t'' //ʃa//
+- **i in oi** as in ''vo|i|ture'' //vwatyʁ//
+- **pronounced as part of y in oy** as in ''v|oy|age'' //vw_a_jaʒ//
+
 **//i// close front unrounded vowel**
 
 In English it's always pronounced long. Example is the second vowel of ''b|e|l|ie|ve'' //bɪˈl_iː_v//. In French, **vowels are always short**.
