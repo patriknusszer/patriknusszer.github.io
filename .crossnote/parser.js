@@ -27,7 +27,7 @@
       });
   }
     if (await getDocType(markdown) != 'language')
-      return getDocType(markdown);
+      return markdown;
 
     markdown = await applyMarkers(markdown, '\'\'', 'example')
     markdown = await applyMarkers(markdown, '//', 'ipa', '/')
