@@ -253,9 +253,9 @@ f(x(t))
 \xrightarrow{A=A^T}
 &=2\vec{x}'(t)^TA\vec{x}(t)\\
 \xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
-&2\vec{x}'(0)^TA\vec{x}(0)=0\\
+&2\vec{x}'(t^*)^TA\vec{x}(t^*)=0\\
 \xrightarrow{\vec{x}(t^*)=\vec{s}}
-&=2\vec{x}'(0)^TA\vec{s}=0.
+&=2\vec{x}'(t^*)^TA\vec{s}=0.
 \end{aligned}
 $$
 
