@@ -189,11 +189,11 @@ By the **Topoligical Extreme Value Theorem**:
 
 Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
-**This is not proven**
+**Not proven**
 
 The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint.
 
-The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given by the **implicit function theorem** when the gradient at this point of the **constraint function** is nonzero. (Not proven)
+The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given by the **implicit function theorem** when the gradient at this point of the **constraint function** is nonzero. **Not proven**.
 
 $$
 \begin{aligned}
