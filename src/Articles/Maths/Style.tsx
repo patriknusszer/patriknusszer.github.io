@@ -1,38 +1,9 @@
+export default function Style() {
+    return (
+        <style>{`
+            @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Space+Mono:wght@400;700&display=swap');
 
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Space+Mono:wght@400;700&display=swap');
-
-.markdown-preview.markdown-preview {
-  // modify your style here
-  // eg: background-color: blue;
-}
-
- .underline {
-              text-decoration: underline;
-              }
-                .example {
-                                    /*color: #8062af;*/
-color:#9161dd;
-                }
-                .emphasis {
-                    color:  #ffcba0;
-                }
-                .ipa {
-                    color: #e7a5ff;
-                }
-                strong {
-                /*color:  #ffcba0;*/
-                    color:  #ffcba0;
-                }
-                em {
-                    color: #8062af;
-                /*color: #7860a0;*/ 
-                /* color: #725e93; */
-                }
-
-                @font-face {
+@font-face {
     font-family: "Iosevka Web";
     font-weight: 400;
     font-style: normal;
@@ -122,7 +93,6 @@ color:#9161dd;
     /*color: #909fff;*/
     color: #989ffe;
 }
-
 strong{
     color: #ffbb83;
 }
@@ -150,4 +120,8 @@ h1, h2, h3 {
 
 .mrel {
                 color: #9161dd;
+}
+
+        `}</style>
+    );
 }
