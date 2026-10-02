@@ -275,7 +275,7 @@ $$
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
 \implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\\
 \implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
-\implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i=w_i\quad \forall i\neq k
+\implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
 $$
 
@@ -288,7 +288,7 @@ $$
 Because, it is trivial that $\frac{d}{dt}\vec{x}(t)$ is a tangential direction, and the above also already proves that the gradient is perpendicular to it, but what we wanted to prove is that it is perpendicular to **ANY, ARBITRARY** tangential direction, so we must show that:
 
 $$
-\vec{w} = \frac{d}{dt}\vec{x}(t)
+\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}
 $$
 
 Since $\vec{w}$ can be any arbitrarily chosen vector perpendicular to the gradient, and if we can show it is always equal to the tangential direction, that would mean we have proven for all possible tangential directions.
@@ -296,7 +296,7 @@ Since $\vec{w}$ can be any arbitrarily chosen vector perpendicular to the gradie
 The only question needing to be answered for this, is whether the $k$th component of the tangential direction is $w_k$:
 
 $$
-\left(\frac{d}{dt}\vec{x}(t)\right)_k\stackrel{?}{=}w_k
+\left(\frac{d}{dt}\vec{x}(t)\right)_k\bigg|_{t=0}\stackrel{?}{=}w_k
 $$
 
 We know the following:
@@ -308,7 +308,7 @@ These two equations give us a system of equations to solve for the $k$th coordin
 $$
 \begin{aligned}
 &\begin{cases}
-\nabla g \frac{d}{dt}\vec{x}(t)=0\\
+\nabla g \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
 \nabla g \vec{w}=0
 \end{cases}\\
 \xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
