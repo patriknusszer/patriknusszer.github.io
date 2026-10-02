@@ -191,7 +191,7 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 **Not proven**
 
-The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint.
+The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
 
 The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given indirectly by the **implicit function theorem**.
 
@@ -204,7 +204,7 @@ $$
 \end{aligned}
 $$
 
-For a scalar valued continously differentiable function, the **implicit function theorem** tells us that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors are nonzero, then the coordinate variable belonging to that direction is locally expressible as a differentiable function of all other coordinate variables in some (small) neighborhood of the point. I am going to later update this article for teh precise conditions and a general proof.
+For a scalar valued continously differentiable function, the **implicit function theorem** tells us that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point. I am going to later update this article for the precise conditions and a general proof.
 
 It is not actually hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
 
@@ -222,14 +222,14 @@ $$
 \end{aligned}
 $$
 
-But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any neighborhoods of $t$.
+But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any neighborhood of $t$.
 
 With the **implicit function theorem**, however, for some coordinate $x_k$ for which $\exists \frac{d}{dx_k} g(\vec{x})\neq 0$, since $g$ is infinitely continuously differentiable (polynomial) function, we are guaranteed that:
 
 $$
 \begin{aligned}
 &\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \in \mathbb{R}^{n-1}\\
-&\exists \phi: U \to \mathbb{R} \in C^1\\
+&\exists (\phi: U \to \mathbb{R}) \in C^1\\
 &\text{such that: }\\
 &\forall \vec{v} \in U: \phi(\vec{v})=x_k
 \end{aligned}
@@ -239,7 +239,7 @@ Again, in other words, $x_k$ is locally expressible by a (continuously) differen
 
 **NOTE/Lemma**
 
-To demonstrate how we can use it, let's prove that the gradient of a **constraint equation** is perpendicular to all tangetial directions at any point $\vec{s}$.
+To demonstrate how we can use it, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
 
 **Proof**
 
@@ -311,7 +311,7 @@ $$
 \nabla g \frac{d}{dt}\vec{x}(t)=0\\
 \nabla g \vec{w}=0
 \end{cases}\\
-\implies &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\frac{d}{dt}\vec{x}(t) - w_k\right)_k=0\\
+\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
 &=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
 \xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k=0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_k = w_k
@@ -320,13 +320,12 @@ $$
 
 With that we have proven that $\vec{w} = \frac{d}{dt}\vec{x}(t)$.
 
-So we have proven any curve function $\vec{x}(t)$ constructed with arbitrarily chosen perpendicular $\vec{w}$ that $\vec{w}$ is also the tangential direction at $\vec{s}=\vec{x}(0)$, and therefore the gradient is perpendicular to every tangential direction at that point.
+So we have proven any curve function $\vec{x}(t)$ constructed with arbitrarily chosen perpendicular $\vec{w}$ that $\vec{w}$ is also a tangential direction at $\vec{s}=\vec{x}(0)$, and therefore the gradient is perpendicular to every tangential direction at that point.
 
 
 Now we proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
 
 Applying the multivariable chain rule to function $f$:
-
 $$
 \begin{aligned}
 \frac{d}{dt}f(\vec{x}(t))
