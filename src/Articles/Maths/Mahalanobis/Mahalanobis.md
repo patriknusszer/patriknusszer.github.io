@@ -303,32 +303,24 @@ We know the following:
 - We already know the gradient vector is perpendicular to the tangential direction
 - We know that when $i \neq k$ the coordinates of the tangential direction match the respective coordinates of the vector $\vec{w}$
 
-
-These two forces the following to hold true:
+These two equations give us a system of equations to solve for the $k$th coordinate of the tangential direction. We are going to subtract the second equation from the former.
 
 $$
 \begin{aligned}
 &\begin{cases}
 \nabla g \frac{d}{dt}\vec{x}(t)=0\\
-(\nabla g)_i\left(\frac{d}{dt}\vec{x}(t)\right)_i=0\quad \forall i \neq k
+\nabla g \vec{w}=0
 \end{cases}\\
-\implies &(\nabla g)_k\left(\frac{d}{dt}\vec{x}(t)\right)_k=0
+\implies &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\frac{d}{dt}\vec{x}(t) - w_k\right)_k=0\\
+&=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
+\xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k=0\\
+\implies \left(\frac{d}{dt}\vec{x}(t)\right)_k = w_k
 \end{aligned}
 $$
 
-Actually, the fact that $(\nabla g)_k$ is known not to be zero also forces the $k$th coordinate of the tangential direction to be zero, but what we want is to show it equals $w_k$. And to show that we already have an earlier equation as well:
+With that we have proven that $\vec{w} = \frac{d}{dt}\vec{x}(t)$.
 
-$$
-\begin{aligned}
-&\begin{cases}
-(\nabla g)_k\left(\frac{d}{dt}\vec{x}(t)\right)_k=0\\
-(\nabla g)_k w_k=0
-\end{cases}\\
-\xrightarrow{(\nabla g)_k \neq 0} &w_k = \left(\frac{d}{dt}\vec{x}(t)\right)_k
-\end{aligned}
-$$
-
-So we have proven for any curve function $\vec{x}(t)$ the used perpendicular $\vec{w}$ is also the tangential direction at $\vec{s}=\vec{x}(0)$, and therefore the gradient is perpendicular to every tangential direction at that point.
+So we have proven any curve function $\vec{x}(t)$ constructed with arbitrarily chosen perpendicular $\vec{w}$ that $\vec{w}$ is also the tangential direction at $\vec{s}=\vec{x}(0)$, and therefore the gradient is perpendicular to every tangential direction at that point.
 
 
 Now we proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
