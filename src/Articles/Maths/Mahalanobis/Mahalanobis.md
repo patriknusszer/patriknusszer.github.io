@@ -275,7 +275,7 @@ $$
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
 \implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\\
 \implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
-\implies &\frac{d}{dx_i}\vec{x}(t)\bigg|_{t=0}=w_i\quad \forall i\neq k
+\implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i=w_i\quad \forall i\neq k
 \end{aligned}
 $$
 
@@ -291,7 +291,7 @@ $$
 \vec{w} = \frac{d}{dt}\vec{x}(t)
 $$
 
-Since $\vec{w}$ can be any vector perpendicular to the gradient, and if we can show it is always equal to the tangential direction, that woudl mean we have proven for all possible tangential directions.
+Since $\vec{w}$ can be any arbitrarily chosen vector perpendicular to the gradient, and if we can show it is always equal to the tangential direction, that would mean we have proven for all possible tangential directions.
 
 The only question needing to be answered for this, is whether the $k$th component of the tangential direction is $w_k$:
 
@@ -342,7 +342,7 @@ $$
 \end{aligned}
 $$
 
-That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
+That means the gradient vector of $f(\vec{x}(t))$ at $t^*=0$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
 
 And since $g$ was by definition an implicitly defined function (set equal to a constant), the derivative of $g$ with respect to $t$ at every point $t$, and hence at $t^*$ as well, is zero:
 
@@ -353,7 +353,7 @@ $$
 \end{aligned}
 $$
 
-Since at $t^*$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
+Since at $t^*=0$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
 
 $$
