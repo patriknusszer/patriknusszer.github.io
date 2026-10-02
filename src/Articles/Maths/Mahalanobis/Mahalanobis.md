@@ -314,7 +314,7 @@ $$
 \implies &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\frac{d}{dt}\vec{x}(t) - w_k\right)_k=0\\
 &=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
 \xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k=0\\
-\implies $\left(\frac{d}{dt}\vec{x}(t)\right)_k = w_k
+\implies &\left(\frac{d}{dt}\vec{x}(t)\right)_k = w_k
 \end{aligned}
 $$
 
