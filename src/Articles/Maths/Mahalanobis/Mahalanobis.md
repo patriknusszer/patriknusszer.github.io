@@ -248,7 +248,7 @@ Let $\vec{w}$ be arbitrarily chosen vector perpendicular to $\nabla g(\vec{x})$ 
 If $g$ satisfies the conditions of the **implicit function theorem**, then in some neighborhood $U \subseteq \mathbb{R}^{n-1}$ of $\vec{s} \in \mathbb{R}^n$:
 
 $$
-\forall \vec{v}\ \in V:\\
+\forall \vec{v}\ \in U:\\
 x_k=\phi(\vec{v})
 $$
 
@@ -267,7 +267,7 @@ x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \end{aligned}\\
 $$
 
-Now consider the derivative of **constraint function** $g$ with respect to $t$, applying teh chain rule:
+Now consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
 
 $$
 \begin{aligned}
@@ -421,18 +421,8 @@ If we know a symmetric matrix has at least one eigenvector, then it has exactly 
 
 The above maximization problem is repeated, but with vectors perpendicular to all other already found. It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
-**Q.E.D**
-
-**NOTE**
-If $f$ was converted into an implicitly defined function $F = f(\vec{x}) - y=0$ with one more variable, and redefining the curvature function $\vec{X}(t)$ as also controlling the extra variable $y$, and taking the derivative of $F$ with respect to $t$ we get the same result for all $t \in \mathbb{R}$:
-
-$$
-\nabla F(\vec{X}(t))^T\vec{X}'(t)=0
-$$
-
-Which is exactly means for **implicitly defined** surfaces the gradient at any point is perpendicular to every tangent direction at that point.
-
-For **explicitly defined** surfaces, the gradient is the direction of the greatest ascent/increase.
+**Q.E.D.**
+Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
 
 The important conclusion here is, however:
 
