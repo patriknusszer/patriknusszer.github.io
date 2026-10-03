@@ -30,7 +30,7 @@ $$
 $$
 
 - $\Sigma$ is a matrix, in particular, the covariance matrix of the features in $x$
-- $\Lambda$ is a diagonal matrix, in particular, the values in the diagonal are the eigenvalues
+- $\Lambda$ is a diagonal matrix, in particular, the elements of teh diagonal are teh eigenvalues of $\Sigma$
 
 $$
 \begin{aligned}
@@ -51,7 +51,7 @@ $$
 \end{aligned}
 $$
 
-In generality, this is the eigenvalue problem for multiple eigenvectors and eigenvalues.
+In general, this is the eigenvalue problem for multiple eigenvectors and eigenvalues.
 
 After multiplication on the right hand side, the matrix $(Q \Lambda)$ will contain the columns vectors of $Q$ each multiplied by one of the constants of $\Lambda$.
 
