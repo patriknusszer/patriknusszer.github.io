@@ -32,7 +32,7 @@ $$
 $$
 
 - $\Sigma$ is a matrix, in particular, the covariance matrix of the features in $x$
-- $\Lambda$ is a diagonal matrix, in particular, the elements of teh diagonal are teh eigenvalues of $\Sigma$
+- $\Lambda$ is a diagonal matrix, in particular, the elements of the diagonal are the eigenvalues of $\Sigma$
 
 $$
 \begin{aligned}
@@ -94,7 +94,7 @@ $$
 $$
 
 Which is the eigenvalue problem for one eigenvector.
-From the above identity we can draw an important conclusion, when $Q$ is invertible.
+From the above identity an important conclusion can be drawn, when $Q$ is invertible.
 
 $$
 \begin{aligned}
@@ -111,7 +111,7 @@ $$
 Q^{-1}=Q^T
 $$
 
-The reasoning is trivial. Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal we have the square of the Euclidean $(\operatorname{L}_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit vectors):
+The reasoning is trivial. Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal is the square of the Euclidean $(\operatorname{L}_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit vectors):
 
 $$
 QQ^T =
@@ -398,7 +398,7 @@ $$
 \end{aligned}
 $$
 
-So when $i \neq k$, the $i$th coordinate of $\frac{d}{dt}\vec{x}(t)$ at $t=0$ is the $i$th coordinate of $\vec{w}$. Indeed, we want to show the tangential direction is exactly the same as $\vec{w}$ at $t=0$, because $\vec{w}$ is an arbitrarily chosen perpendicular vector (to $\nabla g$), and hence then the lemma would be proven for all possible tangential directions. In order to show:
+So when $i \neq k$, the $i$th coordinate of $\frac{d}{dt}\vec{x}(t)$ at $t=0$ is the $i$th coordinate of $\vec{w}$. Indeed, the goal is to show the tangential direction is exactly the same as $\vec{w}$ at $t=0$, because $\vec{w}$ is an arbitrarily chosen perpendicular vector (to $\nabla g$), and hence then the lemma would be proven for all possible tangential directions. In order to show:
 
 $$
 \vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}
@@ -414,7 +414,7 @@ We know the following:
 - It is already known that the gradient vector is perpendicular to the tangential direction $\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}$
 - It is already known that the gradient vector is perpendicular to $\vec{w}$
 
-These two equations give us a system of equations to solve for the $k$th coordinate of the tangential direction. We are going to subtract the second equation from the former.
+These two equations give us a system of equations to solve for the $k$th coordinate of the tangential direction.
 
 $$
 \begin{aligned}
@@ -422,14 +422,14 @@ $$
 \nabla g \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
 \nabla g \vec{w}=0
 \end{cases}\\
-\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
-&=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k\right)=0\\
-\xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\right)_k - w_k=0\\
-\implies &\left(\frac{d}{dt}\vec{x}(t)\right)_k = w_k
+\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+&=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+\xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
+\implies &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k
 \end{aligned}
 $$
 
-With that we have proven that $\vec{w} = \frac{d}{dt}\vec{x}(t)$.
+With that $\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}$ is proven.
 
 Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
 
@@ -533,7 +533,21 @@ If we know a symmetric matrix has at least one eigenvector, then it has exactly 
 
 The above maximization problem is repeated, but with vectors perpendicular to all other already found.
 
-The definition of such new $g$ and the applicability of hte **IFT** for that too will be proven in a later version of the article.
+To further constrain the domain of $f$, $g$ becomes a vector-valued function holding individual constraint equations, for convenience, constrained to **zero**. Let $n$ be the number of orthogonal eigenvectors already found, then the next function $g$ is:
+
+$$
+\vec{g}_n(\vec{x}) = 
+\begin{pmatrix}
+\vec{x}^T\vec{x}-1\\
+\vec{v}_1^T\vec{x}\\
+\vdots\\
+\vec{v}_n^T\vec{x}
+\end{pmatrix}
+$$
+
+Note the first constraint is the unit vector constraint.
+
+The Jacobian matrix of this function is invertible, and is continuously differentiable, and hence satisfies the **General IFT** and therefore all the output variables are expressible by the input variables locally to satify all the **constrain equations**.
 
 It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
