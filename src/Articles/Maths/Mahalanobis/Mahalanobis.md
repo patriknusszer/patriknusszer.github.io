@@ -527,7 +527,7 @@ $$
 (Ax)_k=\sum_{j=1}^n a_{kj}x_j.
 $$
 
-The second sum is the \(k\)-th component of \(A^Tx\):
+The second sum is exactly the \(k\)-th component of \(A^Tx\):
 
 $$
 (A^Tx)_k=\sum_{i=1}^n a_{ik}x_i.
@@ -562,7 +562,7 @@ $$
 \end{aligned}
 $$
 
-So that we obtain the eigenvalue problem, and hence $\vec{s}$ not just exists, but is also an eigenvector.
+Which is the eigenvalue problem, and hence $\vec{s}$ not just exists, but is also an eigenvector.
 
 **Q.E.D.**
 Any symmetric matrix has at least one eigenvector.
