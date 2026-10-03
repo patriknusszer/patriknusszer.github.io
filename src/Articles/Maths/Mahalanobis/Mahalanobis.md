@@ -286,7 +286,7 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 **T-EVT will be proven in a later version of teh article**
 
-The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
+The problem is, taking the gradient of $f$ at this point $s$ might not give the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
 
 The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given indirectly by the **implicit function theorem**.
 
