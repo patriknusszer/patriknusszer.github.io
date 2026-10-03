@@ -465,7 +465,7 @@ $$
 \nabla g(\vec{x}(t^{*}))=\lambda \nabla f(\vec{x}(t^{*}))
 $$
 
-In the following $f$ is differentiated with respect to $t$ minding its concrete definition:
+In the following $f(\vec{x}(t))$ is differentiated with respect to $t$ minding its concrete definition:
 
 $$
 \begin{aligned}
