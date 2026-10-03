@@ -486,7 +486,7 @@ f(x(t))
 $$
 
 
-Differentiation of $g(\vec{x}(t))$ with respect to $t$ is almost the same set aside matrix $A$:
+Differentiation of $g(\vec{x}(t))$ with respect to $t$ is almost the same, set aside matrix $A$:
 
 $$
 \begin{aligned}
