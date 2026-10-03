@@ -471,56 +471,98 @@ $$
 \nabla g(\vec{x}(t^{*}))=\lambda \nabla f(\vec{x}(t^{*}))
 $$
 
-In the following $f(\vec{x}(t))$ is differentiated with respect to $t$ minding its concrete definition:
+In our particular case, $\nabla g$ is:
 
 $$
 \begin{aligned}
-f(x(t))
-&=\vec{x}(t)^TA\vec{x}(t)\\
-\frac{d}{dt}f(\vec{x}(t))
-&=\frac{d}{dt}\left(\vec{x}(t)^TA\vec{x}(t)\right)\\
-&=\vec{x}'(t)^TA\vec{x}(t)+\vec{x}(t)^TA\vec{x}'(t)\\
-&=\vec{x}'(t)^TA\vec{x}(t)+\left(\vec{x}(t)^TA\vec{x}'(t)\right)^T\\
-&=\vec{x}'(t)^TA\vec{x}(t)+\vec{x}'(t)^TA^T\vec{x}(t)\\
-\xrightarrow{A=A^T}
-&=2\vec{x}'(t)^TA\vec{x}(t)\\
-\xrightarrow{\frac{d}{dt} f(\vec{x}(t^{*}))=0}
-&2\vec{x}'(t^{*})^TA\vec{x}(t^{*})=0\\
-\xrightarrow{\vec{x}(t^{*})=\vec{s}}
-&=2\vec{x}'(t^{*})^TA\vec{s}=0.
+\nabla g &=
+\begin{pmatrix}
+\frac{\partial g}{\partial x_0} = 2x_0\\
+\vdots\\
+\frac{\partial g}{\partial x_n} = 2x_n
+\end{pmatrix}\\
+&=2\vec{x}
 \end{aligned}
 $$
 
-
-Differentiation of $g(\vec{x}(t))$ with respect to $t$ is almost the same, set aside matrix $A$:
+And $\nabla f$ is:
 
 $$
 \begin{aligned}
-f(x(t))
-&=\vec{x}(t)^T\vec{x}(t)\\
-\frac{d}{dt}f(\vec{x}(t))
-&=\frac{d}{dt}\left(\vec{x}(t)^T\vec{x}(t)\right)\\
-&=\vec{x}'(t)^T\vec{x}(t)+\vec{x}(t)^T\vec{x}'(t)\\
-&=\vec{x}'(t)^T\vec{x}(t)+\left(\vec{x}(t)^T\vec{x}'(t)\right)^T\\
-&=2\vec{x}'(t)^T\vec{x}(t)\\
-\xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
-&2\vec{x}'(t^{*})^T\vec{x}(t^{*})=0\\
-\xrightarrow{\vec{x}(t^*)=\vec{s}}
-&=2\vec{x}'(t^{*})^T\vec{s}=0.
+f(x)
+&=x^TAx\\
+f(x)
+&=
+\sum_{i=1}^n\sum_{j=1}^n a_{ij}x_i x_j\\
+\frac{\partial f}{\partial x_k}
+&=
+\frac{\partial}{\partial x_k}
+\left(
+\sum_{i,j}a_{ij}x_i x_j
+\right).
 \end{aligned}
 $$
 
-Therefore we can conclude what we get with the introduction of the Lagrange multiplier is the eigenvalue problem, and therefore $\vec{s}$ exists and it is an eigenvector of symmetric matrix $A$:
+There are two ways \(x_k\) can occur:
+
+$$
+i=k
+\qquad\text{or}\qquad
+j=k.
+$$
+
+Therefore,
+
+$$
+\frac{\partial f}{\partial x_k}
+=
+\sum_{j=1}^n a_{kj}x_j
++
+\sum_{i=1}^n a_{ik}x_i.
+$$
+
+The first sum is exactly the \(k\)-th component of \(Ax\):
+
+$$
+(Ax)_k=\sum_{j=1}^n a_{kj}x_j.
+$$
+
+The second sum is the \(k\)-th component of \(A^Tx\):
+
+$$
+(A^Tx)_k=\sum_{i=1}^n a_{ik}x_i.
+$$
+
+Hence
+
+$$
+\frac{\partial f}{\partial x_k}
+=
+(Ax)_k+(A^Tx)_k.
+$$
+
+Since this holds for every \(k\),
+
+$$
+\boxed{\nabla f(x)=Ax+A^Tx}.
+$$
+
+If \(A\) is symmetric, then \(A^T=A\), and therefore
+
+$$
+\boxed{\nabla f(x)=2Ax}.
+$$
+
+We know both gradients are perpendicular to the same tangential direction at point $\vec{s}$, so the two are parallel:
 
 $$
 \begin{aligned}
-2\vec{x}'(0)^T\vec{s}=0\\
-2\vec{x}'(0)^TA\vec{s}=0\\
-\implies \vec{s} \perp \vec{x}'(0)\\
-\implies A\vec{s} \perp \vec{x}'(0)\\
-\implies A\vec{s} = \lambda \vec{s}
+& 2A\vec{s} = \lambda 2\vec{s}\\
+\implies & A\vec{s}=\lambda\vec{s}
 \end{aligned}
 $$
+
+So that we obtain the eigenvalue problem, and hence $\vec{s}$ not just exists, but is also an eigenvector.
 
 **Q.E.D.**
 Any symmetric matrix has at least one eigenvector.
