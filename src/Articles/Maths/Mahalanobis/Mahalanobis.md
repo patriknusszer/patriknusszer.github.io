@@ -7,7 +7,7 @@ $$
 - $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate being the mean of one of the features/traits
 - $\vec{\sigma}_c$ is the standard deviation vector, each coordinate being the standard deviation of one of the features/traits 
 
-Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
+Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation/diff. from mean $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
 
 The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they contribute great **unusualness** but the fact that it was expected due their great correlation is **not discounted**.
 
@@ -15,11 +15,13 @@ The idea is to instead measure **unusualness** of **transformed features that ar
 
 **Lemma**
 
-The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix of the features yield uncorrelated features, and the variances of these new features are the eigenvalues of the cov. mat.:
+The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix  yield uncorrelated features, and the variances of these new features are the eigenvalues of the cov. mat.:
 
 $$
 \operatorname{Cov}(\vec{z}Q)=\Lambda
 $$
+
+Where $\Lambda$ is a diagonal matrix, hence transformed traits do not correlate.
 
 **Proof**
 
@@ -101,7 +103,9 @@ $$
 \end{aligned}
 $$
 
-$\Sigma$ is a special matrix, because covariance matrices are symmetrical and hence they have exactly $n$ eigenvectors which are orthogonal. And the inverse of square matrices holding orthogonal vectors exist, and it is exactly their transpose:
+$\Sigma$ is a special matrix, because covariance matrices are symmetrical and hence they have exactly $n$ eigenvectors which are orthogonal. **This theorem, for the curious, is proven below, after the derivation of the use of Mahalanobis distance in generative LDA.**
+
+The inverse of square matrices holding orthogonal vectors exist, and it is exactly their transpose:
 
 $$
 Q^{-1}=Q^T
@@ -155,6 +159,97 @@ QQ^T =
 \end{bmatrix}
 $$
 
+$$
+\begin{aligned}
+\Sigma Q &= Q \Lambda\\
+\implies Q^{-1}\Sigma Q &= Q^{T}\Sigma Q = \Lambda
+\end{aligned}
+$$
+
+This result is important because the $z$-score transformation by matrix $Q$ yields:
+
+$$
+\begin{aligned}
+\operatorname{Cov}(zQ)
+&=
+\mathbb{E}\left[
+\left(zQ-\mathbb{E}[zQ]\right)^T
+\left(zQ-\mathbb{E}[zQ]\right)
+\right]\\
+\operatorname{Cov}(zQ)
+&=
+\mathbb{E}\left[
+\left(zQ-\mathbb{E}[zQ]\right)^T
+\left(zQ-\mathbb{E}[zQ]\right)
+\right]
+\\[4pt]
+&=
+\mathbb{E}\left[
+\left(Q^Tz^T-Q^T\mathbb{E}[z]^T\right)
+\left(zQ-\mathbb{E}[z]Q\right)
+\right]
+\\[4pt]
+&=
+\mathbb{E}\left[
+Q^T
+\left(z-\mathbb{E}[z]\right)^T
+\left(z-\mathbb{E}[z]\right)
+Q
+\right]
+\\[4pt]
+&=
+Q^T
+\mathbb{E}\left[
+\left(z-\mathbb{E}[z]\right)^T
+\left(z-\mathbb{E}[z]\right)
+\right]
+Q
+\\[4pt]
+&=
+Q^T\operatorname{Cov}(z)Q\\
+&= Q^T \Sigma Q = \Lambda
+\end{aligned}
+$$
+
+Therefore, the transformed data has diagonal covariance matrix, hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the L2 norm of $\vec{z}Q$ which is:
+
+$$
+\operatorname{L}_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
+$$
+
+If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\Lambda$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
+
+$$
+\begin{aligned}
+\operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \hat{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{ii}}\right)^2}\\
+\Lambda_{ii} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
+\end{aligned}
+$$
+
+In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $x$ belonging to a class $c$.
+
+Formally, assuming data has normal distribution:
+
+$$
+
+\operatorname{p}(\vec{x}\mid c)
+=
+\frac{1}{(2\pi)^{n/2}\mid\Sigma\mid^{1/2}}
+\exp\left(
+-\frac12
+(\vec{x}-\vec{\mu}_c)^T
+\Sigma^{-1}
+(\vec{x}-\vec{\mu}_c)
+\right).
+$$
+
+Where $
+(\vec{x}-\vec{\mu}_c)^T
+\Sigma^{-1}
+(\vec{x}-\vec{\mu}_c)$ is the Mahalanobis distance.
+
+#Auxiliary
+
 **Theorem**
 
 A symmetric matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
@@ -189,7 +284,7 @@ By the **Topoligical Extreme Value Theorem**:
 
 Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
-**Not proven**
+**T-EVT will be proven in a later vrsion of teh article**
 
 The problem is that taking the gradient of $f$ at this point $s$ might not be the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
 
@@ -204,7 +299,9 @@ $$
 \end{aligned}
 $$
 
-For a scalar valued continously differentiable function, the **implicit function theorem** tells us that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point. I am going to later update this article for the precise conditions and a general proof.
+For a scalar valued continously differentiable function, the **implicit function theorem** tells us that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point.
+
+**IFT will be proven in later version of the article**
 
 It is not actually hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
 
@@ -279,7 +376,7 @@ $$
 \end{aligned}
 $$
 
-Please note that when $i \neq k$, the directional derivative of $\frac{d}{dx_i}\vec{x}$ is **trivially** just the $i$th component of the vector $\vec{w}$ that is perpendicular to $\nabla g(\vec{x})=\frac{d}{d\vec{x}}g$. Indeed, what we want to show is exactly:
+Note that when $i \neq k$, the directional derivative of $\frac{d}{dx_i}\vec{x}$ is **trivially** just the $i$th component of the vector $\vec{w}$ that is perpendicular to $\nabla g(\vec{x})=\frac{d}{d\vec{x}}g$. Indeed, what we want to show is exactly:
 
 $$
 \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=\vec{w}
@@ -425,91 +522,3 @@ Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvecto
 
 The important conclusion here is, however:
 
-$$
-\begin{aligned}
-\Sigma Q &= Q \Lambda\\
-\implies Q^{-1}\Sigma Q &= Q^{T}\Sigma Q = \Lambda
-\end{aligned}
-$$
-
-This result is important because the $z$-score transformation by matrix $Q$ yields:
-
-$$
-\begin{aligned}
-\operatorname{Cov}(zQ)
-&=
-\mathbb{E}\left[
-\left(zQ-\mathbb{E}[zQ]\right)^T
-\left(zQ-\mathbb{E}[zQ]\right)
-\right]\\
-\operatorname{Cov}(zQ)
-&=
-\mathbb{E}\left[
-\left(zQ-\mathbb{E}[zQ]\right)^T
-\left(zQ-\mathbb{E}[zQ]\right)
-\right]
-\\[4pt]
-&=
-\mathbb{E}\left[
-\left(Q^Tz^T-Q^T\mathbb{E}[z]^T\right)
-\left(zQ-\mathbb{E}[z]Q\right)
-\right]
-\\[4pt]
-&=
-\mathbb{E}\left[
-Q^T
-\left(z-\mathbb{E}[z]\right)^T
-\left(z-\mathbb{E}[z]\right)
-Q
-\right]
-\\[4pt]
-&=
-Q^T
-\mathbb{E}\left[
-\left(z-\mathbb{E}[z]\right)^T
-\left(z-\mathbb{E}[z]\right)
-\right]
-Q
-\\[4pt]
-&=
-Q^T\operatorname{Cov}(z)Q\\
-&= Q^T \Sigma Q = \Lambda
-\end{aligned}
-$$
-
-Therefore, the transformed data has diagonal covariance matrix, hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the L2 norm of $\vec{z}Q$ which is:
-
-$$
-\operatorname{L}_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
-$$
-
-If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\Lambda$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
-
-$$
-\begin{aligned}
-\operatorname{L}_2(\vec{z}Q) &=\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \hat{q_i}\lVert \vec{q_i} \rVert_2^2}{\Lambda_{ii}}\right)^2}\\
-\Lambda_{ii} &= \lVert \vec{q_i} \rVert_2^2 \lambda_i
-\end{aligned}
-$$
-
-In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $x$ belonging to a class $c$.
-
-Formally, assuming data has normal distribution:
-
-$$
-
-\operatorname{p}(\vec{x}\mid c)
-=
-\frac{1}{(2\pi)^{n/2}\mid\Sigma\mid^{1/2}}
-\exp\left(
--\frac12
-(\vec{x}-\vec{\mu}_c)^T
-\Sigma^{-1}
-(\vec{x}-\vec{\mu}_c)
-\right).
-$$
-
-Where $
-(\vec{x}-\vec{\mu}_c)^T
-\Sigma^{-1}
-(\vec{x}-\vec{\mu}_c)$ is the Mahalanobis distance.
