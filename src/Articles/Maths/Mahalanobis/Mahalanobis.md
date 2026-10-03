@@ -288,7 +288,7 @@ Then $f$ attains its maximum at some point $\vec{s} \in S$.
 
 The problem is, taking the gradient of $f$ at this point $s$ might not give the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
 
-The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such differentiable curves around some point $t^*$ is given indirectly by the **implicit function theorem**.
+The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such one-variable differentiable curves around some point $t^*$ is given indirectly by the **implicit function theorem**.
 
 $$
 \begin{aligned}
@@ -299,11 +299,11 @@ $$
 \end{aligned}
 $$
 
-For a scalar valued continously differentiable function, the **implicit function theorem** tells us that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point.
+For a scalar valued continously differentiable function, the **implicit function theorem** states that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point.
 
 **IFT will be proven in later version of the article**
 
-It is not actually hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
+It is not hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
 
 $$
 \begin{aligned}
@@ -321,12 +321,13 @@ $$
 
 But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any neighborhood of $t$.
 
-With the **implicit function theorem**, however, for some coordinate $x_k$ for which $\exists \frac{d}{dx_k} g(\vec{x})\neq 0$, since $g$ is infinitely continuously differentiable (polynomial) function, we are guaranteed that:
+With the **implicit function theorem**, however, for some coordinate $x_k$ for which $\exists \frac{d}{dx_k} g(\vec{x})\neq 0$, since $g$ is infinitely continuously differentiable (polynomial) function, the following is guaranteed:
 
 $$
 \begin{aligned}
-&\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \in \mathbb{R}^{n-1}\\
-&\exists (\phi: U \to \mathbb{R}) \in C^1\\
+&\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \subseteq \mathbb{R}^{n-1}\\
+&\exists I_k\ \text{open interval} \subseteq \mathbb{R}\\
+&\exists (\phi: U \to I_k) \in C^1\\
 &\text{such that: }\\
 &\forall \vec{v} \in U: \phi(\vec{v})=x_k
 \end{aligned}
@@ -336,13 +337,13 @@ Again, in other words, $x_k$ is locally expressible by a (continuously) differen
 
 **NOTE/Lemma**
 
-To demonstrate how we can use it, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
+To demonstrate how it caneb used, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
 
 **Proof**
 
 Let $\vec{w}$ be arbitrarily chosen vector perpendicular to $\nabla g(\vec{x})$ at point $\vec{s}$, so $\nabla g(\vec{s}) \vec{w}=0$
 
-If $g$ satisfies the conditions of the **implicit function theorem**, then in some neighborhood $U \subseteq \mathbb{R}^{n-1}$ of $\vec{s} \in \mathbb{R}^n$:
+If $g$ satisfies the conditions of the **implicit function theorem**, then in some neighborhood $U \subseteq \mathbb{R}^{n-1}$ of $\vec{s}_{-k} \in \mathbb{R}^{n-1}$:
 
 $$
 \forall \vec{v}\ \in U:\\
