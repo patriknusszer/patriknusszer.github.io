@@ -271,7 +271,10 @@ g(\vec{x}) &= \vec{x}^T\vec{x} = 1
 \end{aligned}
 $$
 
-Where $g$ generally as an explicitly defined function is a **constraint function**. Setting it equal to a constant $c$, here in particular $1$, makes it implicitly defined, that turns it into a **constraint equation**. And the set of vectors $S$ for which the **constraint equation** holds true is either called **constraint set** or **constraint surface**. Simply said, we are looking for the unit vector for which $f$ is maximal in a set $S$ such that:
+Where
+- $g$ in its explicit form is a **constraint function**
+- $g$ in its implicit form is a **constraint equation**
+- The set $S$ for which the **constraint equation** holds true is the **constraint set/level set**:
 
 $$
 S=\{\vec{x}∈\mathbb{R}^n : \vec{x}^T\vec{x}=1\}
@@ -282,13 +285,13 @@ By the **Topoligical Extreme Value Theorem**:
 - If $S$ is a compact (closed and bounded) non-empty topoligical space, here in particular a non-empty metric space such as a subset of $\mathbb{R}^n$
 - If $f: S \to \mathbb{R}$ is continuous (everywhere)
 
-Then $f$ attains its maximum at some point $\vec{s} \in S$.
+Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{s} \in S$.
 
-**T-EVT will be proven in a later version of teh article**
+**T-EVT will be proven in a later version of the article**
 
-The problem is, taking the gradient of $f$ at this point $s$ might not give the null vector (which is the gradient at extremums) because its definition is insensitive of the constraint. The same goes to $g$. It is an **implicit function/level set** and yet only its explicit unconstrained version can be differentiated because differentiation inherently only makes sense when analyzing rate of change of a free output value/variable in function of change in the input variables.
+Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its derivative $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
 
-The solution is to take a **parametrized curve (function)** $\vec{x}(t)$ over the **constraint surface/set** for which the **constraint equation** holds true, and which is differentiable in some neighborhood of $t^*$. The existence of such one-variable differentiable curves around some point $t^*$ is given indirectly by the **implicit function theorem**.
+The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around some point of the **explicit constraint function**.
 
 $$
 \begin{aligned}
@@ -299,9 +302,7 @@ $$
 \end{aligned}
 $$
 
-For a scalar valued continously differentiable function, the **implicit function theorem** states that if at some point the function has a nonzero gradient, that is, at least one of the directional vectors is nonzero, and teh function is continuously differentiable, then the coordinate variable belonging to that direction is locally expressible as a (continuously) differentiable function of all other coordinate variables in some (small) neighborhood of the point.
-
-**IFT will be proven in later version of the article**
+**IFT will be proven in a later version of the article**
 
 It is not hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
 
@@ -319,26 +320,39 @@ $$
 \end{aligned}
 $$
 
-But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any neighborhood of $t$.
+But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any **neighborhood** of $t$.
 
-With the **implicit function theorem**, however, for some coordinate $x_k$ for which $\exists \frac{d}{dx_k} g(\vec{x})\neq 0$, since $g$ is infinitely continuously differentiable (polynomial) function, the following is guaranteed:
+The **implicit function theorem** states:
 
 $$
 \begin{aligned}
-&\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \subseteq \mathbb{R}^{n-1}\\
-&\exists (\phi: U \to \mathbb{R}) \in C^1\\
-&\text{such that: }\\
-&\forall \vec{v} \in U: \phi(\vec{v})=x_k
+&\begin{cases}
+g \in C^1\\
+\exists \frac{d}{dx_k} g(\vec{x})\neq 0
+\end{cases}\\
+\implies
+&\begin{cases}
+\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \subseteq \mathbb{R}^{n-1}\\
+\exists (\phi: U \to \mathbb{R}) \in C^1\\
+\text{such that: }\\
+\forall \vec{v} \in U: \phi(\vec{v})=x_k
+\end{cases}
 \end{aligned}
 $$
 
-Again, in other words, $x_k$ is locally expressible by a (continuously) differentiable function of all the other coordinate variables.
+In other words, $x_k$ is locally expressible by a (continuously) differentiable function of all the other coordinate variables, provided $g$ is continuously differentiable and has at least one nonzero directional derivative at the point of interest.
 
-Note that the coordinate being expressed may not take on every value of some open interval.
+Note that the coordinate $x_k$ being expressed may not take on every value of some open interval.
+
+For our particular function $g$:
+- It is a polynomial, and hence $\in C^{\infty}$ (infinitely continuously differentiable)
+- Its gradient is $\nabla g = 2\vec{x}$ and $\vec{x}^T\vec{x}=1$ and hence the gradient of the explicit unconstrained $g$ can not be null vector at the extremum point of its constrained implicit version
+
+Hence $g$ satisfies the conditions of the **implicit function theorem**.
 
 **NOTE/Lemma**
 
-To demonstrate how it caneb used, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
+To demonstrate how the **IFT** can be used to construct and use parametrized curves in proofs, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
 
 **Proof**
 
@@ -366,7 +380,7 @@ x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \end{aligned}\\
 $$
 
-Now consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
+Consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
 
 $$
 \begin{aligned}
@@ -378,29 +392,21 @@ $$
 \end{aligned}
 $$
 
-Note that when $i \neq k$, the directional derivative of $\frac{d}{dx_i}\vec{x}$ is **trivially** just the $i$th component of the vector $\vec{w}$ that is perpendicular to $\nabla g(\vec{x})=\frac{d}{d\vec{x}}g$. Indeed, what we want to show is exactly:
-
-$$
-\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=\vec{w}
-$$
-
-Because, it is trivial that $\frac{d}{dt}\vec{x}(t)$ is a tangential direction, and the above also already proves that the gradient is perpendicular to it, but what we wanted to prove is that it is perpendicular to **ANY, ARBITRARY** tangential direction, so we must show that:
+So when $i \neq k$, the $i$th coordinate of $\frac{d}{dt}\vec{x}(t)$ at $t=0$ is the $i$th coordinate of $\vec{w}$. Indeed, we want to show the tangential direction is exactly the same as $\vec{w}$ at $t=0$, because $\vec{w}$ is an arbitrarily chosen perpendicular vector (to $\nabla g$), and hence then the lemma would be proven for all possible tangential directions. In order to show:
 
 $$
 \vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}
 $$
 
-Since $\vec{w}$ can be any arbitrarily chosen vector perpendicular to the gradient, and if we can show it is always equal to the tangential direction, that would mean we have proven for all possible tangential directions.
-
-The only question needing to be answered for this, is whether the $k$th component of the tangential direction is $w_k$:
+...the only question needing to be answered, is whether the $k$th component of the tangential direction is $w_k$:
 
 $$
 \left(\frac{d}{dt}\vec{x}(t)\right)_k\bigg|_{t=0}\stackrel{?}{=}w_k
 $$
 
 We know the following:
-- We already know the gradient vector is perpendicular to the tangential direction
-- We know that when $i \neq k$ the coordinates of the tangential direction match the respective coordinates of the vector $\vec{w}$
+- It is already known that the gradient vector is perpendicular to the tangential direction $\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}$
+- It is already known that the gradient vector is perpendicular to $\vec{w}$
 
 These two equations give us a system of equations to solve for the $k$th coordinate of the tangential direction. We are going to subtract the second equation from the former.
 
@@ -419,12 +425,9 @@ $$
 
 With that we have proven that $\vec{w} = \frac{d}{dt}\vec{x}(t)$.
 
-So we have proven any curve function $\vec{x}(t)$ constructed with arbitrarily chosen perpendicular $\vec{w}$ that $\vec{w}$ is also a tangential direction at $\vec{s}=\vec{x}(0)$, and therefore the gradient is perpendicular to every tangential direction at that point.
+Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
 
-
-Now we proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
-
-Applying the multivariable chain rule to function $f$:
+Applying the multivariable chain rule to function $f(\vec{x}(t))$:
 $$
 \begin{aligned}
 \frac{d}{dt}f(\vec{x}(t))
@@ -436,26 +439,30 @@ $$
 &=
 \nabla f(\vec{x}(t))^T\vec{x}'(t)\\
 \implies
-&\nabla f(\vec{x}(t^*))^T\vec{x}'(t^*)=0
+&\nabla f(\vec{x}(t^{*}))^T\vec{x}'(t^{*})=0
 \end{aligned}
 $$
 
-That means the gradient vector of $f(\vec{x}(t))$ at $t^*=0$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
+Note the result is only true at point $t^{*}$ because there is the extremum.
 
-And since $g$ was by definition an implicitly defined function (set equal to a constant), the derivative of $g$ with respect to $t$ at every point $t$, and hence at $t^*$ as well, is zero:
+That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
+
+Similarly, differentiating $g(\vec{x}(t))$:
 
 $$
 \begin{aligned}
 &\nabla g(\vec{x}(t))^T\vec{x}'(t)=0\\
-&\nabla g(\vec{x}(t^*))^T\vec{x}'(t^*)=0
+\implies &\nabla g(\vec{x}(t^{*}))^T\vec{x}'(t^{*})=0
 \end{aligned}
 $$
 
-Since at $t^*=0$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
+Note the above result is true when $t = t^{*}$, and also true in the respective neighborhood given by the **IFT**.
+
+Since at $t^*$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
 
 $$
-\nabla g(\vec{x}(t^*))=\lambda \nabla f(\vec{x}(t^*))
+\nabla g(\vec{x}(t^{*}))=\lambda \nabla f(\vec{x}(t^{*}))
 $$
 
 In the following $f$ is differentiated with respect to $t$ minding its concrete definition:
@@ -471,10 +478,10 @@ f(x(t))
 &=\vec{x}'(t)^TA\vec{x}(t)+\vec{x}'(t)^TA^T\vec{x}(t)\\
 \xrightarrow{A=A^T}
 &=2\vec{x}'(t)^TA\vec{x}(t)\\
-\xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
-&2\vec{x}'(t^*)^TA\vec{x}(t^*)=0\\
-\xrightarrow{\vec{x}(t^*)=\vec{s}}
-&=2\vec{x}'(t^*)^TA\vec{s}=0.
+\xrightarrow{\frac{d}{dt} f(\vec{x}(t^{*}))=0}
+&2\vec{x}'(t^{*})^TA\vec{x}(t^{*})=0\\
+\xrightarrow{\vec{x}(t^{*})=\vec{s}}
+&=2\vec{x}'(t^{*})^TA\vec{s}=0.
 \end{aligned}
 $$
 
@@ -491,9 +498,9 @@ f(x(t))
 &=\vec{x}'(t)^T\vec{x}(t)+\left(\vec{x}(t)^T\vec{x}'(t)\right)^T\\
 &=2\vec{x}'(t)^T\vec{x}(t)\\
 \xrightarrow{\frac{d}{dt} f(\vec{x}(t^*))=0}
-&2\vec{x}'(0)^T\vec{x}(0)=0\\
+&2\vec{x}'(t^{*})^T\vec{x}(t^{*})=0\\
 \xrightarrow{\vec{x}(t^*)=\vec{s}}
-&=2\vec{x}'(0)^T\vec{s}=0.
+&=2\vec{x}'(t^{*})^T\vec{s}=0.
 \end{aligned}
 $$
 
