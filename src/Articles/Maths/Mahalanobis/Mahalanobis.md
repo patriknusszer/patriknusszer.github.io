@@ -326,14 +326,15 @@ With the **implicit function theorem**, however, for some coordinate $x_k$ for w
 $$
 \begin{aligned}
 &\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \subseteq \mathbb{R}^{n-1}\\
-&\exists I_k\ \text{open interval} \subseteq \mathbb{R}\\
-&\exists (\phi: U \to I_k) \in C^1\\
+&\exists (\phi: U \to \mathbb{R}) \in C^1\\
 &\text{such that: }\\
 &\forall \vec{v} \in U: \phi(\vec{v})=x_k
 \end{aligned}
 $$
 
 Again, in other words, $x_k$ is locally expressible by a (continuously) differentiable function of all the other coordinate variables.
+
+Note that the coordinate being expressed may not take on every value of some open interval.
 
 **NOTE/Lemma**
 
