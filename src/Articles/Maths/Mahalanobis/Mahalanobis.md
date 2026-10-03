@@ -516,7 +516,8 @@ $$
 \end{aligned}
 $$
 
-**Q.E.D.** any symmetric matrix has at least one eigenvector.
+**Q.E.D.**
+Any symmetric matrix has at least one eigenvector.
 
 **Lemma**
 
