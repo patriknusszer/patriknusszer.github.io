@@ -38,7 +38,7 @@ function Blog() {
                     },
                                         {
                         page: "/Blog/Mahalanobis",
-                        name: "Generative LDA & Mahalanobis distance"
+                        name: "Mahalanobis distance, eigendecomposition, generative LDA"
                     }
                 ]
             },
