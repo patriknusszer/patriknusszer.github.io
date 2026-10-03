@@ -525,7 +525,11 @@ If we know a symmetric matrix has at least one eigenvector, then it has exactly 
 
 **Proof**
 
-The above maximization problem is repeated, but with vectors perpendicular to all other already found. It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
+The above maximization problem is repeated, but with vectors perpendicular to all other already found.
+
+The definition of such new $g$ and the applicability of hte **IFT** for that too will be proven in a later version of the article.
+
+It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
