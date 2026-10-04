@@ -334,7 +334,7 @@ $$
 \begin{aligned}
 &\begin{cases}
 g \in C^1\\
-\exists \frac{d}{dx_k} g(\vec{x})\neq 0
+\exists \frac{\partial}{\partial x_k} g(\vec{x})\neq 0
 \end{cases}\\
 \implies
 &\begin{cases}
@@ -390,7 +390,7 @@ Consider the derivative of **constraint function** $g$ with respect to $t$, appl
 
 $$
 \begin{aligned}
-&g(\vec{x}(t))=\text{const}\\
+&g(\vec{x}(t))=\text{const}\quad \forall\vec{x}_{-k}(t) \in U\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
 \implies &=\frac{d}{d\vec{x}} g(\vec{x})\bigg|_{\vec{x} = \vec{x}(t)} \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x}(t))\frac{d}{dt}\vec{x}(t)=0\\
 \implies &\nabla g(\vec{x}(t)) \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
