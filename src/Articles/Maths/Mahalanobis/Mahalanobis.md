@@ -456,12 +456,12 @@ These two equations give us a system of equations to solve for the $k$th coordin
 $$
 \begin{aligned}
 &\begin{cases}
-\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
-\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \vec{w}=0
+\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}}\cdot \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
+\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}}\cdot \vec{w}=0
 \end{cases}\\
-\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_i(w_i - w_i)\right) +\\
-&+ \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
-&=\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_i\cdot(w_i - w_i)\right) +\\
+&+ \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\cdot\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+&=\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\cdot\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
 \xrightarrow{\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
 \implies &\boxed{\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k}\\
 \implies &\boxed{\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}}
