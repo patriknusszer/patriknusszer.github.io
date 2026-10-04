@@ -333,7 +333,7 @@ This is of course highly unlikely, so we want to derive a new function which is 
 
 The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around some point of the **explicit constraint function**.
 
-That means, $\exists I$ open interval, so for $\forall t \in I$ the domain of function $f$ can not leave the **constraint set** when $f(\vec{x}(t))$ is differentiated with respect to $t$: 
+That means, $\exists I$ open interval, so for $\forall t \in I$ the domain of function $f$ can not leave the **constraint set** when $f(\vec{x}(t))$ is differentiated with respect to $t$ at some point $t^{*} \in I$ we indeed obtain the zero gradient.
 
 $$
 \begin{aligned}
@@ -344,7 +344,6 @@ $$
 \end{aligned}
 $$
 
-And that makes such a function which does have a zero gradient at the maximum of $f$ over the **constraint set**.
 
 **IFT will be proven in a later version of the article**
 
