@@ -295,11 +295,9 @@ Then $f$, whose domain is constrained to unit vectors, evidently satisfies these
 
 **T-EVT will be proven in a later version of the article**
 
-Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its derivative $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
+Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its gradient $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
 
 Precisely, the gradient inherently considers small perturbations in every coordinate direction around the point. Therefore, when differentiating $f$ as a function defined on the ambient space, it (most probably) takes into account how $f$ changes toward points both inside and outside a given constraint set.
-
-And most precisely:
 
 $$
 \nabla f(\vec{s}) =
@@ -374,7 +372,7 @@ $$
 \begin{aligned}
 &\begin{cases}
 g \in C^1\\
-\exists \frac{\partial}{\partial x_k} g(\vec{x})\neq 0
+\exists \frac{\partial}{\partial x_k} g\neq 0
 \end{cases}\\
 \implies
 &\begin{cases}
@@ -432,8 +430,8 @@ $$
 \begin{aligned}
 &g(\vec{x}(t))=\text{const}\quad \forall\vec{x}_{-k}(t) \in U\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
-\implies &=\frac{d}{d\vec{x}} g(\vec{x})\bigg|_{\vec{x} = \vec{x}(t)} \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x}(t))\frac{d}{dt}\vec{x}(t)=0\\
-\implies &\nabla g(\vec{x}(t)) \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
+\implies &=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
+\implies &\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
 $$
@@ -459,12 +457,13 @@ These two equations give us a system of equations to solve for the $k$th coordin
 $$
 \begin{aligned}
 &\begin{cases}
-\nabla g \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
-\nabla g \vec{w}=0
+\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
+\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \vec{w}=0
 \end{cases}\\
-\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
-&=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
-\xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
+\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_i(w_i - w_i)\right) +\\
+&+ \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+&=\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
+\xrightarrow{\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
 \implies &\boxed{\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k}\\
 \implies &\boxed{\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}}
 \end{aligned}
@@ -475,11 +474,11 @@ Now we can proceed with proving the original lemma, now that we know we can cons
 Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$, the derivative here, and only here, is guaranteed to be zero. While for $g$, 
 
 
-Since at $t^*$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
+Since at $t^*$ both gradient vectors $\nabla g(\vec{x})$ and $\nabla f(\vec{x})$ are perpendicular to $\frac{d}{dt}\vec{x}(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
 
 $$
-\nabla g(\vec{x}(t^{*}))=\lambda \nabla f(\vec{x}(t^{*}))
+\nabla g(\vec{x})\bigg|_{\vec{x}=t^{*}}=\lambda \nabla f(\vec{x})\bigg|_{\vec{x}=t^{*}}
 $$
 
 In our particular case, $\nabla g$ is:
@@ -500,9 +499,9 @@ And $\nabla f$ is:
 
 $$
 \begin{aligned}
-f(x)
+f(\vec{x})
 &=x^TAx\\
-f(x)
+f(\vec{x})
 &=
 \sum_{i=1}^n\sum_{j=1}^n a_{ij}x_i x_j\\
 \frac{\partial f}{\partial x_k}
@@ -525,7 +524,7 @@ $$
 Therefore,
 
 $$
-\frac{\partial f}{\partial x_k}
+\frac{\partial}{\partial x_k} f
 =
 \sum_{j=1}^n a_{kj}x_j
 +
@@ -547,7 +546,7 @@ $$
 Hence
 
 $$
-\frac{\partial f}{\partial x_k}
+\frac{\partial}{\partial x_k} f
 =
 (Ax)_k+(A^Tx)_k.
 $$
@@ -555,13 +554,13 @@ $$
 Since this holds for every $k$,
 
 $$
-\boxed{\nabla f(x)=Ax+A^Tx}.
+\boxed{\nabla f=Ax+A^Tx}.
 $$
 
 If $A$ is symmetric, then $A^T=A$, and therefore
 
 $$
-\boxed{\nabla f(x)=2Ax}.
+\boxed{\nabla f=2Ax}.
 $$
 
 We know both gradients are perpendicular to the same tangential direction at point $\vec{s}$, so the two are parallel:
