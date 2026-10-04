@@ -392,8 +392,8 @@ $$
 \begin{aligned}
 &g(\vec{x}(t))=\text{const}\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
-\implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\\
-\implies &\frac{d}{d\vec{x}} g\frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
+\implies &=\frac{d}{d\vec{x}} g(\vec{x})\bigg|_{\vec{x} = \vec{x}(t)} \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x}(t))\frac{d}{dt}\vec{x}(t)=0\\
+\implies &\nabla g(\vec{x}(t)) \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
 $$
@@ -425,11 +425,10 @@ $$
 \xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} (\nabla g)_i(w_i - w_i)\right) + (\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
 &=(\nabla g)_k\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
 \xrightarrow{(\nabla g)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
-\implies &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k
+\implies &\boxed{\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k}\\
+\implies &\boxed{\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}}
 \end{aligned}
 $$
-
-With that $\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}$ is proven.
 
 Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
 
@@ -481,7 +480,7 @@ $$
 \vdots\\
 \frac{\partial g}{\partial x_n} = 2x_n
 \end{pmatrix}\\
-&=2\vec{x}
+\implies &\boxed{\nabla g=2\vec{x}}
 \end{aligned}
 $$
 
@@ -558,7 +557,7 @@ We know both gradients are perpendicular to the same tangential direction at poi
 $$
 \begin{aligned}
 & 2A\vec{s} = \lambda 2\vec{s}\\
-\implies & A\vec{s}=\lambda\vec{s}
+\implies & \boxed{A\vec{s}=\lambda\vec{s}}
 \end{aligned}
 $$
 
