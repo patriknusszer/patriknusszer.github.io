@@ -297,7 +297,45 @@ Then $f$, whose domain is constrained to unit vectors, evidently satisfies these
 
 Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its derivative $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
 
+Precisely, the gradient inherently considers small perturbations in every coordinate direction around the point. Therefore, when differentiating $f$ as a function defined on the ambient space, it (most probably) takes into account how $f$ changes toward points both inside and outside a given constraint set.
+
+And most precisely:
+
+$$
+\nabla f(\vec{s}) =
+\begin{pmatrix}
+\frac{\partial}{\partial x_1} f\\
+\vdots\\
+\frac{\partial}{\partial x_n} f
+\end{pmatrix}\\
+\frac{\partial}{\partial x_i} f(\vec{s}) = 
+\lim_{h\to 0}
+\frac{f(\vec{x}+h\vec{e}_i)-f(\vec{x})}{h}.
+$$
+
+Where $\vec{e}_i$ is the unit vector in which $e_i=1$ and all other coordinates are zero. This means for the calculation of the $i$th partial derivative at a point $\vec{s}$ involves taking into account vector points that have their $i$th coordinates in a small neighborhood of the $i$th coordinate of $\vec{s}$.
+
+If for each coordinate there existed a small interval around the respective coordinate of the analyzed point so that arbitrary perturbations to just that one coordinate up to the boundaries of that interval keeps us inside the **constraint set**, then the gradient numerically coincides with a truly constrained version of the function:
+
+
+$$
+\begin{aligned}
+&\forall i\in\{1,\ldots,n\},\quad
+\exists\,\varepsilon_i>0
+\quad\text{such that}\\
+&\vec{s}+h\vec{e}_i\in S
+\quad\forall h\in(-\varepsilon_i,\varepsilon_i).
+\\
+\Longrightarrow&
+\boxed{\nabla f(\vec{s})=\nabla(f|_S)(\vec{s})}
+\end{aligned}
+$$
+
+This is of course highly unlikely, so we want to derive a new function which is truly constrained.
+
 The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around some point of the **explicit constraint function**.
+
+That means, $\exists I$ open interval, so for $\forall t \in I$ the domain of function $f$ can not leave the **constraint set** when $f(\vec{x}(t))$ is differentiated with respect to $t$: 
 
 $$
 \begin{aligned}
@@ -307,6 +345,8 @@ $$
 \implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^*} = 0
 \end{aligned}
 $$
+
+And that makes such a function which does have a zero gradient at the maximum of $f$ over the **constraint set**.
 
 **IFT will be proven in a later version of the article**
 
@@ -430,38 +470,10 @@ $$
 \end{aligned}
 $$
 
-Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** locally, and is also locally differentiable.
+Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** $g$ locally, and is also locally differentiable.
 
-Applying the multivariable chain rule to function $f(\vec{x}(t))$:
-$$
-\begin{aligned}
-\frac{d}{dt}f(\vec{x}(t))
-&=
-\frac{d}{dt}f(x_1(t),\ldots,x_n(t))\\
-&=
-\sum_{i=1}^{n}
-\frac{\partial f}{\partial x_i}(\vec{x}(t))\,x_i'(t)\\
-&=
-\nabla f(\vec{x}(t))^T\vec{x}'(t)\\
-\implies
-&\nabla f(\vec{x}(t^{*}))^T\vec{x}'(t^{*})=0
-\end{aligned}
-$$
+Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$, the derivative here, and only here, is guaranteed to be zero. While for $g$, 
 
-Note the result is only true at point $t^{*}$ because there is the extremum.
-
-That means the gradient vector of $f(\vec{x}(t))$ at $t^*$ with the vector of the derivative of the curve function $\vec{x}(t)$ at $t^*$ are perpendicular.
-
-Similarly, differentiating $g(\vec{x}(t))$:
-
-$$
-\begin{aligned}
-&\nabla g(\vec{x}(t))^T\vec{x}'(t)=0\\
-\implies &\nabla g(\vec{x}(t^{*}))^T\vec{x}'(t^{*})=0
-\end{aligned}
-$$
-
-Note the above result is true when $t = t^{*}$, and also true in the respective neighborhood given by the **IFT**.
 
 Since at $t^*$ both gradient vectors $\nabla g(\vec{x}(t))$ and $\nabla f(\vec{x}(t))$ are perpendicular to $\vec{x}'(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
