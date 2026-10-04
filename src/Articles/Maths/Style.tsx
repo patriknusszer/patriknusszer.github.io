@@ -122,6 +122,18 @@ h1, h2, h3 {
                 color: #9161dd;
 }
 
+.katex-display .msupsub .mord,
+.katex-display .msupsub .mrel,
+.katex-display .msupsub .mbin,
+.katex-display .msupsub .mopen,
+.katex-display .msupsub .mclose
+{
+     /*color: #909fff; */
+    /*color: #909fff;*/
+    color: #989ffe;
+}
+
+
         `}</style>
     );
 }
