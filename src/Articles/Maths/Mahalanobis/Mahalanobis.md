@@ -161,8 +161,8 @@ $$
 
 $$
 \begin{aligned}
-\Sigma Q &= Q \Lambda\\
-\implies Q^{-1}\Sigma Q &= Q^{T}\Sigma Q = \Lambda
+&\Sigma Q = Q \Lambda\\
+\implies &\boxed{Q^{-1}\Sigma Q = Q^{T}\Sigma Q = \Lambda}
 \end{aligned}
 $$
 
@@ -207,7 +207,7 @@ Q
 \\[4pt]
 &=
 Q^T\operatorname{Cov}(z)Q\\
-&= Q^T \Sigma Q\\
+&= \boxed{Q^T \Sigma Q}\\
 \xrightarrow{
     \substack{
         \Sigma\ \text{is symmetric}\\
@@ -223,7 +223,7 @@ $$
 \operatorname{L}_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
 $$
 
-If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a *rotational* matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\Lambda$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
+If eigenvectors of $Q$ are chosen to be unit vectors, then $Q$ is a rotational matrix, that is, it preserves Euclidean properties but it is important to note **it is not in fact required to measure Mahalanobis distance**. The eigenvectors can have arbitrary $L_2$ lengths but then the variances in the diagonal of $\Lambda$ are scaled by the respective squares of the $L_2$ lengths of their corresponding eigenvectors, and hence the Mahalanobis distance needs to be adjusted as:
 
 $$
 \begin{aligned}
@@ -540,13 +540,13 @@ $$
 (Ax)_k+(A^Tx)_k.
 $$
 
-Since this holds for every \(k\),
+Since this holds for every $k$,
 
 $$
 \boxed{\nabla f(x)=Ax+A^Tx}.
 $$
 
-If \(A\) is symmetric, then \(A^T=A\), and therefore
+If $A$ is symmetric, then $A^T=A$, and therefore
 
 $$
 \boxed{\nabla f(x)=2Ax}.
