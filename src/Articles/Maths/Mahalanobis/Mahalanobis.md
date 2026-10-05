@@ -298,7 +298,7 @@ Then $f$, whose domain is constrained to unit vectors, evidently satisfies these
 In an abstract topological space $(X, \tau)$, every subset $V \subseteq S$ has an open cover $\mathcal{U} \subseteq \tau$:
 
 $$
-A \subseteq \bigcup_{U\in\mathcal{U}}U
+V \subseteq \mathcal{U} = \bigcup_{U\in\mathcal{U}}U
 $$
 
 So it can be contained by a union of open sets of $X$.
@@ -314,7 +314,7 @@ $$
 \end{aligned}
 $$
 
-Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, $Y$ has such an open cover, and by definition of continuous functions over abstract topological spaces, the pre-image of the open cover of $Y$ is also open.
+Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, $Y$ we select such an open cover, and by definition of continuous functions over abstract topological spaces, the pre-image of the open cover of $Y$ is also open.
 
 Then, by definition of a compact abstarct topological space, any open covers of $X$ has a **finite** open subcover.
 
