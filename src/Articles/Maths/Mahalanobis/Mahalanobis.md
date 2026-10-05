@@ -552,7 +552,7 @@ f(\vec{x})
 \end{aligned}
 $$
 
-There are two ways \(x_k\) can occur:
+There are two ways $x_k$ can occur:
 
 $$
 i=k
@@ -570,13 +570,13 @@ $$
 \sum_{i=1}^n a_{ik}x_i.
 $$
 
-The first sum is exactly the \(k\)-th component of \(Ax\):
+The first sum is exactly the $k$-th component of $Ax$:
 
 $$
 (Ax)_k=\sum_{j=1}^n a_{kj}x_j.
 $$
 
-The second sum is exactly the \(k\)-th component of \(A^Tx\):
+The second sum is exactly the $k$-th component of $A^Tx$:
 
 $$
 (A^Tx)_k=\sum_{i=1}^n a_{ik}x_i.
