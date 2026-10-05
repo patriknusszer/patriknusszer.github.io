@@ -288,12 +288,51 @@ $$
 
 By the **Topoligical Extreme Value Theorem**:
 
-- If $S$ is a compact (closed and bounded) non-empty topoligical space, here in particular a non-empty metric space such as a subset of $\mathbb{R}^n$
-- If $f: S \to \mathbb{R}$ is continuous (everywhere)
+- If $(X, \tau)$ is a compact (closed and bounded) non-empty topoligical space, here in particular a non-empty metric space such as a subset of $\mathbb{R}^n$
+- If $f: X \to \mathbb{R}$ is continuous (everywhere)
 
-Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{s} \in S$.
+Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{x} \in X$.
 
-**T-EVT will be proven in a later version of the article**
+**T-EVT proof**
+
+In an abstract topological space $(X, \tau)$, every subset $V \subseteq S$ has an open cover $\mathcal{U} \subseteq \tau$:
+
+$$
+A \subseteq \bigcup_{U\in\mathcal{U}}U
+$$
+
+So it can be contained by a union of open sets of $X$.
+
+$\tau$ is the topology of the topological space. It contains all the open sets of $X$.
+- Contains empty set and $X$
+- Closed under unions
+- Closed under finite intersections
+
+$$
+\begin{aligned}
+&\text{(a)} && \varnothing,X\in\tau,\\ &\text{(b)} && \bigcup_{\alpha\in A}U_\alpha\in\tau &&\forall\ {U_\alpha}:\ {\alpha\in A}\subseteq\tau,\\ &\text{(c)} && \bigcap_{i=1}^{n}U_i\in\tau &&\forall\ U_1,\ldots,U_n\in\tau.
+\end{aligned}
+$$
+
+Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, $Y$ has such an open cover, and by definition of continuous functions over abstract topological spaces, the pre-image of the open cover of $Y$ is also open.
+
+Then, by definition of a compact abstarct topological space, any open covers of $X$ has a **finite** open subcover.
+
+But this essentially means the image of the finite cover of $X$ is a finite cover of $Y$, which is also a finite subcover of the initial open cover for $Y$ we started off with.
+
+And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover. And since a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
+
+Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**.
+
+And since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
+
+Every limit point $\in \overline{Y}$, that is, the closure (the closed version) of $Y$ contains every limit point of $Y$.
+
+And since $Y$ is compact, it is not just boudned but also closed, and hence contains its supremum.
+
+The containment of the infimum is analogously provided by the **greatest lower bound axiom**.
+
+**Q.E.D**
 
 Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its gradient $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
 
