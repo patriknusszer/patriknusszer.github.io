@@ -331,12 +331,13 @@ $$
 
 This is of course highly unlikely, so we want to derive a new function which is truly constrained.
 
-The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around some point of the **explicit constraint function**.
+The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around a point of the **explicit constraint function**.
 
-That means, $\exists I$ open interval, so for $\forall t \in I$ the domain of function $f$ can not leave the **constraint set** when $f(\vec{x}(t))$ is differentiated with respect to $t$ at some point $t^{*} \in I$, so we indeed obtain the zero gradient.
+That means, $\exists I$ open interval, so for $\forall t \in I$ the domain of function $f$ can not leave the **constraint set** when $f(\vec{x}(t))$ is differentiated with respect to $t$ at some point $t^{*} \in I$, so we indeed obtain the zero gradient there.
 
 $$
 \begin{aligned}
+&\forall t \in I:\\
 &g(\vec{x}(t)) = g(x_1(t), x_2(t)...,x_n(t))=1\\
 \xrightarrow{\frac{d}{dt}\text{const=0}} &\frac{d}{dt} g(\vec{x}(t)) = 0\\
 \text{Let } &\vec{s} = \vec{x}(t^*)\\
@@ -365,7 +366,7 @@ $$
 
 But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any **neighborhood** of $t$.
 
-The **implicit function theorem** states:
+The **implicit function theorem** states, for multi variable single/scalar valued functions:
 
 $$
 \begin{aligned}
@@ -604,6 +605,4 @@ It would lead to contradiction if there were less than $n$ eigenvectors, because
 
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
-
-The important conclusion here is, however:
 
