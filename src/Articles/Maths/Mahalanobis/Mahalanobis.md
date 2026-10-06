@@ -322,7 +322,7 @@ But this essentially means the image of the finite cover of $X$ is a finite cove
 
 And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover. And since a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
 
-Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**.
+Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the Heine-Borel theorem.
 
 And since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
 
