@@ -645,3 +645,69 @@ It would lead to contradiction if there were less than $n$ eigenvectors, because
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
 
+**Implicit Function Theorem Proof**
+
+The implicit function theorem is just a specific application of the inverse function theorem. (It is almost a lie to call it a theorem)
+
+The statement is:
+
+$$
+\begin{aligned}
+&\begin{cases}
+f: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^m \in C^1\\
+\exists\ \vec{a} \in \mathbb{R}^n,\ \vec{b} \in \mathbb{R}^m: f(\vec{a}, \vec{b})=0\\
+\det D_{\vec{y}}f(\vec{a}, \vec{b}) \neq 0
+\end{cases}\\
+\implies
+&\begin{cases}
+\exists\ U \subseteq \mathbb{R}^m\quad \text{open neighborhood of}\quad \vec{a}\\
+\exists\ V \subseteq \mathbb{R}^n\quad \text{open neighborhood of}\quad \vec{b}\\
+\exists\ \Phi: \mathbb{R}^m \to \mathbb{R}^n\\
+\text{Such that}\\
+\Psi(\vec{x})=\vec{y}\quad \forall \vec{x} \in U\\
+\text{In particular}\\
+\Psi(\vec{a})=\vec{b}
+\end{cases}
+\end{aligned}
+$$
+
+Let a function $\Phi: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^n \times \mathbb{R}^m$ be defined as $\Phi(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$
+
+The key takeaway is that the pointwise invertible Jacobian criterium holds for $\Phi$ as well:
+
+$$
+\begin{aligned}
+&J_{\Psi}(\vec{a},\vec{b}) =
+\begin{pmatrix} D_x(\vec{x}) && D_y(\vec{x})\\
+D_x F(\vec{a},\vec{b}) && D_y F(\vec{a},\vec{b})
+\end{pmatrix}\\
+&=
+\begin{pmatrix} I_n && 0\\
+D_x F(a,b) && D_y F(a,b) \end{pmatrix}\\
+
+\implies &\det(J_{\Psi}(a,b)) = \det(I_n) \cdot \det(D_y F(a,b))\\
+&= \det(D_y F(a,b))\\
+
+&D_y F(a,b) \text{ invertible}\\
+\implies &\det(D_y F(a,b)) \neq 0\\
+\implies &\det(J_{\Psi}(a,b)) \neq 0
+\end{aligned}
+$$
+
+And Since $\Psi \in C^1$ so $\Phi \in C^1$ as well, and therefore by the inverse function theorem $\Phi$ is invertible in a fully covered open neighborhood of point $(\vec{a}, \vec{b})$.
+
+Therefore $\Phi^{-1}(\vec{u}, \vec{v})=(\vec{x}, \vec{y})$ exists and particularly in case of $\Phi^{-1}(\vec{u}, \vec{0})$ the implicit constraint $f(\vec{x}, \vec{y})=0$ holds true.
+
+Hence we can build an extraction function which basically just extracts the $\vec{y}$ variables from the resulting vector of $\Phi^{-1}(\vec{u}, \vec{0})$:
+
+$$
+\gamma(\vec{x})=\Phi^{-1}(\vec{x}, 0)_{\vec{y}}
+$$
+
+And hence for $\forall\ \vec{x} \in U$:
+
+$$
+f(\vec{x}, \gamma(\vec{x}))=0
+$$
+
+Q.E.D.
