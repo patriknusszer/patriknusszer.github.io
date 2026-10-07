@@ -322,7 +322,10 @@ But this essentially means the image of the finite cover of $X$ is a finite cove
 
 And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover. And since a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
 
-Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the Heine-Borel theorem.
+Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the **Heine-Borel theorem**.
+
+**Proof of Heine-Borel theorem**
+**coming soon**
 
 And since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
 
@@ -470,7 +473,7 @@ $$
 &g(\vec{x}(t))=\text{const}\quad \forall\vec{x}_{-k}(t) \in U\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
 \implies &=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
-\implies &\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
+\implies &\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \cdot \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
 $$
@@ -678,19 +681,19 @@ The key takeaway is that the pointwise invertible Jacobian criterium holds for $
 $$
 \begin{aligned}
 &J_{\Psi}(\vec{a},\vec{b}) =
-\begin{pmatrix} D_x(\vec{x}) && D_y(\vec{x})\\
-D_x F(\vec{a},\vec{b}) && D_y F(\vec{a},\vec{b})
+\begin{pmatrix} D_{\vec{x}}(\vec{x}) && D_{\vec{y}}(\vec{x})\\
+D_{\vec{x}} F(\vec{a},\vec{b}) && D_{\vec{y}} F(\vec{a},\vec{b})
 \end{pmatrix}\\
 &=
 \begin{pmatrix} I_n && 0\\
-D_x F(a,b) && D_y F(a,b) \end{pmatrix}\\
+D_{\vec{x}} F(\vec{a},\vec{b}) && D_{\vec{y}} F(\vec{a},\vec{b}) \end{pmatrix}\\
 
-\implies &\det(J_{\Psi}(a,b)) = \det(I_n) \cdot \det(D_y F(a,b))\\
-&= \det(D_y F(a,b))\\
+\implies &\det(J_{\Psi}(\vec{a},\vec{b})) = \det(I_n) \cdot \det(D_{\vec{y}} F(\vec{a},\vec{b}))\\
+&= \det(D_{\vec{y}} F(\vec{a},\vec{b}))\\
 
-&D_y F(a,b) \text{ invertible}\\
-\implies &\det(D_y F(a,b)) \neq 0\\
-\implies &\det(J_{\Psi}(a,b)) \neq 0
+&D_{\vec{y}} F(\vec{a},\vec{b}) \text{ invertible}\\
+\implies &\det(D_{\vec{y}} F(\vec{a},\vec{b})) \neq 0\\
+\implies &\det(J_{\Psi}(\vec{a},\vec{b})) \neq 0
 \end{aligned}
 $$
 
@@ -711,3 +714,6 @@ f(\vec{x}, \gamma(\vec{x}))=0
 $$
 
 Q.E.D.
+
+**Inverse function theorem proof**
+**coming soon**
