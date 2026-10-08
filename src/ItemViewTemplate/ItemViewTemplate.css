@@ -259,4 +259,15 @@ hr {
                 font-size: 15px;
 
     }
+
+    ul {
+        padding-inline-start: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    up {
+        padding-inline-start: 10px;
+    }
 }
