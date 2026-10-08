@@ -90,13 +90,14 @@ $$
 \end{bmatrix}
 $$
 
-Therefore, for $\forall \vec{q_i} \in Q$ and their corresponding constant $ \Lambda_{ii} \in \Lambda $ the following must hold:
+Therefore, for $\forall\ \vec{q_i} \in Q$ and their corresponding constant $ \Lambda_{ii} \in \Lambda $ the following must hold:
 
 $$
 \Sigma \vec{q_i} = \vec{q_i} \Lambda_{ii}
 $$
 
-Which is the eigenvalue problem for one eigenvector.
+Which is the eigenvalue problem for one eigenvector for an eigenvalue from $\Lambda$ and an eigenvector from the column vectors of $Q$.
+
 From the above identity an important conclusion can be drawn, when $Q$ is invertible.
 
 $$
