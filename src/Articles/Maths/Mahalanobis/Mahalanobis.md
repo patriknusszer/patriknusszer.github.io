@@ -218,7 +218,7 @@ Q^T\operatorname{Cov}(z)Q\\
 \end{aligned}
 $$
 
-Therefore, the transformed data has diagonal covariance matrix, hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the L2 norm of $\vec{z}Q$ which is:
+Therefore, the transformed data has diagonal covariance matrix (only the variances are nonzero), hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the $L_2$ norm of $\vec{z}Q$ which is:
 
 $$
 \operatorname{L}_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
@@ -253,7 +253,7 @@ $$
 Where $
 (\vec{x}-\vec{\mu}_c)^T
 \Sigma^{-1}
-(\vec{x}-\vec{\mu}_c)$ is the Mahalanobis distance.
+(\vec{x}-\vec{\mu}_c)$ is numerically the Mahalanobis distance.
 
 #Auxiliary
 
