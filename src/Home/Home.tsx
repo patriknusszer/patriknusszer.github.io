@@ -1,6 +1,27 @@
+import { useEffect } from 'react';
 import './Home.css'
 
 function Home() {
+useEffect(() => {
+    document.documentElement.style.width = "100%";
+    document.documentElement.style.height = "100%";
+    document.documentElement.style.overflow = "hidden";
+
+    document.body.style.width = "100%";
+    document.body.style.height = "100%";
+    document.body.style.overflow = "hidden";
+
+    return () => {
+        document.documentElement.style.width = "";
+        document.documentElement.style.height = "";
+        document.documentElement.style.overflow = "";
+
+        document.body.style.width = "";
+        document.body.style.height = "";
+        document.body.style.overflow = "";
+    };
+}, [])
+
   return (
     <>
         <svg
