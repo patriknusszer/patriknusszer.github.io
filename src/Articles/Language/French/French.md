@@ -57,11 +57,9 @@ Variables of consonants are:
     - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
     - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in Italian ''t|r|e'' //t_r_e//, Spanish ''pe|rr|o'' //pe_r_o// and Hungarian ''raktá|r|'' //rɒktaː_r_//, but it is again not the same as English //ɹ// which is the voiced postalveolar approximant //ɹ//
 
-In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories:
+In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories, in case of non-nasal consonants:
 
-**Nasal > Approximant > Fricative > Plosives/Trill**
-
-Nasals were included because airflow is not actually constrained as it freely flows, although the passageway is through the **nose**, not the mouth.
+**Approximant > Fricative > Plosives/Trill**
 
 And considering how further back is the place of articulation in the mouth, we have:
 
@@ -216,7 +214,7 @@ Nasal vowels are pronounced as their non-nasal counterpart, but air also passes 
 
 Nasal vowels are pronounced when the vowels |a|, |e|, |i| or |y| are followed by |n| or |m| at the end of the last syllable, or when |n|/|m| is followed by another consonant in a nonfinal syllable.
 
-When |en|/|én| is used a prefix, it can nasalise in the first syllable without a subsequent consonant. But most of the time, when |n|/|m| is followed by a vowel it does not nasalize.
+When |en|/|én| is used as a prefix, it can nasalise in the first syllable without a subsequent consonant. But most of the time, when |n|/|m| is followed by a vowel it does not nasalize.
 
 **//ɑ̃// nasalized open back unrounded vowel**
 
@@ -298,8 +296,8 @@ Pronounced as in ''|s|ee'' //siː//
 
 **When //s// is pronounced**
 - **ss, and s when _not_ between two vowels**  
-''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''cy|c|lisme'', ''ascen|s|ion'', ''exten|s|ion''  
-//pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //si._s_li.sm//, //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
+''profe|ss|eur'', ''per|s|onne'', ''que|s|tion'', ''ascen|s|ion'', ''exten|s|ion''  
+//pʁɔ.fɛ._s_œʁ//, //pɛʁ._s_ɔn//, //kɛ_s_t.jɔ̃//, //a.sɑ̃._s_jɔ̃//, //ɛk.stɑ̃._s_jɔ̃//
 - **t in tion, _when not preceded by s_**  
 ''na|t|ion'', ''éduca|t|ion'', ''fonc|t|ion''  
 //na_s_jɔ̃//, //e.dy.ka._s_jɔ̃//, //fɔ̃k._s_jɔ̃//
