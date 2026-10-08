@@ -54,7 +54,7 @@ $$
 \end{aligned}
 $$
 
-The covariance matrix is a $n \cdot n$ table, each cell $\sigma_{ij}$ represetning the covariance of feature $i$ and feature $j$. At the diagonal $\sigma_{ii}$ is a covariance of some  feature with itself which equals the variance of the feature.
+The covariance matrix is a $n \cdot n$ table, each cell $\sigma_{ij}$ representing the covariance of feature $i$ and feature $j$. At the diagonal $\sigma_{ii}$ is a covariance of some  feature with itself which equals the variance of the feature.
 
 In general, the abovementioned equation is the eigenvalue problem for multiple eigenvectors and eigenvalues.
 
