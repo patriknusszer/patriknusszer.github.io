@@ -237,6 +237,14 @@ hr {
         margin-left: 22px;
         margin-right: 22px;
     }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+
+        ul ul {
+        padding-inline-start: 10px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -273,11 +281,6 @@ hr {
 @media only screen and (max-width: 500px) {
     ul {
         padding-inline-start: 0px;
-    }
-
-    ul ul {
-                padding-inline-start: -10px;
-
     }
 
         li li {
