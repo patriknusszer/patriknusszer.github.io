@@ -131,7 +131,7 @@ Oftenly dropped in speech, when the surrounding consonants are easily pronounced
 - **e at the end of the first open syllable**  
 Less likely to be dropped  
 ''f|e|nêtre'', ''d|e|ssous'', ''d|e|ssus'', ''d|e|venir'', ''p|e|tit'', ''v|e|nir'', ''r|e|commancer''  
-//f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //pə.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
+//f_ə_.nɛtʁ//, //d_ə_.su//, //d_ə_.sy//, //p_ə_.ti//, //v_ə_.niʁ//, //ʁ_ə_.kɔ.mɑ̃.se//
 - **e at the end of medial open syllables**  
 More likely to be dropped  
     Mostly **en/em/el** but other combinations also exist  

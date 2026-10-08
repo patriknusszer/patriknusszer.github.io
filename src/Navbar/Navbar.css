@@ -69,13 +69,6 @@
     transition: color .3s ease-in-out;
 }
 
-.selected {
-    color: #9E5EA2;
-    font-family: 'Sacramento';
-    font-size: 20px;
-    border-bottom: 1px solid #9E5EA2;
-}
-
 .menuitem:hover {
     color: #c792ca;
     /* border-bottom-color: #9E5EA2; */
@@ -99,7 +92,7 @@
     height: 100%;
     left: 0;
     margin: auto;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     visibility: hidden;
     animation: ununderline .5s ease-in-out forwards;
     transition: border-bottom-color 0s ease-in-out 1s;
