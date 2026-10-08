@@ -32,7 +32,7 @@ $$
 \Sigma Q = Q \Lambda
 $$
 
-- $\Sigma$ is a matrix, here in particular, the covariance matrix of the features in $x$
+- $\Sigma$ is a matrix, here in particular, the covariance matrix of the features in $\vec{x}$
 - $\Lambda$ is a diagonal matrix, here in particular, the elements of the diagonal are the eigenvalues of $\Sigma$
 
 $$
@@ -480,7 +480,8 @@ $$
 \begin{aligned}
 &g(\vec{x}(t))=\text{const}\quad \forall\vec{x}_{-k}(t) \in U\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
-\implies &=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
+\implies &=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)\\
+&=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
 \implies &\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \cdot \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
@@ -724,4 +725,55 @@ $$
 Q.E.D.
 
 **Inverse function theorem proof**
-**coming soon**
+
+The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective, using the Banach theorem. The existence of the local inverse is equivalent to the local bijectivity.
+
+$$
+\begin{aligned}
+&\begin{cases}
+f: U \subseteq \mathbb{R}^n \to \mathbb{R}^n \in C^1\\
+\det Df(\vec{a}) \neq 0
+\end{cases}\\
+\implies
+&\begin{cases}
+\exists\ \vec{a} \in V \subseteq \mathbb{R}^n\\
+\exists\ f(\vec{a}) \in W \subseteq \mathbb{R}^n\\
+\text{such that}\\
+f: V \to W\ \text{is bijective}\\
+f^{-1} \in C^1
+\end{cases}
+\end{aligned}
+$$
+
+The problem can be normalized by applying invertible operations to $f$ that also preserve continuous differentiability.
+
+$$
+\begin{aligned}
+&\begin{cases}
+A = D_{\vec{x}}f(\vec{x})\bigg|_{\vec{x}=\vec{a}}\\
+F(\vec{x})=A^{-1}(f(\vec{x}) - f(\vec{a}))
+\end{cases}\\
+\implies 
+&\begin{cases}
+F(\vec{a})=0\\
+F^{-1}(\vec{x})=f(\vec{x})=AF(\vec{x})+f(\vec{a})\\
+D_{\vec{x}}F(\vec{x})\bigg|_{\vec{x}=\vec{a}}=
+A^{-1}D_{\vec{x}}f(\vec{x})\bigg|_{\vec{x}=\vec{a}}\\
+=A^{-1}A=I
+\end{cases}
+\end{aligned}
+$$
+
+Since $F$ is also continuously differentiable, for a fixed $q>0$ we can establish a ball radius $r_0$ such that:
+
+$$
+||D_{\vec{x}}F(\vec{x})-I|| < q_0\quad \forall\ \vec{x}: ||\vec{x}-\vec{a}||<r_0
+$$
+
+Then we prove that the following weighted average of any two vectors $\vec{x}$ and $\vec{y}$ from the ball is also inside the ball:
+
+$$
+\gamma(t)=\vec{x}+t(\vec{y}-\vec{x}) \in B_{r_0}(\vec{a})\quad \forall t \in [0,1]
+$$
+
+**Proof under construction...**
