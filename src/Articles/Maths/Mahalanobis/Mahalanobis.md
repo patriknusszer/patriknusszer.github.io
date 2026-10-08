@@ -330,11 +330,18 @@ Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an
 **Proof of Heine-Borel theorem**
 **coming soon**
 
-And since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
+**Boundedness $\implies$ existence**
+Since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
 
-Every limit point $\in \overline{Y}$, that is, the closure (the closed version) of $Y$ contains every limit point of $Y$.
+**Closed $\implies$ containment**
+Every limit point $\in \overline{Y}$, that is, the closure (the closed version) of $Y$ contains every limit point of $Y$. And since $Y$ is closed, it contains its supremum.
 
-And since $Y$ is compact, it is not just boudned but also closed, and hence contains its supremum.
+The definition of a limit point of a set: such a point of the complete/topological space, that for all open neighborhoods/sets containing the point also contains a point of the subset other than the limit point:
+
+$$
+\forall\ U \in \mathcal{T}, \quad
+x \in U \implies U \cap (A \setminus \{x\}) \neq \varnothing,
+$$
 
 The containment of the infimum is analogously provided by the **greatest lower bound axiom**.
 
