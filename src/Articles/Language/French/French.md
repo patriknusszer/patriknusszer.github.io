@@ -259,6 +259,8 @@ When |en|/|én| is used as a prefix, it can nasalise in the first syllable witho
 - **u - end of syllable case**
 ''|u|n'', ''br|u|n'', ''parf|u|m''  
 /_œ̃_/, /bʁ_œ̃_/, /paʁ.f_œ̃_/
+- **u - consonant case**  
+''j|u|ngle'', ''déf|u|nt''
 
 ### Others
 
