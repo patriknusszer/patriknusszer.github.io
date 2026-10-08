@@ -307,7 +307,7 @@ $$
 So it can be contained by a union of open sets of $X$.
 
 $\tau$ is the topology of the topological space. It contains all the open sets of $X$.
-- Contains empty set and $X$
+- Contains the empty set and $X$
 - Closed under unions
 - Closed under finite intersections
 
@@ -317,13 +317,13 @@ $$
 \end{aligned}
 $$
 
-Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, $Y$ we select such an open cover, and by definition of continuous functions over abstract topological spaces, the pre-image of the open cover of $Y$ is also open.
+Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, for $Y$ we select such an open cover arbitrarily, and by definition of continuous functions over subsets of abstract topological spaces, the preimage of the open cover of $Y$ is also open.
 
-Then, by definition of a compact abstarct topological space, any open covers of $X$ has a **finite** open subcover.
+Then, by definition of a compact subset of an abstract topological space, any open covers of $X$ has a **finite** open subcover.
 
 But this essentially means the image of the finite cover of $X$ is a finite cover of $Y$, which is also a finite subcover of the initial open cover for $Y$ we started off with.
 
-And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover. And since a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
+And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover as well. And since a subset of a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
 
 Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the **Heine-Borel theorem**.
 
