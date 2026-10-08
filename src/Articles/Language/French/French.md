@@ -47,7 +47,6 @@ Variables of consonants are:
 
 **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 
-
 **Manner of articulation**
 - **No airflow blockage involved**
     - **Nasal**: free air passageway throguh the nose. An example is //m// in ''|M|onday'' //ˈ_m_ʌndeɪ//.
@@ -221,32 +220,38 @@ When |en|/|én| is used as a prefix, it can nasalise in the first syllable witho
 **When //ɑ̃// is pronounced**
 
 - **a/e - end of syllable case**  
-''|e|n'', ''mam|a|n'', ''rom|a|n'', ''plan'', ''volcan'', ''artisan'', ''écran'', ''ruban''
+''|e|n'', ''mam|a|n'', ''rom|a|n'', ''plan'', ''volcan'', ''artisan'', ''écran'', ''ruban''  
+//_ɑ̃_//, //ma.m_ɑ̃_//, //ʁɔ.m_ɑ̃_//, //pl_ɑ̃_//, //vɔl.k_ɑ̃_//, //aʁ.ti.z_ɑ̃_//, //e.kʁ_ɑ̃_//, //ʁy.b_ɑ̃_//
 - **a/e - consonant case**  
-''m|a|nger'', ''ch|a|nter'', ''l|a|ngue'', ''|a|mpoule'', ''|e|nf|a|nt'', ''|e|ns|e|mble''
-
+''m|a|nger'', ''ch|a|nter'', ''l|a|ngue'', ''|a|mpoule'', ''|e|nf|a|nt'', ''|e|ns|e|mble''  
+//m_ɑ̃_.ʒe//, //ʃ_ɑ̃_.te//, //l_ɑ̃_ɡ//, //_ɑ̃_.pul//, //_ɑ̃_.f_ɑ̃_//, //_ɑ̃_.s_ɑ̃_bl//
 **//ɛ̃// nasalized open-mid front unrounded vowel**
 
 **When //ɛ̃// is pronounced**
 
 - **e in ie - end of syllable case**  
-''bi|e|n'', ''chi|e|n'', ''comédi|e|n''
+''bi|e|n'', ''chi|e|n'', ''comédi|e|n''  
+//bj_ɛ̃_//, //ʃj_ɛ̃_//, //kɔ.me.dj_ɛ̃_//
 - **e in ie - consonant case**  
-''bi|e|ntôt'', ''vi|e|ndrai'', ''ti|e|ndras'', ''sci|e|nce''
+''bi|e|ntôt'', ''vi|e|ndrai'', ''ti|e|ndras'', ''sci|e|nce''  
+//bj_ɛ̃_.to//, //vj_ɛ̃_.drɛ//, //tj_ɛ̃_.dʁa//, //sj_ɛ̃_s//
 - **i/y - end of syllable case**  
-''th|y|m'', ''mat|i|n'', ''seraph|i|m'', ''v|i|n'', ''chem|i|n''
+''th|y|m'', ''mat|i|n'', ''seraph|i|m'', ''v|i|n'', ''chem|i|n''  
+//t_ɛ̃_//, //ma.t_ɛ̃_//, //se.ʁa.f_ɛ̃_//, //v_ɛ̃_//, //ʃə.m_ɛ̃_//
 - **i/y - consonant case**  
-''t|i|mbre'', ''s|i|nge'', ''s|y|ndicate'', ''s|y|ntaxe''
+''t|i|mbre'', ''s|i|nge'', ''s|y|ndicate'', ''s|y|ntaxe''  
+//t_ɛ̃_bʁ//, //s_ɛ̃_ʒ//, //s_ɛ̃_.di.kɑ//, //s_ɛ̃_.taks//
 
 **//ɔ̃// nasalized open-mid back rounded vowel**
 
 **When //ɔ̃// is pronounced**
 
 - **o - end syllable case**  
-''bonb|o|n'', ''mais|o|n'', ''trap|o|n'', ''n|o|m''
+''bonb|o|n'', ''mais|o|n'', ''trap|o|n'', ''n|o|m''  
+//bɔ̃.b_ɔ̃_//, //mɛ.z_ɔ̃_//, //tʁa.p_ɔ̃_//, //n_ɔ̃_//
 - **o - consonant case**  
 ''b|o|njour'', ''c|o|ntent'', ''n|o|mbre'', ''l|o|ng'', ''b|o|nbon''
-
+//b_ɔ̃_.ʒuʁ//, //k_ɔ̃_.tɑ̃//, //n_ɔ̃_bʁ//, //l_ɔ̃_//, //b_ɔ̃_.bɔ̃//
 ### Others
 
 **//a// open front unrounded vowel**
