@@ -366,7 +366,7 @@ Does not exist in English but is pronounced similarly to ''ca|ny|on'' //ˈkæ_n.
 ''monta|gn|e'', ''pei|gn|e'', ''champi|gn|on'', ''espa|gn|ol''  
 //mɔ̃.ta_ɲ_//, //pɛ_ɲ_//, //ʃɑ̃.pi._ɲ_ɔ̃//, //ɛs.pa._ɲ_ɔl//
 
-**//ʁ// voiceless uvular fricative**
+**//ʁ// voiced uvular fricative**
 
 Can be pronounced by raising the back of the tongue towards the *uvula* to create a narrow air passageway. Vibration of the uvula is not necessary but is not a mistake.
 
