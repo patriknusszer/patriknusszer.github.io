@@ -212,12 +212,9 @@ Q
 &=
 Q^T\operatorname{Cov}(z)Q\\
 &= \boxed{Q^T \Sigma Q}\\
-\xrightarrow{
-    \substack{
-        \Sigma\ \text{is symmetric}\\
-        Q\ \text{is orthonormal eigenbasis of}\ \Sigma
-    }
-} &= \Lambda
+&\Sigma\ \text{is symmetric}\\
+&Q\ \text{is orthonormal eigenbasis of}\ \Sigma \\
+\implies &= \Lambda
 \end{aligned}
 $$
 
