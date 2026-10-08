@@ -235,7 +235,7 @@ $$
 \end{aligned}
 $$
 
-In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $x$ belonging to a class $c$.
+In generative LDA, the Mahalanobis distance is exponentially weighted to measure the probability of the data point $\vec{x}$ belonging to a class $c$.
 
 Formally, assuming data has normal distribution:
 
