@@ -1,3 +1,14 @@
+html, body, * {
+    overflow:hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 #logo {
     height: 110px;
     width: auto;
@@ -42,7 +53,6 @@
 }
 
 #panel {
-    height: fit-content;
     width: 100%;
 }
 
