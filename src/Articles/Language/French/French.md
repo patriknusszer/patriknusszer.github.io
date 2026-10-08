@@ -210,6 +210,35 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
 //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.t_y_ʁ//, //m_y_.zik//
 
+### Nasal vowels
+
+Nasal vowels are pronounced as their non-nasal counterpart, but air also passes through the nose, and the |n| or |m| is not, or just barely pronounced.
+
+Nasal vowels are pronounced when the vowels |a|, |e|, |i| or |y| are followed by |n| or |m| at the end of the last syllable, or when |n|/|m| is followed by another consonant in a nonfinal syllable.
+
+**//ɑ̃// nasalized open back unrounded vowel**
+
+**When //ɑ̃// is pronounced**
+
+- **a/e - end of syllable case**
+- **a/e - consonant case**
+
+**//ɛ̃// nasalized open-mid front unrounded vowel**
+
+**When //ɛ̃// is pronounced**
+
+- **e in ie - end of syllable case**
+- **e in ie - consonant case**
+- **i/y/ei/ai - end of syllable**
+- **i/y/ei/ai - consonant case**
+
+**//ɔ̃// nasalized open-mid back rounded vowel**
+
+**When //ɔ̃// is pronounced**
+
+- **o + n/m at the end of a syllable**
+- **o + n/m + consonant**
+
 ### Others
 
 **//a// open front unrounded vowel**
