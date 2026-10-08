@@ -194,6 +194,10 @@ hr {
     text-align: center;
 }
 
+#background {
+    background-color: #111111;
+}
+
 @media only screen and (max-width: 740px) {
     #panel {
         width: auto;
@@ -261,13 +265,22 @@ hr {
     }
 
     ul {
-        padding-inline-start: 20px;
+        padding-inline-start: 10px;
     }
 }
 
 
 @media only screen and (max-width: 500px) {
-    up {
-        padding-inline-start: 10px;
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    ul ul {
+                padding-inline-start: -10px;
+
+    }
+
+        li li {
+        margin-left: 15px;;
     }
 }
