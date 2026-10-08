@@ -253,14 +253,18 @@ When |en|/|én| is used as a prefix, it can nasalise in the first syllable witho
 ''b|o|njour'', ''c|o|ntent'', ''n|o|mbre'', ''l|o|ng'', ''b|o|nbon''
 //b_ɔ̃_.ʒuʁ//, //k_ɔ̃_.tɑ̃//, //n_ɔ̃_bʁ//, //l_ɔ̃_//, //b_ɔ̃_.bɔ̃//
 
-**//œ̃// nasalized**
+**//œ̃// Nasalized open-mid front rounded vowel**
+
+In modern French, this sound is merged with //ɛ̃//.
+This is a mainly classical French sound.
 
 **When //œ̃// is pronounced**
 - **u - end of syllable case**
 ''|u|n'', ''br|u|n'', ''parf|u|m''  
-/_œ̃_/, /bʁ_œ̃_/, /paʁ.f_œ̃_/
+//_œ̃_//, //bʁ_œ̃_//, //paʁ.f_œ̃_//
 - **u - consonant case**  
-''j|u|ngle'', ''déf|u|nt''
+''j|u|ngle'', ''déf|u|nt''  
+//ʒ_œ̃_ɡl//, //def_œ̃_//
 
 ### Others
 
