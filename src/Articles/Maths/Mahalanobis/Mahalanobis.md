@@ -32,8 +32,8 @@ $$
 \Sigma Q = Q \Lambda
 $$
 
-- $\Sigma$ is a matrix, in particular, the covariance matrix of the features in $x$
-- $\Lambda$ is a diagonal matrix, in particular, the elements of the diagonal are the eigenvalues of $\Sigma$
+- $\Sigma$ is a matrix, here in particular, the covariance matrix of the features in $x$
+- $\Lambda$ is a diagonal matrix, here in particular, the elements of the diagonal are the eigenvalues of $\Sigma$
 
 $$
 \begin{aligned}
@@ -53,6 +53,8 @@ $$
 \end{bmatrix}
 \end{aligned}
 $$
+
+The covariance matrix is a $n \cdot n$ table, each cell $\sigma_{ij}$ represetning the covariance of feature $i$ and feature $j$. At the diagonal $\sigma_{ii}$ this covariance of the feature with itself equals teh variance of the feature.
 
 In general, this is the eigenvalue problem for multiple eigenvectors and eigenvalues.
 
