@@ -343,6 +343,10 @@ $$
 x \in U \implies U \cap (A \setminus \{x\}) \neq \varnothing,
 $$
 
+The catch is: a limit point of set $Y$ does not have to be an element of $Y$.
+
+The intuition is the example interval $(0, 1) \subseteq \mathbb{R}$ in which any open neighborhood of an interior point has infinitely many points of $(0, 1)$ other than the interior point. Points $1$ and $0$ are not contained by set $(0, 1)$ and only by the ambient space (and of course the complete/topological space), but still they are both limit points of $(0, 1)$.
+
 The containment of the infimum is analogously provided by the **greatest lower bound axiom**.
 
 **Q.E.D**
