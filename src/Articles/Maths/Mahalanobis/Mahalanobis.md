@@ -216,7 +216,7 @@ Q^T\operatorname{Cov}(z)Q\\
 &= \boxed{Q^T \Sigma Q}\\
 &\Sigma\ \text{is symmetric}\\
 &Q\ \text{is orthonormal eigenbasis of}\ \Sigma \\
-\implies &= \Lambda
+\implies &= \boxed{\Lambda}
 \end{aligned}
 $$
 
