@@ -170,7 +170,7 @@ $$
 \end{aligned}
 $$
 
-Please note that when the eigenvectors are chosen not to have unit length, then the diagonal of the above matrix will not one ones, so $Q^TQ \neq I$ and hence the eigenvalues in $\Lambda$ get scaled by the squares of the $L_2$ lengths of their eigenvectors.  
+Please note that when the eigenvectors are chosen not to have unit length, then the diagonal of the above matrix will not be ones, so $Q^TQ \neq I$ and hence the eigenvalues in $\Lambda$ get scaled by the squares of the $L_2$ lengths of their eigenvectors.  
 
 This result is important because the $z$-score transformation by matrix $Q$ yields:
 
