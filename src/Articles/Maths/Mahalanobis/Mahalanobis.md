@@ -107,7 +107,7 @@ $$
 \end{aligned}
 $$
 
-$\Sigma$ is a special matrix, because covariance matrices are symmetrical and hence they have exactly $n$ eigenvectors which are orthogonal. **This theorem, for the curious, is proven below, after the derivation of the use of Mahalanobis distance in generative LDA.**
+$\Sigma$ is a special matrix, because covariance matrices are symmetrical ($\sigma_{ij} = \sigma_{ji}$) and hence they have exactly $n$ eigenvectors which are orthogonal. **This theorem, for the curious, is proven below, after the derivation of the use of Mahalanobis distance in generative LDA.**
 
 The inverse of square matrices holding orthogonal vectors exists, and it is exactly their transpose:
 
