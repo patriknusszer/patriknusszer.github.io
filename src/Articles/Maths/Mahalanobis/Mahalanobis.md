@@ -773,7 +773,7 @@ $$
 Then we prove that the following weighted average of any two vectors $\vec{x}$ and $\vec{y}$ from the ball is also inside the ball:
 
 $$
-\gamma(t)=\vec{x}+t(\vec{y}-\vec{x}) \in B_{r_0}(\vec{a})\quad \forall t \in [0,1]
+\gamma(t)=\vec{x}+t(\vec{y}-\vec{x}) \in B_{r_0}(\vec{a})\quad \forall\ t \in [0,1]
 $$
 
 **Proof under construction...**
