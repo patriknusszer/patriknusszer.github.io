@@ -109,7 +109,7 @@ $$
 
 $\Sigma$ is a special matrix, because covariance matrices are symmetrical and hence they have exactly $n$ eigenvectors which are orthogonal. **This theorem, for the curious, is proven below, after the derivation of the use of Mahalanobis distance in generative LDA.**
 
-The inverse of square matrices holding orthogonal vectors exist, and it is exactly their transpose:
+The inverse of square matrices holding orthogonal vectors exists, and it is exactly their transpose:
 
 $$
 Q^{-1}=Q^T
@@ -169,6 +169,8 @@ $$
 \implies &\boxed{Q^{-1}\Sigma Q = Q^{T}\Sigma Q = \Lambda}
 \end{aligned}
 $$
+
+Please note that when the eigenvectors are chosen not to have unit length, then $Q^TQ \neq I$ and hence the eigenvalues in $\Lambda$ get scaled by the squares of the $L_2$ lengths of their eigenvectors.  
 
 This result is important because the $z$-score transformation by matrix $Q$ yields:
 
