@@ -257,7 +257,7 @@ Where $
 \Sigma^{-1}
 (\vec{x}-\vec{\mu}_c)$ is numerically the Mahalanobis distance.
 
-#Auxiliary
+#Complementary
 
 **Theorem**
 
@@ -291,8 +291,8 @@ $$
 
 By the **Topoligical Extreme Value Theorem**:
 
-- If $(X, \tau)$ is a compact (closed and bounded) non-empty topoligical space, here in particular a non-empty metric space such as a subset of $\mathbb{R}^n$
-- If $f: X \to \mathbb{R}$ is continuous (everywhere)
+- If $X \subseteq K$ is a compact set and $K$ is the ambient space of the abstract topological space $(K, \tau)$
+- If $f: X \to Y \subseteq \mathbb{R}$ is continuous (everywhere)
 
 Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{x} \in X$.
 
