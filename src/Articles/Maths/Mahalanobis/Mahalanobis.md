@@ -172,16 +172,10 @@ $$
 
 Please note that when the eigenvectors are chosen not to have unit length, then the diagonal of the above matrix will not be ones, so $Q^TQ \neq I$ and hence the eigenvalues in $\Lambda$ get scaled by the squares of the $L_2$ lengths of their eigenvectors.  
 
-This result is important because the $z$-score transformation by matrix $Q$ yields:
+The above result is important because the $z$-score transformation by matrix $Q$ yields:
 
 $$
 \begin{aligned}
-\operatorname{Cov}(zQ)
-&=
-\mathbb{E}\left[
-\left(zQ-\mathbb{E}[zQ]\right)^T
-\left(zQ-\mathbb{E}[zQ]\right)
-\right]\\
 \operatorname{Cov}(zQ)
 &=
 \mathbb{E}\left[
