@@ -216,28 +216,38 @@ Nasal vowels are pronounced as their non-nasal counterpart, but air also passes 
 
 Nasal vowels are pronounced when the vowels |a|, |e|, |i| or |y| are followed by |n| or |m| at the end of the last syllable, or when |n|/|m| is followed by another consonant in a nonfinal syllable.
 
+When |en|/|én| is used a prefix, it can nasalise in the first syllable without a subsequent consonant. But most of the time, when |n|/|m| is followed by a vowel it does not nasalize.
+
 **//ɑ̃// nasalized open back unrounded vowel**
 
 **When //ɑ̃// is pronounced**
 
-- **a/e - end of syllable case**
-- **a/e - consonant case**
+- **a/e - end of syllable case**  
+''|e|n'', ''mam|a|n'', ''rom|a|n'', ''plan'', ''volcan'', ''artisan'', ''écran'', ''ruban''
+- **a/e - consonant case**  
+''m|a|nger'', ''ch|a|nter'', ''l|a|ngue'', ''|a|mpoule'', ''|e|nf|a|nt'', ''|e|ns|e|mble''
 
 **//ɛ̃// nasalized open-mid front unrounded vowel**
 
 **When //ɛ̃// is pronounced**
 
-- **e in ie - end of syllable case**
-- **e in ie - consonant case**
-- **i/y/ei/ai - end of syllable**
-- **i/y/ei/ai - consonant case**
+- **e in ie - end of syllable case**  
+''bi|e|n'', ''chi|e|n'', ''comédi|e|n''
+- **e in ie - consonant case**  
+''bi|e|ntôt'', ''vi|e|ndrai'', ''ti|e|ndras'', ''sci|e|nce''
+- **i/y - end of syllable case**  
+''th|y|m'', ''mat|i|n'', ''seraph|i|m'', ''v|i|n'', ''chem|i|n''
+- **i/y - consonant case**  
+''t|i|mbre'', ''s|i|nge'', ''s|y|ndicate'', ''s|y|ntaxe''
 
 **//ɔ̃// nasalized open-mid back rounded vowel**
 
 **When //ɔ̃// is pronounced**
 
-- **o + n/m at the end of a syllable**
-- **o + n/m + consonant**
+- **o - end syllable case**  
+''bonb|o|n'', ''mais|o|n'', ''trap|o|n'', ''n|o|m''
+- **o - consonant case**  
+''b|o|njour'', ''c|o|ntent'', ''n|o|mbre'', ''l|o|ng'', ''b|o|nbon''
 
 ### Others
 
