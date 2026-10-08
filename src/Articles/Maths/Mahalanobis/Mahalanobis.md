@@ -1,13 +1,14 @@
-One way of measuring the **unusualness** of a given data point $\vec{x}$ is taking the $\operatorname{L}_2$ norm of the $z$-score vector:
+One way of measuring the **unusualness** of a given data point $\vec{x}$ is taking the $\operatorname{L}_2$ norm (Euclidean length) of the $z$-score vector:
 
 $$
 \vec{z} = \frac{\vec{x} - \vec{\pi}_c}{\vec{\sigma}_c}
 $$
 
-- $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate being the mean of one of the features/traits
-- $\vec{\sigma}_c$ is the standard deviation vector, each coordinate being the standard deviation of one of the features/traits 
+- $\vec{x}$ is the data point, each coordinate representing a measure of a trait
+- $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate representing the mean of a trait
+- $\vec{\sigma}_c$ is the standard deviation vector, each coordinate representing the standard deviation of one of a trait 
 
-Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation/diff. from mean $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
+Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation from the mean $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
 
 The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they contribute great **unusualness** but the fact that it was expected due their great correlation is **not discounted**.
 
@@ -15,7 +16,7 @@ The idea is to instead measure **unusualness** of **transformed features that ar
 
 **Lemma**
 
-The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix  yield uncorrelated features, and the variances of these new features are the eigenvalues of the cov. mat.:
+The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix  yield uncorrelated features, and the variances of these new features are the eigenvalues of the covariance matrix:
 
 $$
 \operatorname{Cov}(\vec{z}Q)=\Lambda
