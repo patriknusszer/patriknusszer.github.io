@@ -211,7 +211,7 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 
 Nasal vowels are pronounced as their non-nasal counterpart, but air also passes through the nose, and the |n| or |m| is not, or just barely pronounced.
 
-Nasal vowels are pronounced when the vowels |a|, |e|, |i| or |y| are followed by |n| or |m| at the end of the last syllable, or when |n|/|m| is followed by another consonant in a nonfinal syllable.
+Nasal vowels are pronounced when the vowels |a|, |e|, |i| or |y| are followed by |n| or |m| at the end of the last syllable, or when |n|/|m| is followed by another consonant in any syllable.
 
 When |en|/|én| is used as a prefix, it can nasalise in the first syllable without a subsequent consonant. But most of the time, when |n|/|m| is followed by a vowel it does not nasalize.
 
