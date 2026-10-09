@@ -48,13 +48,13 @@ Variables of consonants are:
 **Voicedness**: if vocal chords vibrate it is **voiced**, otherwise **voiceless**
 
 **Manner of articulation**
-- **No airflow blockage involved**
-    - **Nasal**: free air passageway throguh the nose. An example is //m// in ''|M|onday'' //ˈ_m_ʌndeɪ//.
+- **No complete airflow blockage involved**
     - **Approximant**: the tongue is **approximating** the place of articulation, it is close to it, but the airflow pathway is relatively wide. An example is the //j// at the start of the word ''|y|es'' //jɛs// or English //ɹ// in ''|r|obot'' //'_ɹ_oʊ.bɑt//
     - **Fricative**: free airway pathway still exists but it is very constricted. An example is the initial //ʃ// in ''|sh|op'' //ʃɑp//.
 - **Airflow blockage involved**
     - **Stop/Plosive**: airflow is completely blocked for a very brief time, and then is suddenly released. An example is initial //t// in "time".
     - **Trill**: Airway is blocked and released repeatedly. An example is the initial //r// in Italian ''t|r|e'' //t_r_e//, Spanish ''pe|rr|o'' //pe_r_o// and Hungarian ''raktá|r|'' //rɒktaː_r_//, but it is again not the same as English //ɹ// which is the voiced postalveolar approximant //ɹ//
+    -**Nasal**: free air passageway throguh the nose, but complete blockage in the mouth cavity. An example is //m// in ''|M|onday'' //ˈ_m_ʌndeɪ//.
 
 In case of consonants, considering the maximal level of airway constriction involved, we can intuitively memorise these categories, in case of non-nasal consonants:
 
