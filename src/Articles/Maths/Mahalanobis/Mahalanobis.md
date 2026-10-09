@@ -726,7 +726,9 @@ Q.E.D.
 
 **Inverse function theorem proof**
 
-The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective, using the Banach theorem. The existence of the local inverse is equivalent to the local bijectivity.
+The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective. The existence of the local inverse is equivalent to being locally bijective.
+
+The proof has two main parts. The first one establishes an inequality relation from which injectivity of $F$ is proven. And the second one uses Banach's theorem to show surjectivity.
 
 $$
 \begin{aligned}
