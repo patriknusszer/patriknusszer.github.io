@@ -769,13 +769,31 @@ $$
 Since $F$ is also continuously differentiable, for a fixed $q>0$ we can establish a ball radius $r_0$ such that:
 
 $$
-||D_{\vec{x}}F(\vec{x})-I|| < q_0\quad \forall\ \vec{x}: ||\vec{x}-\vec{a}||<r_0
+\begin{aligned}
+&\forall\ \vec{x}: ||\vec{x}-\vec{a}||<r_0\ \exists q_0 > 0\\
+&\text{such that}\\
+&||D_{\vec{x}}F(\vec{x})-I|| < q_0\quad 
+\end{aligned}
 $$
 
-Then we prove that the following weighted average of any two vectors $\vec{x}$ and $\vec{y}$ from the ball is also inside the ball:
+Since any vectors in the ball are at most $r_0$ away from the center $\vec{a}$, a weighted average of the two must also be inside the ball. In teh following the first inequality relation is derived using the triangle inequality.
 
 $$
-\gamma(t)=\vec{x}+t(\vec{y}-\vec{x}) \in B_{r_0}(\vec{a})\quad \forall\ t \in [0,1]
+\begin{aligned}
+&\forall\ t\in[0,1]:\\
+&\gamma(t)=t\vec{x} + (t-1)\vec{y}\ \in B_{r_)}(\vec{a})\\
+&\mid\mid\gamma(t) - \vec{a}\mid\mid=\\
+&=\mid\mid t\vec{x} - t\vec{a} + (t - 1)\vec{y} - (t-1)\vec{a}\mid\mid=\\
+&=\mid\mid t(\vec{x}-\vec{a}) + (t-1)(\vec{y}-\vec{a})\mid\mid\leq\\
+&\leq \mid\mid t(\vec{x} - \vec{a}) \mid\mid + \mid\mid (t-1)(\vec{y} - \vec{a}) \mid\mid<\\
+&<tr + (t-1)r=r\\
+\implies &\mid\mid \gamma(t) - \vec{a} \mid\mid < r
+\end{aligned}
 $$
 
-**Proof under construction...**
+Now let $g(t)=F(\gamma(t))$. From the fundamental theoremm of calculus, we know that the difference of function value (sensitive to signs) over a finite interval equals the accumulated change (sensitive to signs) over that finite interval, that is, the integral of the derivative over that interval:
+
+$$
+F(\vec{y}) - F(\vec{x}) = \int_{0}^{1}\frac{d}{dt} g(t) dt=\\
+=\int_{0}^{1}DF(\gamma(t))(\vec{y}-\vec{x})dt
+$$
