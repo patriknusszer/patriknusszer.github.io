@@ -726,9 +726,9 @@ Q.E.D.
 
 **Inverse function theorem proof**
 
-The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective. The existence of the local inverse is equivalent to being locally bijective.
+The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective. The proof can roughly be thought of as having a part showing local injectivity for some open neighborhood, and then surjectivity for an open neighborhood. Two open neighborhoods of the same point, where both image and preimage points uniquely determine their pairs.
 
-The proof has two main parts. The first one establishes an inequality relation from which injectivity of $F$ is proven. And the second one uses Banach's theorem to show surjectivity.
+Let's find a neighborhood of $\vec{a}$ over which $f$ is injective. 
 
 $$
 \begin{aligned}
@@ -747,24 +747,7 @@ f^{-1} \in C^1
 \end{aligned}
 $$
 
-The problem can be normalized by applying invertible operations to $f$ that also preserve continuous differentiability.
-
-$$
-\begin{aligned}
-&\begin{cases}
-A = D_{\vec{x}}f(\vec{x})\bigg|_{\vec{x}=\vec{a}}\\
-F(\vec{x})=A^{-1}(f(\vec{x}) - f(\vec{a}))
-\end{cases}\\
-\implies 
-&\begin{cases}
-F(\vec{a})=0\\
-F^{-1}(\vec{x})=f(\vec{x})=AF(\vec{x})+f(\vec{a})\\
-D_{\vec{x}}F(\vec{x})\bigg|_{\vec{x}=\vec{a}}=
-A^{-1}D_{\vec{x}}f(\vec{x})\bigg|_{\vec{x}=\vec{a}}\\
-=A^{-1}A=I
-\end{cases}
-\end{aligned}
-$$
+**Injectivity** means the function can only attain  
 
 Since $F$ is also continuously differentiable, for a fixed $q>0$ we can establish a ball radius $r_0$ such that:
 
