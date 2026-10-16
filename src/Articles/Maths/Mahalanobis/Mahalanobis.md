@@ -740,8 +740,6 @@ Then we can find two open neighborhoods of vectors around $\vec{a}$ for which $f
 
 First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective.
 
-The **fundamental theorem of calculus** says that the sign-sensitive difference in function value over a closed interval equals the accumulated sign-sensitive rate of change over that interval. Formally expressed, that is the integral of the derivative over that interval.
-
 Connsider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}(\vec{a})$:
 
 $$
@@ -764,6 +762,8 @@ $$
 &< tr_0 + (1-t)r_0=r_0
 \end{aligned}
 $$
+
+The **fundamental theorem of calculus** says that the sign-sensitive difference in function value over a closed interval equals the accumulated sign-sensitive rate of change over that interval. Formally expressed, that is the integral of the derivative over that interval.
 
 Using the fundamental theorem of calculus and the chain rule:
 
@@ -813,14 +813,14 @@ $$
 If invertibility is proven for $f$ it is also proven for $g$ because $f$ has been derived from $g$ through an invertible operation. And the favourable condition obtained with this is that the Jacobian of $f$ at $\vec{a}$ this way is now the identity matrix:
 
 $$
-Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Df\big|_{\vec{a}}=I
+Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Dg\big|_{\vec{a}}=I
 $$
 
 And it has also been assumed that $f$ is continuously differentiable, and it means there exists $B_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. This is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
 
 $$
 \begin{aligned}
-&\forall\ q>0\ \exists\ r_0>0\\
+&\forall\ q_0>0\ \exists\ r_0>0\\
 &\text{such that}\ \forall\ \vec{x} \in\ B_{r_0}(\vec{a})\\
 &\mid\mid Df(\vec{x})-I\mid\mid < q_0\\
 &\text{let}\ q_0=1\\
@@ -936,3 +936,4 @@ That being said an important takeaway is the preimage of the open range ball may
 $$
 f: U \subseteq B_{r_0}(\vec{a})\to B_{(1-q_0)r_0}(\vec{a})
 $$
+
