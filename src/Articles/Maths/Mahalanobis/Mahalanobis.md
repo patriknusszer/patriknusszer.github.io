@@ -726,57 +726,143 @@ Q.E.D.
 
 **Inverse function theorem proof**
 
-The idea of the inverse function theorem is, in case of a pointwise invertible Jacobian and local continuous differentiability, it can be shown that the function is locally bijective. The proof can roughly be thought of as having a part showing local injectivity for some open neighborhood, and then surjectivity for an open neighborhood. Two open neighborhoods of the same point, where both image and preimage points uniquely determine their pairs.
+A function having an inverse over a set of input points means it is **bijective** over that set of input points and the image of those input points. Since here it has been pinpointed that only the image of those points are considered bijection is equivalent to **injectivity** over the set of input points which means no two input points can be assigned to the same output point.
 
-Let's find a neighborhood of $\vec{a}$ over which $f$ is injective. 
+Bijection also means **surjectivity**, which means teh codomain is restricted to the range. That is we only consider such output points that are actually attained for the domain.
+
+That means if a function is bijective, it means it has a (sub)domain and a (sub)range in which **points are uniquely paired**.
+
+The inverse function theorem says:
+- if a $\mathbb{R}^n \to \mathbb{R}^m$ function has an invertible Jacobian at some point $\vec{a}$
+- and is continuously differentiable
+
+Then we can find two open balls of vectors around $\vec{a}$ for which $f$ is bijective.
+
+First, let's find an open ball $B_{r_0}$ around $\vec{a}$ for which $f$ can be shown to be injective.
+
+The **fundamental theorem of calculus** says that the sign-sensitive difference in function value over a closed interval equals the accumulated sign-sensitive rate of change over that interval. Formally expressed, that is the integral of the derivative over that interval.
+
+Connsider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}$:
+
+$$
+t \in [0, 1]\\
+\gamma(t)=t\vec{x}+(1-t)\vec{y}\\
+\gamma(t)=\vec{y}+t(\vec{x}-\vec{y})
+$$
+
+The second rewriting can intuitively be imagined as going from point $\vec{y}$ to point $\vec{x}$ through the "line" connecting them, as $t \to 1$.
+
+For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $B_{r_0}$:
 
 $$
 \begin{aligned}
-&\begin{cases}
-f: U \subseteq \mathbb{R}^n \to \mathbb{R}^n \in C^1\\
-\det Df(\vec{a}) \neq 0
-\end{cases}\\
-\implies
-&\begin{cases}
-\exists\ \vec{a} \in V \subseteq \mathbb{R}^n\\
-\exists\ f(\vec{a}) \in W \subseteq \mathbb{R}^n\\
-\text{such that}\\
-f: V \to W\ \text{is bijective}\\
-f^{-1} \in C^1
-\end{cases}
+&\mid\mid\gamma(t) - \vec{a}\mid\mid = \mid\mid t\vec{x} + (1-t)\vec{y} -\vec{a}\mid\mid \\
+&= \mid\mid t(\vec{x}-\vec{a}) + (1-t)(\vec{y}-\vec{a})\mid\mid \\
+&\leq \mid\mid t(\vec{x}-\vec{a}) \mid\mid + \mid\mid (1-t)(\vec{y}-\vec{a})\mid\mid\\
+&\leq t\mid\mid \vec{x} - \vec{a} \mid\mid + (1-t) \mid\mid \vec{y} - \vec{a} \mid\mid\\
+\xrightarrow{\mid\mid\vec{x}-\vec{a}\mid\mid, \mid\mid\vec{y}-\vec{a}\mid\mid < r_0}
+&< tr_0 + (1-t)r_0=r_0
 \end{aligned}
 $$
 
-**Injectivity** means the function can only attain  
+Using the fundamental theorem of calculus and the chain rule:
 
-Since $F$ is also continuously differentiable, for a fixed $q>0$ we can establish a ball radius $r_0$ such that:
+$$
+f(\vec{x})-f(\vec{y})=\int_0^1 Df(\gamma(t))\frac{d}{dt}\gamma(t)dt\\
+f(\vec{x})-f(\vec{y})=(\vec{x}-\vec{y})\int_0^1 Df(\gamma(t))dt
+$$
+
+If we could show that the integral of $Df$ is invertible, then injectivity would immediately follow. Assuming $f(\vec{x})=f(\vec{y})$:
 
 $$
 \begin{aligned}
-&\forall\ \vec{x}: ||\vec{x}-\vec{a}||<r_0\ \exists q_0 > 0\\
-&\text{such that}\\
-&||D_{\vec{x}}F(\vec{x})-I|| < q_0\quad 
+&A=\int_0^1 Df(\gamma(t))dt\\
+&0A^{-1}=(\vec{x}-\vec{y})AA^{-1}\\
+&0=(\vec{x}-\vec{y})I=\vec{x}-\vec{y}\\
+\iff &\vec{x}=\vec{y}
 \end{aligned}
 $$
 
-Since any vectors in the ball are at most $r_0$ away from the center $\vec{a}$, a weighted average of the two must also be inside the ball. In teh following the first inequality relation is derived using the triangle inequality.
+Given a submultiplicative matrix norm, if a matrix is "close enough" to the identity matrix, then it is invertible, precisely:
+
+$$
+\mid\mid A-I \mid\mid < 1\\
+\implies \exists A^{-1}
+$$
+
+For curious, this lemma is proven at the end of the article.
+
+The idea is that if we could force $\mid\mid Df-I\mid\mid<1$ then it would also force $\mid\mid(\int Df)-I\mid\mid<1$:
 
 $$
 \begin{aligned}
-&\forall\ t\in[0,1]:\\
-&\gamma(t)=t\vec{x} + (t-1)\vec{y}\ \in B_{r_)}(\vec{a})\\
-&\mid\mid\gamma(t) - \vec{a}\mid\mid=\\
-&=\mid\mid t\vec{x} - t\vec{a} + (t - 1)\vec{y} - (t-1)\vec{a}\mid\mid=\\
-&=\mid\mid t(\vec{x}-\vec{a}) + (t-1)(\vec{y}-\vec{a})\mid\mid\leq\\
-&\leq \mid\mid t(\vec{x} - \vec{a}) \mid\mid + \mid\mid (t-1)(\vec{y} - \vec{a}) \mid\mid<\\
-&<tr + (t-1)r=r\\
-\implies &\mid\mid \gamma(t) - \vec{a} \mid\mid < r
+&\bigg|\bigg| \int_0^1 Df(\gamma(t)) dt - I \bigg|\bigg|\leq \int_0^1 \mid\mid Df(\gamma(t))-I\mid\mid dt\\
+&\text{if } \mid\mid Df(\gamma(t)) - I \mid\mid < 1\\
+\implies &\bigg|\bigg| \int_0^1 Df(\gamma(t)) dt - I \bigg|\bigg| < 1
 \end{aligned}
 $$
 
-Now let $g(t)=F(\gamma(t))$. From the fundamental theoremm of calculus, we know that the difference of function value (sensitive to signs) over a finite interval equals the accumulated change (sensitive to signs) over that finite interval, that is, the integral of the derivative over that interval:
+Of course, $Df$ does not automatically have that property. However, it has been assumed that $Df$ is invertible at point $\vec{a}$.
+
+Let's do some rebranding. Assume the original function was $g$ and the modified one is $f$, and let $f$ be:
 
 $$
-F(\vec{y}) - F(\vec{x}) = \int_{0}^{1}\frac{d}{dt} g(t) dt=\\
-=\int_{0}^{1}DF(\gamma(t))(\vec{y}-\vec{x})dt
+f=\left(Dg\big|_{\vec{a}}\right)^{-1}g
 $$
+
+If invertibility is proven for $f$ it is also proven for $g$ because $f$ has been derived from $g$ through an invertible operation. And the favourable condition obtained with this is that the Jacobian of $f$ at $\vec{a}$ this way is now the identity matrix:
+
+$$
+Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Df\big|_{\vec{a}}=I
+$$
+
+And it has also been assumed that $f$ is continuously differentiable, and it means there exists $B_{r_0}$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. This is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
+
+$$
+\begin{aligned}
+&\forall\ q>0\ \exists\ r_0>0\\
+&\text{such that}\ \forall\ \vec{x} \in\ B_{r_0}\\
+&\mid\mid Df(\vec{x})-I\mid\mid < q\\
+&\text{let}\ q=1\\
+&\bigg|\bigg| \int_0^1 Df(\gamma(t)) dt - I \bigg|\bigg|\leq\\
+&\leq \int_0^1 \mid\mid Df(\gamma(t))-I\mid\mid dt<q=1
+\end{aligned}
+$$
+
+And hence it proves injectivity of $f$ for all points of the ball around $\vec{a}$ that brings $Df$ close enough to the identity matrix.
+
+Without specifically defining the exact image of the points in the ball, it is already proven that $f$ is bijective over the ball and its image and hence it has an inverse there.
+
+But we also want to show:
+- the image of this ball is actually another open ball around $\vec{a}$. Even better, every point in this ball is attained by $f$ and hence these two different balls around $\vec{a}$ are the sets for which the inverse exists
+- it was also promised that the inverse function is also continuously differentiable.  
+
+Wanted are those $\vec{y}$ points that are attained by $f$. A proving strategy is needed. Begin with the function:
+
+$$
+f(\vec{x})=\vec{y}
+$$
+
+Note that $Df$ is close to $I$ for points inside our domain ball. Notice that this causes the derivative of the below function to be bounded by one, meaning the function value increases slower than the input:
+
+$$
+\begin{aligned}
+&f(\vec{x})=\vec{y}\\
+\iff &\vec{x}=\vec{x}-f(\vec{x})+\vec{y}\\
+&\text{Let}\ \vec{y}\ \text{be a constant}\ \vec{y}_0\\
+&T_{\vec{y}_0}(\vec{x})=\vec{x}-f(\vec{x})+\vec{y}_0\\
+\implies &DT_{\vec{y}_0}(\vec{x})=I-Df(\vec{x})\\
+\implies &\mid\mid DT_{\vec{y}_0}(\vec{x}) \mid\mid < 1\ \forall\ \vec{x}\ \in\ B_{r_0}(\vec{a})
+\end{aligned}
+$$
+
+The fact that the function value increases slower than the input intuitively means the function shrinks distances between points. Indeed, parametrizing $T_{\vec{y}_0}$ analogously and formalizing again with the fundamental theorem of calculus:
+
+$$
+\begin{aligned}
+&\mid\mid T_{\vec{y}_0}(\vec{x})-T_{\vec{y}_0}(\vec{y}) \mid\mid \le \mid\mid\vec{x}-\vec{y}\mid\mid\cdot\int_0^1 \mid\mid DT_{\vec{y}_0}(\gamma(t)) \mid\mid dt\\
+\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-T_{\vec{y}_0}(\vec{y}) \mid\mid < \mid\mid\vec{x}-\vec{y}\mid\mid\cdot\ q\quad q<1
+\end{aligned}
+$$
+
+So $T$ indeed shrinks distances and hence is a **contraction**. If only we could show that it maps points into itself, Banach's theorem would conclude the theorem.
