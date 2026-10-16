@@ -865,4 +865,40 @@ $$
 \end{aligned}
 $$
 
-So $T$ indeed shrinks distances and hence is a **contraction**. If only we could show that it maps points into itself, Banach's theorem would conclude the theorem.
+So $T$ indeed shrinks distances and hence is a **contraction**. If only we could show that it maps points into itself, Banach's theorem would be applicable and it would mean there exists exactly one fixed point/point of attraction $\vec{x}_0$ of function $T_{\vec{y}_0}$ that does not move:
+
+$$
+\begin{aligned}
+&T_{\vec{y}_0}(\vec{x}_0)=\vec{x}_0\\
+\iff &\vec{y}_0 - f(\vec{x}_0) + \vec{x}_0 = \vec{x}_0\\
+\iff &f(\vec{x}_0)=\vec{y}_0
+\end{aligned}
+$$
+
+That means the fixed point provided by Banach's theorem would be the solution for $\vec{y}_0$.
+
+But for this it is still needed that $T$ maps into itself, meaning:
+
+$$
+T_{\vec{y}_0}: B_{r_0}(\vec{a})\ \to\ B_{r_0}(\vec{a})\\
+\iff \mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid < r_0
+$$
+
+Consider the following function and its derivative:
+
+$$
+\begin{aligned}
+&h(\vec{x})=f(\vec{x})-f(\vec{a})-(\vec{x}-\vec{a})\\
+&Dh(\vec{x})=Df(\vec{x})-I\\
+\implies &\mid\mid Dh(\vec{x}) \mid\mid < 1\quad \forall\ \vec{x}\ \in\ B_{r_0}(\vec{a})
+\end{aligned}
+$$
+
+Analogously applying the fundamental theorem of calculus we can show:
+
+$$
+\mid\mid h(\vec{x})-h(\vec{y})\mid\mid < q\ \cdot\mid\mid \vec{x} - \vec{y} \mid\mid\quad q<1
+$$
+
+Rewriting $\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid$ using $h(\vec{x})$:
+
