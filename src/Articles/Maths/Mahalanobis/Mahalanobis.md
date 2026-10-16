@@ -894,11 +894,43 @@ $$
 \end{aligned}
 $$
 
-Analogously applying the fundamental theorem of calculus we can show:
+Analogously applying the fundamental theorem of calculus the following can be obtained:
 
 $$
-\mid\mid h(\vec{x})-h(\vec{y})\mid\mid < q\ \cdot\mid\mid \vec{x} - \vec{y} \mid\mid\quad q<1
+\begin{aligned}
+&\mid\mid h(\vec{x})-h(\vec{y})\mid\mid < q\ \cdot\mid\mid \vec{x} - \vec{y} \mid\mid\quad q<1\\
+\implies &\mid\mid h(\vec{x})-h(\vec{a})\mid\mid=\mid\mid h(\vec{x}) \mid\mid < q\ \cdot \mid\mid \vec{x}-\vec{a} \mid\mid\\
+\implies &h(\vec{x}) < qr
+\end{aligned}
 $$
 
 Rewriting $\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid$ using $h(\vec{x})$:
 
+$$
+\begin{aligned}
+&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid = \mid\mid \vec{y}_0-\vec{a}-h(\vec{x})\mid\mid \le\\
+&\le \mid\mid \vec{y}_0-\vec{a} \mid\mid + \mid\mid h(\vec{x})\mid\mid\\
+&<\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr
+\end{aligned}
+$$
+
+If we impose upon $\vec{y}_0$ that it be close enough to $\vec{a}$ such that:
+
+$$
+\mid\mid \vec{y}_0-\vec{a}\mid\mid < (1-q)r
+$$
+
+Then we obtain:
+
+$$
+\begin{aligned}
+&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < (1-q)r + qr\\
+\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < r
+\end{aligned}
+$$
+
+And hence we can conclude that function $f$ is **bijective** when domain and codomain are restricted such that:
+
+$$
+f: B_{r_0}\ \to\ B_{(1-q)r_0}
+$$
