@@ -738,11 +738,11 @@ The inverse function theorem says:
 
 Then we can find two open balls of vectors around $\vec{a}$ for which $f$ is bijective.
 
-First, let's find an open ball $B_{r_0}$ around $\vec{a}$ for which $f$ can be shown to be injective.
+First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective.
 
 The **fundamental theorem of calculus** says that the sign-sensitive difference in function value over a closed interval equals the accumulated sign-sensitive rate of change over that interval. Formally expressed, that is the integral of the derivative over that interval.
 
-Connsider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}$:
+Connsider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}(\vec{a})$:
 
 $$
 t \in [0, 1]\\
@@ -752,7 +752,7 @@ $$
 
 The second rewriting can intuitively be imagined as going from point $\vec{y}$ to point $\vec{x}$ through the "line" connecting them, as $t \to 1$.
 
-For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $B_{r_0}$:
+For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $B_{r_0}(\vec{a})$:
 
 $$
 \begin{aligned}
@@ -816,16 +816,16 @@ $$
 Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Df\big|_{\vec{a}}=I
 $$
 
-And it has also been assumed that $f$ is continuously differentiable, and it means there exists $B_{r_0}$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. This is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
+And it has also been assumed that $f$ is continuously differentiable, and it means there exists $B_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. This is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
 
 $$
 \begin{aligned}
 &\forall\ q>0\ \exists\ r_0>0\\
-&\text{such that}\ \forall\ \vec{x} \in\ B_{r_0}\\
-&\mid\mid Df(\vec{x})-I\mid\mid < q\\
-&\text{let}\ q=1\\
+&\text{such that}\ \forall\ \vec{x} \in\ B_{r_0}(\vec{a})\\
+&\mid\mid Df(\vec{x})-I\mid\mid < q_0\\
+&\text{let}\ q_0=1\\
 &\bigg|\bigg| \int_0^1 Df(\gamma(t)) dt - I \bigg|\bigg|\leq\\
-&\leq \int_0^1 \mid\mid Df(\gamma(t))-I\mid\mid dt<q=1
+&\leq \int_0^1 \mid\mid Df(\gamma(t))-I\mid\mid dt<q_0=1
 \end{aligned}
 $$
 
@@ -861,7 +861,7 @@ The fact that the function value increases slower than the input intuitively mea
 $$
 \begin{aligned}
 &\mid\mid T_{\vec{y}_0}(\vec{x})-T_{\vec{y}_0}(\vec{y}) \mid\mid \le \mid\mid\vec{x}-\vec{y}\mid\mid\cdot\int_0^1 \mid\mid DT_{\vec{y}_0}(\gamma(t)) \mid\mid dt\\
-\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-T_{\vec{y}_0}(\vec{y}) \mid\mid < \mid\mid\vec{x}-\vec{y}\mid\mid\cdot\ q\quad q<1
+\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-T_{\vec{y}_0}(\vec{y}) \mid\mid < \mid\mid\vec{x}-\vec{y}\mid\mid\cdot\ q_0\quad q_0<1
 \end{aligned}
 $$
 
@@ -898,9 +898,9 @@ Analogously applying the fundamental theorem of calculus the following can be ob
 
 $$
 \begin{aligned}
-&\mid\mid h(\vec{x})-h(\vec{y})\mid\mid < q\ \cdot\mid\mid \vec{x} - \vec{y} \mid\mid\quad q<1\\
-\implies &\mid\mid h(\vec{x})-h(\vec{a})\mid\mid=\mid\mid h(\vec{x}) \mid\mid < q\ \cdot \mid\mid \vec{x}-\vec{a} \mid\mid\\
-\implies &h(\vec{x}) < qr
+&\mid\mid h(\vec{x})-h(\vec{y})\mid\mid < q_0\ \cdot\mid\mid \vec{x} - \vec{y} \mid\mid\quad q_0<1\\
+\implies &\mid\mid h(\vec{x})-h(\vec{a})\mid\mid=\mid\mid h(\vec{x}) \mid\mid < q_0\ \cdot \mid\mid \vec{x}-\vec{a} \mid\mid\\
+\implies &h(\vec{x}) < q_0r_0
 \end{aligned}
 $$
 
@@ -910,27 +910,27 @@ $$
 \begin{aligned}
 &\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid = \mid\mid \vec{y}_0-\vec{a}-h(\vec{x})\mid\mid \le\\
 &\le \mid\mid \vec{y}_0-\vec{a} \mid\mid + \mid\mid h(\vec{x})\mid\mid\\
-&<\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr
+&<\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr_0
 \end{aligned}
 $$
 
 If we impose upon $\vec{y}_0$ that it be close enough to $\vec{a}$ such that:
 
 $$
-\mid\mid \vec{y}_0-\vec{a}\mid\mid < (1-q)r
+\mid\mid \vec{y}_0-\vec{a}\mid\mid < (1-q_0)r_0
 $$
 
 Then we obtain:
 
 $$
 \begin{aligned}
-&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < (1-q)r + qr\\
-\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < r
+&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < (1-q_0)r_0 + q_0r_0\\
+\implies &\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid < r_0
 \end{aligned}
 $$
 
 And hence we can conclude that function $f$ is **bijective** when domain and codomain are restricted such that:
 
 $$
-f: B_{r_0}\ \to\ B_{(1-q)r_0}
+f: B_{r_0}\ \to\ B_{(1-q_0)r_0}
 $$
