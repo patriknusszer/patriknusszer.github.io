@@ -736,7 +736,7 @@ The inverse function theorem says:
 - if a $\mathbb{R}^n \to \mathbb{R}^m$ function has an invertible Jacobian at some point $\vec{a}$
 - and is continuously differentiable
 
-Then we can find two open balls of vectors around $\vec{a}$ for which $f$ is bijective.
+Then we can find two open neighborhoods of vectors around $\vec{a}$ for which $f$ is bijective.
 
 First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective.
 
@@ -929,8 +929,10 @@ $$
 \end{aligned}
 $$
 
-And hence we can conclude that function $f$ is **bijective** when domain and codomain are restricted such that:
+The preimage of the open ball $B_{(1-q_0)r_0}(\vec{a})$ is also open since for a continuous function only an open preimage can have open image. In an open set $U \subseteq \mathbb{R}^n$ for all points $\vec{x} \in U$ there $\exists r>0$ such that $B_r(\vec{x}) \subseteq U$.
+
+That being said an important takeaway is the preimage of the open range ball may not be a ball, but it is a subset of our initial domain ball $B_{r_0}(\vec{a})$. Hence the there $\exists U \subseteq B_{r_0}(\vec{a})$ such that the open sets around $\vec{a}$ for which f is bijective are:
 
 $$
-f: B_{r_0}\ \to\ B_{(1-q_0)r_0}
+f: U \subseteq B_{r_0}(\vec{a})\to B_{(1-q_0)r_0}(\vec{a})
 $$
