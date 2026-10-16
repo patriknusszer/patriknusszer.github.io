@@ -776,8 +776,8 @@ If we could show that the integral of $Df$ is invertible, then injectivity would
 
 $$
 \begin{aligned}
-&A=\int_0^1 Df(\gamma(t))dt\\
-&0A^{-1}=(\vec{x}-\vec{y})AA^{-1}\\
+\text{Let}\ &A=\int_0^1 Df(\gamma(t))dt\\
+\implies &0A^{-1}=(\vec{x}-\vec{y})AA^{-1}\\
 &0=(\vec{x}-\vec{y})I=\vec{x}-\vec{y}\\
 \iff &\vec{x}=\vec{y}
 \end{aligned}
