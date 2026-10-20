@@ -970,4 +970,4 @@ $$
 f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(\vec{a})
 $$
 
-Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of teh derivative at any point never requires leaving the open set.
+Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
