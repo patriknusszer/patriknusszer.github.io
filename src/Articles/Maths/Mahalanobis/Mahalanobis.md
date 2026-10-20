@@ -934,11 +934,11 @@ $$
 \begin{aligned}
 &\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid = \mid\mid \vec{y}_0-\vec{a}-h(\vec{x})\mid\mid \le\\
 &\le \mid\mid \vec{y}_0-\vec{a} \mid\mid + \mid\mid h(\vec{x})\mid\mid\\
-&<\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr_0
+&\le\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr_0
 \end{aligned}
 $$
 
-If we impose upon $\vec{y}_0$ that it be close enough to $\vec{a}$ such that:
+If we impose upon $\vec{y}_0$ that it be close enough to $\vec{a}$, to obtain an open ball:
 
 $$
 \mid\mid \vec{y}_0-\vec{a}\mid\mid < (1-q_0)r_0
@@ -953,11 +953,21 @@ $$
 \end{aligned}
 $$
 
-The preimage of the open ball $B_{(1-q_0)r_0}(\vec{a})$ is also open since for a continuous function only an open preimage can have open image. In an open set $U \subseteq \mathbb{R}^n$ for all points $\vec{x} \in U$ there $\exists r>0$ such that $B_r(\vec{x}) \subseteq U$.
+The preimage of the open ball $B_{(1-q_0)r_0}(\vec{a})$ is also open since for a continuous function only an open preimage can have open image. We know that the preimage is contained by the closed ball $\overline{B}_{r_0}(\vec{a})$ but it shoudl also intuitively be contained by just the open ball $B_{r_0}(\vec{a})$.
 
-That being said an important takeaway is the preimage of the open range ball may not be a ball, but it is a subset of our initial domain ball $B_{r_0}(\vec{a})$. Hence the there $\exists U \subseteq B_{r_0}(\vec{a})$ such that the open sets around $\vec{a}$ for which f is bijective are:
+Indeed, considering the fixed point $\vec{x}^*$ for $\vec{y}_0$ we have:
 
 $$
-f: U \subseteq B_{r_0}(\vec{a})\to B_{(1-q_0)r_0}(\vec{a})
+\begin{aligned}
+&\mid\mid \vec{x}^* - \vec{a} \mid\mid = \mid\mid T_{\vec{y}_0}(\vec{x}^*) - \vec{a} \mid\mid < r_0\\
+\implies &\vec{x}^* \in B_{r_0}(\vec{a})  
+\end{aligned}
 $$
 
+So $V = B_{r_0(1-q_0)}$ and $U = f(B_{r_0(1-q_0)}) \subseteq B_{r_0}$ so that the bijective function is:
+
+$$
+f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(\vec{a})
+$$
+
+Please note that the inverse function theorem could have been stated for closed neighborhoods as well. Continuous differentiability hasn't yet be proven for the inverse but even that could be shown if the theorem was stated for closed neighborhoods, but for convenience/elegance it makes sense to show differentiability for open neighborhoods because we do not need to leave the neighborhood and enter the ambient space due to perturbations at border points for the evaluation of the derivative.
