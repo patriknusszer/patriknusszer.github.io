@@ -730,16 +730,28 @@ Bijection also means **surjectivity**, which means teh codomain is restricted to
 That means if a function is bijective, it means it has a (sub)domain and a (sub)range in which **points are uniquely paired**.
 
 The inverse function theorem says:
-- if $f: \mathbb{R}^n \to \mathbb{R}^m$ is defined as continously differentiable over some open set (neighborhood) containing $\vec{a}$
+- if $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined as continously differentiable over some open set (neighborhood) containing $\vec{a}$
 - if the Jacobian at $\vec{a}$ is invertible
 
-Then we can find two open neighborhoods one containing $\vec{a}$ and one containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
+Then we can find two open neighborhoods, $U \subseteq X$ containing $\vec{a}$ and $V \subseteq Y$ containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
 
-First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective. Fully saturated open balls around $\vec{a}$, and also every other point of $f$ over which it is defined, are guaranteed to exist as per the definition of open neighborhood/set in $\mathbb{R}^n$. (Every point of an open set/neighborhood has a fully saturated open ball of positive radius around it.)
+In $\mathbb{R}^n$, in an open set every point has an open neighborhood, which is precisely some open ball around it. Furthermore every open ball is an open set, yet an open set may not be a ball.
 
-We also want to make sure, for a later reason, that **the closure of this ball is also contained by the open neighborhood $f$ comes with**.
+First, let's find a closed ball $\overline{B}_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective. For now it is enough to just assume it exists, and it is known that it exists, because the fact that $\vec{a} \in X$ means that there exists an open ball around $\vec{a}$ with some positive radius, and then it is not hard to select a fully contained closed ball inside that with an even smaller positive radius.
 
-Consider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}(\vec{a})$:
+Definition of open ball $B_{r_0}(\vec{a})$:
+
+$$
+B_{r_0}(\vec{a})=\{\vec{x}\in\mathbb R^n:\|\vec{x}-\vec{a}\|<r\}
+$$
+
+Definition of the closed ball $\overline{B}_{r_0}(\vec{a})$ which is called the closure of the above open ball, containing its border points:
+
+$$
+\overline{B}_{r_0}(\vec{a})=\{\vec{x}\in\mathbb R^n:\|\vec{x}-\vec{a}\|\le r\}
+$$
+
+Consider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $\overline{B}_{r_0}(\vec{a})$:
 
 $$
 t \in [0, 1]\\
@@ -749,7 +761,7 @@ $$
 
 The second rewriting can intuitively be imagined as going from point $\vec{y}$ to point $\vec{x}$ through the "line" connecting them, as $t \to 1$.
 
-For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $B_{r_0}(\vec{a})$:
+For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $\overline{B}_{r_0}(\vec{a})$:
 
 $$
 \begin{aligned}
@@ -757,8 +769,8 @@ $$
 &= \mid\mid t(\vec{x}-\vec{a}) + (1-t)(\vec{y}-\vec{a})\mid\mid \\
 &\leq \mid\mid t(\vec{x}-\vec{a}) \mid\mid + \mid\mid (1-t)(\vec{y}-\vec{a})\mid\mid\\
 &\leq t\mid\mid \vec{x} - \vec{a} \mid\mid + (1-t) \mid\mid \vec{y} - \vec{a} \mid\mid\\
-\xrightarrow{\mid\mid\vec{x}-\vec{a}\mid\mid, \mid\mid\vec{y}-\vec{a}\mid\mid < r_0}
-&< tr_0 + (1-t)r_0=r_0
+\xrightarrow{\mid\mid\vec{x}-\vec{a}\mid\mid, \mid\mid\vec{y}-\vec{a}\mid\mid \le r_0}
+&\le tr_0 + (1-t)r_0=r_0
 \end{aligned}
 $$
 
@@ -815,7 +827,9 @@ $$
 Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Dg\big|_{\vec{a}}=I
 $$
 
-And it has also been assumed that $f$ is continuously differentiable, and it means there exists $B_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. This is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
+And it has also been assumed that $f$ is continuously differentiable, and it means there exists $\overline{B}_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. We have already shown that some fully contained closed ball exists around $\vec{a}$, we just need to adjust the radius (if required) to be small enough in order to push $Df$ close enough to $I$.
+
+That is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
 
 $$
 \begin{aligned}
@@ -836,15 +850,15 @@ But we also want to show:
 - There exists an open set, particularly an open ball around $f(\vec{a})$, whose preimage is contained by $B_{r_0}(\vec{a})$, and that these are the two open sets for which $f$ is bijective
 - It must also be shown that the inverse is $C^1$
 
-Please note that, therefore, the open set in the domain for which $f$ is bijective is contained by $B_{r_0}(\vec{a})$, but it may not be exactly that ball.
+Please note that the preimage of the open ball of function values for which we show bijectivity is open (as per continuity of $f$) and is contained by the open version of our closed ball, but may not itself be a ball.
 
-Wanted are those $\vec{y}$ points that are attained by $f$. A proving strategy is needed. Begin with the function:
+Wanted are thus those $\vec{y}$ points that are attained by $f$. A proving strategy is needed. Begin with the function:
 
 $$
 f(\vec{x})=\vec{y}
 $$
 
-Note that $Df$ is close to $I$ for points inside our domain ball. Notice that this causes the derivative of the below function to be bounded by one, meaning the function value increases slower than the input:
+Note that $Df$ is close to $I$ for points inside our ball. This causes the derivative of the below function to be bounded by one, meaning the function value increases slower than the input:
 
 $$
 \begin{aligned}
@@ -853,7 +867,7 @@ $$
 &\text{Let}\ \vec{y}\ \text{be a constant}\ \vec{y}_0\\
 &T_{\vec{y}_0}(\vec{x})=\vec{x}-f(\vec{x})+\vec{y}_0\\
 \implies &DT_{\vec{y}_0}(\vec{x})=I-Df(\vec{x})\\
-\implies &\mid\mid DT_{\vec{y}_0}(\vec{x}) \mid\mid < 1\ \forall\ \vec{x}\ \in\ B_{r_0}(\vec{a})
+\implies &\mid\mid DT_{\vec{y}_0}(\vec{x}) \mid\mid < 1\ \forall\ \vec{x}\ \in\ \overline{B}_{r_0}(\vec{a})
 \end{aligned}
 $$
 
@@ -866,7 +880,7 @@ $$
 \end{aligned}
 $$
 
-So $T$ indeed shrinks distances and hence is a **contraction**. If only we could show that it maps points into itself, Banach's theorem would be applicable and it would mean there exists exactly one fixed point/point of attraction $\vec{x}_0$ of function $T_{\vec{y}_0}$ that does not move:
+Note that So $T$ indeed shrinks distances and hence is a **contraction**. If only we could show that it maps points into itself, Banach's theorem would be applicable and it would mean there exists exactly one fixed point/point of attraction $\vec{x}_0$ of function $T_{\vec{y}_0}$ that does not move:
 
 $$
 \begin{aligned}
@@ -878,13 +892,20 @@ $$
 
 That means the fixed point provided by Banach's theorem would be the solution for $\vec{y}_0$.
 
-Please not that Banach requires the function to have a complete domain. The closure of $B_{r_0}(\vec{a})$ satisfies that condition. Here for convenience, the proof only takes elements from the open ball but every step works for the closed ball as well. So long as we selected $B_{r_0}(\vec{a})$ such that its closure is contained by the initial open domain of $f$, it is not a problem if the fixed point result happens to be a boundary point of the ball.
+Banach's theorem, stated:
+- Given a function $f: A \to A$ mapping into itself
+- If $A$ is complete
+- If $f$ is a contraction, that is, shrinks distances
 
-But for this it is still needed that $T$ maps into itself, meaning:
+Then there's exactly one fixed point such that $f(x^*)=x^*$.
+
+Note that $\overline{B}_{r_0}(\vec{a})$ is complete, while $B_{r_0}(\vec{a})$ is not. This is why we needed a closed ball.
+
+It has been shown that $T_{\vec{y}_0}$ shrinks distances, and it is yet to be shown that $T$ maps into itself, meaning:
 
 $$
-T_{\vec{y}_0}: B_{r_0}(\vec{a})\ \to\ B_{r_0}(\vec{a})\\
-\iff \mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid < r_0
+T_{\vec{y}_0}: \overline{B}_{r_0}(\vec{a})\ \to\ \overline{B}_{r_0}(\vec{a})\\
+\iff \mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid \le r_0
 $$
 
 Consider the following function and its derivative:
@@ -893,7 +914,7 @@ $$
 \begin{aligned}
 &h(\vec{x})=f(\vec{x})-f(\vec{a})-(\vec{x}-\vec{a})\\
 &Dh(\vec{x})=Df(\vec{x})-I\\
-\implies &\mid\mid Dh(\vec{x}) \mid\mid < 1\quad \forall\ \vec{x}\ \in\ B_{r_0}(\vec{a})
+\implies &\mid\mid Dh(\vec{x}) \mid\mid < 1\quad \forall\ \vec{x}\ \in\ \overline{B}_{r_0}(\vec{a})
 \end{aligned}
 $$
 
