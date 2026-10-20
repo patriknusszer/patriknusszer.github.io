@@ -730,14 +730,16 @@ Bijection also means **surjectivity**, which means teh codomain is restricted to
 That means if a function is bijective, it means it has a (sub)domain and a (sub)range in which **points are uniquely paired**.
 
 The inverse function theorem says:
-- if a $\mathbb{R}^n \to \mathbb{R}^m$ function has an invertible Jacobian at some point $\vec{a}$
-- and is continuously differentiable
+- if $f: \mathbb{R}^n \to \mathbb{R}^m$ is defined as continously differentiable over some open set (neighborhood) containing $\vec{a}$
+- if the Jacobian at $\vec{a}$ is invertible
 
-Then we can find two open neighborhoods of vectors around $\vec{a}$ for which $f$ is bijective.
+Then we can find two open neighborhoods one containing $\vec{a}$ and one containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
 
-First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective.
+First, let's find an open ball $B_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective. Fully saturated open balls around $\vec{a}$, and also every other point of $f$ over which it is defined, are guaranteed to exist as per the definition of open neighborhood/set in $\mathbb{R}^n$. (Every point of an open set/neighborhood has a fully saturated open ball of positive radius around it.)
 
-Connsider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}(\vec{a})$:
+We also want to make sure, for a later reason, that **the closure of this ball is also contained by the open neighborhood $f$ comes with**.
+
+Consider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $B_{r_0}(\vec{a})$:
 
 $$
 t \in [0, 1]\\
@@ -831,8 +833,10 @@ And hence it proves injectivity of $f$ for all points of the ball around $\vec{a
 Without specifically defining the exact image of the points in the ball, it is already proven that $f$ is bijective over the ball and its image and hence it has an inverse there.
 
 But we also want to show:
-- There is an open image over whose preimage the function is bijective. Since $f$ is continuous, the preimage of an open image would also be open.
-- It was also promised that the inverse function is also continuously differentiable.  
+- There exists an open set, particularly an open ball around $f(\vec{a})$, whose preimage is contained by $B_{r_0}(\vec{a})$, and that these are the two open sets for which $f$ is bijective
+- It must also be shown that the inverse is $C^1$
+
+Please note that, therefore, the open set in the domain for which $f$ is bijective is contained by $B_{r_0}(\vec{a})$, but it may not be exactly that ball.
 
 Wanted are those $\vec{y}$ points that are attained by $f$. A proving strategy is needed. Begin with the function:
 
@@ -873,6 +877,8 @@ $$
 $$
 
 That means the fixed point provided by Banach's theorem would be the solution for $\vec{y}_0$.
+
+Please not that Banach requires the function to have a complete domain. The closure of $B_{r_0}(\vec{a})$ satisfies that condition. Here for convenience, the proof only takes elements from the open ball but every step works for the closed ball as well. So long as we selected $B_{r_0}(\vec{a})$ such that its closure is contained by the initial open domain of $f$, it is not a problem if the fixed point result happens to be a boundary point of the ball.
 
 But for this it is still needed that $T$ maps into itself, meaning:
 
