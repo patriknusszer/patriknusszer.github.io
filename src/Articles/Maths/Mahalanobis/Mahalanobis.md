@@ -395,9 +395,6 @@ $$
 \end{aligned}
 $$
 
-
-**IFT will be proven in a later version of the article**
-
 It is not hard to construct a differentiable curve function that equals $\vec{s}$ for $\vec{x}(0)$:
 
 $$
@@ -790,7 +787,7 @@ $$
 \implies \exists A^{-1}
 $$
 
-For curious, this lemma is proven at the end of the article.
+For the curious, this lemma is proven at the end of the article.
 
 The idea is that if we could force $\mid\mid Df-I\mid\mid<1$ then it would also force $\mid\mid(\int Df)-I\mid\mid<1$:
 
@@ -834,8 +831,8 @@ And hence it proves injectivity of $f$ for all points of the ball around $\vec{a
 Without specifically defining the exact image of the points in the ball, it is already proven that $f$ is bijective over the ball and its image and hence it has an inverse there.
 
 But we also want to show:
-- the image of this ball is actually another open ball around $\vec{a}$. Even better, every point in this ball is attained by $f$ and hence these two different balls around $\vec{a}$ are the sets for which the inverse exists
-- it was also promised that the inverse function is also continuously differentiable.  
+- There is an open image over whose preimage the function is bijective. Since $f$ is continuous, the preimage of an open image would also be open.
+- It was also promised that the inverse function is also continuously differentiable.  
 
 Wanted are those $\vec{y}$ points that are attained by $f$. A proving strategy is needed. Begin with the function:
 
