@@ -974,6 +974,6 @@ $$
 f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(\vec{a})
 $$
 
-Again, note that the preimage of $B_{(1-q_0)r_0}$ is contained by $B_{r_0}$, but it can not be shown that it equals $B_{r_0}$. In a particular case the preimage might equal $B_{r_0}$ but in generality it is not true.
+Again, note that the preimage of $B_{(1-q_0)r_0}$ is contained by $B_{r_0}$, but it can not be shown that it equals $B_{r_0}$. In a particular case the preimage might equal $B_{r_0}$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two open balls, it can't be guaranteed.
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
