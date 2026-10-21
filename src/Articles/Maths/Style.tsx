@@ -79,14 +79,6 @@ export default function Style() {
     color:#fdbbf4;
 }
 
-.katex-display .mrel,
-.katex-display .mbin
-{
-    /*color: #cb93ff;*/
-    /*color: #bc75ff;*/
-    color: #c282ff;
-}
-
 .katex-display .msupsub .mord
 {
      /*color: #909fff; */
@@ -102,12 +94,24 @@ strong{
     color: #e7a5ff;
 }
 
-h1 > .katex, h2 > .katex {
-    color: #ffb1f4;
+.katex .mrel,
+.katex .mbin
+{
+    /*color: #cb93ff;*/
+    /*color: #bc75ff;*/
+    color: #e7a5ff;
 }
 
-.katex-display > .katex {
-    color:  #ffc8f7;  
+.katex-display .mrel,
+.katex-display .mbin
+{
+    /*color: #cb93ff;*/
+    /*color: #bc75ff;*/
+    color: #c282ff;
+}
+
+h1 > .katex, h2 > .katex {
+    color: #ffb1f4;
 }
 
 h1, h2, h3 {
@@ -116,21 +120,6 @@ h1, h2, h3 {
    -webkit-font-smoothing: antialiased;
     color:#ffb1f4;
         font-family: 'Cabin sketch';
-}
-
-.mrel {
-                color: #9161dd;
-}
-
-.katex-display .msupsub .mord,
-.katex-display .msupsub .mrel,
-.katex-display .msupsub .mbin,
-.katex-display .msupsub .mopen,
-.katex-display .msupsub .mclose
-{
-     /*color: #909fff; */
-    /*color: #909fff;*/
-    color: #989ffe;
 }
 
 @media (max-width: 600px) {

@@ -21,39 +21,6 @@ body {
 }
 
 
-
-.katex-display .mopen,
-.katex-display .mclose,
-.katex-display .munder .vlist svg
-{
-    /*color: #ff9058;*/
-    /*color: #bc75ff;*/
-        color: #c282ff;
-
-}
-
-.katex-display .mord,
-.katex-display .mop
-{
-    color:#fdbbf4;
-}
-
-.katex-display .mrel,
-.katex-display .mbin
-{
-    /*color: #cb93ff;*/
-    /*color: #bc75ff;*/
-    color: #c282ff;
-}
-
-.katex-display .msupsub .mord
-{
-     /*color: #909fff; */
-    /*color: #909fff;*/
-    color: #989ffe;
-}
-
-
 #panel {
     border-radius: 20px;
     position: static;
@@ -149,9 +116,6 @@ h1 > .katex, h2 > .katex {
     color: #ffb1f4;
 }
 
-.katex-display > .katex {
-    color:  #ffc8f7;  
-}
 
 h1, h2, h3 {
     margin-top: 60px;
@@ -159,10 +123,6 @@ h1, h2, h3 {
    -webkit-font-smoothing: antialiased;
     color:#ffb1f4;
         font-family: 'Cabin sketch';
-}
-
-.mrel {
-                color: #9161dd;
 }
 
 hr {
