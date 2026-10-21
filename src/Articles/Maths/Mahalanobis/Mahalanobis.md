@@ -957,7 +957,7 @@ $$
 \end{aligned}
 $$
 
-The preimage of the open ball $B_{(1-q_0)r_0}(\vec{a})$ is also open since for a continuous function only an open preimage can have open image. We know that the preimage is contained by the closed ball $\overline{B}_{r_0}(\vec{a})$ but it should also intuitively be contained by just the open ball $B_{r_0}(\vec{a})$.
+The preimage of the open ball $B_{(1-q_0)r_0}(f(\vec{a}))$ is also open since for a continuous function only an open preimage can have open image. We know that the preimage is contained by the closed ball $\overline{B}_{r_0}(\vec{a})$ but it should also intuitively be contained by just the open ball $B_{r_0}(\vec{a})$.
 
 Indeed, considering the fixed point $\vec{x}^*$ for $\vec{y}_0$ we have:
 
