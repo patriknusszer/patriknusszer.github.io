@@ -778,6 +778,8 @@ $$
 
 The **fundamental theorem of calculus** says that the sign-sensitive difference in function value over a closed interval equals the accumulated sign-sensitive rate of change over that interval. Formally expressed, that is the integral of the derivative over that interval.
 
+Since our closed ball is fully contained by the initial open set $X$ for which $f$ was defined, the derivatives $Df$ exist at every inner point and $f$ is defined at every point, including boundary points.
+
 Using the fundamental theorem of calculus and the chain rule:
 
 $$
@@ -971,5 +973,7 @@ So $V = B_{r_0(1-q_0)}$ and $U = f(B_{r_0(1-q_0)}) \subseteq B_{r_0}$ so that th
 $$
 f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(\vec{a})
 $$
+
+Again, note that the preimage of $B_{(1-q_0)r_0}$ is contained by $B_{r_0}$, but it can not be shown that it equals $B_{r_0}$. In a particular case the preimage might equal $B_{r_0}$ but in generality it is not true.
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
