@@ -123,6 +123,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 600px) {
+    .katex-display {
+            font-size: 3.3vw;
+    }
+
     p, li {
         font-family: "Space Grotesk";
     }
