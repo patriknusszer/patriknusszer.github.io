@@ -124,7 +124,7 @@ h1, h2, h3 {
 
 @media (max-width: 600px) {
     .katex-display {
-            font-size: 3.3vw;
+            font-size: 3.5vw;
     }
 
     p, li {
