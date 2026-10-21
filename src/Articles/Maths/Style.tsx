@@ -133,7 +133,7 @@ h1, h2, h3 {
     color: #989ffe;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
     p, li {
         font-family: "Space Grotesk";
     }
