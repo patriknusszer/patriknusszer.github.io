@@ -968,12 +968,12 @@ $$
 \end{aligned}
 $$
 
-So $V = B_{r_0(1-q_0)}$ and $U = f(B_{r_0(1-q_0)}) \subseteq B_{r_0}$ so that the bijective function is:
+So $V = B_{r_0(1-q_0)}(f(\vec{a}))$ and $U = f^{-1}(B_{r_0(1-q_0)}(f(\vec{a}))) \subseteq B_{r_0}$ so that the bijective function is:
 
 $$
-f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(\vec{a})
+f: U \subseteq B_{r_0}(\vec{a})\to V=B_{(1-q_0)r_0}(f(\vec{a}))
 $$
 
-Again, note that the preimage of $B_{(1-q_0)r_0}$ is contained by $B_{r_0}$, but it can not be shown that it equals $B_{r_0}$. In a particular case the preimage might equal $B_{r_0}$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two balls (either open or closed), it can't be guaranteed.
+Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B_{r_0}(\vec{a})$, but it can not be shown that it equals $B_{r_0}(\vec{a})$. In a particular case the preimage might equal $B_{r_0}(\vec{a})$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two balls (either open or closed), it can't be guaranteed.
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
