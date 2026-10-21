@@ -228,8 +228,8 @@ hr {
 
 @media only screen and (max-width: 500px) {
     #panel {
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 12px;
+        margin-left: 12px;
     }
 
     .equm {
