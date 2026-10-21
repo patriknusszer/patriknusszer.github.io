@@ -88,7 +88,7 @@ body {
 
 #topheading {
     -webkit-font-smoothing: antialiased;
-    font-family: 'cabin sketch';
+    font-family: 'Cabin Sketch';
     font-size: 27px;
     color: #b949c0;
     text-align: center;
@@ -114,13 +114,24 @@ body {
     margin-top: 12px;
 }
 
-#description, p, li, .katex-display {
+.katex-display {
     -webkit-font-smoothing: antialiased;
     color:#c7e2d9;
     text-align: left;
     margin-left: 30px;
     margin-right: 30px;
     font-family: 'Space Mono';
+    line-height: 28px;
+    font-size: 17px;
+}
+
+#description, p, li {
+    -webkit-font-smoothing: antialiased;
+    color:#c7e2d9;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Ariel';
     line-height: 28px;
     font-size: 17px;
 }

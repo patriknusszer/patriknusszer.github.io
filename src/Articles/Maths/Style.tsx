@@ -20,7 +20,7 @@ export default function Style() {
 }
             p, li {
                 color: #c7e2d9;
-                font-family: "Space Mono";
+                font-family: "Inconsolata";
             }
 
             h1, h2 {
@@ -133,7 +133,15 @@ h1, h2, h3 {
     color: #989ffe;
 }
 
-
-        `}</style>
+@media (max-width: 767px) {
+    p, li {
+        font-family: "Space Grotesk";
+    }
+}
+        `}
+        
+        
+        </style>
     );
+    
 }
