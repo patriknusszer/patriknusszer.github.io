@@ -719,23 +719,25 @@ $$
 f(\vec{x}, \gamma(\vec{x}))=0
 $$
 
-Q.E.D.
+**Q.E.D.**
 
 **Inverse function theorem proof**
 
-A function having an inverse over a set of input points means it is **bijective** over that set of input points and the image of those input points. Since here it has been pinpointed that only the image of those points are considered bijection is equivalent to **injectivity** over the set of input points which means no two input points can be assigned to the same output point.
+A function having an inverse over a set of input points means it is **bijective** between that set of input points and the image of those input points.
 
-Bijection also means **surjectivity**, which means teh codomain is restricted to the range. That is we only consider such output points that are actually attained for the domain.
+If $f: X \to Y$ is bijective between $X$ and $Y$:
+- It is **injective** on $X$, meaning two different elements of $X$ are mapped to two different elements of $Y$, it is "one-to-one"
+- it is **surjective** onto $Y$, meaning each element of $Y$ has an image in $X$. It basically means the codomain is not larger than the, meaning it exactly equals the range
 
-That means if a function is bijective, it means it has a (sub)domain and a (sub)range in which **points are uniquely paired**.
+So if a function is bijective between a (sub)domain and (sub)codomain, the **image/preimage points are uniquely paired**.
 
 The inverse function theorem says:
-- if $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined as continously differentiable over some open set (neighborhood) containing $\vec{a}$
-- if the Jacobian at $\vec{a}$ is invertible
+- If $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined over some open set $X$ containing some point $\vec{a}$, and it is continously differentiable over $X$
+- If the Jacobian at $\vec{a}$ is invertible
 
-Then we can find two open neighborhoods, $U \subseteq X$ containing $\vec{a}$ and $V \subseteq Y$ containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
+Then we can find two open neighborhoods, $U \subset X$ containing $\vec{a}$ and $V \subset Y$ containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
 
-In $\mathbb{R}^n$, in an open set every point has an open neighborhood, which is precisely some open ball around it. Furthermore every open ball is an open set, yet an open set may not be a ball.
+In $\mathbb{R}^n$, in an open set every point has an open neighborhood, which is precisely some fully saturated open ball around it. Furthermore every such saturated open ball is an open set, yet an open set may not exactly equal one particular saturated open ball.
 
 First, let's find a closed ball $\overline{B}_{r_0}(\vec{a})$ around $\vec{a}$ for which $f$ can be shown to be injective. For now it is enough to just assume it exists, and it is known that it exists, because the fact that $\vec{a} \in X$ means that there exists an open ball around $\vec{a}$ with some positive radius, and then it is not hard to select a fully contained closed ball inside that with an even smaller positive radius.
 
@@ -759,7 +761,7 @@ t \in [0, 1]\\
 \gamma(t)=\vec{y}+t(\vec{x}-\vec{y})
 $$
 
-The second rewriting can intuitively be imagined as going from point $\vec{y}$ to point $\vec{x}$ through the "line" connecting them, as $t \to 1$.
+The second rewriting can intuitively be imagined as going from point $\vec{y}$ to point $\vec{x}$ through the "line/direction" towards $\vec{y}$, as $t \to 1$.
 
 For $t \in [0, 1]$ the function value $\gamma(t)$ is also within the ball $\overline{B}_{r_0}(\vec{a})$:
 
@@ -794,7 +796,7 @@ $$
 \end{aligned}
 $$
 
-Given a submultiplicative matrix norm, if a matrix is "close enough" to the identity matrix, then it is invertible, precisely:
+Given a **submultiplicative matrix norm**, if a matrix is "close enough" to the identity matrix, then it is invertible, precisely:
 
 $$
 \mid\mid A-I \mid\mid < 1\\
@@ -827,7 +829,7 @@ $$
 Df\big|_{\vec{a}}=\left(Dg\big|_{\vec{a}}\right)^{-1}Dg\big|_{\vec{a}}=I
 $$
 
-And it has also been assumed that $f$ is continuously differentiable, and it means there exists $\overline{B}_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball any matrix norm of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. We have already shown that some fully contained closed ball exists around $\vec{a}$, we just need to adjust the radius (if required) to be small enough in order to push $Df$ close enough to $I$.
+And it has also been assumed that $f$ is continuously differentiable, and it means there exists $\overline{B}_{r_0}(\vec{a})$ so that for any point $\vec{x}$ in the ball **any matrix norm** of the difference of the identity matrix and the Jacobian of $f$ at $\vec{a}$ is beyond some constant, here in particular one. We have already shown that some fully contained closed ball exists around $\vec{a}$, we just need to adjust the radius (if required) to be small enough in order to push $Df$ close enough to $I$.
 
 That is the exact meaning of the continuity of the derivative. But as per the previous reasoning this proves invertibility of $\int_0^1 Df(\gamma(t))dt$
 
