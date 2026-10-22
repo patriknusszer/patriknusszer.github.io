@@ -53,13 +53,13 @@ function Contents({ setContentsOpen }: ContentsProps) {
     };
 
     return (
-        <div id="mobile_menu">
-            <div id="menu_block">
-                <div id="menu_text_block">
+        <div id="contents">
+            <div id="contents_block">
+                <div id="contents_text_block">
                     {sections.map(section => (
                         <span key={section.id}>
                             <div
-                                className="p_white"
+                                className="contents_p_white"
                                 onClick={() => navigateToSection(section.id)}
                             >
                                 {section.title}

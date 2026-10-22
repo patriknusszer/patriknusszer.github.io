@@ -11,7 +11,7 @@
         }
     }
 
-    #menu_block:before {
+    #contents_block:before {
         z-index: -1;
         content: "";
         position: absolute;
@@ -26,7 +26,7 @@
         transition: border-bottom-color 0s ease-in-out 1s;
     }
 
-    #menu_block:after {
+    #contents_block:after {
         z-index: -1;
         content: "";
         position: absolute;
@@ -41,7 +41,7 @@
         transition: border-bottom-color 0s ease-in-out 1s;
     }
 
-    #mobile_menu {
+    #contents {
 
                 font-family: 'Fredericka the Great', serif;
 font-size: 24px;
@@ -57,7 +57,7 @@ font-size: 24px;
         animation: frame;
     }
 
-    #menu_block {
+    #contents_block {
 
                 font-family: 'Fredericka the Great', serif;
 
@@ -73,13 +73,13 @@ font-size: 24px;
         top: 30px;
     }
 
-    #menu_text_block {
+    #contents_text_block {
         display: inline-block;
                         overflow-y: auto;
         height: 350px;
     }
 
-    .p_white {
+    .contents_p_white {
         border-bottom: 3px solid transparent;
         font-family: 'Fredericka the Great', serif;
         font-style: normal;
@@ -95,7 +95,7 @@ font-size: 24px;
 
 
 @media only screen and (max-width: 450px) {
-        .p_white {
+        .contents_p_white {
         border-bottom: 3px solid transparent;
         font-family: 'Fredericka the Great', serif;
         font-style: normal;
