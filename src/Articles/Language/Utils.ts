@@ -23,5 +23,13 @@ export function preprocessMarkdown(markdown: string) {
 
     markdown = applyMarkers(markdown, '\'\'', 'example')
     markdown = applyMarkers(markdown, '|', 'emphasis')
+
+    markdown = markdown.replace(
+    /<!--\s*(.*?)\s*-->/g,
+    (_, id) => `<span id="${id}"></span>`
+    );
+
+
+
     return markdown
 }
