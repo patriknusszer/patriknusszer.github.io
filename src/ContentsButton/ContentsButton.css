@@ -1,0 +1,15 @@
+#contents_btn {
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    transition: color .3s ease-in-out;
+    z-index: 11;
+    font-family: "Cabin Sketch";
+}
+
+#contents_btn:hover {
+    color: #9E5EA2;
+}

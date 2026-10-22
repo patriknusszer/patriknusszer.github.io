@@ -177,6 +177,10 @@ hr {
     background-color:  #111111;
 }
 
+span[id] {
+    scroll-margin-top: 50px;
+}
+
 @media only screen and (max-width: 740px) {
     #panel {
         width: auto;

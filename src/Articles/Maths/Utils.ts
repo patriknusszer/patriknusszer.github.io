@@ -16,7 +16,11 @@ export function preprocessMarkdown(markdown: string) {
               : `${surround}</span>`;
       });
   }
-    markdown = applyMarkers(markdown, '|', 'emphasis')
-    markdown = applyMarkers(markdown, '__', 'underline')
+    markdown = markdown.replace(
+    /<!--\s*(.*?)\s*-->/g,
+    (_, id) => `<span id="${id}"></span>`
+    );
+
+
     return markdown
 }

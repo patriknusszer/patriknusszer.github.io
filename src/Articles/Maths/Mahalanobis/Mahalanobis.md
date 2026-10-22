@@ -1,3 +1,5 @@
+<!--Measuring unusualness-->
+
 One way of measuring the **unusualness** of a given data point $\vec{x}$ is taking the $\operatorname{L}_2$ norm (Euclidean length) of the $z$-score vector:
 
 $$
@@ -13,6 +15,8 @@ Therefore a $z$-score can roughly be thought of as a vector of standardized devi
 The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they contribute great **unusualness** but the fact that it was expected due their great correlation is **not discounted**.
 
 The idea is to instead measure **unusualness** of **transformed features that are uncorrelated**. And in particular: can these **transformed features be linear combinations of the original features**?
+
+<!--Eigendecomposition and diagonalization of covariance matrix-->
 
 **Lemma**
 
@@ -251,13 +255,13 @@ Where $
 \Sigma^{-1}
 (\vec{x}-\vec{\mu}_c)$ is numerically the Mahalanobis distance.
 
-#Complementary
-
 **Theorem**
 
 A symmetric matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
 
 **Proof**
+
+<!--Symmetric matrix has at least one eigenvector-->
 
 **Lemma**
 
@@ -289,6 +293,8 @@ By the **Topoligical Extreme Value Theorem**:
 - If $f: X \to Y \subseteq \mathbb{R}$ is continuous (everywhere)
 
 Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{x} \in X$.
+
+<!--Topological Extreme Value Theorem-->
 
 **T-EVT proof**
 
@@ -441,6 +447,8 @@ For our particular function $g$:
 
 Hence $g$ satisfies the conditions of the **implicit function theorem**.
 
+<!--The gradient of an implicit function is perpendicular to any tangential direction-->
+
 **NOTE/Lemma**
 
 To demonstrate how the **IFT** can be used to construct and use parametrized curves in proofs, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
@@ -516,6 +524,10 @@ $$
 \implies &\boxed{\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}}
 \end{aligned}
 $$
+
+<!--Lagrange multiplier-->
+
+**Introducing the Lagrange multiplier**
 
 Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** $g$ locally, and is also locally differentiable.
 
@@ -625,6 +637,8 @@ Which is the eigenvalue problem, and hence $\vec{s}$ not just exists, but is als
 **Q.E.D.**
 Any symmetric matrix has at least one eigenvector.
 
+<!--If a symmetrical matrix has at least one eigenvector, it can be extended into an orthogonal eigenbasis of the complete space-->
+
 **Lemma**
 
 If we know a symmetric matrix has at least one eigenvector, then it has exactly $n-1$ more eigenvectors, $n$ in total.
@@ -653,6 +667,8 @@ It would lead to contradiction if there were less than $n$ eigenvectors, because
 
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
+
+<!--Implicit function theorem proof-->
 
 **Implicit Function Theorem Proof**
 
@@ -720,6 +736,8 @@ f(\vec{x}, \gamma(\vec{x}))=0
 $$
 
 **Q.E.D.**
+
+<!--Inverse function theorem proof-->
 
 **Inverse function theorem proof**
 
@@ -977,6 +995,8 @@ $$
 Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B_{r_0}(\vec{a})$, but it can not be shown that it equals $B_{r_0}(\vec{a})$. In a particular case the preimage might equal $B_{r_0}(\vec{a})$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two balls (either open or closed), it can't be guaranteed.
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
+
+<!--Banach's theorem-->
 
 **Banach Theorem proof**
 

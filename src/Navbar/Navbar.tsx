@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import MobileButton from '../MobileButton/MobileButton'
 import './Navbar.css'
+import ContentsButton from '../ContentsButton/ContentsButton';
 
 function useMediaQuery(query: string) {
     const [matches, setMatches] = useState(
@@ -28,6 +29,8 @@ function useMediaQuery(query: string) {
 function Navbar() {
   const isMobile = useMediaQuery("(max-width: 600px)")
   const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false)
+  const [ contentsOpen, setContentsOpen ] = useState(false)
+
 
   return (
     <>
@@ -57,6 +60,8 @@ function Navbar() {
                     <Link onClick={() => setMobileMenuOpen(false)} to="/Projects" title="Projects" className="menuitem">Projects</Link>
                 </>
             )}
+
+            <ContentsButton contentsOpen={contentsOpen} setContentsOpen={setContentsOpen} />
         </div>
     </>
   )
