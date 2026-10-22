@@ -1,6 +1,4 @@
-<!--
-doctype: language
--->
+<!--Introduction-->
 
 # Live courses and IPA
 
@@ -14,6 +12,8 @@ IPA is not perfect either. If you learn pronounciation just from transcriptions,
 
 # IPA phonemes in general
 
+<!--Vowels-->
+
 ## Vowels
 
 Vowels are those phonemes which when sounded, air is moving freely. They have three parameters:
@@ -23,6 +23,8 @@ Vowels are those phonemes which when sounded, air is moving freely. They have th
 - **Lip rounding**: lipes are either ''rounded'' or ''unrounded''
 
 Besides these, **every vowel is voiced**, that is, the vocal cords are vibrating. And trivially, there is **no place of articulation** to talk about.
+
+<!--Consonants-->
 
 ## Consonants
 
@@ -69,6 +71,8 @@ And considering how further back is the place of articulation in the mouth, we h
 In the following I am going to introduce most phonemes/sounds that can occur in French words. Three categories are distinguished.
 
 I am going to list phonemes individually, and then write which character combinations usually produce that sound, under what conditions.
+
+<!--Vowels in French-->
 
 ## True vowels
 
@@ -207,6 +211,8 @@ This vowel doesn't exist in English. Pronounce the abovementioned //u// and move
 ''|u|sine'', ''|u|niversité'', ''min|u|te'', ''nat|u|re'', ''m|u|sique''  
 //_y_.zin//, //_y_.ni.vɛʁ.si.te//, //na.t_y_ʁ//, //m_y_.zik//
 
+<!--Nasal vowels in French-->
+
 ### Nasal vowels
 
 Nasal vowels are pronounced as their non-nasal counterpart, but air also passes through the nose, and the |n| or |m| is not, or just barely pronounced.
@@ -293,6 +299,8 @@ In English it's always pronounced long. Example is the second vowel of ''b|e|l|i
 In Italian, to prevent softening of **g** or **c**, **h** is used.
 
 In French, the softening of **c** caused **e** or **i** do not have to be prevented because any words having the sound //ki// //kɛ// or //ke// use **qu** for //k//.
+
+<!--Consonants in French-->
 
 ## Consonants
 
@@ -386,6 +394,8 @@ Pronounced as in ''|t|errain'' //_t_eˈreɪn//
 - **t (when not in tion preceded by s)**  
 ''au|t|eur'', ''pe|t|it'', ''|t|erre'', ''hô|t|el''  
 //o._t_œʁ//, //pə._t_i//, //_t_ɛʁ//, //o._t_ɛl//
+
+<!--Semi vowels in French-->
 
 ## Smoothly gliding approximants: semi-vowels
 
