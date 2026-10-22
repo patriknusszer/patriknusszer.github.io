@@ -97,6 +97,7 @@ font-size: 24px;
 @media only screen and (max-width: 600px) {
     .contents_p_white {
         width: 85%;
+        font-size: 18px;
     }
 
     #contents_block {
