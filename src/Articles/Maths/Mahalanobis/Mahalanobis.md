@@ -995,8 +995,8 @@ Steps:
 Let's show $a_n+1=T(a_n)$ is Cauchy for arbitrary $a_0 \in X$. Going from $a_0$ to $a_n$ there's a repeated application of $T$:
 
 $$
-a_n = T(T(......T(a_0)))))\\
-a_{n+1} = T(T(T(......T(a_0))))))
+a_n = T(T(......T(a_0)))\\
+a_{n+1} = T(T(T(......T(a_0))))
 $$
 
 And we also know that each parallel iteration lessens the distance between $a_{n+1}$ and $a_n$:
