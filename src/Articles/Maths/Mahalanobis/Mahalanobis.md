@@ -1004,14 +1004,24 @@ And we also know that each parallel iteration lessens the distance between $a_{n
 $$
 \begin{aligned}
  &d(a_{n+1}=T(a_n),\ a_n=T(a_{n-1}))\le\\
- \le &qd(a_{n}=T(a_{n-1}),\ a_{n-1}=T(a_{n-2}))\\
+ \le &q \cdot d(a_{n}=T(a_{n-1}),\ a_{n-1}=T(a_{n-2}))\\
  &d(a_{n}=T(a_{n-1}),\ a_{n-1}=T(a_{n-2}))\le\\
-  \le &qd(a_{n-1}=T(a_{n-2}),\ a_{n-2}=T(a_{n-3}))\\
+  \le &q \cdot d(a_{n-1}=T(a_{n-2}),\ a_{n-2}=T(a_{n-3}))\\
  &\cdots\\ 
  &d(a_2,\ a_1)\le\\
- \le &qd(a_1,\ a_0)\\
- \implies &d(a_2,\ a_1)\le q \cdot d(a_1, a_0)\\
- \implies &d(a_3,\ a_2)\le q^2 \cdot d(a_2, a_1)\\
+ \le &q \cdot d(a_1,\ a_0)
+ \end{aligned}
+$$
+
+Which means:
+
+$$
+\begin{aligned}
+&d(a_2,\ a_1)\le q \cdot d(a_1, a_0)\\
+&d(a_3,\ a_2)\le q \cdot d(a_2,\ a_1)\\
+ \implies &d(a_3,\ a_2)\le q^2 \cdot d(a_1, a_0)\\
+ &d(a_4,\ a_3)\le q\cdot d(a_3,\ a_2)\\
+ \implies & d(a_4,\ a_3)\le q^3 \cdot d(a_1,\ a_0)\\
  \implies &\cdots\\
  \implies &d(a_{n+1},\ a_n)\le q^n \cdot d(a_1, a_0)\\
  \implies &d(a_{n+1}, a_n) \overset{n \to \infty}{\longrightarrow} 0
