@@ -987,9 +987,9 @@ Let $T: X \to X$ be a contraction for a complete metric space $X$ with metric fu
 Steps:
 - Show that the sequence $a_{n+1}=T(a_n)$ is Cauchy, that is, when $m>n$ and $n \to \infty$, $d(a_m, a_n)$ goes to zero
 - Using the fact that $X$ is a complete metric space, assert that Cauchy property is equivalent with the convergence of $a_n$ to some $x^* \in X$
-- Using continuity of $f$ assert that as $x_n \to x^*$, $f(x_n) \to f(x^*)$
-- Using the fact that $x_{n+1}=f(x_n)$, assert that $\lim x_n = \lim f(x_n)$
-- Conclude that $x^*=f(x^*)$
+- Using continuity of $T$ assert that as $x_n \to x^*$, $T(x_n) \to T(x^*)$
+- Using the fact that $x_{n+1}=T(x_n)$ (maps into itself), assert that $\lim x_n = \lim T(x_n)$
+- Conclude that $x^*=T(x^*)$
 - Show uniqueness of the limit
 
 Let's show $a_n+1=T(a_n)$ is Cauchy for arbitrary $a_0 \in X$. Going from $a_0$ to $a_n$ there's a repeated application of $T$:
