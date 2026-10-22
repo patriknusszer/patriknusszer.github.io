@@ -94,19 +94,14 @@ font-size: 24px;
     }
 
 
-@media only screen and (max-width: 450px) {
-        .contents_p_white {
-        border-bottom: 3px solid transparent;
-        font-family: 'Fredericka the Great', serif;
-        font-style: normal;
-        color: white !important;
-        transition: color .3s ease-in-out, border-bottom-color .3s ease-in-out;
-        text-align: left;
-        margin: 15px;
-        display: inline-block;
-        width: 340px;
-        display: block;
+@media only screen and (max-width: 600px) {
+    .contents_p_white {
         font-size: 17px;
+        width: 85%;
     }
 
+    #contents_block {
+        left: 30px;
+        right: 30px;
+    }
 }
