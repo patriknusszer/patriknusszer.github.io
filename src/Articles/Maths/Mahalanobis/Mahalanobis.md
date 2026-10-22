@@ -977,3 +977,49 @@ $$
 Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B_{r_0}(\vec{a})$, but it can not be shown that it equals $B_{r_0}(\vec{a})$. In a particular case the preimage might equal $B_{r_0}(\vec{a})$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two balls (either open or closed), it can't be guaranteed.
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
+
+**Banach Theorem proof**
+
+Let $T: X \to X$ be a contraction for a complete metric space $X$ with metric function $d$, that is, $\exists q \in [0, 1)$ such that $d(T(x), T(y))\le q \cdot d(x, y)$ for $\forall x,y \in X$.
+
+**Proof**
+
+Intuitive sketch:
+- Show that the sequence $a_{n+1}=T(a_n)$ is Cauchy, that is, when $m>n$ and $n \to \infty$, $d(a_m, a_n)$ goes to zero
+- Using the fact that $X$ is a complete metric space, assert that Cauchy convergence is equivalent with standard convergence of $a_n$ to some $x^* \in X$
+- Using continuity of $f$ assert that as $x_n \to x^*$, $f(x_n) \to f(x^*)$
+- Using the fact that $x_{n+1}=f(x_n)$, assert that $\lim x_n = \lim f(x_n)$
+- Conclude that $x^*=f(x^*)$
+- Show uniqueness of the limit
+
+Let's show $a_n+1=T(a_n)$ is Cauchy for arbitrary $a_0 \in X$. Going from $a_0$ to $a_n$ there's a repeated application of $T$:
+
+$$
+a_n = T(T(......T(a_0)))))\\
+a_{n+1} = T(T(T(......T(a_0))))))
+$$
+
+And we also know that each parallel iteration lessens the distance between $a_{n+1}$ and $a_n$:
+
+$$
+\begin{aligned}
+ &d(a_{n+1}=T(a_n),\ a_n=T(a_{n-1}))\le\\
+ \le &qd(a_{n}=T(a_{n-1}),\ a_{n-1}=T(a_{n-2}))\\
+ &d(a_{n}=T(a_{n-1}),\ a_{n-1}=T(a_{n-2}))\le\\
+  \le &qd(a_{n-1}=T(a_{n-2}),\ a_{n-2}=T(a_{n-3}))\\
+ &\cdots\\ 
+ &d(a_2,\ a_1)\le\\
+ \le &qd(a_1,\ a_0)\\
+ \implies &d(a_2,\ a_1)\le q \cdot d(a_1, a_0)\\
+ \implies &d(a_3,\ a_2)\le q^2 \cdot d(a_2, a_1)\\
+ \implies &\cdots\\
+ \implies &d(a_{n+1},\ a_n)\le q^n \cdot d(a_1, a_0)\\
+ \implies &d(a_{n+1}, a_n) \overset{n \to \infty}{\longrightarrow} 0
+ \end{aligned}
+ $$
+
+To prove $a_n$ is Cauchy, we need to be able to show this exact result for arbitrary fixed $m>n$ as well, not just $m=n+1$:
+
+$$
+d(a_m, a_n) \overset{n \to \infty}{\longrightarrow} 0
+$$

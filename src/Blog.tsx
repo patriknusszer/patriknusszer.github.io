@@ -38,7 +38,7 @@ function Blog() {
                     },
                                         {
                         page: "/Blog/Mahalanobis",
-                        name: "Mahalanobis distance, eigendecomposition, generative LDA"
+                        name: "Mahalanobis distance, eigendecomposition, implicit/inverse function theorem, Banach theorem, generative LDA"
                     }
                 ]
             },
