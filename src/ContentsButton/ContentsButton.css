@@ -4,7 +4,7 @@
     color: white;
     position: absolute;
     right: 30px;
-    top: 7px;
+    top: 10px;
     transition: color .3s ease-in-out;
     z-index: 11;
     font-family: "Cabin Sketch";
