@@ -1036,7 +1036,7 @@ $$
 d(a_m,\ a_n)\le \sum_{k=n}^{m-1} q^k d(x_1, x_0)
 $$
 
-$m$ is fixed, and finite number of terms each going to zero give a sum also going to zero right? The problem is that the distance must stay bounded by any chosen finite amount independently of $m$, that is, selection of $n$ can't be a function of $m$, and only a function of the chosen bound.
+$m$ is fixed, and finite number of terms each going to zero give a sum also going to zero right? The problem is that the distance must stay bounded by any chosen finite amount independently of $m$, that is, selection of threshold $n$ can't be a function of $m$, and only a function of the chosen bound.
 
 That reasoning motivates the application of the finite geometric series identity:
 
