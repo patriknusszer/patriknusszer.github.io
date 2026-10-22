@@ -294,63 +294,6 @@ By the **Topoligical Extreme Value Theorem**:
 
 Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{x} \in X$.
 
-<!--Topological Extreme Value Theorem-->
-
-**T-EVT proof**
-
-In an abstract topological space $(X, \tau)$, every subset $V \subseteq S$ has an open cover $\mathcal{U} \subseteq \tau$:
-
-$$
-V \subseteq \mathcal{U} = \bigcup_{U\in\mathcal{U}}U
-$$
-
-So it can be contained by a union of open sets of $X$.
-
-$\tau$ is the topology of the topological space. It contains all the open sets of $X$.
-- Contains the empty set and $X$
-- Closed under unions
-- Closed under finite intersections
-
-$$
-\begin{aligned}
-&\text{(a)} && \varnothing,X\in\tau,\\ &\text{(b)} && \bigcup_{\alpha\in A}U_\alpha\in\tau &&\forall\ {U_\alpha}:\ {\alpha\in A}\subseteq\tau,\\ &\text{(c)} && \bigcap_{i=1}^{n}U_i\in\tau &&\forall\ U_1,\ldots,U_n\in\tau.
-\end{aligned}
-$$
-
-Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, for $Y$ we select such an open cover arbitrarily, and by definition of continuous functions over subsets of abstract topological spaces, the preimage of the open cover of $Y$ is also open.
-
-Then, by definition of a compact subset of an abstract topological space, any open covers of $X$ has a **finite** open subcover.
-
-But this essentially means the image of the finite cover of $X$ is a finite cover of $Y$, which is also a finite subcover of the initial open cover for $Y$ we started off with.
-
-And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover as well. And since a subset of a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
-
-Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the **Heine-Borel theorem**.
-
-**Proof of Heine-Borel theorem**
-**coming soon**
-
-**Boundedness $\implies$ existence**  
-Since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
-
-**Closed $\implies$ containment**  
-Every limit point $\in \overline{Y}$, that is, the closure (the closed version) of $Y$ contains every limit point of $Y$. And since $Y$ is closed, it contains its supremum.
-
-The definition of a limit point of a set: such a point of the complete/topological space, that for all open neighborhoods/sets containing the point also contains a point of the subset other than the limit point:
-
-$$
-\forall\ U \in \mathcal{T}, \quad
-x \in U \implies U \cap (A \setminus \{x\}) \neq \varnothing,
-$$
-
-The catch is: a limit point of set $Y$ does not have to be an element of $Y$.
-
-The intuition is the example interval $(0, 1) \subseteq \mathbb{R}$ in which any open neighborhood of an interior point has infinitely many points of $(0, 1)$ other than the interior point. Points $1$ and $0$ are not contained by set $(0, 1)$ and only by the ambient space (and of course the complete/topological space), but still they are both limit points of $(0, 1)$.
-
-The containment of the infimum is analogously provided by the **greatest lower bound axiom**.
-
-**Q.E.D**
-
 Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its gradient $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
 
 Precisely, the gradient inherently considers small perturbations in every coordinate direction around the point. Therefore, when differentiating $f$ as a function defined on the ambient space, it (most probably) takes into account how $f$ changes toward points both inside and outside a given constraint set.
@@ -996,9 +939,9 @@ Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
 
-<!--Banach's theorem-->
+<!--Banach fixed-point theorem proof-->
 
-**Banach Theorem proof**
+**Banach fixed-point theorem proof**
 
 Let $T: X \to X$ be a contraction for a complete metric space $X$ with metric function $d$, that is, $\exists q \in [0, 1)$ such that $d(T(x), T(y))\le q \cdot d(x, y)$ for $\forall x,y \in X$.
 
@@ -1083,3 +1026,60 @@ $$
 That means $d(a_m,\ a_n) \to 0$ as $n \to  \infty$ independently of $m>n$ and hence $a_n$ is Cauchy.
 
 **Q.E.D.**
+
+<!--Topological Extreme Value Theorem Proof-->
+
+**Topological Extreme Value Theorem proof**
+
+In an abstract topological space $(X, \tau)$, every subset $V \subseteq S$ has an open cover $\mathcal{U} \subseteq \tau$:
+
+$$
+V \subseteq \mathcal{U} = \bigcup_{U\in\mathcal{U}}U
+$$
+
+So it can be contained by a union of open sets of $X$.
+
+$\tau$ is the topology of the topological space. It contains all the open sets of $X$.
+- Contains the empty set and $X$
+- Closed under unions
+- Closed under finite intersections
+
+$$
+\begin{aligned}
+&\text{(a)} && \varnothing,X\in\tau,\\ &\text{(b)} && \bigcup_{\alpha\in A}U_\alpha\in\tau &&\forall\ {U_\alpha}:\ {\alpha\in A}\subseteq\tau,\\ &\text{(c)} && \bigcap_{i=1}^{n}U_i\in\tau &&\forall\ U_1,\ldots,U_n\in\tau.
+\end{aligned}
+$$
+
+Therefore in case of $f : X \to Y \subseteq \mathbb{R}$, for $Y$ we select such an open cover arbitrarily, and by definition of continuous functions over subsets of abstract topological spaces, the preimage of the open cover of $Y$ is also open.
+
+Then, by definition of a compact subset of an abstract topological space, any open covers of $X$ has a **finite** open subcover.
+
+But this essentially means the image of the finite cover of $X$ is a finite cover of $Y$, which is also a finite subcover of the initial open cover for $Y$ we started off with.
+
+And since we selected the initial open cover of $Y$ arbitrarily, it means every open cover of $Y$ has a finite subcover as well. And since a subset of a topological space is compact if and only if every open cover has a finite subcover, $Y$ **must be compact** as well.
+
+Since $Y$ is a subset of $\mathbb{R}$, it is a **metric space**, specifically an **Euclidean space**, and for Euclidean spaces compactness means $Y$ is **closed** and **bounded**, by the **Heine-Borel theorem**.
+
+**Proof of Heine-Borel theorem**
+**coming soon**
+
+**Boundedness $\implies$ existence**  
+Since $Y$ is bounded, the **least upper bound axiom** applies, and therefore $Y$ has a finite limit point that is its supremum.
+
+**Closed $\implies$ containment**  
+Every limit point $\in \overline{Y}$, that is, the closure (the closed version) of $Y$ contains every limit point of $Y$. And since $Y$ is closed, it contains its supremum.
+
+The definition of a limit point of a set: such a point of the complete/topological space, that for all open neighborhoods/sets containing the point also contains a point of the subset other than the limit point:
+
+$$
+\forall\ U \in \mathcal{T}, \quad
+x \in U \implies U \cap (A \setminus \{x\}) \neq \varnothing,
+$$
+
+The catch is: a limit point of set $Y$ does not have to be an element of $Y$.
+
+The intuition is the example interval $(0, 1) \subseteq \mathbb{R}$ in which any open neighborhood of an interior point has infinitely many points of $(0, 1)$ other than the interior point. Points $1$ and $0$ are not contained by set $(0, 1)$ and only by the ambient space (and of course the complete/topological space), but still they are both limit points of $(0, 1)$.
+
+The containment of the infimum is analogously provided by the **greatest lower bound axiom**.
+
+**Q.E.D**
