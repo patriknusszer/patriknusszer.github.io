@@ -26,7 +26,11 @@ function useMediaQuery(query: string) {
     return matches;
 }
 
-function Navbar() {
+type NavbarProps = {
+    showContents: boolean;
+};
+
+function Navbar({ showContents } : NavbarProps) {
   const isMobile = useMediaQuery("(max-width: 600px)")
   const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false)
   const [ contentsOpen, setContentsOpen ] = useState(false)
@@ -61,7 +65,7 @@ function Navbar() {
                 </>
             )}
 
-            <ContentsButton contentsOpen={contentsOpen} setContentsOpen={setContentsOpen} />
+            {showContents && (<ContentsButton contentsOpen={contentsOpen} setContentsOpen={setContentsOpen} />)}
         </div>
     </>
   )

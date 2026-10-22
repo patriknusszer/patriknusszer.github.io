@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './ItemsViewTemplate.css'
+import { useContents } from "../App/App";
 
 interface Item {
     page: string;
@@ -20,6 +21,9 @@ interface ItemsViewTemplateProps {
 }
 
 function ItemsViewTemplate({ items }: ItemsViewTemplateProps) {
+    const [showContents, setShowContents] = useContents();
+    setShowContents(false)
+
     return (
         <>
             {items.categories.map((category) => (

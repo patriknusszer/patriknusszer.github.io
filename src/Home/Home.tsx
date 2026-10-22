@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './Home.css'
+import { useContents } from '../App/App';
 
 function Home() {
 useEffect(() => {
@@ -21,6 +22,9 @@ useEffect(() => {
         document.body.style.overflow = "";
     };
 }, [])
+
+        const [showContents, setShowContents] = useContents();
+        setShowContents(false)
 
   return (
     <>

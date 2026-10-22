@@ -6,6 +6,7 @@ import cssUrl from "./ItemViewTemplate.css?url"
 import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
+import { useContents } from "../App/App";
 
 interface ItemViewTemplateProps {
     title: string;
@@ -35,6 +36,9 @@ function ItemViewTemplate({
             link.remove();
         };
     }, []);
+
+    const [showContents, setShowContents] = useContents();
+    setShowContents(true)
 
     return (
         <>
