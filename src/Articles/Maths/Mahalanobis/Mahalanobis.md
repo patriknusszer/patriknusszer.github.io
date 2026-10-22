@@ -984,9 +984,9 @@ Let $T: X \to X$ be a contraction for a complete metric space $X$ with metric fu
 
 **Proof**
 
-Intuitive sketch:
+Steps:
 - Show that the sequence $a_{n+1}=T(a_n)$ is Cauchy, that is, when $m>n$ and $n \to \infty$, $d(a_m, a_n)$ goes to zero
-- Using the fact that $X$ is a complete metric space, assert that Cauchy convergence is equivalent with standard convergence of $a_n$ to some $x^* \in X$
+- Using the fact that $X$ is a complete metric space, assert that Cauchy property is equivalent with the convergence of $a_n$ to some $x^* \in X$
 - Using continuity of $f$ assert that as $x_n \to x^*$, $f(x_n) \to f(x^*)$
 - Using the fact that $x_{n+1}=f(x_n)$, assert that $\lim x_n = \lim f(x_n)$
 - Conclude that $x^*=f(x^*)$
@@ -1023,3 +1023,31 @@ To prove $a_n$ is Cauchy, we need to be able to show this exact result for arbit
 $$
 d(a_m, a_n) \overset{n \to \infty}{\longrightarrow} 0
 $$
+
+To show this, we have the triangle inequality:
+
+$$
+d(a_m,\ a_n) \le \sum_{k=n}^{m-1} d(a_n, a_{n+1})
+$$
+
+As per our earlier reasoning:
+
+$$
+d(a_m,\ a_n)\le \sum_{k=n}^{m-1} q^k d(x_1, x_0)
+$$
+
+$m$ is fixed, and finite number of terms each going to zero give a sum also going to zero right? The problem is that the distance must stay bounded by any chosen finite amount independently of $m$, that is, selection of $n$ can't be a function of $m$, and only a function of the chosen bound.
+
+That reasoning motivates the application of the finite geometric series identity:
+
+$$
+\begin{aligned}
+&\sum_{k=n}^{m-1} q^k = \frac{q^n(1-q^{m-n})}{1-q}\\
+&q^n(1-q^{m-n}) \le q^n\\
+\implies &\frac{q^n(1-q^{m-n})}{1-q} \le \frac{q^n}{1-q}\\
+\implies &d(a_1,\ a_0)\sum_{k=n}^{m-1} q^k \le d(a_1,\ a_0)\frac{q^n}{1-q}\\
+\implies &d(a_m,\ a_n) \le d(a_1,\ a_0)\frac{q^n}{1-q}
+\end{aligned}
+$$
+
+That means $d(a_m,\ a_n) \to 0$ as $n \to  \infty$ independently of $m>n$ and hence $a_n$ is Cauchy.
