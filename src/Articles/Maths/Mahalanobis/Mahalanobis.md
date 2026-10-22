@@ -1051,3 +1051,5 @@ $$
 $$
 
 That means $d(a_m,\ a_n) \to 0$ as $n \to  \infty$ independently of $m>n$ and hence $a_n$ is Cauchy.
+
+**Q.E.D.**
