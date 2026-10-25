@@ -654,11 +654,11 @@ $$
 f(\vec{x}_{\vec{u}}, \Phi(\vec{x}_{\vec{u}}))=c\quad \forall\ \vec{x}_{\vec{u}} \in \mathbb{R}^k
 $$
 
-And $\Phi$ is $C^1$ over $U$.
+And $\Phi$ is $C^1$ over $U$. $V$ is known to contain the image of $U$ but might not equal it. It is a codomain, not (necessarily) the range.
 
 **Proof**
 
-Let a function $g: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^n \times \mathbb{R}^m$ be defined as $G(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$.
+Let a function $g: \mathbb{R}^{k+n} \to \mathbb{R}^{k+n}$ be defined as $g(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$.
 
 The key takeaway is that if the partial Jacobian $D_{\vec{v}}f\bigg|_{\vec{a}}$ of $f$ is invertible, then the full Jacobian of $g$ is also invertible: 
 
@@ -684,7 +684,6 @@ $$
 And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O$ and one containing $f(\vec{a}) \in P$.
 
 Note that $g^{-1}(\vec{x}, c)$ exactly means that $f(\vec{x}, \vec{x})=c$:
-
 $$
 \begin{aligned}
 &g(\vec{x},\vec{y})=(\vec{x}, f(\vec{x}, \vec{y})=c)\\
