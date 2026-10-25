@@ -615,61 +615,83 @@ Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvecto
 
 **Implicit Function Theorem Proof**
 
-The implicit function theorem is just a specific application of the inverse function theorem. (It is almost a lie to call it a theorem)
+The implicit function theorem is just a specific application of the inverse function theorem. (It is almost a lie to call it a theorem).
 
-The statement is:
+The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$ which outputs some (consequently) open set $W$, which is a subset of $R^n$ and $m>n$.
 
 $$
 \begin{aligned}
-&\begin{cases}
-f: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^m \in C^1\\
-\exists\ \vec{a} \in \mathbb{R}^n,\ \vec{b} \in \mathbb{R}^m: f(\vec{a}, \vec{b})=0\\
-\det D_{\vec{y}}f(\vec{a}, \vec{b}) \neq 0
-\end{cases}\\
-\implies
-&\begin{cases}
-\exists\ U \subseteq \mathbb{R}^m\quad \text{open neighborhood of}\quad \vec{a}\\
-\exists\ V \subseteq \mathbb{R}^n\quad \text{open neighborhood of}\quad \vec{b}\\
-\exists\ \Phi: \mathbb{R}^m \to \mathbb{R}^n\\
-\text{Such that}\\
-\Psi(\vec{x})=\vec{y}\quad \forall \vec{x} \in U\\
-\text{In particular}\\
-\Psi(\vec{a})=\vec{b}
-\end{cases}
+&f: Q \subseteq \mathbb{R}^{m} \to W \subseteq \mathbb{R}^n\\
+&m > n\\
+&W\ \text{is open, and hence,}\ \text{Q}\ \text{is open}
 \end{aligned}
 $$
 
-Let a function $\Phi: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^n \times \mathbb{R}^m$ be defined as $\Phi(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$
+It is also required that among the $m$ input variables, there $\exists\ n$ input variables, denoted by coordinates of a dummy vector $\vec{v}$, for which the partial Jacobian of $f$ is invertible at some $\vec{a} \in Q$:
 
-The key takeaway is that the pointwise invertible Jacobian criterium holds for $\Phi$ as well:
+$$
+\exists \left(D_{\vec{v}}f\bigg|_{\vec{a}}\right)^{-1}
+$$
+
+These requirements motivate us to separate all $m$ input variables into two group denoted by dummy vector $\vec{u} \in \mathbb{R}^{m-n=k}$ and dummy vector $\vec{v} \in \mathbb{R}^n$. Hence $f$ can also be written as:
 
 $$
 \begin{aligned}
-&J_{\Psi}(\vec{a},\vec{b}) =
+&f: Q \subseteq \mathbb{R}^k \times \mathbb{R}^n \to W \subseteq \mathbb{R}^n\\
+&f(\vec{x}_{\vec{u}}, \vec{x}_{\vec{v}})=f(\vec{x})\\
+&\vec{x}_{\vec{u}} \in \mathbb{R}^k,\ \vec{x}_{\vec{v}} \in \mathbb{R}^n,\ \vec{x} \in \mathbb{R}^k \times \mathbb{R}^n
+\end{aligned}
+$$
+
+Then the theorem says $\exists\ \text{open}\ U \subseteq \mathbb{R}^k$ neighborhood of $\vec{a}_{\vec{u}}$ and $\exists\ \text{open}\ V \subseteq \mathbb{R}^n$ neighborhood of $\vec{a}_{\vec{v}}$ and a unique function $\Phi: U \to  V$ such that:
+
+$$
+f(\vec{x}_{\vec{u}}, \Phi(\vec{x}_{\vec{u}}))=c\quad \forall\ \vec{x}_{\vec{u}} \in \mathbb{R}^k
+$$
+
+And $\Phi$ is $C^1$ over $U$.
+
+**Proof**
+
+Let a function $g: \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}^n \times \mathbb{R}^m$ be defined as $G(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$.
+
+The key takeaway is that if the partial Jacobian $D_{\vec{v}}f\bigg|_{\vec{a}}$ of $f$ is invertible, then the full Jacobian of $g$ is also invertible: 
+
+$$
+\begin{aligned}
+&J_{g}(\vec{x},\vec{y}) =
 \begin{pmatrix} D_{\vec{x}}(\vec{x}) && D_{\vec{y}}(\vec{x})\\
-D_{\vec{x}} F(\vec{a},\vec{b}) && D_{\vec{y}} F(\vec{a},\vec{b})
+D_{\vec{x}} f(\vec{x},\vec{y}) && D_{\vec{y}} f(\vec{x},\vec{y})
 \end{pmatrix}\\
 &=
-\begin{pmatrix} I_n && 0\\
-D_{\vec{x}} F(\vec{a},\vec{b}) && D_{\vec{y}} F(\vec{a},\vec{b}) \end{pmatrix}\\
+\begin{pmatrix} I_n && 0_n\\
+D_{\vec{x}} f(\vec{x},\vec{y}) && D_{\vec{y}} f(\vec{x},\vec{y}) \end{pmatrix}\\
 
-\implies &\det(J_{\Psi}(\vec{a},\vec{b})) = \det(I_n) \cdot \det(D_{\vec{y}} F(\vec{a},\vec{b}))\\
-&= \det(D_{\vec{y}} F(\vec{a},\vec{b}))\\
+\implies &\det(J_{g}(\vec{x},\vec{y})) = \det(I_n) \cdot \det(D_{\vec{y}} f(\vec{x},\vec{y}))\\
+&= \det(D_{\vec{y}} f(\vec{x},\vec{y}))\\
 
-&D_{\vec{y}} F(\vec{a},\vec{b}) \text{ invertible}\\
-\implies &\det(D_{\vec{y}} F(\vec{a},\vec{b})) \neq 0\\
-\implies &\det(J_{\Psi}(\vec{a},\vec{b})) \neq 0
+&D_{\vec{y}} f(\vec{a}_{\vec{u}},\vec{a}_{\vec{v}})=D_{\vec{y}} f(\vec{a})\ \text{is  invertible}\\
+\implies &\det(D_{\vec{y}} f(\vec{x},\vec{y})) \neq 0\\
+\implies &\det(J_{g}(\vec{x},\vec{y})) \neq 0
 \end{aligned}
 $$
 
-And Since $\Psi \in C^1$ so $\Phi \in C^1$ as well, and therefore by the inverse function theorem $\Phi$ is invertible in a fully covered open neighborhood of point $(\vec{a}, \vec{b})$.
+And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O$ and one containing $f(\vec{a}) \in P$.
 
-Therefore $\Phi^{-1}(\vec{u}, \vec{v})=(\vec{x}, \vec{y})$ exists and particularly in case of $\Phi^{-1}(\vec{u}, \vec{0})$ the implicit constraint $f(\vec{x}, \vec{y})=0$ holds true.
-
-Hence we can build an extraction function which basically just extracts the $\vec{y}$ variables from the resulting vector of $\Phi^{-1}(\vec{u}, \vec{0})$:
+Note that $g^{-1}(\vec{x}, c)$ exactly means that $f(\vec{x}, \vec{x})=c$:
 
 $$
-\gamma(\vec{x})=\Phi^{-1}(\vec{x}, 0)_{\vec{y}}
+\begin{aligned}
+&g(\vec{x},\vec{y})=(\vec{x}, f(\vec{x}, \vec{y})=c)\\
+\iff
+&g^{-1}(\vec{x}, c)=(\vec{x}, \vec{y})
+\end{aligned}
+$$
+
+Hence we can build an extraction function which basically just extracts the $\vec{v}$ variables from the resulting vector of $g^{-1}(\vec{u}, \vec{0})$:
+
+$$
+\gamma(\vec{x})=g^{-1}(\vec{x}, c)_{\vec{v}}
 $$
 
 And hence for $\forall\ \vec{x} \in U$:
