@@ -633,13 +633,18 @@ $$
 \exists \left(D_{\vec{v}}f\bigg|_{\vec{a}}\right)^{-1}
 $$
 
-These requirements motivate us to separate all $m$ input variables into two group denoted by dummy vector $\vec{u} \in \mathbb{R}^{m-n=k}$ and dummy vector $\vec{v} \in \mathbb{R}^n$. Hence $f$ can also be written as:
+Furthermore, $f$ is known to equal some constraint vector $\vec{c}$ at vector $\vec{a}$:
+
+$$
+f(\vec{a})=\vec{c}
+$$
+
+These requirements motivate us to separate all $m$ input variables into two groups, one denoted by a dummy vector $\vec{u} \in \mathbb{R}^{m-n=k}$ and one by a dummy vector $\vec{v} \in \mathbb{R}^n$. Hence $f$ can also be written as:
 
 $$
 \begin{aligned}
-&f: Q \subseteq \mathbb{R}^k \times \mathbb{R}^n \to W \subseteq \mathbb{R}^n\\
-&f(\vec{x}_{\vec{u}}, \vec{x}_{\vec{v}})=f(\vec{x})\\
-&\vec{x}_{\vec{u}} \in \mathbb{R}^k,\ \vec{x}_{\vec{v}} \in \mathbb{R}^n,\ \vec{x} \in \mathbb{R}^k \times \mathbb{R}^n
+&f: Q \subseteq \mathbb{R}^{k+n} \to W \subseteq \mathbb{R}^n\\
+&f(\vec{x}_{\vec{u}}, \vec{x}_{\vec{v}})=f(\vec{x})
 \end{aligned}
 $$
 
