@@ -726,12 +726,12 @@ $$
 
 It is also known that $g^{-1}$ maps back to open set $O$ containing $(\pi_{\vec{u}}(a), \pi_{\vec{v}}(a))=\vec{a}$, which yields an open ball around $\vec{a}$. Analogously to the above reasoning, there $\exists$ a saturated open ball $V$ around $\pi_{\vec{v}}(\vec{a})$, such that the vectors from this ball, extended by fixed $\vec{v}$ coordinates of $\vec{a}$ form a subset of the ball around $\vec{a}$. This set $V$ must therefore contain the image of $\Phi(U)$ but note that $\Phi$ may not be bijective between $V$ and $U$ like $g$ is bijective between $O$ and $P$. So $V$ must contain the image of $\Phi(U)$ but it is just a codomain/may not equal the range.
 
-Hence whenever $\pi_{\vec{u}}(\vec{x})\in U$ the other $\vec{v}$ coordinates can be expressed by $\Phi$ so that $f$ retains its function value (the implicit constraint vector):
+Hence whenever $\vec{x} \in U$ the other $\vec{v}$ coordinates can be expressed by $\Phi$ so that $f$ retains its function value (the implicit constraint vector):
 
 $$
 \begin{aligned}
 &\Phi: U \to V\\
-&f(\vec{x}, \Phi(\vec{x}))=\vec{c}\quad \forall\ \pi_{\vec{u}}(\vec{x})\in U
+&f(\vec{x}, \Phi(\vec{x}))=\vec{c}\quad \forall\ \vec{x} \in U
 \end{aligned}
 $$
 
