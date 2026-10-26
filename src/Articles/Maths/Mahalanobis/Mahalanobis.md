@@ -616,7 +616,7 @@ It would lead to contradiction if there were less than $n$ eigenvectors, because
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
 
-<!--Implicit function theorem proof-->
+<!--Implicit function theorem-->
 
 **Implicit Function Theorem Proof**
 
@@ -744,7 +744,7 @@ $g^{-1}$ is a $C^1$ function. $(\vec{x}) \to (\vec{x}, \vec{c})$ is also $C^1$, 
 
 **Q.E.D.**
 
-<!--Inverse function theorem proof-->
+<!--Inverse function theorem-->
 
 **Inverse function theorem proof**
 
@@ -1093,7 +1093,7 @@ That means $d(a_m,\ a_n) \to 0$ as $n \to  \infty$ independently of $m>n$ and he
 
 **Q.E.D.**
 
-<!--Topological Extreme Value Theorem Proof-->
+<!--Topological extreme value theorem-->
 
 **Topological Extreme Value Theorem proof**
 
