@@ -713,6 +713,8 @@ $$
 \end{aligned}
 $$
 
+$g^{-1}$ is a $C^1$ function. $(\vec{x}) \to (\vec{x}, \vec{c})$ is also $C^1$, and the projection $\pi_{\vec{v}}$ is also $C^1$. Therefore, $\Phi$ is also $C^1$.
+
 **Q.E.D.**
 
 <!--Inverse function theorem proof-->
