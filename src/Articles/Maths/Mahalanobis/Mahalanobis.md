@@ -644,14 +644,14 @@ These requirements motivate us to separate all $m$ input variables into two grou
 $$
 \begin{aligned}
 &f: Q \subseteq \mathbb{R}^{k+n} \to W \subseteq \mathbb{R}^n\\
-&f(\vec{x}_{\vec{u}}, \vec{x}_{\vec{v}})=f(\vec{x})
+&f(\pi_{\vec{u}}(\vec{x}), \pi_{\vec{v}}(\vec{x}))=f(\vec{x})
 \end{aligned}
 $$
 
-Then the theorem says $\exists\ \text{open}\ U \subseteq \mathbb{R}^k$ neighborhood of $\vec{a}_{\vec{u}}$ and $\exists\ \text{open}\ V \subseteq \mathbb{R}^n$ neighborhood of $\vec{a}_{\vec{v}}$ and a unique function $\Phi: U \to  V$ such that:
+Then the theorem says $\exists\ \text{open}\ U \subseteq \mathbb{R}^k$ neighborhood of $\pi_{\vec{u}}(\vec{x})$ and $\exists\ \text{open}\ V \subseteq \mathbb{R}^n$ neighborhood of $\pi_{\vec{v}}(\vec{x})$ and a unique function $\Phi: U \to  V$ such that:
 
 $$
-f(\vec{x}_{\vec{u}}, \Phi(\vec{x}_{\vec{u}}))=c\quad \forall\ \vec{x}_{\vec{u}} \in \mathbb{R}^k
+f(\pi_{\vec{u}}(\vec{x}), \Phi(\pi_{\vec{u}}(\vec{x})))=c\quad \forall\ \pi_{\vec{u}}(\vec{x}) \in U
 $$
 
 And $\Phi$ is $C^1$ over $U$. $V$ is known to contain the image of $U$ but might not equal it. It is a codomain, not (necessarily) the range.
@@ -660,7 +660,7 @@ In most condensed terms, if $f$ equals some vector $\vec{c}$ at some point $\vec
 
 **Proof**
 
-Let a function $g: \mathbb{R}^{k+n} \to \mathbb{R}^{k+n}$ be defined as $g(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$, and $\vec{x}$ represents coordinates $\vec{u}$, and $\vec{y}$ represents coordinates $\vec{v}$.
+Let a function $g: \mathbb{R}^{k+n} \to \mathbb{R}^{k+n}$ be defined as $g(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$, and $\vec{x}$ represents coordinates $\vec{u}$ and $\vec{y}$ represents coordinates $\vec{v}$.
 
 The key takeaway is that if the partial Jacobian $D_{\vec{v}}f\bigg|_{\vec{a}}$ of $f$ is invertible, then the full Jacobian of $g$ is also invertible: 
 
@@ -677,15 +677,15 @@ D_{\vec{x}} f(\vec{x},\vec{y}) && D_{\vec{y}} f(\vec{x},\vec{y}) \end{pmatrix}\\
 \implies &\det(J_{g}(\vec{x},\vec{y})) = \det(I_n) \cdot \det(D_{\vec{y}} f(\vec{x},\vec{y}))\\
 &= \det(D_{\vec{y}} f(\vec{x},\vec{y}))\\
 
-&D_{\vec{y}} f(\vec{a}_{\vec{u}},\vec{a}_{\vec{v}})=D_{\vec{y}} f(\vec{a})\ \text{is  invertible}\\
+&D_{\vec{y}} f(\pi_{\vec{u}}(\vec{a}),\pi_{\vec{v}}(\vec{a}))=D_{\vec{y}} f(\vec{a})\ \text{is  invertible}\\
 \implies &\det(D_{\vec{y}} f(\vec{x},\vec{y})) \neq 0\\
 \implies &\det(J_{g}(\vec{x},\vec{y})) \neq 0
 \end{aligned}
 $$
 
-And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O \subseteq \mathbb{R}^{k+n}$ and one containing $\overrightarrow{(\vec{a}_{\vec{u}}, f(\vec{a})=\vec{c})} \in P \subseteq \mathbb{R}^{k+n}$.
+And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O \subseteq \mathbb{R}^{k+n}$ and one containing $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c}) \in P \subseteq \mathbb{R}^{k+n}$.
 
-Note that when $\overrightarrow{(\vec{x}, \vec{c})} \in P$, then $g^{-1}(\vec{x}, \vec{c})$ exactly means that $f(\vec{x}, \vec{y})=c$:
+Note that when $(\vec{x}, \vec{c}) \in P$, then $g^{-1}(\vec{x}, \vec{c})$ exactly means that $f(\vec{x}, \vec{y})=c$:
 $$
 \begin{aligned}
 &g^{-1}(\vec{x}, \vec{c})=(\vec{x}, \vec{y})\\
@@ -693,18 +693,18 @@ $$
 \end{aligned}
 $$
 
-Since $P$ is an open neighborhood of vector $\overrightarrow{(\vec{a}_{\vec{u}}, f(\vec{a})=\vec{c})}$, there $\exists$ a fully saturated open ball around that vector (inside $P$), and hence there $\exists\ U \subseteq R^k$ so for $\forall\ \vec{x} \in U$, $\overrightarrow{(\vec{x}, \vec{c})}$ is also inside that ball.
+Since $P$ is an open neighborhood of vector $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c})$, there $\exists$ a fully saturated open ball around that vector (inside $P$), and hence there $\exists\ U \subseteq R^k$ so for $\forall\ \vec{x} \in U$, $(\vec{x}, \vec{c})$ is also inside that ball.
 
 Simplify $g^{-1}(\vec{x}, \vec{y})$ such that $\vec{y}$ is set to constant vector $\vec{c}$ and let it be defined over $U$, and extract the $\vec{v}$ coordinates from the resulting vector:
 
 $$
 \begin{aligned}
-&\Phi(\vec{x})=(g^{-1}(\vec{x}, \vec{c}))_{\vec{v}}\\
+&\Phi(\vec{x})=\pi_{\vec{v}}(g^{-1}(\vec{x}, \vec{c}))\\
 &\vec{x} \in U
 \end{aligned}
 $$
 
-Since $\overrightarrow{(\vec{x}, \vec{c})}$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $\Phi$, extended by coordinates of $\vec{x} \in U$ must also be contained by some open subset $O$, meaning $(\vec{x}, \Phi(\vec{x})) \in O$. That means $g^{-1}(\vec{x}, \vec{c})_{\vec{v}}=\Phi(\vec{x})\quad \forall \vec{x} \in U$ are also contained by some open neighborhood $V \subseteq \mathbb{R}^n$, therefore:
+Since $(\vec{x}, \vec{c})$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $\Phi$, extended by coordinates of $\vec{x} \in U$ must also be contained by some open subset $O$, meaning $(\vec{x}, \Phi(\vec{x})) \in O$. That means $\pi_{\vec{v}}(g^{-1}(\vec{x}, \vec{c}))=\Phi(\vec{x})\quad \forall \vec{x} \in U$ are also contained by some open neighborhood $V \subseteq \mathbb{R}^n$, therefore:
 
 $$
 \begin{aligned}
