@@ -731,7 +731,7 @@ Hence whenever $\pi_{\vec{u}}(vec{x})\in U$ the other $\vec{v}$ coordinates can 
 $$
 \begin{aligned}
 &\Phi: U \to V\\
-&f(\vec{x}, \Phi(\vec{x}))=\vec{c}\quad \forall\ \pi_{\vec{u}}(vec{x})\in U
+&f(\vec{x}, \Phi(\vec{x}))=\vec{c}\quad \forall\ \pi_{\vec{u}}(\vec{x})\in U
 \end{aligned}
 $$
 
