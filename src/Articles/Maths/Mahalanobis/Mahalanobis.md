@@ -617,13 +617,13 @@ Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvecto
 
 The implicit function theorem is just a specific application of the inverse function theorem. (It is almost a lie to call it a theorem).
 
-The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$ which outputs some (consequently) open set $W$, which is a subset of $R^n$ and $m>n$.
+The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$ which outputs some open set $W$, which is a subset of $R^n$ and $m>n$.
 
 $$
 \begin{aligned}
 &f: Q \subseteq \mathbb{R}^{m} \to W \subseteq \mathbb{R}^n\\
 &m > n\\
-&W\ \text{is open, and hence,}\ \text{Q}\ \text{is open}
+&W, Q\ \text{are open}
 \end{aligned}
 $$
 
