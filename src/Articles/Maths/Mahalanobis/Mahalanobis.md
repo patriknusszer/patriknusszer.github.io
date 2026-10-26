@@ -617,7 +617,7 @@ Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvecto
 
 The implicit function theorem is just a specific application of the inverse function theorem.
 
-The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$ which outputs some open set $W$, which is a subset of $R^n$ and $m>n$.
+The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$, and the range of $f$/image of $Q$ is some set $W \subseteq R^n$ and $m>n$:
 
 $$
 \begin{aligned}
@@ -640,7 +640,7 @@ $$
 f(\vec{a})=\vec{c}
 $$
 
-These requirements motivate us to separate all $m$ input variables into two groups, one denoted by a dummy vector $\vec{u} \in \mathbb{R}^{m-n=k}$ and one by a dummy vector $\vec{v} \in \mathbb{R}^n$. Hence $f$ can also be written as:
+These requirements motivate us to separate the $m$ input variables into two groups, one denoted by a dummy vector $\vec{u} \in \mathbb{R}^{m-n=k}$ and one by a dummy vector $\vec{v} \in \mathbb{R}^n$. Hence $f$ can also be written as:
 
 $$
 \begin{aligned}
@@ -657,7 +657,7 @@ $$
 
 And $\Phi$ is $C^1$ over $U$. $V$ is known to contain the image of $U$ but might not equal it. It is a codomain, not (necessarily) the range.
 
-In most condensed terms, if $f$ equals some vector $\vec{c}$ at some point $\vec{a}$, its full/complete Jacobian has full rank $n$, $f$ is $C^1$ in some open neigbhorhood of $\vec{a}$, then $n$ coordinates - $\vec{v}$ - are "locally expressible" by the other $k$ coordinates: $\vec{u}$, and the function preserves the function value, that is, the implicit constraint holds in the neighborhood.
+That means, intuitively, given $n$ constraint equations, giving values to $k=m-n$ input variables, the remaining $n$ input variables can be solved for/can be expressed in function of the $k$ variables in some small neighborhood of a point in which the partial Jacobian with respect to those $n$ input variables is invertible.
 
 **Proof**
 
