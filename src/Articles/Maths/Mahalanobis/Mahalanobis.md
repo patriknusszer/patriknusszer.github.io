@@ -649,7 +649,7 @@ $$
 \end{aligned}
 $$
 
-Then the theorem says $\exists\ \text{open}\ U \subseteq \mathbb{R}^k$ neighborhood of $\pi_{\vec{u}}(\vec{x})$ and $\exists\ \text{open}\ V \subseteq \mathbb{R}^n$ neighborhood of $\pi_{\vec{v}}(\vec{x})$ and a unique function $\Phi: U \to  V$ such that:
+Then the theorem says $\exists\ \text{open}\ U \subseteq \mathbb{R}^k$ neighborhood of $\pi_{\vec{u}}(\vec{a})$ and $\exists\ \text{open}\ V \subseteq \mathbb{R}^n$ neighborhood of $\pi_{\vec{v}}(\vec{a})$ and a unique function $\Phi: U \to  V$ such that:
 
 $$
 f(\pi_{\vec{u}}(\vec{x}), \Phi(\pi_{\vec{u}}(\vec{x})))=c\quad \forall\ \pi_{\vec{u}}(\vec{x}) \in U
@@ -684,7 +684,7 @@ D_{\vec{x}} f(\vec{x},\vec{y}) && D_{\vec{y}} f(\vec{x},\vec{y}) \end{pmatrix}\\
 \end{aligned}
 $$
 
-And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O \subseteq \mathbb{R}^{k+n}$ and one containing $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c}) \in P \subseteq \mathbb{R}^{k+n}$.
+And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inverse/is bijective between two open sets, one containing $\vec{a} \in O \subseteq \mathbb{R}^{k+n}$ and one containing $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c}) \in P \subseteq \mathbb{R}^{k+n}$.
 
 Note that when $(\vec{x}, \vec{c}) \in P$, then $g^{-1}(\vec{x}, \vec{c})$ exactly means that $f(\vec{x}, \vec{y})=c$:
 $$
@@ -694,7 +694,26 @@ $$
 \end{aligned}
 $$
 
-Since $P$ is an open neighborhood of vector $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c})$, there $\exists$ a fully saturated open ball around that vector (inside $P$), and hence there $\exists\ U \subseteq R^k$ so for $\forall\ \vec{x} \in U$, $(\vec{x}, \vec{c})$ is also inside that ball.
+Since $P$ is an open neighborhood of vector $(\pi_{\vec{u}}(\vec{a}), f(\vec{a})=\vec{c})$, there $\exists$ a saturated open ball around that vector contained by $P$. If the $\vec{v}$ coordinates are kept fixed to match the coordinates of $\vec{c}$, and we only let the $\vec{u}$ coordinates be variable, then the distance of such vectors from $(\pi_{\vec{u}}(\vec{a}), \vec{c})$ is entirely determined by the other $\vec{u}$ coordinates:
+
+$$
+\begin{aligned}
+&\mid\mid(\pi_{\vec{u}}(\vec{a}), \vec{c}) - (\vec{x}, \vec{c})\mid\mid=\mid\mid \pi_{\vec{u}}(\vec{a}) - \vec{x}\mid\mid
+\end{aligned}
+
+$$
+
+That exactly means we have a saturated ball $U$ around $\pi_{\vec{u}}(\vec{a})$ for which $t(\vec{x})=(\vec{x}, \vec{c})\quad \vec{x} \in U$ is a subset of the ball around $(\pi_{\vec{u}}(\vec{a}), \vec{c})$.
+
+$$
+\begin{aligned}
+&\mid\mid(\pi_{\vec{u}}(\vec{a}), \vec{c}) - (\vec{x}, \vec{c})\mid\mid < r\\
+&\iff\\
+&\mid\mid \pi_{\vec{u}}(\vec{a}) - \vec{x}\mid\mid<r
+\end{aligned}
+$$
+
+
 
 Simplify $g^{-1}(\vec{x}, \vec{y})$ such that $\vec{y}$ is set to constant vector $\vec{c}$ and let it be defined over $U$, and extract the $\vec{v}$ coordinates from the resulting vector:
 
@@ -705,7 +724,7 @@ $$
 \end{aligned}
 $$
 
-Since $(\vec{x}, \vec{c})$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $\Phi$, extended by coordinates of $\vec{x} \in U$ must also be contained by some open subset $O$, meaning $(\vec{x}, \Phi(\vec{x})) \in O$. That means $\pi_{\vec{v}}(g^{-1}(\vec{x}, \vec{c}))=\Phi(\vec{x})\quad \forall \vec{x} \in U$ are also contained by some open neighborhood $V \subseteq \mathbb{R}^n$, therefore:
+It is also known that $g^{-1}$ maps back to open set $O$ containing $(\pi_{\vec{u}}(a), \pi_{\vec{v}}(a))=\vec{a}$, which yields an open ball around $\vec{a}$. Analogously to the above reasoning, there $\exists$ a saturated open ball $V$ around $\pi_{\vec{v}}(\vec{a})$, such that the vectors from this ball, extended by fixed $\vec{v}$ coordinates of $\vec{a}$ form a subset of the ball around $\vec{a}$. This set $V$ must therefore contain the image of $\Phi(U)$ but note that $\Phi$ may not be bijective between $V$ and $U$ like $g$ is bijective between $O$ and $P$. So $V$ must contain the image of $\Phi(U)$ but it is just a codomain/may not equal the range.
 
 $$
 \begin{aligned}
