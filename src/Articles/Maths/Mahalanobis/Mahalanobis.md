@@ -1005,7 +1005,7 @@ Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B
 
 Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause concerns about whether the function is defined outside the border. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set where definition is guaranteed.
 
-<!--Banach fixed-point theorem proof-->
+<!--Banach fixed-point theorem-->
 
 **Banach fixed-point theorem proof**
 
