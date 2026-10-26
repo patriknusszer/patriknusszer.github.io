@@ -656,9 +656,11 @@ $$
 
 And $\Phi$ is $C^1$ over $U$. $V$ is known to contain the image of $U$ but might not equal it. It is a codomain, not (necessarily) the range.
 
+In most condensed terms, if $f$ equals some vector $\vec{c}$ at some point $\vec{a}$, its full/complete Jacobian has full rank $n$, $f$ is $C^1$ in some open neigbhorhood of $\vec{a}$, then $n$ coordinates - $\vec{v}$ - are "locally expressible" by the other $k$ coordinates: $\vec{u}$.
+
 **Proof**
 
-Let a function $g: \mathbb{R}^{k+n} \to \mathbb{R}^{k+n}$ be defined as $g(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$.
+Let a function $g: \mathbb{R}^{k+n} \to \mathbb{R}^{k+n}$ be defined as $g(\vec{x}, \vec{y})=(\vec{x}, f(\vec{x}, \vec{y}))$ over the same open domain as $f$, which is $Q$, and $\vec{x}$ represents coordinates $\vec{u}$, and $\vec{y}$ represents coordinates $\vec{v}$.
 
 The key takeaway is that if the partial Jacobian $D_{\vec{v}}f\bigg|_{\vec{a}}$ of $f$ is invertible, then the full Jacobian of $g$ is also invertible: 
 
@@ -681,16 +683,28 @@ D_{\vec{x}} f(\vec{x},\vec{y}) && D_{\vec{y}} f(\vec{x},\vec{y}) \end{pmatrix}\\
 \end{aligned}
 $$
 
-And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O$ and one containing $f(\vec{a}) \in P$.
+And since $f \in C^1$ over $Q$ so $g \in C^1$ over $Q$ as well, and therefore by the inverse function theorem $g$ has an inervse/is bijective between two open sets, one containing $\vec{a} \in O \subseteq \mathbb{R}^{k+n}$ and one containing $\overrightarrow{(\vec{a}_{\vec{u}}, f(\vec{a})=\vec{c})} \in P \subseteq \mathbb{R}^{k+n}$.
 
-Note that $g^{-1}(\vec{x}, c)$ exactly means that $f(\vec{x}, \vec{x})=c$:
+Note that when $\overrightarrow{(\vec{x}, \vec{c})} \in P$, then $g^{-1}(\vec{x}, \vec{c})$ exactly means that $f(\vec{x}, \vec{y})=c$:
 $$
 \begin{aligned}
-&g(\vec{x},\vec{y})=(\vec{x}, f(\vec{x}, \vec{y})=c)\\
-\iff
-&g^{-1}(\vec{x}, c)=(\vec{x}, \vec{y})
+&g^{-1}(\vec{x}, \vec{c})=(\vec{x}, \vec{y})\\
+\iff &g(\vec{x},\vec{y})=(\vec{x},f(\vec{x},\vec{y})=c)
 \end{aligned}
 $$
+
+Since $P$ is an open neighborhood of vector $\overrightarrow{(\vec{a}_{\vec{u}}, f(\vec{a})=\vec{c})}$, there $\exists$ a fully saturated open ball around that vector (inside $P$), and hence there $\exists\ U \subseteq R^k$ so for $\forall\ \vec{x} \in U$, $\overrightarrow{(\vec{x}, \vec{c})}$ is also inside that ball.
+
+Simplify $g^{-1}(\vec{x}, \vec{y})$ such that $\vec{y}$ is set to constant vector $\vec{c}$ and let it be defined over $U$, and extract the $\vec{v}$ coordinates from the resulting vector:
+
+$$
+\begin{aligned}
+&\Phi(\vec{x})=(g^{-1}(\vec{x}, \vec{c}))_{\vec{v}}\\
+&\vec{x} \in U
+\end{aligned}
+$$
+
+Since $\overrightarrow{(\vec{x}, \vec{c})}$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $g^{-1}$, extended by $\vec{x} \in U$ must also be contained by $O$.
 
 Hence we can build an extraction function which basically just extracts the $\vec{v}$ variables from the resulting vector of $g^{-1}(\vec{u}, \vec{0})$:
 
