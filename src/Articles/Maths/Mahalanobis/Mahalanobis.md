@@ -704,18 +704,13 @@ $$
 \end{aligned}
 $$
 
-Since $\overrightarrow{(\vec{x}, \vec{c})}$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $g^{-1}$, extended by $\vec{x} \in U$ must also be contained by $O$.
-
-Hence we can build an extraction function which basically just extracts the $\vec{v}$ variables from the resulting vector of $g^{-1}(\vec{u}, \vec{0})$:
+Since $\overrightarrow{(\vec{x}, \vec{c})}$ is contained by the open neighborhood $P$ for which $f$ is bijective together with open set $O$, we also know that coordinates $\vec{v}$ output by $\Phi$, extended by coordinates of $\vec{x} \in U$ must also be contained by some open subset $O$, meaning $(\vec{x}, \Phi(\vec{x})) \in O$. That means $g^{-1}(\vec{x}, \vec{c})_{\vec{v}}=\Phi(\vec{x})\quad \forall \vec{x} \in U$ are also contained by some open neighborhood $V \subseteq \mathbb{R}^n$, therefore:
 
 $$
-\gamma(\vec{x})=g^{-1}(\vec{x}, c)_{\vec{v}}
-$$
-
-And hence for $\forall\ \vec{x} \in U$:
-
-$$
-f(\vec{x}, \gamma(\vec{x}))=0
+\begin{aligned}
+&\Phi: U \to V\\
+&f(\vec{x}, \Phi(\vec{x}))=\vec{c}\quad \forall\ \vec{x}\in U
+\end{aligned}
 $$
 
 **Q.E.D.**
