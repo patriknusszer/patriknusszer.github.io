@@ -656,7 +656,7 @@ $$
 
 And $\Phi$ is $C^1$ over $U$. $V$ is known to contain the image of $U$ but might not equal it. It is a codomain, not (necessarily) the range.
 
-In most condensed terms, if $f$ equals some vector $\vec{c}$ at some point $\vec{a}$, its full/complete Jacobian has full rank $n$, $f$ is $C^1$ in some open neigbhorhood of $\vec{a}$, then $n$ coordinates - $\vec{v}$ - are "locally expressible" by the other $k$ coordinates: $\vec{u}$.
+In most condensed terms, if $f$ equals some vector $\vec{c}$ at some point $\vec{a}$, its full/complete Jacobian has full rank $n$, $f$ is $C^1$ in some open neigbhorhood of $\vec{a}$, then $n$ coordinates - $\vec{v}$ - are "locally expressible" by the other $k$ coordinates: $\vec{u}$, and the function preserves the function value, that is, the implicit constraint holds in the neighborhood.
 
 **Proof**
 
