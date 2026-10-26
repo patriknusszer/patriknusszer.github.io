@@ -474,7 +474,12 @@ $$
 
 Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** $g$ locally, and is also locally differentiable.
 
-Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$ (since the neighorhood of $\vec{x}(t^{*})$ is a subset of the full compact set containing the supremum), the derivative here, and only here, is guaranteed to be zero. While for $g$, 
+Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$ (since the neighorhood of $\vec{x}(t^{*})$ is a subset of the full compact set containing the supremum), the derivative here, and only here, with respect to $T$, is guaranteed to be zero. While for $g(\vec{x}(t))$, the derivative  with respect to $t$ at all points of the neighborhood of $t^{*}$ is zero (including $t^{*}$):
+
+$$
+\nabla g(\vec{x})\bigg|_{\vec{x}=t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0\\
+\nabla f(\vec{x})\bigg|_{\vec{x}=t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0
+$$
 
 
 Since at $t^*$ both gradient vectors $\nabla g(\vec{x})$ and $\nabla f(\vec{x})$ are perpendicular to $\frac{d}{dt}\vec{x}(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
