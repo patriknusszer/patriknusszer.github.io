@@ -615,7 +615,7 @@ Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvecto
 
 **Implicit Function Theorem Proof**
 
-The implicit function theorem is just a specific application of the inverse function theorem. (It is almost a lie to call it a theorem).
+The implicit function theorem is just a specific application of the inverse function theorem.
 
 The theorem requires a $C^1$ function defined over some open set $Q \subseteq R^m$ which outputs some open set $W$, which is a subset of $R^n$ and $m>n$.
 
@@ -623,7 +623,8 @@ $$
 \begin{aligned}
 &f: Q \subseteq \mathbb{R}^{m} \to W \subseteq \mathbb{R}^n\\
 &m > n\\
-&W, Q\ \text{are open}
+&Q\ \text{is open}\\
+&f\ \text{is}\ C^1\ \text{over Q}
 \end{aligned}
 $$
 
@@ -730,7 +731,7 @@ If $f: X \to Y$ is bijective between $X$ and $Y$:
 So if a function is bijective between a (sub)domain and (sub)codomain, the **image/preimage points are uniquely paired**.
 
 The inverse function theorem says:
-- If $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined over some open set $X$ containing some point $\vec{a}$, and it is continously differentiable over $X$
+- If $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined over some open set $X$ containing some point $\vec{a}$, and it is continously differentiable over $X$. The theorem assumes openness of $X$ entirely out of convenience and convention as differentiability at some point requires perturbations into its neighborhood, which are absorbed by the guaranteed ball neighborhood of the inner point in $R^n$ 
 - If the Jacobian at $\vec{a}$ is invertible
 
 Then we can find two open neighborhoods, $U \subset X$ containing $\vec{a}$ and $V \subset Y$ containing $f(\vec{a})$ for which $f$ is bijective (one-to-one), and its inverse is also continuously differentiable.
@@ -750,6 +751,8 @@ Definition of the closed ball $\overline{B}_{r_0}(\vec{a})$ which is called the 
 $$
 \overline{B}_{r_0}(\vec{a})=\{\vec{x}\in\mathbb R^n:\|\vec{x}-\vec{a}\|\le r\}
 $$
+
+Note: you can always select a saturated closed ball inside a saturated open ball and vice-versa.
 
 Consider the weighted average of two vectors $\vec{x}$ and $\vec{y}$ from ball $\overline{B}_{r_0}(\vec{a})$:
 
@@ -974,7 +977,7 @@ $$
 
 Again, note that the preimage of $B_{(1-q_0)r_0}(f(\vec{a}))$ is contained by $B_{r_0}(\vec{a})$, but it can not be shown that it equals $B_{r_0}(\vec{a})$. In a particular case the preimage might equal $B_{r_0}(\vec{a})$ but in generality it is not true. However nice it would be to show that $f$ is bijective between two balls (either open or closed), it can't be guaranteed.
 
-Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause problems. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set.
+Please note that the inverse function theorem could have been stated and shown for closed neighborhoods as well. Even showing that the inverse function is continuously differentiable doesn't specifically require open sets so long as it is proven that perturbations at border points towards the ambient space does not cause concerns about whether the function is defined outside the border. Hence when showing differentiability over a set it is convenient/elegant/conventional to show it over an open set where evaluation of the derivative at any point never requires leaving the open set where definition is guaranteed.
 
 <!--Banach fixed-point theorem proof-->
 
