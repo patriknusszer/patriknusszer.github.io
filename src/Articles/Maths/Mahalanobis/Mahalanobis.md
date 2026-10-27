@@ -1021,7 +1021,7 @@ Steps:
 - Conclude that $x^*=T(x^*)$
 - Show uniqueness of the limit
 
-Let's show $a_n+1=T(a_n)$ is Cauchy for arbitrary $a_0 \in X$. Going from $a_0$ to $a_n$ there's a repeated application of $T$:
+Let's show $a_{n+1}=T(a_n)$ is Cauchy for arbitrary $a_0 \in X$. Going from $a_0$ to $a_n$ there's a repeated application of $T$:
 
 $$
 a_n = T(T(......T(a_0)))\\
