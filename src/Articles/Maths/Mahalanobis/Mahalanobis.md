@@ -340,7 +340,7 @@ $$
 &g(\vec{x}(t)) = g(x_1(t), x_2(t)...,x_n(t))=1\\
 \xrightarrow{\frac{d}{dt}\text{const=0}} &\frac{d}{dt} g(\vec{x}(t)) = 0\\
 \text{Let } &\vec{s} = \vec{x}(t^*)\\
-\implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^*} = 0
+\implies &\frac{d}{dt} f(\vec{x}(t))\bigg|_{t=t^{*}} = 0
 \end{aligned}
 $$
 

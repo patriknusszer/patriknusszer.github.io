@@ -114,6 +114,15 @@ h1 > .katex, h2 > .katex {
     color: #ffb1f4;
 }
 
+.katex-display .msupsub .mrel,
+.katex-display .msupsub .mbin
+
+{
+     /*color: #909fff; */
+    /*color: #909fff;*/
+    color: #989ffe;
+}
+
 h1, h2, h3 {
     margin-top: 60px;
     margin-bottom: 45px;
