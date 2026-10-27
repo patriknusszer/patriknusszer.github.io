@@ -1017,7 +1017,7 @@ Steps:
 - Show that the sequence $a_{n+1}=T(a_n)$ is Cauchy, that is, when $m>n$ and $n \to \infty$, $d(a_m, a_n)$ goes to zero
 - Using the fact that $X$ is a complete metric space, assert that Cauchy property is equivalent with the convergence of $a_n$ to some $x^* \in X$
 - Using continuity of $T$ assert that as $x_n \to x^*$, $T(x_n) \to T(x^*)$ due to the sequential equivalent characterization of continuity
-- Using the fact that $x_{n+1}=T(x_n)$ (maps into itself), assert that $\lim x_n = \lim T(x_n)$
+- Using the fact that $x_{n+1}=T(x_n)$, assert that $\lim x_n = \lim T(x_n)$
 - Conclude that $x^*=T(x^*)$
 - Show uniqueness of the limit
 
