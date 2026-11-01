@@ -360,41 +360,23 @@ $$
 \end{aligned}
 $$
 
-But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any **neighborhood** of $t$.
+But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any **neighborhood** of $t=0$.
 
-The **implicit function theorem** states, for multi variable single/scalar valued functions:
+The **implicit function theorem** states, for multi variable and vector valued functions $f: \mathbb{R}^k \to \mathbb{R}^n$, if at some point $f$ is continuously differentiable over some open neighborhood, and at the point the full Jacobian has full rank $k$ - which is the same as saying there $\exists\ n$ inputs for which the partial Jacobian is invertible - then there's an open neighborhood of the other $k-n$ inputs in which the $k$ inputs are expressible as a continuously differentiable function of those $n$ inputs.
 
-$$
-\begin{aligned}
-&\begin{cases}
-g \in C^1\\
-\exists \frac{\partial}{\partial x_k} g\neq 0
-\end{cases}\\
-\implies
-&\begin{cases}
-\exists (U = \prod_{i=1}^{n-1}\ I_i\ \text{open interval}) \subseteq \mathbb{R}^{n-1}\\
-\exists (\phi: U \to \mathbb{R}) \in C^1\\
-\text{such that: }\\
-\forall \vec{v} \in U: \phi(\vec{v})=x_k
-\end{cases}
-\end{aligned}
-$$
+**Particularly**, in case of a multi-variable, **scalar valued function**, the full gradient having full rank equal to one means exactly one of the partial derivatives need to be nonzero (or there $\exists$ a partial Jacobian matrix $1 \times 1$ whosse determinant is exactly its one and only entry which must be nonzero).
 
-In other words, $x_k$ is locally expressible by a (continuously) differentiable function of all the other coordinate variables, provided $g$ is continuously differentiable and has at least one nonzero directional derivative at the point of interest.
-
-Note that the coordinate $x_k$ being expressed may not take on every value of some open interval.
-
-For our particular function $g$:
-- It is a polynomial, and hence $\in C^{\infty}$ (infinitely continuously differentiable)
+For our particular function $g$, at the first step - when proving at least one eigenvector exists - it is scalar valued, moreover:
+- It is a polynomial, and hence $\in C^{\infty}$ (infinitely continuously differentiable over its entire domain)
 - Its gradient is $\nabla g = 2\vec{x}$ and $\vec{x}^T\vec{x}=1$ and hence the gradient of the explicit unconstrained $g$ can not be null vector at the extremum point of its constrained implicit version
 
-Hence $g$ satisfies the conditions of the **implicit function theorem**.
+Hence $g$ satisfies the conditions of the **implicit function theorem**, particularly applied for a multi-variable scalar valued function.
 
 <!--The gradient of an implicit function is perpendicular to any tangential direction-->
 
 **NOTE/Lemma**
 
-To demonstrate how the **IFT** can be used to construct and use parametrized curves in proofs, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=y \to f(\vec{x})=\text{const}$)
+To demonstrate how the **IFT** can be used to construct and use parametrized curves in proofs, let's prove that the gradient of a function is perpendicular to all tangetial directions at any point $\vec{s}$ of an implicit **constraint equation/level set** derived from that function. ($f(\vec{x})=\vec{y} \to f(\vec{x})=\vec{c}$)
 
 **Proof**
 
@@ -406,6 +388,8 @@ $$
 \forall \vec{v}\ \in U:\\
 x_k=\phi(\vec{v})
 $$
+
+Where $x_k$ is the input variable to be expressed as a function of all others, and with respect to which the partial derivative is nonzero.
 
 And to construct our one-variable, vector valued parametrized curve function:
 
@@ -595,7 +579,11 @@ If we know a symmetric matrix has at least one eigenvector, then it has exactly 
 
 The above maximization problem is repeated, but with vectors perpendicular to all other already found.
 
-To further constrain the domain of $f$, $g$ becomes a vector-valued function holding individual constraint equations, for convenience, constrained to **zero**. Let $n$ be the number of orthogonal eigenvectors already found, then the next function $g$ is:
+To further constrain the domain of $f$, $g$ becomes a vector-valued function holding individual constraint equations:
+- The unit-vector constraint is always present
+- All other constraints express perpendicularity to already found eigenvectors
+
+For convenience, let's choose each equation such that $g(\vec{x})=\vec{0}$. So if $n$ vectors have already been found, the output vector is:
 
 $$
 \vec{g}_n(\vec{x}) = 
@@ -607,9 +595,35 @@ $$
 \end{pmatrix}
 $$
 
-Note the first constraint is the unit vector constraint.
+Note the first constraint is the unit vector constraint when equals zero, and all other are perpendicularity constraints.
 
-The Jacobian matrix of this function is invertible, and is continuously differentiable, and hence satisfies the **General IFT** and therefore all the output variables are expressible by the input variables locally (to the input variables) to satify all the **constrain equations**.
+Have a look at the Jacobian matrix:
+
+$$
+J_{\vec g_n}(\vec x)=
+\begin{pmatrix}
+2\vec x^T\\
+\vec v_1^T\\
+\vdots\\
+\vec v_n^T
+\end{pmatrix}
+$$
+
+The full Jacobian matrix at the next extremum point of this function has full rank $n+1$, because:
+- The row vectors are perpendicular (pairwise)
+- None of the vectors are zero
+
+And hence the $n+1$ vectors are linearly independent, which means the Jacobian has full rank $n+1$.
+
+$\vec{g}_n(\vec{x})$ is also continuously differentiable (infinitely, over the entire domain). So it satisfies the **general implicit function theorem**, and hence there $\exists\ n+1$ input variables that are expressible as a continuously differentiable function of all other inputs in some open neighborhood of the projection of the extremum point to those coordinates.
+
+Knowing this, a parametrization $\vec{g}(\vec{x}(t))$ of the vector-valued constraint function $\vec{g}(\vec{x})$ is yet to be shown.
+
+Analogously to our proof particularly made for scalar-valued constraints, we take arbitrary $\vec{w}$ which is perpendicular to **all** of the gradient vectors inside the Jacobian matrix of $\vec{g}$ (In the scalar case the Jacobian was equal to the one and only gradient vector):
+
+$$
+\nabla \vec{g}(\vec{x})\bigg|_{\vec{s}} \cdot \vec{w} = \vec{0}
+$$
 
 It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
