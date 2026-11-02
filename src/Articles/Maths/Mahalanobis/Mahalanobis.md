@@ -400,7 +400,7 @@ x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \implies &\forall t\ \text{such that}\ \vec{x}_{-k}(t) \in U:\\
 &\begin{cases}
  g(\vec{x}(t))=\text{const}\\
- \exists \frac{d}{dt} g(\vec{x}(t))
+ \exists \nabla g(\vec{x}(t))
  \end{cases}\\
 \implies &g(\vec{x}(0))=g(\vec{s})
 \end{aligned}\\
@@ -718,6 +718,35 @@ $$
 \nabla\ \vec{x}(t)\bigg|_{0} = \vec{w}
 $$
 
+So it means that there indeed $\exists$ a curve $\vec{x}(t)$ such around the right neighborhood $I$ of $t=0$ function $g$ retains its constraint vector (each output is a constant function of the inputs) and hence its derivative over $I$ is zero:
+
+$$
+\begin{aligned}
+g_n(\vec{x}(t))&=\vec{c}\quad \forall\ t\in I\\
+\implies J_{g_n} \bigg|_{\vec{x}(t)} \cdot \nabla \vec{x}(t)\bigg|_{t}&=\vec{0}\quad \forall\ t\in I
+\end{aligned}
+$$
+
+And hence particularly (and trivially) at $t=0$:
+
+$$
+J_{g_n} \bigg|_{\vec{s}} \cdot \nabla \vec{x}(t)\bigg|_{0}=\vec{0}
+$$
+
+And for function $f(\vec{x}(t))$ over $I$, when $I$ is selected such that at $t=0$ we have the supremum of $f$ over the entire compact level set (so $I$ is a subset of this level set containing the supremum) the derivative with respect to $t$ is also zero:
+
+$$
+\nabla f(\vec{x}(t))\bigg|_{0} \cdot \nabla \vec{x}(t)\bigg|_{0} = 0
+$$
+
+Therefore we can again conclude:
+
+$$
+\lambda J_{g_n}\bigg|_{0}=\nabla f(\vec{x}(t))\bigg|_{0}
+$$
+
+Which is a little bit different from the first step in which $g_0$ was a scalar valued constraint function and we did not have found any eigenvectors yet.
+
 It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
 **Q.E.D.**
@@ -917,8 +946,8 @@ Since our closed ball is fully contained by the initial open set $X$ for which $
 Using the fundamental theorem of calculus and the chain rule:
 
 $$
-f(\vec{x})-f(\vec{y})=\int_0^1 Df(\gamma(t))\frac{d}{dt}\gamma(t)dt\\
-f(\vec{x})-f(\vec{y})=(\vec{x}-\vec{y})\int_0^1 Df(\gamma(t))dt
+f(\vec{x})-f(\vec{y})=\int_0^1 Df(\gamma(t))\cdot\nabla\gamma(t)\ dt\\
+f(\vec{x})-f(\vec{y})=(\vec{x}-\vec{y})\int_0^1 Df(\gamma(t))\ dt
 $$
 
 If we could show that the integral of $Df$ is invertible, then injectivity would immediately follow. Assuming $f(\vec{x})=f(\vec{y})$:
