@@ -763,7 +763,7 @@ $$
 And on the right hand side, since everyone is orthogonal to everyone else, only the term corresponding to eigenvector $\vec{v}_j$ remains:
 
 $$
-0=\rho_j \vec{v}_j^T\vec{v}_j= \rho_j 1=\rho
+0=\rho_j \vec{v}_j^T\vec{v}_j= \rho_j 1=\rho_j
 $$
 
 But that essentially means every coefficient in $\vec{\rho}$ belonging to the already found eigenvectors is zero, hence those terms cancel:
