@@ -742,10 +742,44 @@ $$
 Therefore we can again conclude:
 
 $$
-\lambda J_{g_n}\bigg|_{0}=\nabla f(\vec{x}(t))\bigg|_{0}
+\left(J_{g_n}\bigg|_{0}\right)^{T} \cdot \vec{\rho}=\nabla f(\vec{x}(t))\bigg|_{0}
 $$
 
 Which is a little bit different from the first step in which $g_0$ was a scalar valued constraint function and we did not have found any eigenvectors yet.
+
+This means the coordinates of the gradient of $f$ are each linear combinations of one of the gradient vectors inside the Jacobian of $g$. The gradient of $f$ does not change algebraically:
+
+$$
+2 \cdot A\vec{x} = 2 \cdot \left(\rho \vec{x} + \sum_{i=1}^{n} \rho v_i \right)\\
+A\vec{x} = \left(\rho \vec{x} + \sum_{i=1}^{n} \rho v_i \right)
+$$
+
+Now let's multiply each side by one of the already found eigenvectors from the left, with its transpose! Let it be $\vec{v}_j^{T}$. The left side, due to $A$ being symmetric, then due to the eigenvector property, then due to orthogonality, becomes:
+
+$$
+(\vec{v}_j^{T}A)\vec{x} = (A\vec{v}_j)^T\vec{x} = \lambda_j\vec{v}_j^{T}\vec{x}=0
+$$
+
+And on the right hand side, since everyone is orthogonal to everyone else, only the term corresponding to eigenvector $\vec{v}_j$ remains:
+
+$$
+0=\rho_j \vec{v}_j^T\vec{v}_j= \rho_j 1=\rho
+$$
+
+But that essentially means every coefficient in $\vec{\rho}$ belonging to the already found eigenvectors is zero, hence those terms cancel:
+
+$$
+A\vec{x}=\rho\vec{x}
+$$
+
+Since $A$ is symmetric, it is invertible, and since it is invertible, only the nullvector is inside its kernel, that means $A\vec{x}=0$ can only be true for the nullvector, but we have already shown the supremum point we find can never be the nullvector. And hence the eigenvalue can't either be zero:
+
+$$
+\begin{aligned}
+&\rho\vec{x}\neq0\\
+\implies &\rho \neq0
+\end{aligned}
+$$
 
 It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
 
