@@ -617,12 +617,105 @@ And hence the $n+1$ vectors are linearly independent, which means the Jacobian h
 
 $\vec{g}_n(\vec{x})$ is also continuously differentiable (infinitely, over the entire domain). So it satisfies the **general implicit function theorem**, and hence there $\exists\ n+1$ input variables that are expressible as a continuously differentiable function of all other inputs in some open neighborhood of the projection of the extremum point to those coordinates.
 
-Knowing this, a parametrization $\vec{g}(\vec{x}(t))$ of the vector-valued constraint function $\vec{g}(\vec{x})$ is yet to be shown.
+Knowing this, a parametrization $\vec{g}(\vec{x}(t))$ of the vector-valued constraint function $\vec{g}(\vec{x})$ is yet to be shown around point $\vec{s}$.
 
-Analogously to our proof particularly made for scalar-valued constraints, we take arbitrary $\vec{w}$ which is perpendicular to **all** of the gradient vectors inside the Jacobian matrix of $\vec{g}$ (In the scalar case the Jacobian was equal to the one and only gradient vector):
+Analogously to our proof particularly made for scalar-valued constraints, we take arbitrary $\vec{w}$ which is perpendicular to **all** of the gradient (row) vectors inside the Jacobian matrix of $\vec{g}$ (In the scalar case the Jacobian was equal to the one and only gradient vector):
 
 $$
-\nabla \vec{g}(\vec{x})\bigg|_{\vec{s}} \cdot \vec{w} = \vec{0}
+J_{\vec{g}(\vec{x})}\bigg|_{\vec{s}} \cdot \vec{w} = \vec{0}
+$$
+
+That multiplication is a result of multiplying each gradient vector/row vector of the Jacobian matrix with the respective coordinate of $\vec{w}$. The equality holds if the multiplication is broken down into the  sum of the right projections of $\vec{w}$ and horizontal cuts of the matrix.
+
+Let $\pi_{\vec{u}}$ denote the projection of an input vector to those input coordinates for which the implicit function theorem guarantees local expressibility. $\dim{\vec{u}}$ is the number of inputs minus the number of outputs, hence $m-(n+1)=k$ if $m>(n+1)$ is the number of all input variables. 
+
+Let $\pi_{\vec{v}}$ denote the projection of an input vector to those input coordinates as a function of which the implicit function theorem guarantees expressibility. $\dim{\vec{v}}$ is the number of outputs, hence $n + 1$.
+
+Hence the above matrix multiplication can be broken down into the sum of two other matrix multiplications, with one matrix horizontal cut being of size $(n+1) \times k$ and the other of size $(n+1) \times (n+1)$:
+
+$$
+J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\vec{w}) + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{v}}(\vec{w}) = \vec{0}
+$$
+
+And note that $\vec{v}$ denote those inputs with respect to which the partial Jacobian is invertible at $\vec{s}$.
+
+By the implicit function theorem we can express coordinates $\vec{v}$ as a continuously differentiable function of coordinates $\vec{u}$ around some open neighborhood $U$ of $\pi_{\vec{u}}(\vec{s})$ so that function $g$ retains its function value (implicit constraint vector $\vec{c}$):
+
+$$
+g(\vec{x}, \gamma(\vec{x}))=\vec{c}\quad \vec{x} \in U
+$$
+
+Now let's construct the parametrizing curve $\vec{x}(t)$.  
+For the $\vec{u}$ coordinates:
+
+$$
+\vec{x}_{i}(t) = \pi_{\vec{u}}(\vec{s})_{i} + t\cdot\vec{w}_i
+$$
+
+We know that the vector given by $\vec{x}_i(t)$ for all $\vec{u}$ coordinates is within $U$ because $U$ guarantees an open neighborhood around $\pi_{\vec{u}}(\vec{s})$ and that means particularly at point $\pi_{\vec{u}}(\vec{s})$ we have a fully saturated open ball of some positive radius and if parameter $t$ is maximized so that $t \cdot \vec{w}_{i}$ is a displacement not exceeding the radius, it displaces the center point into another point within the guaranteed ball.
+
+The derivative of these outputs with respect to $t$ is trivially the $i$th coordinate of $\vec{w}$ at point $t=0$:
+
+$$
+\vec{w}_i = \frac{d}{dt} \vec{x}_{i}(t)\bigg|_{0}
+$$
+
+And for the $\vec{v}$ coordinates:
+
+$$
+\vec{x}_{j}(t) = \gamma(\vec{x}_{\vec{u}}(t))_{j}
+$$
+
+That is, the other coordinates are just defined as a function of all other coordinates (as guaranteed by the implicit function theorem).
+
+At this point we have actually set up a correct parametrization for constraint function $g$. However, it is also worth showing that the tangential direction at point $\vec{s}$ (or $t=0$) for function $g(\vec{x}(t))$ is exactly the arbitrarily chosen vector $\vec{w}$ perpendicular to all gradient vectors.
+
+In the right neighborhood of $t=0$ $g$ retains a constant function value $\vec{c}$ and hence has a zero derivative for all of its outputs:
+
+$$
+J_{g_n}\bigg|_{\vec{s}} \cdot \nabla \vec{x}(t)\bigg|_{0}=\vec{0}
+$$
+
+Introduce the same horizontal split of the Jacobian:
+
+$$
+J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\vec{x}(t))\bigg|_{0} + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\ \vec{x}(t))\bigg|_{0} = \vec{0}
+$$
+
+Reccall that $\pi_{\vec{u}}(\nabla\vec{x}(t))\bigg|_{0}$ are trivially the corresponding coordinates of $\vec{w}$:
+
+$$
+J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\vec{w}) + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\ \vec{x}(t))\bigg|_{0} = \vec{0}
+$$
+
+Now recall our initial split of the Jacobian, describing the perpendicularity of $\vec{w}$ to all of the gradient vectors:
+
+$$
+J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\vec{w}) + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{v}}(\vec{w}) = \vec{0}
+$$
+
+Subtract the second equation from the first one:
+
+$$
+J_{\vec{v}}\bigg|_{\vec{s}} \cdot \left(\pi_{\vec{v}}(\nabla\ \vec{x}(t))\bigg|_{0} - \pi_{\vec{v}}(\vec{w})\right) = \vec{0}
+$$
+
+Now recall the partial Jacobian with respect to the $\vec{v}$ coordinates at $\vec{s}$ is invertible:
+
+$$
+\left(\pi_{\vec{v}}(\nabla\ \vec{x}(t))\bigg|_{0} - \pi_{\vec{v}}(\vec{w})\right) = \vec{0}
+$$
+
+Therefore the $\vec{v}$ coordinates of the gradient of $\vec{x}(t)$ at $\vec{s}$ also equal the respective coordinates of $\vec{w}$:
+
+$$
+\pi_{\vec{v}}(\nabla\ \vec{x}(t))\bigg|_{0} = \pi_{\vec{v}}(\vec{w})
+$$
+
+And it can be concluded that:
+
+$$
+\nabla\ \vec{x}(t)\bigg|_{0} = \vec{w}
 $$
 
 It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
