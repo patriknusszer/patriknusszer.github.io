@@ -460,8 +460,8 @@ These two equations give us a system of equations to solve for the $k$th coordin
 $$
 \begin{aligned}
 &\begin{cases}
-\nabla g(\vec{x})\bigg|_{\vec{s}}\cdot \nabla\vec{x}(t)\bigg|_{t=0}=0\\
-\nabla g(\vec{x})\bigg|_{\vec{s}}\cdot \vec{w}=0
+\nabla g(\vec{x})\bigg|_{\vec{x}(0)=\vec{s}}\cdot \nabla\vec{x}(t)\bigg|_{t=0}=0\\
+\nabla g(\vec{x})\bigg|_{\vec{x}(0)=\vec{s}}\cdot \vec{w}=0
 \end{cases}\\
 \xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{s}}\right)_i\cdot(w_i - w_i)\right) +\\
 &+ \left(\nabla g(\vec{x})\bigg|_{\vec{s}}\right)_k\cdot\left(\left(\nabla\vec{x}(t)\bigg|_{0}\right)_k - w_k\right)=0\\
