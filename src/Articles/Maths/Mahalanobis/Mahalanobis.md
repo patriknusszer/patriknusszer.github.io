@@ -386,7 +386,7 @@ For our particular function $g$, at the first step - when proving at least one e
 
 Hence the constrained version of $g$ satisfies the conditions of the **implicit function theorem** particularly applied for a multi-variable scalar valued function.
 
-It is yet to be shown, however, how the implicit function theorem can be used to constructed a parametrized version of a function. Here below, for now just specifically for scalar valued functions, can be found a proof.
+It is yet to be shown, however, how the implicit function theorem can be used to constructed a parametrized version of a function. Here below, for now just specifically for scalar valued functions, can be seen a proof.
 
 The proof for vector valued functions can be found later forward in the article.
 
@@ -418,11 +418,13 @@ x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \implies &\forall t\ \text{such that}\ \vec{x}_{-k}(t) \in U:\\
 &\begin{cases}
  g(\vec{x}(t))=\text{const}\\
- \exists \nabla g(\vec{x}(t))
+ \exists \nabla g(\vec{x}(t))=0
  \end{cases}\\
 \implies &g(\vec{x}(0))=g(\vec{s})
 \end{aligned}\\
 $$
+
+
 
 Consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
 
@@ -430,9 +432,9 @@ $$
 \begin{aligned}
 &g(\vec{x}(t))=\text{const}\quad \forall\vec{x}_{-k}(t) \in U\\
 \implies &\frac{d}{dt} g(\vec{x}(t))=0\\
-\implies &=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)\\
-&=\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
-\implies &\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}} \cdot \frac{d}{dt}\vec{x}(t)=0\bigg|_{t=0} = 0\\
+\implies &=\nabla g(\vec{x})\bigg|_{\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)\\
+&=\nabla g(\vec{x})\bigg|_{\vec{x}(t)} \cdot \frac{d}{dt}\vec{x}(t)=0\\
+\implies &\nabla g(\vec{x})\bigg|_{\vec{s}} \cdot \frac{d}{dt}\vec{x}(t)\bigg|_{t=0} = 0\\
 \implies &\left(\frac{d}{dt}\vec{x}(t)\right)_i\bigg|_{t=0}=w_i\quad \forall i\neq k
 \end{aligned}
 $$
