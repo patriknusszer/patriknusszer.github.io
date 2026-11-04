@@ -413,7 +413,7 @@ And to construct our one-variable, vector valued parametrized curve function:
 
 $$
 \begin{aligned}
-x_i(t) &= \vec{s} + \vec{v}t\quad \forall i \neq k\\
+x_i(t) &= \vec{s}_i + \vec{v}_it\quad \forall i \neq k\\
 x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \implies &\forall t\ \text{such that}\ \vec{x}_{-k}(t) \in U:\\
 &\begin{cases}
@@ -424,9 +424,9 @@ x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
 \end{aligned}\\
 $$
 
+Since $U$ is some open neighborhood of $\vec{s}_{-k}$ it means there $\exists$ a saturated ball around it of positive radius. So if we make sure the absolute value of $t$ is constrained to be small enough so that the products $\vec{v}_it$ together don't displace the ball center $\vec{s}$ more than the guaranteed positive radius, we can be sure we do not obtain a point outside $U$.
 
-
-Consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
+Now that we have constructed the parametrized version of $g$, consider the derivative of **constraint function** $g$ with respect to $t$, applying the chain rule:
 
 $$
 \begin{aligned}
@@ -439,13 +439,13 @@ $$
 \end{aligned}
 $$
 
-So when $i \neq k$, the $i$th coordinate of $\frac{d}{dt}\vec{x}(t)$ at $t=0$ is the $i$th coordinate of $\vec{w}$. Indeed, the goal is to show the tangential direction is exactly the same as $\vec{w}$ at $t=0$, because $\vec{w}$ is an arbitrarily chosen perpendicular vector (to $\nabla g$), and hence then the lemma would be proven for all possible tangential directions. In order to show:
+So when $i \neq k$, the $i$th coordinate of $\frac{d}{dt}\vec{x}(t)$ at $t=0$ is the $i$th coordinate of $\vec{w}$. Indeed, the goal is to show the tangential direction is exactly the same as $\vec{w}$ at $t=0$, because $\vec{w}$ is an arbitrarily chosen perpendicular vector (to $\nabla g$), and therefore the lemma would be proven for all possible tangential directions at the point. In order to show:
 
 $$
 \vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}
 $$
 
-...the only question needing to be answered, is whether the $k$th component of the tangential direction is $w_k$:
+...the only question left to be answered, is whether the $k$th component of the tangential direction is $w_k$:
 
 $$
 \left(\frac{d}{dt}\vec{x}(t)\right)_k\bigg|_{t=0}\stackrel{?}{=}w_k
@@ -460,15 +460,15 @@ These two equations give us a system of equations to solve for the $k$th coordin
 $$
 \begin{aligned}
 &\begin{cases}
-\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}}\cdot \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}=0\\
-\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{x}(0)=\vec{s}}\cdot \vec{w}=0
+\nabla g(\vec{x})\bigg|_{\vec{s}}\cdot \nabla\vec{x}(t)\bigg|_{t=0}=0\\
+\nabla g(\vec{x})\bigg|_{\vec{s}}\cdot \vec{w}=0
 \end{cases}\\
-\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_i\cdot(w_i - w_i)\right) +\\
-&+ \left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\cdot\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
-&=\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k\cdot\left(\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k\right)=0\\
-\xrightarrow{\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k \neq 0} &\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k - w_k=0\\
-\implies &\boxed{\left(\frac{d}{dt}\vec{x}(t)\bigg|_{t=0}\right)_k = w_k}\\
-\implies &\boxed{\vec{w} = \frac{d}{dt}\vec{x}(t)\bigg|_{t=0}}
+\xrightarrow{\text{Subtracting 2.}} &\left(\sum_{i \neq k}^{n} \left(\nabla g(\vec{x})\bigg|_{\vec{s}}\right)_i\cdot(w_i - w_i)\right) +\\
+&+ \left(\nabla g(\vec{x})\bigg|_{\vec{s}}\right)_k\cdot\left(\left(\nabla\vec{x}(t)\bigg|_{0}\right)_k - w_k\right)=0\\
+&=\left(\nabla g(\vec{x})\bigg|_{\vec{s}}\right)_k\cdot\left(\left(\nabla\vec{x}(t)\bigg|_{0}\right)_k - w_k\right)=0\\
+\xrightarrow{\left(\nabla g(\vec{x})\bigg|_{\vec{x}=\vec{s}}\right)_k \neq 0} &\left(\nabla\vec{x}(t)\bigg|_{0}\right)_k - w_k=0\\
+\implies &\boxed{\left(\nabla\vec{x}(t)\bigg|_{0}\right)_k = w_k}\\
+\implies &\boxed{\vec{w} = \nabla\vec{x}(t)\bigg|_{0}}
 \end{aligned}
 $$
 
