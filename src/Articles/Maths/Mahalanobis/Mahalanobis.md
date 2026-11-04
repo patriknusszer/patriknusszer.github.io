@@ -7,37 +7,37 @@ $$
 $$
 
 - $\vec{x}$ is the data point, each coordinate representing a measure of a trait
-- $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate representing the mean of a trait
-- $\vec{\sigma}_c$ is the standard deviation vector, each coordinate representing the standard deviation of one of a trait 
+- $\vec{\pi}_c$ is the mean vector of class $c$, each coordinate representing the mean of one of the traits
+- $\vec{\sigma}_c$ is the standard deviation vector of class $c$, each coordinate representing the standard deviation of one of a traits 
 
 Therefore a $z$-score can roughly be thought of as a vector of standardized deviations of different traits from the means. Each deviation from the mean $x_i - \pi_{x_i}$ is compared against the respective standard deviation $\sigma_{x_i}$ by division to measure **how many typical deviations is the value from the mean**.
 
-The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they contribute great **unusualness** but the fact that it was expected due their great correlation is **not discounted**.
+The problem with measuring **unusualness** this way is the fact that the original features might be **correlated**. For example, if two features have great standardized deviations, but it is known they correlate strongly in their direction, then they both contribute great **unusualness** but the fact that it was expected due their high correlation is **not discounted**.
 
-The idea is to instead measure **unusualness** of **transformed features that are uncorrelated**. And in particular: can these **transformed features be linear combinations of the original features**?
+The idea is to instead measure **unusualness** of **transformed features that are uncorrelated**. And in particular: can these **transformed features be linear combinations of the z-scores describing the original features**?
 
 <!--Eigendecomposition and diagonalization of covariance matrix-->
 
 **Lemma**
 
-The linear combinations of the standardized deviations of the original features with the eigenvectors of covariance matrix  yield uncorrelated features, and the variances of these new features are the eigenvalues of the covariance matrix:
+The linear combinations of the standardized deviations of the original features with the eigenvectors of the covariance matrix yield uncorrelated features, and the variances of the resulting vectors are the eigenvalues of the covariance matrix:
 
 $$
 \operatorname{Cov}(\vec{z}Q)=\Lambda
 $$
 
-Where $\Lambda$ is a diagonal matrix, hence transformed traits do not correlate.
+Where $\Lambda$ is a diagonal matrix with the eigenvalues at its diagonal, hence transformed traits do not correlate (any entries outside the diagonal are zero, those which represent covariances of different features).
 
 **Proof**
 
-The key identity is the following:
+The key desired identity is the following:
 
 $$
 \Sigma Q = Q \Lambda
 $$
 
-- $\Sigma$ is a matrix, here in particular, the covariance matrix of the features in $\vec{x}$
-- $\Lambda$ is a diagonal matrix, here in particular, the elements of the diagonal are the eigenvalues of $\Sigma$
+- $\Sigma$ is a matrix representing the covariance matrix of the features in $\vec{x}$
+- $\Lambda$ is the diagonal matrix, having the eigenvalues of matrix $\Sigma$ in its diagonal
 
 $$
 \begin{aligned}
@@ -58,7 +58,7 @@ $$
 \end{aligned}
 $$
 
-The covariance matrix is a $n \cdot n$ table, each cell $\sigma_{ij}$ representing the covariance of feature $i$ and feature $j$. At the diagonal $\sigma_{ii}$ is a covariance of some  feature with itself which equals the variance of the feature.
+The covariance matrix is a $n \times n$ table, each cell $\sigma_{ij}$ representing the covariance of feature $i$ and feature $j$. At the diagonal $\sigma_{ii}$ is a covariance of some feature with itself which equals the variance of the feature.
 
 In general, the abovementioned equation is the eigenvalue problem for multiple eigenvectors and eigenvalues.
 
@@ -102,12 +102,12 @@ $$
 
 Which is the eigenvalue problem for one eigenvector for an eigenvalue from $\Lambda$ and an eigenvector from the column vectors of $Q$.
 
-From the above identity an important conclusion can be drawn, when $Q$ is invertible.
+From the above identity an important conclusion can be drawn, when $Q$ is invertible:
 
 $$
 \begin{aligned}
 \Sigma Q &= Q \Lambda\\
-\implies Q^{-1}\Sigma Q &= Q^{-1}Q \Lambda = \Lambda
+\implies Q^{-1}\Sigma Q &= Q^{-1}Q \Lambda = I \Lambda=\Lambda
 \end{aligned}
 $$
 
@@ -119,7 +119,7 @@ $$
 Q^{-1}=Q^T
 $$
 
-The reasoning is trivial. Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal is the square of the Euclidean $(\operatorname{L}_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit vectors):
+Nondiagonal entries of $(QQ^T)$ are products of different eigenvectors, which are orthogonal, and hence their dot product is zero. While at the diagonal is the square of the Euclidean $(\operatorname{L}_2)$ length/norm of the eigenvector (which is $1$ if they are chosen to be unit eigenvectors):
 
 $$
 QQ^T =
@@ -218,7 +218,7 @@ Q^T\operatorname{Cov}(z)Q\\
 \end{aligned}
 $$
 
-Therefore, the transformed data has diagonal covariance matrix (only the variances are nonzero), hence the new features, formed by linear combinations of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the $L_2$ norm of $\vec{z}Q$ which is:
+Therefore, the transformed data has diagonal covariance matrix (only the variances are nonzero), hence the new features, formed by linear combinations of the z-scores of the original features are **uncorrelated**. So the idea is, instead of measuring unusualness of original data, instead, **measure unusualness of the transformed data which is uncorrelated**, by calculating the $L_2$ norm of $\vec{z}Q$ which is:
 
 $$
 \operatorname{L}_2(\vec{z}Q) =\sqrt{ \sum_{i=1}^{n} \left(\frac{z_i \vec{q_i}}{\lambda_i}\right)^2}
@@ -255,6 +255,8 @@ Where $
 \Sigma^{-1}
 (\vec{x}-\vec{\mu}_c)$ is numerically the Mahalanobis distance.
 
+In the remaining portion of the article is dedicated to proving the fact that symmatrical matrices of size $n \times n$ have exactly $n$ orthoognal eigenvectors. Any theorems used are also proven.
+
 **Theorem**
 
 A symmetric matrix $A^{nn}$ has exactly $n$ orthogonal eigenvectors.
@@ -269,7 +271,7 @@ A symmetrical matrix $A^{nn}$ has at least one eigenvector.
 
 **Proof**
 
-Consider the following multi-variable functions:
+Consider the following multi-variable (and at this first step scalar-valued) functions:
 
 $$
 \begin{aligned}
@@ -287,14 +289,14 @@ $$
 S=\{\vec{x}∈\mathbb{R}^n : \vec{x}^T\vec{x}=1\}
 $$
 
-By the **Topoligical Extreme Value Theorem**:
+The **Topoligical Extreme Value Theorem** says:
 
 - If $X \subseteq K$ is a compact set and $K$ is the ambient space of the abstract topological space $(K, \tau)$
 - If $f: X \to Y \subseteq \mathbb{R}$ is continuous (everywhere)
 
-Then $f$, whose domain is constrained to unit vectors, evidently satisfies these criterions and hence attains its maximum at some point $\vec{x} \in X$.
+Then $f$ attains its supremum at some point of $X$.
 
-Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its gradient $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive of the constraint, and so is its derivative.
+Since $\vec{s}$ is an extremum of the constrained domain version of $f$, its gradient $\nabla f$ with respect to its coordinate variables of $\vec{x}$ is equal to zero. The problem is, the original definition of $f$ is insensitive to the constraint, and so is its derivative.
 
 Precisely, the gradient inherently considers small perturbations in every coordinate direction around the point. Therefore, when differentiating $f$ as a function defined on the ambient space, it (most probably) takes into account how $f$ changes toward points both inside and outside a given constraint set.
 
@@ -312,7 +314,7 @@ $$
 
 Where $\vec{e}_i$ is the unit vector in which $e_i=1$ and all other coordinates are zero. This means for the calculation of the $i$th partial derivative at a point $\vec{s}$ involves taking into account vector points that have their $i$th coordinates in a small neighborhood of the $i$th coordinate of $\vec{s}$.
 
-If for each coordinate there existed a small interval around the respective coordinate of the analyzed point so that arbitrary perturbations to just that one coordinate up to the boundaries of that interval keeps us inside the **constraint set**, then the gradient numerically coincides with the gradient of a truly constrained version of the function:
+If there existed a small interval around each coordinate of the analyzed point so that arbitrary perturbations to just that one coordinate up to the boundaries of that interval keeps us inside the **constraint set**, then the gradient numerically coincides with the gradient of a truly constrained version of the function:
 
 
 $$
@@ -328,7 +330,7 @@ $$
 \end{aligned}
 $$
 
-This is of course highly unlikely, so we want to derive a new function which is truly constrained.
+This is of course highly unlikely, so we want to derive a completely new function so that during differentiation with respect to its input in a neighborhood of the said extremum point guarantees that only the image of some subset of the compact constraint set  (including the extremum point of course) is evaluated. So then the derivative at that point would be guaranteed to indeed be zero.
 
 The **implicit function theorem** indirectly proves the existence of one-variable, vector-valued parametrized curve functions $\vec{x}(t)$ whose range/value set is a **level (sub)set** satisfying an **implicit function/constraint equation** locally around a point of the **explicit constraint function**.
 
@@ -362,15 +364,31 @@ $$
 
 But that generally does not satisfy $f(\vec{x}(t))=\text{const}$ in any **neighborhood** of $t=0$.
 
-The **implicit function theorem** states, for multi variable and vector valued functions $f: \mathbb{R}^k \to \mathbb{R}^n$, if at some point $f$ is continuously differentiable over some open neighborhood, and at the point the full Jacobian has full rank $k$ - which is the same as saying there $\exists\ n$ inputs for which the partial Jacobian is invertible - then there's an open neighborhood of the other $k-n$ inputs in which the $k$ inputs are expressible as a continuously differentiable function of those $n$ inputs.
+The **implicit function theorem** states, for multi variable and vector valued functions $f: \mathbb{R}^k \to \mathbb{R}^n\quad k\geq n$, if at some neighborhood around some point $\vec{s}$ of $f$ is continuously differentiable over some open neighborhood, and at $\vec{s}$ the complete Jacobian matrix has full rank $k$ - which is equivalent to saying there $\exists\ n$ inputs out of the $k$ inputs for which the partial Jacobian is invertible - then there's an open neighborhood of the projection of $\vec{s}$ onto the other $k-n$ input coordinates ($\pi_{\vec{u}}$) in which the $k$ inputs are expressible as a continuously differentiable function of them, so that $f$ preserves/retains its function value:
 
-**Particularly**, in case of a multi-variable, **scalar valued function**, the full gradient having full rank equal to one means exactly one of the partial derivatives need to be nonzero (or there $\exists$ a partial Jacobian matrix $1 \times 1$ whosse determinant is exactly its one and only entry which must be nonzero).
+$$
+\begin{aligned}
+&f: X \to Y\\
+&f \in C^1\ \text{over}\ X\\
+&f(\vec{s})=\vec{c}\\
+&\exists\ U\subseteq X\ \text{open such that}:\\
+&\pi_{\vec{u}}(\vec{s}) \in U\\
+&f(\vec{x}, \gamma(\vec{x}))=\vec{c}\quad \forall \vec{x} \in U\\
+&\gamma \in C^1\ \text{over}\ U
+\end{aligned}
+$$
+
+**In particular**, in case of a multi-variable, **scalar valued function**, the full gradient having full rank equal to one means exactly one of the partial derivatives need to be nonzero (or there $\exists$ a partial Jacobian matrix $1 \times 1$ whose determinant is exactly its one and only entry which must be nonzero).
 
 For our particular function $g$, at the first step - when proving at least one eigenvector exists - it is scalar valued, moreover:
 - It is a polynomial, and hence $\in C^{\infty}$ (infinitely continuously differentiable over its entire domain)
-- Its gradient is $\nabla g = 2\vec{x}$ and $\vec{x}^T\vec{x}=1$ and hence the gradient of the explicit unconstrained $g$ can not be null vector at the extremum point of its constrained implicit version
+- Its gradient is $\nabla g = 2\vec{x}$ and $\vec{x}^T\vec{x}=1$ and hence the gradient of a constrained version of $g$ can not have maximum at a null vector
 
-Hence $g$ satisfies the conditions of the **implicit function theorem**, particularly applied for a multi-variable scalar valued function.
+Hence the constrained version of $g$ satisfies the conditions of the **implicit function theorem** particularly applied for a multi-variable scalar valued function.
+
+It is yet to be shown, however, how the implicit function theorem can be used to constructed a parametrized version of a function. Here below, for now just specifically for scalar valued functions, can be found a proof.
+
+The proof for vector valued functions can be found later forward in the article.
 
 <!--The gradient of an implicit function is perpendicular to any tangential direction-->
 
