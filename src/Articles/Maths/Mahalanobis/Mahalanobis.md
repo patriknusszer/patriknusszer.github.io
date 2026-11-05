@@ -945,13 +945,15 @@ $g^{-1}$ is a $C^1$ function. $(\vec{x}) \to (\vec{x}, \vec{c})$ is also $C^1$, 
 
 **Inverse function theorem proof**
 
-A function having an inverse over a set of input points means it is **bijective** between that set of input points and the image of those input points.
+A function having an inverse over a set of input points of its domain (over which it is defined) means it is **injective** over that set of input points.
+
+Formally, you would say the function is bijective between two sets. Bijectivity requires injectivity and surjectivity of the function. If it is injective over a subset of the domain, it means different elements of that preimage subset are mapped to different points inside the image of this subset, but expressed this way it immediately means bijectivity between these two sets, because surjectivity onto a subset of the codomain means every element of it actually belongs to the range/every element is inside the image of the preimage in the context.
 
 If $f: X \to Y$ is bijective between $X$ and $Y$:
-- It is **injective** on $X$, meaning two different elements of $X$ are mapped to two different elements of $Y$, it is "one-to-one"
+- It is **injective** over $X$, meaning two different elements of $X$ are mapped to two different elements of $Y$, it is "one-to-one"
 - it is **surjective** onto $Y$, meaning each element of $Y$ has an image in $X$. It basically means the codomain is not larger than the, meaning it exactly equals the range
 
-So if a function is bijective between a (sub)domain and (sub)codomain, the **image/preimage points are uniquely paired**.
+So if a function is bijective between a (sub)domain and (sub)codomain, the **image/preimage points are uniquely paired, and every element have a pair in the other set**.
 
 The inverse function theorem says:
 - If $f: X \subseteq \mathbb{R}^n \to Y \subseteq \mathbb{R}^m$ is defined over some open set $X$ containing some point $\vec{a}$, and it is continously differentiable over $X$. The theorem assumes openness of $X$ entirely out of convenience and convention as differentiability at some point requires perturbations into its neighborhood, which are absorbed by the guaranteed ball neighborhood of the inner point in $R^n$ 
