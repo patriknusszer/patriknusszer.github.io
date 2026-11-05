@@ -403,8 +403,9 @@ Let $\vec{w}$ be arbitrarily chosen vector perpendicular to $\nabla g(\vec{x})$ 
 If $g$ satisfies the conditions of the **implicit function theorem**, then in some neighborhood $U \subseteq \mathbb{R}^{n-1}$ of $\vec{s}_{-k} \in \mathbb{R}^{n-1}$:
 
 $$
-\forall \vec{v}\ \in U:\\
-x_k=\phi(\vec{v})
+\forall\ \vec{u}\ \in U:\\
+x_k=\phi(\vec{u})\\
+g(\vec{u},\gamma(\vec{u}))
 $$
 
 Where $x_k$ is the input variable to be expressed as a function of all others, and with respect to which the partial derivative is nonzero.
@@ -481,7 +482,7 @@ Now we can proceed with proving the original lemma, now that we know we can cons
 Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$ (since the neighorhood of $\vec{x}(t^{*})$ is a subset of the full compact set containing the supremum), the derivative here, and only here, with respect to $T$, is guaranteed to be zero. While for $g(\vec{x}(t))$, the derivative  with respect to $t$ at all points of the neighborhood of $t^{*}$ is zero (including $t^{*}$):
 
 $$
-\nabla g(\vec{x})\bigg|_{\vec{x}=t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0\\
+\nabla g(\vec{x})\bigg|_{t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0\\
 \nabla f(\vec{x})\bigg|_{\vec{x}=t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0
 $$
 
