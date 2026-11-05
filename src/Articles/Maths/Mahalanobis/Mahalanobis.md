@@ -414,12 +414,12 @@ And to construct our one-variable, vector valued parametrized curve function:
 
 $$
 \begin{aligned}
-x_i(t) &= \vec{s}_i + \vec{v}_it\quad \forall i \neq k\\
+x_i(t) &= \vec{s}_i + \vec{v}_it\quad \forall\ i \neq k\\
 x_k(t) &= \phi(x_1,..,x_{k-1},x_{k+1},x_n)\\
-\implies &\forall t\ \text{such that}\ \vec{x}_{-k}(t) \in U:\\
+\implies &\forall\ t\ \text{such that}\ \vec{x}_{-k}(t) \in U:\\
 &\begin{cases}
  g(\vec{x}(t))=\text{const}\\
- \exists \nabla g(\vec{x}(t))=0
+ \exists\ \nabla g(\vec{x}(t))=0
  \end{cases}\\
 \implies &g(\vec{x}(0))=g(\vec{s})
 \end{aligned}\\
@@ -477,13 +477,15 @@ $$
 
 **Introducing the Lagrange multiplier**
 
-Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** $g$ locally, and is also locally differentiable.
+Now we can proceed with proving the original lemma, now that we know we can construct the said curve function $\vec{x}(t)$ so that it satisfies the **constraint equation** $g$ locally (the constraint function retains constant value in the whole neighborhood), and is also locally continuously differentiable.
 
-Since $f(\vec{x}(t))$ is guaranteed to have an extremum at $t^{*}=0$ (since the neighorhood of $\vec{x}(t^{*})$ is a subset of the full compact set containing the supremum), the derivative here, and only here, with respect to $T$, is guaranteed to be zero. While for $g(\vec{x}(t))$, the derivative  with respect to $t$ at all points of the neighborhood of $t^{*}$ is zero (including $t^{*}$):
+Since $f(\vec{x}(t))$, by construction, is truly a version of $f$ constrained to a subset of the target compact level set containing the point at which it attains its supremum over this set, it is guaranteed to have an extremum at $t^{*}=0$ (since the neighborhood of $\vec{x}(t^{*})$ is a subset of the full compact set containing the supremum), the derivative here, and only here, with respect to $T$, is guaranteed to be zero. 
+
+And as for $g(\vec{x}(t))$, again, by construction, it is a constrained version of $g$ so that it retains constant function value over the entire neighborhood of $t^{*}$, and hence the derivative  with respect to $t$ at all points of the neighborhood is zero (including $t^{*}=0$):
 
 $$
-\nabla g(\vec{x})\bigg|_{t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0\\
-\nabla f(\vec{x})\bigg|_{\vec{x}=t^{*}} \cdot \frac{d}{dt} \vec{x}(t^{*})=0
+\nabla g(\vec{x})\bigg|_{\vec{s}} \cdot \nabla \vec{x}(0)=0\\
+\nabla f(\vec{x})\bigg|_{\vec{s}} \cdot \nabla \vec{x}(0)=0
 $$
 
 
