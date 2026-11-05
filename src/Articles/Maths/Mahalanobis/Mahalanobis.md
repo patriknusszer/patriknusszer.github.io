@@ -1074,7 +1074,7 @@ $$
 
 And hence it proves injectivity of $f$ for all points of the ball around $\vec{a}$ that brings $Df$ close enough to the identity matrix.
 
-Without specifically defining the exact image of the points in the ball, it is already proven that $f$ is bijective over the ball and its image and hence it has an inverse there.
+Without specifically defining the boundary of the image of the points in the ball, it is already proven that $f$ is bijective over the ball and its image and hence it has an inverse there.
 
 But we also want to show:
 - There exists an open set, particularly an open ball around $f(\vec{a})$, whose preimage is contained by $B_{r_0}(\vec{a})$, and that these are the two open sets for which $f$ is bijective
@@ -1162,16 +1162,16 @@ Rewriting $\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a}\mid\mid$ using $h(\vec{x})$:
 
 $$
 \begin{aligned}
-&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid = \mid\mid \vec{y}_0-\vec{a}-h(\vec{x})\mid\mid \le\\
-&\le \mid\mid \vec{y}_0-\vec{a} \mid\mid + \mid\mid h(\vec{x})\mid\mid\\
-&\le\mid\mid \vec{y}_0-\vec{a} \mid\mid +\ qr_0
+&\mid\mid T_{\vec{y}_0}(\vec{x})-\vec{a} \mid\mid = \mid\mid \vec{y}_0-f(\vec{a})-h(\vec{x})\mid\mid \le\\
+&\le \mid\mid \vec{y}_0-f(\vec{a}) \mid\mid + \mid\mid h(\vec{x})\mid\mid\\
+&\le\mid\mid \vec{y}_0-f(\vec{a}) \mid\mid +\ qr_0
 \end{aligned}
 $$
 
-If we impose upon $\vec{y}_0$ that it be close enough to $\vec{a}$, to obtain an open ball:
+If we impose upon $\vec{y}_0$ that it be close enough to $f(\vec{a})$, to obtain an open ball:
 
 $$
-\mid\mid \vec{y}_0-\vec{a}\mid\mid < (1-q_0)r_0
+\mid\mid \vec{y}_0-f(\vec{a})\mid\mid < (1-q_0)r_0
 $$
 
 Then we obtain (note the change from $\le$ to $<$):
@@ -1183,7 +1183,7 @@ $$
 \end{aligned}
 $$
 
-The preimage of the open ball $B_{(1-q_0)r_0}(f(\vec{a}))$ is also open since for a continuous function only an open preimage can have open image. We know that the preimage is contained by the closed ball $\overline{B}_{r_0}(\vec{a})$ but it should also intuitively be contained by just the open ball $B_{r_0}(\vec{a})$.
+The preimage of the open ball $B_{(1-q_0)r_0}(f(\vec{a}))$ is also open since a continuous function guarantees open preimage for an open set in the codomain. We know that the preimage is contained by the closed ball $\overline{B}_{r_0}(\vec{a})$ but it should also intuitively be contained by just the open ball $B_{r_0}(\vec{a})$.
 
 Indeed, considering the fixed point $\vec{x}^*$ for $\vec{y}_0$ we have:
 
