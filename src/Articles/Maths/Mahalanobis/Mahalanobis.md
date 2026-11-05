@@ -410,6 +410,8 @@ $$
 
 Where $x_k$ is the input variable to be expressed as a function of all others, and with respect to which the partial derivative is nonzero.
 
+Notw that $\vec{s}_{-k}$ is all-coordinates except the $k$th, formally it is the projection of $\vec{s}$ onto all other coordinates.
+
 And to construct our one-variable, vector valued parametrized curve function:
 
 $$
@@ -488,8 +490,7 @@ $$
 \nabla f(\vec{x})\bigg|_{\vec{s}} \cdot \nabla \vec{x}(0)=0
 $$
 
-
-Since at $t^*$ both gradient vectors $\nabla g(\vec{x})$ and $\nabla f(\vec{x})$ are perpendicular to $\frac{d}{dt}\vec{x}(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
+Since at $t^*=0$ both gradient vectors $\nabla g(\vec{x})$ and $\nabla f(\vec{x})$ are perpendicular to $\nabla\vec{x}(t)$, it follows that **they must be parallel, that is, scalar multiples of each other**.
 Writing the result with the Lagrange multiplier $\lambda$ yields:
 
 $$
@@ -602,7 +603,7 @@ If we know a symmetric matrix has at least one eigenvector, then it has exactly 
 
 The above maximization problem is repeated, but with vectors perpendicular to all other already found.
 
-To further constrain the domain of $f$, $g$ becomes a vector-valued function holding individual constraint equations:
+To further constrain the domain of $f$, $g$ becomes a vector-valued constraint function holding individual constraint equations:
 - The unit-vector constraint is always present
 - All other constraints express perpendicularity to already found eigenvectors
 
@@ -636,9 +637,9 @@ The full Jacobian matrix at the next extremum point of this function has full ra
 - The row vectors are perpendicular (pairwise)
 - None of the vectors are zero
 
-And hence the $n+1$ vectors are linearly independent, which means the Jacobian has full rank $n+1$.
+And hence the $n+1$ vectors are linearly independent, which means the Jacobian has full rank $n+1$ which is equivalent to saying there $\exists\ (n+1)$ inputs with respect to which the partial Jacobian matrix is invertible.
 
-$\vec{g}_n(\vec{x})$ is also continuously differentiable (infinitely, over the entire domain). So it satisfies the **general implicit function theorem**, and hence there $\exists\ n+1$ input variables that are expressible as a continuously differentiable function of all other inputs in some open neighborhood of the projection of the extremum point to those coordinates.
+$\vec{g}_n(\vec{x})$ is also continuously differentiable (infinitely, over the entire domain, since each output is a polynomial). So it satisfies the **general implicit function theorem**, and hence there $\exists\ (n+1)$ input variables that are expressible as a continuously differentiable function of all other inputs in some open neighborhood of the projection of the extremum point to those coordinates.
 
 Knowing this, a parametrization $\vec{g}(\vec{x}(t))$ of the vector-valued constraint function $\vec{g}(\vec{x})$ is yet to be shown around point $\vec{s}$.
 
@@ -650,32 +651,35 @@ $$
 
 That multiplication is a result of multiplying each gradient vector/row vector of the Jacobian matrix with the respective coordinate of $\vec{w}$. The equality holds if the multiplication is broken down into the  sum of the right projections of $\vec{w}$ and horizontal cuts of the matrix.
 
-Let $\pi_{\vec{u}}$ denote the projection of an input vector to those input coordinates for which the implicit function theorem guarantees local expressibility. $\dim{\vec{u}}$ is the number of inputs minus the number of outputs, hence $m-(n+1)=k$ if $m>(n+1)$ is the number of all input variables. 
+Let $\pi_{\vec{u}}$ denote the projection of an input vector to those input coordinates as a function of which the implicit function theorem guarantees expressibility of all other input coordinates. $\dim{\vec{u}}$ is the number of inputs minus the number of outputs, hence $m-(n+1)=k$ if $m>(n+1)$ is the number of all input variables.
 
-Let $\pi_{\vec{v}}$ denote the projection of an input vector to those input coordinates as a function of which the implicit function theorem guarantees expressibility. $\dim{\vec{v}}$ is the number of outputs, hence $n + 1$.
+Let $\pi_{\vec{v}}$ denote the projection of an input vector to those input coordinates for which the implicit function theorem guarantees expressibility by all other coordinates. $\dim{\vec{v}}$ is the number of outputs, hence $n + 1$.
 
-Hence the above matrix multiplication can be broken down into the sum of two other matrix multiplications, with one matrix horizontal cut being of size $(n+1) \times k$ and the other of size $(n+1) \times (n+1)$:
+The above matrix multiplication can be broken down into the sum of two other matrix multiplications, with one matrix horizontal cut being of size $(n+1) \times k$ and the other of size $(n+1) \times (n+1)$:
 
 $$
 J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\vec{w}) + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{v}}(\vec{w}) = \vec{0}
 $$
+
+
+Where $J_{\vec{u}}$ is the partial Jacobian matrix with respect to input coordinates $\vec{u}$ and $J_{\vec{v}}$ is the partial Jacobian with respect to coordinates $\vec{v}$. They are two horizontal cuts of the full Jacobian matrix (with respect to all input coordinates).
 
 And note that $\vec{v}$ denote those inputs with respect to which the partial Jacobian is invertible at $\vec{s}$.
 
 By the implicit function theorem we can express coordinates $\vec{v}$ as a continuously differentiable function of coordinates $\vec{u}$ around some open neighborhood $U$ of $\pi_{\vec{u}}(\vec{s})$ so that function $g$ retains its function value (implicit constraint vector $\vec{c}$):
 
 $$
-g(\vec{x}, \gamma(\vec{x}))=\vec{c}\quad \vec{x} \in U
+g(\vec{x}, \vec{\gamma}(\vec{x}))=\vec{c}\quad \vec{x} \in U
 $$
 
 Now let's construct the parametrizing curve $\vec{x}(t)$.  
 For the $\vec{u}$ coordinates:
 
 $$
-\vec{x}_{i}(t) = \pi_{\vec{u}}(\vec{s})_{i} + t\cdot\vec{w}_i
+\vec{x}_{i}(t) = \vec{s}_{i} + t\cdot\vec{w}_i
 $$
 
-We know that the vector given by $\vec{x}_i(t)$ for all $\vec{u}$ coordinates is within $U$ because $U$ guarantees an open neighborhood around $\pi_{\vec{u}}(\vec{s})$ and that means particularly at point $\pi_{\vec{u}}(\vec{s})$ we have a fully saturated open ball of some positive radius and if parameter $t$ is maximized so that $t \cdot \vec{w}_{i}$ is a displacement not exceeding the radius, it displaces the center point into another point within the guaranteed ball.
+We know that the vector given by $\vec{x}_i(t)$ for all $\vec{u}$ coordinates is within $U$ because $U$ guarantees an open neighborhood around $\pi_{\vec{u}}(\vec{s})$ and that means particularly at point $\pi_{\vec{u}}(\vec{s})$ we have a fully saturated open ball of some positive radius and if parameter $t$ is maximized so that $t \cdot \vec{w}_{i}$ products together do not add up to a displacement exceeding the radius, it displaces the center point into another point within the guaranteed ball.
 
 The derivative of these outputs with respect to $t$ is trivially the $i$th coordinate of $\vec{w}$ at point $t=0$:
 
@@ -686,7 +690,7 @@ $$
 And for the $\vec{v}$ coordinates:
 
 $$
-\vec{x}_{j}(t) = \gamma(\vec{x}_{\vec{u}}(t))_{j}
+\vec{x}_{j}(t) = \vec{\gamma}(\vec{x}(t)_{\vec{u}})_{j}
 $$
 
 That is, the other coordinates are just defined as a function of all other coordinates (as guaranteed by the implicit function theorem).
@@ -702,7 +706,7 @@ $$
 Introduce the same horizontal split of the Jacobian:
 
 $$
-J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\vec{x}(t))\bigg|_{0} + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\ \vec{x}(t))\bigg|_{0} = \vec{0}
+J_{\vec{u}}\bigg|_{\vec{s}} \cdot \pi_{\vec{u}}(\nabla\vec{x}(t))\bigg|_{0} + J_{\vec{v}}\bigg|_{\vec{s}} \cdot \pi_{\vec{v}}(\nabla\ \vec{x}(t))\bigg|_{0} = \vec{0}
 $$
 
 Reccall that $\pi_{\vec{u}}(\nabla\vec{x}(t))\bigg|_{0}$ are trivially the corresponding coordinates of $\vec{w}$:
@@ -741,7 +745,7 @@ $$
 \nabla\ \vec{x}(t)\bigg|_{0} = \vec{w}
 $$
 
-So it means that there indeed $\exists$ a curve $\vec{x}(t)$ such around the right neighborhood $I$ of $t=0$ function $g$ retains its constraint vector (each output is a constant function of the inputs) and hence its derivative over $I$ is zero:
+So it means that there indeed $\exists$ a curve $\vec{x}(t)$ such that around the right neighborhood $I$ of $t=0$ function $g$ retains its constraint vector (each output coordinate is a constant function of the inputs) and hence its derivative over $I$ is zero:
 
 $$
 \begin{aligned}
@@ -804,7 +808,7 @@ $$
 \end{aligned}
 $$
 
-It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which is not possible. 
+It would lead to contradiction if there were less than $n$ eigenvectors, because we know that in $\mathbb{R}^n$ every orthogonal basis that can express all the vector space must have exactly $n$ orthogonal vectors. Therefore if we could not extend our collection of less than $n$ orthogonal vectors with one more, that would imply any other vector in $\mathbb{R}^n$ can be expressed with less than $n$ vectors which would be a paradox. 
 
 **Q.E.D.**
 Now we know that any symmetrical matrix has exactly $n$ perpendicular eigenvectors.
