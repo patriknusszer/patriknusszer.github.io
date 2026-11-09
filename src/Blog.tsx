@@ -39,6 +39,10 @@ function Blog() {
                                         {
                         page: "/Blog/Mahalanobis",
                         name: "Mahalanobis distance, eigendecomposition, implicit/inverse function theorem, Banach theorem, generative LDA"
+                    },
+                    {
+                        page: "/Blog/Radon",
+                        name: "CT Scanner Radiography: Radon transform, Fourier slice theorem"
                     }
                 ]
             },
